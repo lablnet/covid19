@@ -2,7 +2,7 @@
 __author__ = "Muhammad Umer Farooq"
 __license__ = "GPL-3"
 __version__ = "1.0.0"
-__maintainer__ = "Muhammad Umer Farooq"
+__maintainer__ = "Muhammad Umer Farooq & Muhammad Usman Naeem"
 __email__ = "contact@muhammadumerfarooq.me"
 __status__ = "Production"
 
@@ -22,6 +22,7 @@ def get_config(config, root=""):
      """
 
     if os.path.exists(root+"/config.json"):
+        print("true")
         file = open(root+"/config.json", "r")
         data = file.read()
         configuration = json.loads(data)
@@ -29,4 +30,7 @@ def get_config(config, root=""):
             return configuration[config]
         else:
             return None
-    return None
+    else : print("false")
+
+db_name = get_config("db_name")
+print(db_name)

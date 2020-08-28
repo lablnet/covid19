@@ -20,4 +20,3 @@ def insert():
 
 def update():
     pass
-
