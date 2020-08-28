@@ -21,7 +21,7 @@ def get_config(config, root=""):
          None.
      """
 
-    if os.path.exists(root+"/config.json"):
+    if os.path.isfile(root+"/config.json"):
         file = open(root+"/config.json", "r")
         data = file.read()
         configuration = json.loads(data)

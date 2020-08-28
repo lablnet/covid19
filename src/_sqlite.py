@@ -16,8 +16,19 @@ def create_tables():
     for tab in tabl :
         f = list(tabl[tab]['fields'].keys())
         k = list(tabl[tab]['fields'].values())
-        cur.execute('CREATE TABLE' , tabl[tab]['name'], 'title', f[0], 'plays', k[0])
+        # cur.execute('CREATE TABLE' , tabl[tab]['name'], 'title', f[0], 'plays', k[0])
+        # print('CREATE TABLE' , tabl[tab]['name'], 'title', f, 'plays', k)
+        prepareSql = "CREATE TABLE " + tabl[tab]['name'] + "  ("
+        for i in range(len(f)):
+            prepareSql += f[i] + " " + k[i] + ","
 
+        # remove last traling comma.
+        prepareSql = prepareSql[0: len(prepareSql) - 1]
+        prepareSql += ");"
+        cur.executescript(prepareSql)
+
+        # print sql statement
+        print(prepareSql)
 create_tables()
 
 
