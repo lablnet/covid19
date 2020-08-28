@@ -22,7 +22,6 @@ def get_config(config, root=""):
      """
 
     if os.path.exists(root+"/config.json"):
-        print("true")
         file = open(root+"/config.json", "r")
         data = file.read()
         configuration = json.loads(data)
@@ -30,7 +29,5 @@ def get_config(config, root=""):
             return configuration[config]
         else:
             return None
-    else : print("false")
-
-db_name = get_config("db_name")
-print(db_name)
+    else:
+        return None
