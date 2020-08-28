@@ -7,6 +7,14 @@ if [ -z "$1" ]; then
     exit
 fi
 
+# we can pull before commit or push
+# check if branch is provide, if not make push it to default.
+if [ -z "$2" ]; then
+  git pull
+else
+  git pull origin $2
+fi
+
 # add files, commit and push changes.
 git add -A
 git commit -m "$1"
