@@ -7,7 +7,7 @@ from __config import  get_config
 # creating database
 def create_db():
     db_name = get_config("db_name")
-    
+
 
 
 def create_tables():
