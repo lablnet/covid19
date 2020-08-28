@@ -2,11 +2,11 @@
   "database": {
     "db_name": "covid19_pakistan",
     "tables" : {
-        "1": {
+        1: {
           "name": "cases",
           "fields": {
             "field1": "int",
-            "test": "varchar"
+            "test": "varchar",
           }
         }
     }
