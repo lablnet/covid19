@@ -18,7 +18,7 @@ def create_tables():
         k = list(tabl[tab]['fields'].values())
         # cur.execute('CREATE TABLE' , tabl[tab]['name'], 'title', f[0], 'plays', k[0])
         # print('CREATE TABLE' , tabl[tab]['name'], 'title', f, 'plays', k)
-        prepareSql = "CREATE TABLE " + tabl[tab]['name'] + "  ("
+        prepareSql = "CREATE TABLE IF NOT EXISTS " + tabl[tab]['name'] + "  ("
         for i in range(len(f)):
             prepareSql += f[i] + " " + k[i] + ","
 
