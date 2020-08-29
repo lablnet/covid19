@@ -46,6 +46,11 @@ def create_tables():
 create_tables()
 
 
+testData = {
+    'id': '01',
+    'name': 'umer',
+    'username': 'lablnet'
+}
 def insert():
     pass
     #insert into table : insert key and values. auto generated id number(primary key) + Auto Increment

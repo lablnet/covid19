@@ -15,6 +15,14 @@
             "field1": "int",
             "test": "varchar"
           }
+        },
+      "3": {
+          "name": "users",
+          "fields": {
+            "id": "int",
+            "name": "varchar",
+            "username": "varchar"
+          }
         }
     }
   }
