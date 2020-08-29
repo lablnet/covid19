@@ -1,0 +1,21 @@
+{
+  "database": {
+    "db_name": "covid19_pakistan",
+    "tables" : {
+        "1": {
+          "name": "cases",
+          "fields": {
+            "field1": "text",
+            "test": "varchar"
+          }
+        },
+      "2": {
+          "name": "test",
+          "fields": {
+            "field1": "int",
+            "test": "varchar"
+          }
+        }
+    }
+  }
+}
