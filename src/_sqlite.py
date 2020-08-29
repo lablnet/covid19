@@ -26,8 +26,9 @@ def create_tables():
         v = list(tabl[tab]['fields'].values())
 
         prepareSql = "CREATE TABLE IF NOT EXISTS " + tabl[tab]['name'] + "  ("
-        if v[0].upper().startswith("INT"):
-            prepareSql += "id     INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,"
+
+        # Add id field
+        prepareSql += "id     INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,"
 
         for i in range(len(k)):
             if v[i].upper() not in valid_data_types:
