@@ -30,7 +30,7 @@ def create_tables():
         for i in range(len(f)):
             if k[i].upper() not in valid_data_types :
                 print(k[i].upper(), "is not a valid Data Type")
-                continue
+                return False
             prepareSql += f[i] + " " + k[i] + ","
 
         # remove last traling comma.

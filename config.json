@@ -8,6 +8,13 @@
             "field1": "int",
             "test": "varchar"
           }
+        },
+      "2": {
+          "name": "test",
+          "fields": {
+            "field1": "int",
+            "test": "varchar"
+          }
         }
     }
   }
