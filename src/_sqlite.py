@@ -24,37 +24,24 @@ def create_tables():
     for tab in tabl :
         k = list(tabl[tab]['fields'].keys())
         v = list(tabl[tab]['fields'].values())
-        boo = False
 
-        if tab == "1" and not v[0].upper().startswith("INT") :         #Creates Start table a Primary key Index. (If field 1 is int type)
-            prepareSql = "CREATE TABLE IF NOT EXISTS " + tabl[tab]['name'] + " ('ID'    INTEGER,    PRIMARY KEY('ID' AUTOINCREMENT))"       #'ID' INTEGER NOT NULL UNIQUE,   PRIMARY KEY(" + k[0] + " AUTOINCREMENT)"
-            print(prepareSql)
-            cur.executescript(prepareSql)
-            boo = True
+        prepareSql = "CREATE TABLE IF NOT EXISTS " + tabl[tab]['name'] + "  ("
+        if v[0].upper().startswith("INT"):
+            prepareSql += "id     INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,"
 
-        if boo :
-            for i in range(len(k)):
-                prepareSql = "ALTER TABLE " + tabl[tab]['name'] + " ADD "
-                if v[i].upper() not in valid_data_types :
-                    print(v[i].upper(), "is not a valid Data Type")
-                    return False        # -- It will exit the Entire Function..! To skip this column and go to the next, we should use continue.
-                prepareSql += k[i] + " " + v[i] + ";"
-                print("1", prepareSql)
-                cur.executescript(prepareSql)
-        else :
-            prepareSql = "CREATE TABLE IF NOT EXISTS " + tabl[tab]['name'] + "  ("
-            for i in range(len(k)):
-                if v[i].upper() not in valid_data_types :
-                    print(v[i].upper(), "is not a valid Data Type")
-                    return False
-                prepareSql += k[i] + " " + v[i] + ","
-              # remove last traling comma.
-            prepareSql = prepareSql[0: len(prepareSql) - 1]
-            prepareSql += ");"
+        for i in range(len(k)):
+            if v[i].upper() not in valid_data_types:
+                print(v[i].upper(), "is not a valid Data Type", "of table:", tabl[tab]['name'])
+                continue
+            prepareSql += k[i] + " " + v[i] + ","
 
-            cur.executescript(prepareSql)
-            # print sql statement
-            print("\n2", prepareSql)
+        # remove last talling comma.
+        prepareSql = prepareSql[0: len(prepareSql) - 1]
+        prepareSql += ");"
+
+        cur.executescript(prepareSql)
+        # print sql statement
+        print("\n2", prepareSql)
 create_tables()
 
 
