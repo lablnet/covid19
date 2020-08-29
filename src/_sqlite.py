@@ -24,12 +24,6 @@ def create_tables():
     for tab in tabl :
         k = list(tabl[tab]['fields'].keys())
         v = list(tabl[tab]['fields'].values())
-        # cur.execute('CREATE TABLE' , tabl[tab]['name'], 'title', f[0], 'plays', k[0])
-        # print('CREATE TABLE' , tabl[tab]['name'], 'title', f, 'plays', k)
-        '''
-        CREATE TABLE "usman" (	"ID"	INTEGER,	PRIMARY KEY("ID" AUTOINCREMENT));
-chk if 1st is int
-        '''
         boo = False
 
         if tab == "1" and not v[0].upper().startswith("INT") :         #Creates Start table a Primary key Index. (If field 1 is int type)
