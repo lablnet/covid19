@@ -156,15 +156,11 @@ def insert_data():
 def update():
     pass
 
-def find_record():
-    try : choice = int(input("1. Find Record using ID number\n2. Find Record using Username\n => "))
-    except :
-        print("Please Enter Number Only..!")
-        find_record()
+def find_record(choice):
     tabl = db['tables']
     print("Write name of Table to Look into.")
     tables = list()
-    for tab in tabl :
+    for tab in tabl:
         print(tabl[tab]["name"])
         tables.append(tabl[tab]["name"])
     print("Search All Above:  'All'")
@@ -208,7 +204,7 @@ def find_record():
             print(findSql)
             return
         except :
-            Print("No record Found.")
+            print("No record Found.")
             return
     elif choice == 2 :
         id_name = input("Enter username to Find => ")
