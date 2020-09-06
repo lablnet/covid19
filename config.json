@@ -7,7 +7,7 @@
           "name": "cases",
           "fields": {
             "_id": "int",
-            "datetime": "datetime",
+            "datetime": "varchar",
             "type": "varchar",
             "reference": "varchar",
             "description": "TEXT",
