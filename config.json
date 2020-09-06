@@ -1,19 +1,23 @@
 {
+  "url": "https://co.vid19.pk/api/cases/feed/?limit=100",
   "database": {
     "db_name": "covid19_pakistan",
     "tables" : {
         "1": {
           "name": "cases",
           "fields": {
-            "field1": "int",
-            "test": "varchar"
+            "_id": "int",
+            "datetime": "datetime",
+            "type": "varchar",
+            "reference": "varchar",
+            "description": "TEXT",
+            "extra": "varchar"
           }
         },
       "2": {
-          "name": "test",
+          "name": "url",
           "fields": {
-            "field1": "int",
-            "test": "varchar"
+            "url": "varchar"
           }
         }
     }
