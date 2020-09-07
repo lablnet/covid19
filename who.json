@@ -1,7 +1,8 @@
 {
   "database": {
     "db_name": "covid19_report",
-    "table" : {
+    "tables" : {
+      "1" : {
           "name": "cases",
           "fields": {
             "Date_reported": "varchar",
@@ -11,8 +12,9 @@
             " New_cases": "INTEGER",
             " Cumulative_cases": "INTEGER",
             " New_deaths": "INTEGER",
-            " Cumulative_deaths": "INTEGER",
+            " Cumulative_deaths": "INTEGER"
           }
       }
+    }
   }
 }
