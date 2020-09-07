@@ -47,29 +47,26 @@ class _sqlite:
             _sqlite.cur.executescript(sql)
             print(tab, "Table Created.")
 
+    @staticmethod
+    def getCur():
+        return _sqlite.cur
 
     @staticmethod
     def insert(table, data):
         fields = tuple(data.keys())
         values = tuple(data.values())
-        print("1")
         if len(fields) != len(values):
-            print("2")
-            return False
+           return False
         if len(values) > 1:
-            print("3")
             vals = str(tuple("?") * len(values)).replace("'", "")
         else:
-            print("4")
             vals = str(tuple("?") * len(values))[0: len(values) - 3].replace("'", "") + ")"
         sql = "INSERT INTO " + table + " " + str(fields)[0:len(str(fields))-2].replace("'", "") + ")"
         sql += " VALUES " + vals + ";"
         try:
             _sqlite.cur.execute(sql, values)
-            print("5")
         except:
             print("Error")
-            print("6")
         _sqlite.conn.commit()
         return True
 
