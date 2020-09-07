@@ -31,3 +31,4 @@ conn.create_tables()
 
 for item in data:
     conn.insert(_sqlite.db['tables']["1"]["name"], data[item])
+    print(item)
