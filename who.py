@@ -1,5 +1,5 @@
 from src._sqlite import _sqlite
-from who_config import get_config
+from src.__config import get_config
 import json
 import csv
 

@@ -10,7 +10,7 @@ import json
 import os
 
 
-def get_config(config, root=""):
+def get_config(config, root="", filename="config.json"):
     """
      Get config value from config file.
      Args:
@@ -21,8 +21,8 @@ def get_config(config, root=""):
          None.
      """
 
-    if os.path.isfile(root+"/config.json"):
-        file = open(root+"/config.json", "r")
+    if os.path.isfile(root+"/"+filename):
+        file = open(root+"/"+filename, "r")
         data = file.read()
         configuration = json.loads(data)
         if config in configuration:
