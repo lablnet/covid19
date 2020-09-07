@@ -1,0 +1,18 @@
+{
+  "database": {
+    "db_name": "covid19_report",
+    "table" : {
+          "name": "cases",
+          "fields": {
+            "Date_reported": "varchar",
+            " Country_code": "varchar",
+            " Country": "TEXT",
+            " WHO_region": "varchar",
+            " New_cases": "INTEGER",
+            " Cumulative_cases": "INTEGER",
+            " New_deaths": "INTEGER",
+            " Cumulative_deaths": "INTEGER",
+          }
+      }
+  }
+}
