@@ -4,7 +4,7 @@ import json
 import csv
 
 
-def csv_to_list():
+def csv_to_dict() -> dict:
     data = dict()
     with open('WHO-COVID-19-global-data.csv', newline='') as csvfile:
         c_reader = csv.reader(csvfile, delimiter=',')
@@ -24,7 +24,7 @@ def csv_to_list():
         return data
 
 
-data = csv_to_list()
+data = csv_to_dict()
 s = _sqlite()
 conn = s.conn(get_config("database", './','who.json'))
 conn.create_tables()
