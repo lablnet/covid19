@@ -1,11 +1,15 @@
 from src._sqlite import _sqlite
 from src.__config import get_config
+import requests
 import json
 import csv
 
 
 def csv_to_dict() -> dict:
     data = dict()
+    url = 'https://covid19.who.int/WHO-COVID-19-global-data.csv'
+    r = requests.get(url)
+    open('WHO-COVID-19-global-data.csv', 'wb').write(r.content)
     with open('WHO-COVID-19-global-data.csv', newline='') as csvfile:
         c_reader = csv.reader(csvfile, delimiter=',')
         next(c_reader)  # skip header line
@@ -23,6 +27,14 @@ def csv_to_dict() -> dict:
             i = i + 1
         return data
 
+def c_exists(date_reported, country_code) :
+    cursor = conn.getCur()
+    #match = cursor.
+    sql = "SELECT * FROM cases WHERE date_reported = ? and country_code = ?"
+    match = conn.getCur().execute(sql, (date_reported, country_code)).fetchall()
+    if len(match) >= 1 :
+        return False
+    else : return True
 
 data = csv_to_dict()
 s = _sqlite()
@@ -30,5 +42,7 @@ conn = s.conn(get_config("database", './','who.json'))
 conn.create_tables()
 
 for item in data:
-    conn.insert(_sqlite.db['tables']["1"]["name"], data[item])
-    print(item)
+    if c_exists(data[item]['date_reported'], data[item]['country_code']) :
+        conn.insert(_sqlite.db['tables']["1"]["name"], data[item])
+        print(item)
+    else : print("Duplicate Data")
