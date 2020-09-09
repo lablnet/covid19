@@ -11,8 +11,6 @@ def csv_to_dict() -> dict:
         next(c_reader)  # skip header line
         i = 0
         for items in c_reader:
-            if i == 100 :       #Remove this afterwards
-                break
             data[i] = dict()
             data[i]['date_reported'] = items[0] if items[0] else ""
             data[i]['country_code'] = items[1] if 1 < len(items) else ""
