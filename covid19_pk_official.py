@@ -20,10 +20,10 @@ url = "http://covid.gov.pk/"
 
 soup = BeautifulSoup(get_page(url), 'html.parser')
 
-elements = soup.find_all('div', class_='status')
+elements = soup.find('div', class_='status')
 
-status_note = soup.find_all('span', class_='status-note').text
+status_note = elements.find("span", class_='status-note').text
+new_cases = elements.find("div", class_="new-cases").text
+status_items = elements.find("div", class_="col-lg-12")
 
-print(elements)
-
-
+print(status_items)

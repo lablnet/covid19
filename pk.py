@@ -23,15 +23,13 @@ next = data["previous"]
 while True:
     if next is None:
         break
+    conn.insert("url", {"url": next})
     req = Request(next, headers={'User-Agent': 'PYTHON/3.8'})
     response = urlopen(req)
     data = response.read().decode()
     data = json.loads(data)
     results = data["results"]
     next = data["previous"]
-    if next is None:
-        break
-    conn.insert("url", {"url": next})
     for items in results:
         conn.insert("cases", items)
     print(i)
