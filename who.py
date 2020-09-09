@@ -11,6 +11,8 @@ def csv_to_dict() -> dict:
         next(c_reader)  # skip header line
         i = 0
         for items in c_reader:
+            if i == 100 :       #Remove this afterwards
+                break
             data[i] = dict()
             data[i]['date_reported'] = items[0] if items[0] else ""
             data[i]['country_code'] = items[1] if 1 < len(items) else ""
@@ -23,6 +25,14 @@ def csv_to_dict() -> dict:
             i = i + 1
         return data
 
+def c_exists(date_reported, country_code) :
+    cursor = conn.getCur()
+    #match = cursor.
+    sql = "SELECT * FROM cases WHERE date_reported = ? and country_code = ?"
+    match = conn.getCur().execute(sql, (date_reported, country_code)).fetchall()
+    if len(match) >= 1 :
+        return False
+    else : return True
 
 data = csv_to_dict()
 s = _sqlite()
@@ -30,5 +40,7 @@ conn = s.conn(get_config("database", './','who.json'))
 conn.create_tables()
 
 for item in data:
-    conn.insert(_sqlite.db['tables']["1"]["name"], data[item])
-    print(item)
+    if c_exists(data[item]['date_reported'], data[item]['country_code']) :
+        conn.insert(_sqlite.db['tables']["1"]["name"], data[item])
+        print(item)
+    else : print("Duplicate Data")
