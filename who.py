@@ -1,11 +1,15 @@
 from src._sqlite import _sqlite
 from src.__config import get_config
+import requests
 import json
 import csv
 
 
 def csv_to_dict() -> dict:
     data = dict()
+    url = 'https://covid19.who.int/WHO-COVID-19-global-data.csv'
+    r = requests.get(url)
+    open('WHO-COVID-19-global-data.csv', 'wb').write(r.content)
     with open('WHO-COVID-19-global-data.csv', newline='') as csvfile:
         c_reader = csv.reader(csvfile, delimiter=',')
         next(c_reader)  # skip header line
