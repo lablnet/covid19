@@ -14,6 +14,7 @@ def csv_to_dict() -> dict:
         print("File Updated.")
     except :
         print("File not Updated.")
+        return
 
     with open('WHO-COVID-19-global-data.csv', newline='') as csvfile:
         c_reader = csv.reader(csvfile, delimiter=',')

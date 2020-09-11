@@ -45,11 +45,20 @@ class _sqlite:
             sql += ");"
 
             _sqlite.cur.executescript(sql)
-            print(tab, "Table Created.")
+            print(tabl[tab]['name'], "Table Created.")
 
     @staticmethod
     def getCur():
         return _sqlite.cur
+
+    @staticmethod
+    def insert_one(table, file) :
+        sql = "INSERT INTO " + table + " (date) VALUES ('" + file + "')"
+        try:
+            _sqlite.cur.execute(sql)
+        except:
+            print("Error")
+        _sqlite.conn.commit()
 
     @staticmethod
     def insert(table, data):
