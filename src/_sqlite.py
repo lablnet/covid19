@@ -1,4 +1,4 @@
-"""__config.py: Config manipulation."""
+"__config.py: Config manipulation."
 __author__ = "Muhammad Umer Farooq"
 __license__ = "GPL-3"
 __version__ = "1.0.0"

@@ -4,12 +4,17 @@ import requests
 import json
 import csv
 
-
 def csv_to_dict() -> dict:
     data = dict()
     url = 'https://covid19.who.int/WHO-COVID-19-global-data.csv'
-    r = requests.get(url)
-    open('WHO-COVID-19-global-data.csv', 'wb').write(r.content)
+    try :
+        r = requests.get(url)
+        file = open('WHO-COVID-19-global-data.csv', 'wb')
+        file.write(r.content)
+        print("File Updated.")
+    except :
+        print("File not Updated.")
+
     with open('WHO-COVID-19-global-data.csv', newline='') as csvfile:
         c_reader = csv.reader(csvfile, delimiter=',')
         next(c_reader)  # skip header line
@@ -29,7 +34,6 @@ def csv_to_dict() -> dict:
 
 def c_exists(date_reported, country_code) :
     cursor = conn.getCur()
-    #match = cursor.
     sql = "SELECT * FROM cases WHERE date_reported = ? and country_code = ?"
     match = conn.getCur().execute(sql, (date_reported, country_code)).fetchall()
     if len(match) >= 1 :
