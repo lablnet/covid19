@@ -22,14 +22,26 @@ def file_download(file_name) :
         r = requests.get(url)
         file = open(file_name, 'wb')
         file.write(r.content)
+        filesize = os.path.getsize(file_name)
+        if filesize < 10 :
+            print("\n", file_name, "Downloaded but Empty\n")
+            return
         print(file_name, "Record Downloaded.")
     except :
         print(file_name, "Record not Downloaded.")
 
+def day_add(file):
+    month = int(file[:2])
+    day = int(file[3:5])
+    year = int(file[6:10])
+    value = date(year, month, day)
+    Date = value.strftime("%m-%d-%Y") + ".csv"
+    return Date
+
 def c_exists(file) :
     cursor = conn.getCur()
-    sql = "SELECT * FROM records WHERE date = " + file
-    match = conn.getCur().execute(sql).fetchall()
+    conn.getCur().execute("SELECT * FROM records WHERE date=?", (file,))
+    match = conn.getCur().fetchall()
     if len(match) >= 1 :
         return False
     else : return True
@@ -37,11 +49,10 @@ def c_exists(file) :
 start_date = date(2020, 1, 22)
 today_date = date(today_year, today_month, today_day)
 yesterday_date = date(today_year, today_month, today_day - 1)
-today_date_str = str(today_month) + "-" + str(today_day) + "-" + str(today_year) + ".csv"
+today_date_str = "0" + str(today_month) + "-" + str(today_day) + "-" + str(today_year) + ".csv"
 
 if not path.exists(today_date_str) :
-    #file_download(today_date_str)
-    pass
+    file_download(today_date_str)
 
 available_files = list()
 missing_files = list()
@@ -52,7 +63,7 @@ for single_date in date_range(start_date, today_date):
     else : missing_files.append(file)
 
 print("From",start_date.strftime("%m-%d-%Y"), "Uptill", today_date.strftime("%m-%d-%Y"))
-print("Available Records :", len(available_files))
+print("\nAvailable Records :", len(available_files))
 print("Missing Records :", len(missing_files))
 for file in missing_files :
     print(file)
@@ -86,7 +97,13 @@ def csv_to_dict(file) -> dict:
             i = i + 1
         return data
 
-#today_data = csv_to_dict(today_date_str)
+def insert_data(file) :
+        data = csv_to_dict(file)
+        print("Inserting data of", file, "in Table:", _sqlite.db['tables']["1"]["name"])
+        for item in data:
+            conn.insert(_sqlite.db['tables']["1"]["name"], data[item])
+            print(item, "Inserted")
+
 
 s = _sqlite()
 conn = s.conn(get_config("database", './','global.json'))
@@ -96,12 +113,13 @@ print("\nTables Opened")
 
 for single_date in date_range(start_date, yesterday_date):
     file = single_date.strftime("%m-%d-%Y") + ".csv"
-    if c_exists(file[:10]) :
-        conn.insert_one(_sqlite.db['tables']['2']['name'], file[:10])
-        print(file[:10], "Inserted in records")
-    else : print("File Exists")
-quit()
-for item in today_data:
-    if item > 100 : break
-    conn.insert(_sqlite.db['tables']["1"]["name"], today_data[item])
-    print(item, "Inserted")
+    if c_exists(file) :             #First Checks if records are present in table: records
+        print(file, "Inserted in records")
+        conn.insert_one(_sqlite.db['tables']['2']['name'], file)        #inserts in records if not exisits already
+        insert_data(file)                   #also inserts data of file in table: cases whose name is not in records
+
+cursor = conn.getCur()
+conn.getCur().execute("SELECT * FROM records WHERE date=(SELECT max(date) FROM records);")      #Gets last file from records
+match = conn.getCur().fetchall()
+last_record = day_add(match[0][1])
+insert_data(last_record)

@@ -24,7 +24,7 @@
         "2" : {
             "name": "records",
             "fields": {
-              "date": "INTEGER"
+              "date": "varchar"
             }
         }
     }
