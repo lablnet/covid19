@@ -1,0 +1,32 @@
+{
+  "database": {
+    "db_name": "covid19_global",
+    "tables" : {
+      "1" : {
+          "name": "cases",
+          "fields": {
+            "fips": "INTEGER",
+            "admin2": "varchar",
+            "province_state": "varchar",
+            "country_region": "varchar",
+            "last_update": "varchar",
+            "lat": "varchar",
+            "long_": "varchar",
+            "confirmed": "INTEGER",
+            "deaths": "INTEGER",
+            "recovered": "INTEGER",
+            "active": "INTEGER",
+            "combined_key": "varchar",
+            "incidence_rate": "varchar",
+            "case_fatality_ratio": "varchar"
+          }
+      },
+        "2" : {
+            "name": "records",
+            "fields": {
+              "date": "varchar"
+            }
+        }
+    }
+  }
+}

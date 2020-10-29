@@ -1,4 +1,4 @@
-"""__config.py: Config manipulation."""
+"__config.py: Config manipulation."
 __author__ = "Muhammad Umer Farooq"
 __license__ = "GPL-3"
 __version__ = "1.0.0"
@@ -45,11 +45,20 @@ class _sqlite:
             sql += ");"
 
             _sqlite.cur.executescript(sql)
-            print(tab, "Table Created.")
+            print(tabl[tab]['name'], "Table Created.")
 
     @staticmethod
     def getCur():
         return _sqlite.cur
+
+    @staticmethod
+    def insert_one(table, file) :
+        sql = "INSERT INTO " + table + " (date) VALUES ('" + file + "')"
+        try:
+            _sqlite.cur.execute(sql)
+        except:
+            print("Error")
+        _sqlite.conn.commit()
 
     @staticmethod
     def insert(table, data):
