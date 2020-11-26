@@ -3,6 +3,11 @@ import requests
 from bs4 import BeautifulSoup
 import re
 
+from selenium import webdriver
+import selenium as se
+from webdriver_manager.firefox import GeckoDriverManager
+
+
 def get_page(url):
     if url is None:
         return None
@@ -15,6 +20,25 @@ def get_page(url):
             return page.content.decode()
         except:
             return page.content
+
+
+def get_soup(url):
+
+    # options = se.webdriver.ChromeOptions()
+    # chrome_options.add_argument("--headless")
+    # driver = webdriver.Firefox()
+    options = se.webdriver.ChromeOptions()
+    options.add_argument("--headless")
+    # driver = se.webdriver.Chrome(chrome_options=options)
+    driver = webdriver.Firefox(executable_path=GeckoDriverManager().install())
+
+    driver.get(url)
+    html = driver.page_source
+    soup = BeautifulSoup(html, features="lxml")
+
+    # p_element = c.find_element_by_id(id_='intro-text')
+    return soup
+
 
 url = "https://datastudio.google.com/embed/u/0/reporting/1PLVi5amcc_R5Gh928gTE8-8r8-fLXJQF/page/R24IB"
 """url = "http://covid.gov.pk/"
@@ -40,7 +64,10 @@ CASES = {
 }
 """
 
-soup = BeautifulSoup(get_page(url), 'html.parser')
+# soup = BeautifulSoup(get_page(url), 'html.parser')
+soup = get_soup(url)
 
+items = soup.find_all(class_="valueLabel")
 
-print(soup)
+for item in items:
+    print(item)
