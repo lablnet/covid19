@@ -67,7 +67,7 @@ CASES = {
 # soup = BeautifulSoup(get_page(url), 'html.parser')
 soup = get_soup(url)
 
-items = soup.find_all(class_="valueLabel")
+items = soup.find_all("div", class_="valueLabel")
 
 for item in items:
     print(item)
