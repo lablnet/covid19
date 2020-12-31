@@ -41,7 +41,9 @@ def get_soup(url):
 
 
 url = "https://datastudio.google.com/embed/u/0/reporting/1PLVi5amcc_R5Gh928gTE8-8r8-fLXJQF/page/R24IB"
-"""url = "http://covid.gov.pk/"
+
+"""
+url = "http://covid.gov.pk/"
 
 soup = BeautifulSoup(get_page(url), 'html.parser')
 
