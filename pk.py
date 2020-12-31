@@ -4,13 +4,13 @@ from src._sqlite import _sqlite
 from src.__config import get_config
 from urllib.request import Request, urlopen
 import json
-from urllib.error import URLError, HTTPError
 
 
 # sqlite instance
 s = _sqlite()
 # open connection and passing the configs
 conn = s.conn(get_config("database", './'))
+
 # creating the table.
 conn.create_tables()
 i = 0
