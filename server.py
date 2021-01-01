@@ -25,6 +25,13 @@ def index():
 def feed():
     page = request.args['page']
 
+    s = _sqlite
+    conn = s.conn(get_config("database", './'))
+    data = conn.get_page_data("cases", page)  # TableName, Page(Number)
+    conn.close()
+
+    return json.dumps(data)
+
 
 @app.route('/summery')
 def summery():
@@ -37,6 +44,7 @@ def summery():
     conn.close()
 
     return json.dumps(data)
+
 
 @app.route('/newsletter')
 def newsletter():

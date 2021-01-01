@@ -120,6 +120,26 @@ class _sqlite:
         except:
             return False
 
+
+    @staticmethod
+    def get_page_data(table, Page):
+        sql = "SELECT * FROM " + table + " ORDER BY id DESC LIMIT 1 ;"
+        _sqlite.cur.execute(sql, ())
+        ID = _sqlite.cur.fetchone()
+        ID = ID[0]
+        FROM = str(ID - (5*(Page - 1)))
+        TO = str(ID - (5*Page))
+
+        sql = "SELECT * FROM " + table
+        sql += " WHERE id <= " + FROM
+        sql += " AND id > " + TO + " ;"
+        try:
+            _sqlite.cur.execute(sql, ())
+            data = _sqlite.cur.fetchall()
+            return data
+        except:
+            return False
+
     @staticmethod
     def delete(table, field, value):
         sql = "DELETE FROM " + table + " WHERE " + field + " = ? ;"
