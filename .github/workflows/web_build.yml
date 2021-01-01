@@ -1,0 +1,25 @@
+  name: 'Web Build and Deploy'
+  on:
+    push:
+      branches:
+        - master
+  jobs:
+    gh-pages-deploy:
+      name: Deploying to gh-pages
+      runs-on: ubuntu-latest
+      steps:
+        - working-directory: web
+        - name: Setup Node.js for use with actions
+          uses: actions/setup-node@v1.1.0
+          with:
+            version:  12.x
+        - name: Checkout branch
+          uses: actions/checkout@v2
+
+        - name: Clean install dependencies
+          run: npm ci
+
+        - name: Run deploy script
+          run: |
+            git config user.name "lablnet" && git config user.email "mumerfarooqlablnet01@gmail.com"
+            npm run deploy
