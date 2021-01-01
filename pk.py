@@ -5,7 +5,6 @@ from src.__config import get_config
 from urllib.request import Request, urlopen
 import json
 
-
 # sqlite instance
 s = _sqlite()
 # open connection and passing the configs
