@@ -1,6 +1,6 @@
 from flask import Flask
-from src._sqlite import _sqlite
-from src.__config import get_config
+from _sqlite import _sqlite
+from __config import get_config
 import json
 app = Flask(__name__)
 
