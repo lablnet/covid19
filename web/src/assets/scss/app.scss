@@ -1,0 +1,43 @@
+@import'~bootstrap/dist/css/bootstrap.css';
+
+body {
+    background-color: #f0f2f5!important;
+}
+.nav {
+    background-color: #fff;
+    border-bottom: 1px solid #e8e8e8;
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
+}
+.nav ul {
+    float: right;
+    font-size: 15px;
+}
+.nav-item a {
+    color: #959595;
+}
+.title {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 200;
+    margin: 0;
+}
+.subtitle {
+    font-size: 11px;
+    color: #959595;
+    font-weight: 400;
+    margin: 4px 0 0;
+}
+.content {    
+    font-size: 13px;
+    color: #959595;
+    font-weight: 400;
+    margin: 4px 0 0;
+}
+.twelve {
+    font-size: 13px;
+}
+.stat {
+    color: #959595;
+    font-size: 15px;
+}

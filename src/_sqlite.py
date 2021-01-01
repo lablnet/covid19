@@ -7,6 +7,7 @@ __email__ = "contact@muhammadumerfarooq.me"
 __status__ = "Production"
 
 import sqlite3
+import json
 valid_data_types = ('NULL', 'INTEGER', 'INT', 'TINYINT', 'SMALLINT', 'MEDIUMINT', 'BIGINT, UNSIGNED BIG INT', 'INT2', 'INT8' , 'TEXT', 'CHARACTER(20)', 'CHARACTER',
                       'VARCHAR(255)', 'VARCHAR', 'VARYING CHARACTER(255)', 'VARYING CHARACTER', 'NCHAR(55)', 'NCHAR', 'NATIVE CHARACTER(70)', 'NATIVE CHARACTER', 'NVARCHAR(100)',
                       'NVARCHAR', 'CLOB' , 'REAL', 'DOUBLE', 'DOUBLE PRECISION', 'FLOAT' , 'NUMERIC', 'DECIMAL', 'BOOL', 'BOOLEAN', 'BOOLEAN(10,5)' 'DATE', 'DATETIME')
@@ -14,14 +15,14 @@ valid_data_types = ('NULL', 'INTEGER', 'INT', 'TINYINT', 'SMALLINT', 'MEDIUMINT'
 
 class _sqlite:
     db_name = db = ""
-    conn = cur = None
+    connection = cur = None
 
     @staticmethod
     def conn(config):
         _sqlite.db_name = config['db_name']
         _sqlite.db = config
-        _sqlite.conn = sqlite3.connect(_sqlite.db_name + ".sqlite")
-        _sqlite.cur = _sqlite.conn.cursor()
+        _sqlite.connection = sqlite3.connect(_sqlite.db_name + ".sqlite")
+        _sqlite.cur = _sqlite.connection.cursor()
         return _sqlite
 
     @staticmethod
@@ -58,7 +59,7 @@ class _sqlite:
             _sqlite.cur.execute(sql)
         except:
             print("Error")
-        _sqlite.conn.commit()
+        _sqlite.connection.commit()
 
     @staticmethod
     def insert(table, data):
@@ -76,7 +77,7 @@ class _sqlite:
             _sqlite.cur.execute(sql, values)
         except:
             print("Error")
-        _sqlite.conn.commit()
+        _sqlite.connection.commit()
         return True
 
     @staticmethod
@@ -103,6 +104,22 @@ class _sqlite:
         except:
             return False
 
+
+    @staticmethod
+    def get_data(table, From=None, To=None):
+        sql = "SELECT * FROM " + table
+        if From is not None:
+            sql += " WHERE datetime > '" + From + "'"
+        if To is not None:
+            sql += " AND datetime < '" + To + "'"
+        sql += " ORDER BY datetime ;"
+        try:
+            _sqlite.cur.execute(sql, ())
+            data = _sqlite.cur.fetchall()
+            return data
+        except:
+            return False
+
     @staticmethod
     def delete(table, field, value):
         sql = "DELETE FROM " + table + " WHERE " + field + " = ? ;"
@@ -111,3 +128,9 @@ class _sqlite:
             return True
         except:
             return False
+
+
+    @staticmethod
+    def close():
+        _sqlite.connection.close()
+
