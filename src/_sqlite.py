@@ -125,14 +125,13 @@ class _sqlite:
     def get_page_data(table, Page):
         sql = "SELECT * FROM " + table + " ORDER BY id DESC LIMIT 1 ;"
         _sqlite.cur.execute(sql, ())
-        ID = _sqlite.cur.fetchone()
-        ID = ID[0]
-        FROM = str(ID - (5*(Page - 1)))
-        TO = str(ID - (5*Page))
+        ID = int(_sqlite.cur.fetchone()[0])
+        FROM = ID - (5*(int(Page) - 1))
+        TO = ID - (5*int(Page))
 
         sql = "SELECT * FROM " + table
-        sql += " WHERE id <= " + FROM
-        sql += " AND id > " + TO + " ;"
+        sql += " WHERE id <= " + str(FROM)
+        sql += " AND id > " + str(TO) + " ;"
         try:
             _sqlite.cur.execute(sql, ())
             data = _sqlite.cur.fetchall()
