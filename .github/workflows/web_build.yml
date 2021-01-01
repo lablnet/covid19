@@ -8,7 +8,6 @@
       name: Deploying to gh-pages
       runs-on: ubuntu-latest
       steps:
-        - working-directory: web
         - name: Setup Node.js for use with actions
           uses: actions/setup-node@v1.1.0
           with:
@@ -17,6 +16,7 @@
           uses: actions/checkout@v2
 
         - name: Clean install dependencies
+          working-directory: web
           run: npm ci
 
         - name: Run deploy script
