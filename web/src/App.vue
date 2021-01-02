@@ -25,7 +25,7 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Map</a>
+        <router-link class="nav-link" to="/map">Map</router-link>
         </li>
       </ul>
     </div>

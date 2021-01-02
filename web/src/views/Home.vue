@@ -48,7 +48,7 @@
         <div class="card">
           <div class="card-header">
             <div style="display: flex">
-              <h3 class="subtitle">Cases Confirmations {{ loading }}</h3>
+              <h3 class="subtitle">Cases Confirmations</h3>
               <div
                 :class="
                   page >= 2 ? 'float-right offset-8' : 'float-right offset-9'
@@ -104,8 +104,56 @@
       </div>
       <div class="col-md-4">
         <div class="card">
+           <div class="card-header">
+            <h1 class="subtitle">Cases Provience wise</h1>
+          </div>
           <div class="container">
-            <h1 class="title twelve mt-2">Cases Provience wise</h1>
+            <div class="table-responsive">
+              <table class="table table-strip">
+                <thead class="subtitle">
+                  <tr>
+                    <th>
+                      Name
+                    </th>
+                    <th>
+                      Case
+                    </th>
+                  </tr>
+                 
+                </thead>
+                <tbody class="content">
+                  <tr>
+                    <td>Islamabad</td>
+                    <td>{{provience.isb}}</td>
+                  </tr> 
+                  <tr>
+                    <td>Punjab</td>
+                    <td>{{provience.punjab}}</td>
+                  </tr>  
+                  <tr>
+                    <td>Sindh</td>
+                    <td>{{provience.sindh}}</td>
+                  </tr>  
+                  <tr>
+                    <td>Balochistan</td>
+                    <td>{{provience.balochistan}}</td>
+                  </tr>  
+                  <tr>
+                    <td>Gilgit Baltistan</td>
+                    <td>{{provience.gb}}</td>
+                  </tr>  
+                  <tr>
+                    <td>KKP</td>
+                    <td>{{provience.kpk}}</td>
+                  </tr>  
+                  <tr>
+                    <td>AJK</td>
+                    <td>{{provience.ajk}}</td>
+                  </tr>  
+
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>
@@ -152,6 +200,7 @@ export default {
     this.getFeed()
 
     this.getPercentage()
+    this.getProvience()
     // this.fillData()
     // this.getAll()
   },
@@ -165,7 +214,8 @@ export default {
       datacollection: null,
       dataLabels: [],
       dataset: [],
-      percent: {}
+      percent: {},
+      provience: {},
     }
   },
 
@@ -260,6 +310,15 @@ export default {
       })
     },
 
+      getProvience () {
+      const url = 'http://127.0.0.1:5000/provience'
+      const lbls = []
+      axios.get(url).then(response => {
+        // if (response.status == 200) {
+        this.provience = response.data
+        // }
+      })
+    },
     getPercentage () {
       const url = 'http://127.0.0.1:5000/percent'
       const lbls = []
