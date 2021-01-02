@@ -48,7 +48,7 @@
         <div class="card">
           <div class="card-header">
             <div style="display: flex">
-              <h3 class="subtitle">Cases Confirmations</h3>
+              <h3 class="subtitle">Cases Confirmations {{ loading }}</h3>
               <div
                 :class="
                   page >= 2 ? 'float-right offset-8' : 'float-right offset-9'
@@ -111,29 +111,25 @@
       </div>
     </div>
 
-    <div class="row mt-5">
-      <div class="col-md-12">
+    <div class="row mt-5 mb-5">
+      <div class="col-md-6">
         <div class="card">
+          <div class="card-header">
+            <h1 class="subtitle">Daily Trend</h1>
+          </div>
           <div class="container">
-            <h1 class="title twelve mt-2">Daily Trend</h1>
-            <canvas id="myChart"></canvas>
+            <canvas id="myChart" style="width: 100%"></canvas>
           </div>
         </div>
       </div>
-    </div>
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h1 class="subtitle">Cases Breakdown</h1>
+          </div>
 
-    <div class="row mt-5 mb-3">
-      <div class="col-md-4">
-        <div class="card">
           <div class="container">
-            <h1 class="title twelve mt-2">Cases Breakdown</h1>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-8">
-        <div class="card">
-          <div class="container">
-            <h1 class="title twelve mt-2">Section 2</h1>
+            <canvas id="percentage" style="width: 100%"></canvas>
           </div>
         </div>
       </div>
@@ -141,25 +137,26 @@
   </div>
 </template>
 
-<script lang="ts">
-import { Options, Vue } from "vue-class-component";
-import HelloWorld from "@/components/HelloWorld.vue"; // @ is an alias to /src
-import axios from "axios";
-import Chart from 'chart.js';
+<script lang="js">
+import { Options, Vue } from 'vue-class-component'
+import HelloWorld from '@/components/HelloWorld.vue' // @ is an alias to /src
+import axios from 'axios'
+import Chart from 'chart.js'
 
-@Options({
+export default {
   components: {
-    HelloWorld,
+    HelloWorld
   },
 
-  mounted() {
+  mounted () {
     this.getFeed()
-    this.getAll()
-    this.fillData()
-  
+
+    this.getPercentage()
+    // this.fillData()
+    // this.getAll()
   },
 
-  data() {
+  data () {
     return {
       page: 1,
       loading: true,
@@ -168,139 +165,173 @@ import Chart from 'chart.js';
       datacollection: null,
       dataLabels: [],
       dataset: [],
-    };
+      percent: {}
+    }
   },
 
   methods: {
-    mount() {
-      var ctx = document.getElementById('myChart');
-      let labels = []
-      let dataset = []
-      console.log("Daata", this.data)
-      let months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
-      this.alldate.map(e => {
-          //if (e.type == "INFECTED")  {
-            let num = e.desc.match(/\b\d[\d,.]*\b/g);
-            num = num[0]
-            let d = e.date.split('-')
-            let date = months[d[1] - 1] + "/" + d[2].split("T")[0] 
+    percentage () {
+      const ctx = document.getElementById('percentage')
+      const INFECTED = this.percent.inf
+      const DECEASED = this.percent.des
+      const RECOVERED = this.percent.rec
+      const TOTAL = this.percent.total
+      const data = [(INFECTED / TOTAL) * 100, (DECEASED / TOTAL) * 100, (RECOVERED / TOTAL) * 100]
 
-            console.log(e.desc)
-            console.log(num)
-            labels.push(date)
-            dataset.push(num)
-          //}
-       
+      console.log(this.data)
+
+      const myChart = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+          datasets: [{
+            data: data,
+            backgroundColor: [
+              'rgba(95, 188, 222, 1)',
+              'rgba(224, 43, 40, 1)',
+              'rgba(47, 148, 96, 1)'
+            ]
+          }],
+
+          // These labels appear in the legend and in the tooltips when hovering different arcs
+          labels: [
+            'INFECTED',
+            'DECEASED',
+            'RECOVERED'
+          ]
+        }
       })
-      console.log("laabel", this.data)
-var myChart = new Chart(ctx, {
-    type: 'line',
-    data: {
-        labels: labels,
-        datasets: [{
+    },
+
+    mount () {
+      const ctx = document.getElementById('myChart')
+
+      const labels = []
+      const dataset = []
+      const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+      this.alldate.map(e => {
+        // if (e.type == "INFECTED")  {
+        let num = e.desc.match(/\b\d[\d,.]*\b/g)
+        num = num[0]
+        const d = e.date.split('-')
+        const date = months[d[1] - 1] + '/' + d[2].split('T')[0]
+
+        labels.push(date)
+        dataset.push(num)
+        // }
+      })
+      const myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: labels,
+          datasets: [{
             label: '# of INFECTED',
             data: dataset,
             backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
+              'rgba(255, 99, 132, 0.2)',
+              'rgba(54, 162, 235, 0.2)',
+              'rgba(255, 206, 86, 0.2)',
+              'rgba(75, 192, 192, 0.2)',
+              'rgba(153, 102, 255, 0.2)',
+              'rgba(255, 159, 64, 0.2)'
             ],
             borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
+              'rgba(255, 99, 132, 1)',
+              'rgba(54, 162, 235, 1)',
+              'rgba(255, 206, 86, 1)',
+              'rgba(75, 192, 192, 1)',
+              'rgba(153, 102, 255, 1)',
+              'rgba(255, 159, 64, 1)'
             ],
             borderWidth: 1
-        }]
-    },
-    options: {
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero: true
-                }
-            }]
-        }
-    }
-});
-    }
-    getAll() {
-      const url = `http://127.0.0.1:5000/`;
-      let lbls = []
-      axios.get(url).then(response => {
-        console.log(response.status);
-        //if (response.status == 200) {
-        this.alldate = response.data;
-        this.mount()
-        //}
-      });
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: true,
 
+          scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: true
+              }
+            }]
+          }
+        }
+      })
     },
-    getFeed() {
+
+    getPercentage () {
+      const url = 'http://127.0.0.1:5000/percent'
+      const lbls = []
+      axios.get(url).then(response => {
+        // if (response.status == 200) {
+        this.percent = response.data
+        this.percentage()
+        // }
+      })
+    },
+    getAll () {
+      const url = 'http://127.0.0.1:5000/'
+      const lbls = []
+      axios.get(url).then(response => {
+        // if (response.status == 200) {
+        this.alldate = response.data
+        this.mount()
+        // }
+      })
+    },
+    getFeed () {
       this.data = []
       this.loading = true
-      const url = `http://127.0.0.1:5000/feed?page=${this.page}`;
-      let lbls = []
+      const url = `http://127.0.0.1:5000/feed?page=${this.page}`
+      const lbls = []
       axios.get(url).then(response => {
-        console.log(response.status);
-        //if (response.status == 200) {
-        this.data = response.data;
+        console.log(response.status)
+        console.log(response.data)
+        // if (response.status == 200) {
+        this.data = response.data
         this.loading = false
-        //}
-      });
-
+        // }
+      })
     },
 
+    prevPage () {
+      this.page--
+      this.getFeed()
+    },
 
-  prevPage() {
-    this.page--
-    this.getFeed();
-  },
+    nextPage () {
+      this.page++
+      this.getFeed()
+    },
 
-  nextPage() {
-    this.page++
-    this.getFeed();
-  },
-
-    getClass (item: string) {
-      console.log(item)
-      if (item.toString() == "RECOVERED")
-        return "content alert-success"
-      else if (item.toString() == "INFECTED")
-        return "content alert-warning"
-      else if (item.toString() == "DECEASED")
-        return "content alert-danger"
+    getClass (item) {
+      if (item.toString() == 'RECOVERED') { return 'content alert-success' } else if (item.toString() == 'INFECTED') { return 'content alert-warning' } else if (item.toString() == 'DECEASED') { return 'content alert-danger' }
     },
     fillData () {
-        this.datacollection = {
-          labels: [this.getRandomInt(), this.getRandomInt()],
-          datasets: [
-            {
-              label: 'Data One',
-              backgroundColor: '#f87979',
-              data: [this.getRandomInt(), this.getRandomInt()]
-            }, {
-              label: 'Data One',
-              backgroundColor: '#f87979',
-              data: [this.getRandomInt(), this.getRandomInt()]
-            }
-          ]
-        }
-      },
-      getRandomInt () {
-        return Math.floor(Math.random() * (50 - 5 + 1)) + 5
+      this.datacollection = {
+        labels: [this.getRandomInt(), this.getRandomInt()],
+        datasets: [
+          {
+            label: 'Data One',
+            backgroundColor: '#f87979',
+            data: [this.getRandomInt(), this.getRandomInt()]
+          }, {
+            label: 'Data One',
+            backgroundColor: '#f87979',
+            data: [this.getRandomInt(), this.getRandomInt()]
+          }
+        ]
       }
+    },
+    getRandomInt () {
+      return Math.floor(Math.random() * (50 - 5 + 1)) + 5
+    }
 
   },
 
   computed: {
   }
-})
-export default class Home extends Vue {}
+
+}
 </script>

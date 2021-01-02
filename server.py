@@ -33,7 +33,7 @@ def percent():
     data = conn.get_type_percent("cases")
     conn.close()
 
-    return data  # Dictionary
+    return json.dumps(data)  # Dictionary
 
 @app.route('/feed')
 def feed():

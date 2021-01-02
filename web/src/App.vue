@@ -35,6 +35,7 @@
 
   <footer class="footer text-center justify-content-center">
     <p class="content-about"><b>Disclaimer:</b> Error and Omissions expected</p>
+    <p class="content-about text-danger">The testing capacity in Pakistan is very low, the real cases can be much higher.</p>
     <p class="content-about" style="font-size: 11px">
     Information displayed here is carefully calibrated and is mostly updated manually based on reporting of government officals on Website.
     </p>

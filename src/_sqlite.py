@@ -183,20 +183,61 @@ class _sqlite:
             recv = 0   # RECOVERED
             total = 0   # Total Cases
             for row in data:
+                count = 0
+                desc = row[5].split(" ")[0]
+                if (desc.isdigit()):
+                    count = int(desc)
+
                 if row[3] == "DECEASED":
-                    dec += 1
+                    dec += count
                 elif row[3] == "INFECTED":
-                    inf += 1
+                    inf += count
                 elif row[3].startswith("RECOVERED"):
-                    recv += 1
+                    recv += count
                 else:
                     total += 1
             total += dec + inf + recv
             dataDict = {
-                'DECEASED': dec,
-                'INFECTED': inf,
-                'RECOVERED': recv,
-                'TOTAL': total
+                'des': dec,
+                'inf': inf,
+                'rec': recv,
+                'total': total
+            }
+            return dataDict
+        except:
+            return False
+
+
+    @staticmethod
+    def get_provience_wise(table):
+        sql = "SELECT * FROM " + table + " ORDER BY type; "
+        try:
+            _sqlite.cur.execute(sql, ())
+            data = _sqlite.cur.fetchall()
+            dec = 0  # DECEASED
+            inf = 0   # INFECTED
+            recv = 0   # RECOVERED
+            total = 0   # Total Cases
+            for row in data:
+                count = 0
+                desc = row[5].split(" ")[0]
+                if (desc.isdigit()):
+                    count = int(desc)
+
+                if row[3] == "DECEASED":
+                    dec += count
+                elif row[3] == "INFECTED":
+                    inf += count
+                elif row[3].startswith("RECOVERED"):
+                    recv += count
+                else:
+                    total += 1
+            total += dec + inf + recv
+            dataDict = {
+                'des': dec,
+                'inf': inf,
+                'rec': recv,
+                'total': total
             }
             return dataDict
         except:
