@@ -169,16 +169,11 @@ import {
     Options,
     Vue
 } from 'vue-class-component'
-import HelloWorld from '@/components/HelloWorld.vue' // @ is an alias to /src
 import axios from 'axios'
 import Chart from 'chart.js'
 
 export default {
-    components: {
-        HelloWorld
-    },
-
-    mounted() {
+     mounted() {
         window.scrollTo(0, 0);
         this.getFeed()
 
