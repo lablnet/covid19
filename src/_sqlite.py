@@ -13,6 +13,10 @@ valid_data_types = ('NULL', 'INTEGER', 'INT', 'TINYINT', 'SMALLINT', 'MEDIUMINT'
                       'NVARCHAR', 'CLOB' , 'REAL', 'DOUBLE', 'DOUBLE PRECISION', 'FLOAT' , 'NUMERIC', 'DECIMAL', 'BOOL', 'BOOLEAN', 'BOOLEAN(10,5)' 'DATE', 'DATETIME')
 
 
+def dict_from_row(row):
+    return dict(zip(row.keys(), row))
+
+
 class _sqlite:
     db_name = db = ""
     connection = cur = None
@@ -22,6 +26,7 @@ class _sqlite:
         _sqlite.db_name = config['db_name']
         _sqlite.db = config
         _sqlite.connection = sqlite3.connect(_sqlite.db_name + ".sqlite")
+        # _sqlite.connection.row_factory = sqlite3.Row
         _sqlite.cur = _sqlite.connection.cursor()
         return _sqlite
 
@@ -123,11 +128,12 @@ class _sqlite:
 
     @staticmethod
     def get_page_data(table, Page):
+
         sql = "SELECT * FROM " + table + " ORDER BY id DESC LIMIT 1 ;"
         _sqlite.cur.execute(sql, ())
         ID = int(_sqlite.cur.fetchone()[0])
-        FROM = ID - (5*(int(Page) - 1))
-        TO = ID - (5*int(Page))
+        FROM = ID - (10*(int(Page) - 1))
+        TO = ID - (10*int(Page))
 
         sql = "SELECT * FROM " + table
         sql += " WHERE id <= " + str(FROM)
@@ -135,7 +141,17 @@ class _sqlite:
         try:
             _sqlite.cur.execute(sql, ())
             data = _sqlite.cur.fetchall()
-            return data
+            dataDict = []
+            for item in data:
+                dataDict.append({
+                    'id': item[0],
+                    'date': item[2],
+                    'type': item[3],
+                    'ref': item[4],
+                    'desc': item[5],
+
+                })
+            return dataDict #dict_from_row(data)
         except:
             return False
 

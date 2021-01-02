@@ -1,10 +1,15 @@
 from flask import Flask
 from flask import request
+from flask import Response
+from flask_cors import CORS
 from src._sqlite import _sqlite
 from src.__config import get_config
 import json
-app = Flask(__name__)
 
+
+# initialization
+app = Flask(__name__)
+CORS(app)
 
 # Prefix for all routes.
 app.config["APPLICATION_ROOT"] = "/api/"
@@ -43,7 +48,7 @@ def summery():
     data = conn.get_data("cases", frm, to)  # TableName, From(date), To(date)
     conn.close()
 
-    return json.dumps(data)
+    return data #json.dumps(data)
 
 
 @app.route('/newsletter')

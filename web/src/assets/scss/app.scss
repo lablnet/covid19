@@ -58,14 +58,18 @@ body {
 a, a:hover {
     text-decoration: none;
 }
-ol {
-    font-size: 0;
-}
+
 ol li {
     display: inline-block;
     font-size: 14px;
 }
+
 ol li a {
     color: #959595;
     font-weight: bold;
+}
+
+
+ul {
+    list-style-type: disc;
 }
