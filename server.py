@@ -26,6 +26,16 @@ def index():
     return json.dumps(data)
 
 
+@app.route('/processed')
+def processed():
+    s = _sqlite
+    conn = s.conn(get_config("database", './'))
+    data = conn.get_processed("cases")
+    conn.close()
+
+    return data  # List of Dictionaries
+
+
 @app.route('/percent')
 def percent():
     s = _sqlite
