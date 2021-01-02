@@ -11,25 +11,27 @@ s = _sqlite()
 # open connection and passing the configs
 conn = s.conn(get_config("database", './'))
 
+
 # creating the table.
 conn.create_tables()
 i = 0
+"""
 next = conn.get_last("url").fetchall()[0][1]
 req = Request(next, headers={'User-Agent': 'PYTHON/3.8'})
 response = urlopen(req)
 data = response.read().decode()
-data = json.loads(data)
-next = data["previous"]
+data = json.loads(data)"""
+next = "https://co.vid19.pk/api/cases/feed/?limit=100000"
 while True:
     if next is None:
         break
     conn.insert("url", {"url": next})
-    req = Request(next, headers={'User-Agent': 'PYTHON/3.8'})
+    req = Request(next, headers={'User-Agent': 'PYTHON/3.8'+str(i)})
     response = urlopen(req)
     data = response.read().decode()
     data = json.loads(data)
     results = data["results"]
-    next = data["previous"]
+    next = data["next"]
     for items in results:
         conn.insert("cases", items)
     print(i)

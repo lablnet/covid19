@@ -43,7 +43,18 @@ def percent():
     data = conn.get_type_percent("cases")
     conn.close()
 
-    return data  # Dictionary
+    return json.dumps(data)  # Dictionary
+
+
+@app.route('/provience')
+def provience():
+    s = _sqlite
+    conn = s.conn(get_config("database", './'))
+    data = conn.get_provience_wise("cases")
+    conn.close()
+
+    return json.dumps(data)  # Dictionary
+
 
 @app.route('/feed')
 def feed():

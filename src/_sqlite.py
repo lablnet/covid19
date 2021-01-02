@@ -227,8 +227,8 @@ class _sqlite:
         sql = "SELECT * FROM " + table + " ORDER BY id DESC LIMIT 1 ;"
         _sqlite.cur.execute(sql, ())
         ID = int(_sqlite.cur.fetchone()[0])
-        FROM = ID - (10*(int(Page) - 1))
-        TO = ID - (10*int(Page))
+        FROM = ID - (6*(int(Page) - 1))
+        TO = ID - (6*int(Page))
 
         sql = "SELECT * FROM " + table
         sql += " WHERE id <= " + str(FROM)
@@ -262,20 +262,68 @@ class _sqlite:
             recv = 0   # RECOVERED
             total = 0   # Total Cases
             for row in data:
+                count = 0
+                desc = row[5].split(" ")[0]
+                if (desc.isdigit()):
+                    count = int(desc)
+
                 if row[3] == "DECEASED":
-                    dec += 1
+                    dec += count
                 elif row[3] == "INFECTED":
-                    inf += 1
+                    inf += count
                 elif row[3].startswith("RECOVERED"):
-                    recv += 1
+                    recv += count
                 else:
                     total += 1
             total += dec + inf + recv
             dataDict = {
-                'DECEASED': dec,
-                'INFECTED': inf,
-                'RECOVERED': recv,
-                'TOTAL': total
+                'des': dec,
+                'inf': inf,
+                'rec': recv,
+                'total': total
+            }
+            return dataDict
+        except:
+            return False
+
+
+    @staticmethod
+    def get_provience_wise(table):
+        sql = "SELECT * FROM " + table + " ORDER BY type; "
+        try:
+            _sqlite.cur.execute(sql, ())
+            data = _sqlite.cur.fetchall()
+            gb = kpk = isb = punjab = sindh = balochistan = ajk  = 0
+            for row in data:
+                if row[3] == "INFECTED":
+                    count = 0
+                    desc = row[5].split(" ")[0]
+                    if (desc.isdigit()):
+                        count = int(desc)
+
+                    if row[5].find("Balochistan") != -1:
+                        balochistan += count
+                    elif row[5].find("Punjab") != -1:
+                        punjab += count
+                    elif row[5].find("KPK") != -1:
+                        kpk += count
+                    elif row[5].find("Sindh") != -1:
+                        sindh += count
+                    elif row[5].find("Islamabad") != -1:
+                        isb += count
+                    elif row[5].find("Gilgit Baltistan") != -1:
+                        gb += count
+                    elif row[5].find("AJK") != -1:
+                        ajk += count
+
+            dataDict = {
+                'isb': isb,
+                'punjab': punjab,
+                'sindh': sindh,
+                'kpk': kpk,
+                'gb': gb,
+                'balochistan': balochistan,
+                'ajk': ajk,
             }
             return dataDict
         except:
@@ -294,5 +342,6 @@ class _sqlite:
 
     @staticmethod
     def close():
-        _sqlite.connection.close()
+        pass
+        #_sqlite.connection.close()
 
