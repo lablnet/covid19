@@ -127,7 +127,7 @@ class _sqlite:
         i = 0
         while True:
             i += 1
-            print(i)
+            print(i)        # Just to check line number / iteration number
             dec = 0  # DECEASED
             inf = 0  # INFECTED
             recv = 0  # RECOVERED
@@ -142,8 +142,10 @@ class _sqlite:
                 data = _sqlite.cur.fetchall()
             except:
                 return False
+            # Returns DataList if Null output is given from Sqlite
             if data is None:
                 return data_list
+
             for row in data:
                 if row[3] == "INFECTED":
                     num = row[5].split(" ")[0]
@@ -189,7 +191,6 @@ class _sqlite:
             data_list.append(day_data)
             prev_date = date
             date = self.get_previous_date(date)
-
 
     @staticmethod
     def get_data(table, From=None, To=None):

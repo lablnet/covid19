@@ -11,9 +11,6 @@ s = _sqlite()
 # open connection and passing the configs
 conn = s.conn(get_config("database", './'))
 
-s.get_processed("cases")
-quit()
-
 # creating the table.
 conn.create_tables()
 i = 0
