@@ -209,7 +209,6 @@ export default {
             const TOTAL = this.percent.total
             const data = [(INFECTED / TOTAL) * 100, (DECEASED / TOTAL) * 100, (RECOVERED / TOTAL) * 100]
 
-            console.log(this.data)
 
             const myChart = new Chart(ctx, {
                 type: 'doughnut',
@@ -217,9 +216,9 @@ export default {
                     datasets: [{
                         data: data,
                         backgroundColor: [
-                            'rgba(95, 188, 222, 1)',
-                            'rgba(224, 43, 40, 1)',
-                            'rgba(47, 148, 96, 1)'
+                            'rgba(255, 153, 0, 1)',
+                            'rgba(255, 0, 0, 1)',
+                            'rgba(0, 255, 0, 1)'
                         ]
                     }],
 
@@ -265,7 +264,7 @@ export default {
                         label: '#RECOVERED',
                         data: RECOVERED,
                         borderColor: [
-                            'rgba(47, 148, 96, 1)',
+                            'rgba(0, 255, 0, 1)',
                         ],
                        
                         borderWidth: 1
@@ -275,7 +274,7 @@ export default {
                         label: '#INFECTED',
                         data: INFECTED,
                         borderColor: [
-                            'rgba(95, 188, 222, 1)',
+                            'rgba(255, 153, 0, 1)',
                         ],
                         
                         borderWidth: 1
@@ -285,7 +284,7 @@ export default {
                         label: '#DECEASED',
                         data: DECEASED,
                         borderColor: [
-                            'rgba(224, 43, 40, 1)',
+                            'rgba(255, 0, 0, 1)',
                         ],
                         
                         borderWidth: 1
@@ -351,8 +350,6 @@ export default {
             const link = url + `/feed?page=${this.page}`
             const lbls = []
             axios.get(link).then(response => {
-                console.log(response.status)
-                console.log(response.data)
                 // if (response.status == 200) {
                 this.data = response.data
                 this.loading = false
