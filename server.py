@@ -37,7 +37,7 @@ def percent():
 
 
 @app.route('/provience')
-def percent():
+def provience():
     s = _sqlite
     conn = s.conn(get_config("database", './'))
     data = conn.get_provience_wise("cases")

@@ -214,25 +214,27 @@ class _sqlite:
         try:
             _sqlite.cur.execute(sql, ())
             data = _sqlite.cur.fetchall()
-            gb = kpk = isb = punjab = sindh = balochistan  = 0
+            gb = kpk = isb = punjab = sindh = balochistan = ajk  = 0
             for row in data:
                 count = 0
                 desc = row[5].split(" ")[0]
                 if (desc.isdigit()):
                     count = int(desc)
 
-                if row[5].find("Balochistan"):
+                if row[5].find("Balochistan") != -1:
                     balochistan += count
-                elif row[5].find("Punjab"):
+                elif row[5].find("Punjab") != -1:
                     punjab += count
-                elif row[5].find("KPK"):
+                elif row[5].find("KPK") != -1:
                     kpk += count
-                elif row[5].find("Sindh"):
+                elif row[5].find("Sindh") != -1:
                     sindh += count
-                elif row[5].find("Islamabad"):
+                elif row[5].find("Islamabad") != -1:
                     isb += count
-                elif row[5].find("Gilgit Baltistan"):
+                elif row[5].find("Gilgit Baltistan") != -1:
                     gb += count
+                elif row[5].find("AJK") != -1:
+                    ajk += count
 
             dataDict = {
                 'isb': isb,
@@ -240,7 +242,8 @@ class _sqlite:
                 'sindh': sindh,
                 'kpk': kpk,
                 'gb': gb,
-                'balochistan': balochistan
+                'balochistan': balochistan,
+                'ajk': ajk,
             }
             return dataDict
         except:
