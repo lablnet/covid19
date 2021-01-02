@@ -7,6 +7,7 @@ __email__ = "contact@muhammadumerfarooq.me"
 __status__ = "Production"
 
 import sqlite3
+from datetime import datetime, timedelta
 
 valid_data_types = ('NULL', 'INTEGER', 'INT', 'TINYINT', 'SMALLINT', 'MEDIUMINT', 'BIGINT, UNSIGNED BIG INT', 'INT2', 'INT8' , 'TEXT', 'CHARACTER(20)', 'CHARACTER',
                       'VARCHAR(255)', 'VARCHAR', 'VARYING CHARACTER(255)', 'VARYING CHARACTER', 'NCHAR(55)', 'NCHAR', 'NATIVE CHARACTER(70)', 'NATIVE CHARACTER', 'NVARCHAR(100)',
@@ -109,6 +110,86 @@ class _sqlite:
         except:
             return False
 
+    @staticmethod
+    def get_previous_date(date):
+        day = int(date[8:])
+        month = int(date[5:7])
+        year = int(date[:4])
+        return str(datetime(year, month, day) - timedelta(1))[:10]
+
+    def get_processed(self, table):
+        # gets last date from database
+        sq = "SELECT datetime FROM " + table + " ORDER BY datetime DESC LIMIT 1 ;"
+        _sqlite.cur.execute(sq, ())
+        date = _sqlite.cur.fetchone()[0][:10]
+        prev_date = None
+        data_list = []
+        i = 0
+        while True:
+            i += 1
+            print(i)
+            dec = 0  # DECEASED
+            inf = 0  # INFECTED
+            recv = 0  # RECOVERED
+            day_data = {}
+            sql = "SELECT * FROM " + table
+            sql += " WHERE datetime > '" + date + "'"
+            if prev_date is not None:
+                sql += " AND datetime < '" + prev_date + "'"
+            sql += ";"
+            try:
+                _sqlite.cur.execute(sql, ())
+                data = _sqlite.cur.fetchall()
+            except:
+                return False
+            if data is None:
+                return data_list
+            for row in data:
+                if row[3] == "INFECTED":
+                    num = row[5].split(" ")[0]
+                    if num.isdigit():
+                        inf += int(num)
+                    else:
+                        num = num.split(",")
+                        if num[0].isdigit:
+                            if len(num) == 2:
+                                inf += (int(num[0]) * 1000 + int(num[1]))
+                            elif len(num) == 3:
+                                inf += (int(num[0]) * 1000000 + int(num[1]) * 1000 + int(num[2]))
+                elif row[3] == "DECEASED":
+                    num = row[5].split(" ")[0]
+                    if num.isdigit():
+                        dec += int(num)
+                    else:
+                        num = num.split(",")
+                        if num[0].isdigit:
+                            if len(num) == 2:
+                                dec += (int(num[0]) * 1000 + int(num[1]))
+                            elif len(num) == 3:
+                                dec += (int(num[0]) * 1000000 + int(num[1]) * 1000 + int(num[2]))
+                elif row[3].startswith("RECOVERED"):
+                    num = row[5].split(" ")[0]
+                    if num.isdigit():
+                        recv += int(num)
+                    else:
+                        num = num.split(",")
+                        if num[0].isdigit:
+                            if len(num) == 2:
+                                recv += (int(num[0]) * 1000 + int(num[1]))
+                            elif len(num) == 3:
+                                recv += (int(num[0]) * 1000000 + int(num[1]) * 1000 + int(num[2]))
+            total = inf + dec + recv
+            day_data.update({
+                'DATE': date,
+                'INFECTED': inf,
+                'DECEASED': dec,
+                'RECOVERED': recv,
+                'TOTAL': total
+            })
+            data_list.append(day_data)
+            prev_date = date
+            date = self.get_previous_date(date)
+
 
     @staticmethod
     def get_data(table, From=None, To=None):
@@ -117,15 +198,16 @@ class _sqlite:
             sql += " WHERE datetime > '" + From + "'"
         if To is not None:
             sql += " AND datetime < '" + To + "' AND "
-
-        # group by Date(datetime)
-        sql += " where type='INFECTED' ORDER BY Date(datetime) DESC limit 20;"
+        sql += " ORDER BY datetime DESC;"
         # where Date(datetime) in (select DISTINCT DATE(datetime) from " + table + ")
        # try:
         _sqlite.cur.execute(sql, ())
         data = _sqlite.cur.fetchall()
         print(data)
         dataDict = []
+
+        # self.get_previous_date("2020-12-10")
+
         for item in data:
             dataDict.append({
                 'id': item[0],
@@ -141,7 +223,6 @@ class _sqlite:
 
     @staticmethod
     def get_page_data(table, Page):
-
         sql = "SELECT * FROM " + table + " ORDER BY id DESC LIMIT 1 ;"
         _sqlite.cur.execute(sql, ())
         ID = int(_sqlite.cur.fetchone()[0])
@@ -168,9 +249,6 @@ class _sqlite:
         except:
             return False
 
-    @staticmethod
-    def get_type(table):
-        sql = "SELECT * FROM " + table + " ORDER BY type; "
 
     @staticmethod
     def get_type_percent(table):
@@ -201,6 +279,7 @@ class _sqlite:
             return dataDict
         except:
             return False
+
 
     @staticmethod
     def delete(table, field, value):
