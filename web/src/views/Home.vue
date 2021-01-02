@@ -144,6 +144,9 @@
                 <div class="card-header">
                     <h1 class="subtitle">Daily Trend</h1>
                 </div>
+                <div class="spinner-border text-info text-center" v-if="trendLoading" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
                 <div class="container">
                     <canvas id="myChart" style="width: 100%"></canvas>
                 </div>
@@ -154,7 +157,9 @@
                 <div class="card-header">
                     <h1 class="subtitle">Cases Breakdown</h1>
                 </div>
-
+                <div class="spinner-border text-info text-center" v-if="breakdownLoading" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
                 <div class="container">
                     <canvas id="percentage" style="width: 100%"></canvas>
                 </div>
@@ -174,7 +179,7 @@ import Chart from 'chart.js'
 import url from "@/url.js"
 
 export default {
-     mounted() {
+    mounted() {
         window.scrollTo(0, 0);
         this.getFeed()
 
@@ -189,6 +194,9 @@ export default {
         return {
             page: 1,
             loading: true,
+            trendLoading: true,
+            breakdownLoading: true,
+            provienceLoading: true,
             data: [],
             alldate: [],
             datacollection: null,
@@ -209,7 +217,6 @@ export default {
             const TOTAL = this.percent.total
             const data = [(INFECTED / TOTAL) * 100, (DECEASED / TOTAL) * 100, (RECOVERED / TOTAL) * 100]
 
-
             const myChart = new Chart(ctx, {
                 type: 'doughnut',
                 data: {
@@ -228,6 +235,13 @@ export default {
                         'DECEASED',
                         'RECOVERED'
                     ]
+                },
+                options: {
+                    elements: {
+                        arc: {
+                            borderWidth: 0
+                        }
+                    },
                 }
             })
         },
@@ -256,43 +270,48 @@ export default {
             })
             const myChart = new Chart(ctx, {
                 type: 'line',
+
                 data: {
                     labels: labels,
-                    datasets: [
-                        {
- 
-                        label: '#RECOVERED',
-                        data: RECOVERED,
-                        borderColor: [
-                            'rgba(0, 255, 0, 1)',
-                        ],
-                       
-                        borderWidth: 1
-                    
+                    datasets: [{
+
+                            label: '#RECOVERED',
+                            data: RECOVERED,
+                            borderColor: [
+                                'rgba(0, 255, 0, 1)',
+                            ],
+
+                            borderWidth: 2,
+                            fill: false,
+
                         },
                         {
-                        label: '#INFECTED',
-                        data: INFECTED,
-                        borderColor: [
-                            'rgba(255, 153, 0, 1)',
-                        ],
-                        
-                        borderWidth: 1
-                    },
-                    {
- 
-                        label: '#DECEASED',
-                        data: DECEASED,
-                        borderColor: [
-                            'rgba(255, 0, 0, 1)',
-                        ],
-                        
-                        borderWidth: 1
-                    
+                            label: '#INFECTED',
+                            data: INFECTED,
+                            borderColor: [
+                                'rgba(255, 153, 0, 1)',
+                            ],
+
+                            borderWidth: 2,
+                            fill: false,
+
+                        },
+                        {
+
+                            label: '#DECEASED',
+                            data: DECEASED,
+                            borderColor: [
+                                'rgba(255, 0, 0, 1)',
+                            ],
+
+                            borderWidth: 2,
+                            fill: false,
+
                         },
                     ]
                 },
                 options: {
+
                     responsive: true,
                     maintainAspectRatio: true,
 
@@ -311,37 +330,40 @@ export default {
             const link = url + '/provience'
             const lbls = []
             axios.get(link).then(response => {
-                // if (response.status == 200) {
-                this.provience = response.data
-                // }
+                if (response.status == 200) {
+                    this.provience = response.data
+                    this.provienceLoading = false
+                }
             })
         },
         getPercentage() {
-            const link = url +'/percent'
+            const link = url + '/percent'
             axios.get(link).then(response => {
-                // if (response.status == 200) {
-                this.percent = response.data
-                this.percentage()
-                // }
+                if (response.status == 200) {
+                    this.percent = response.data
+                    this.breakdownLoading = false
+                    this.percentage()
+                }
             })
         },
         getAll() {
-            const link = url +'/'
+            const link = url + '/'
             const lbls = []
             axios.get(link).then(response => {
-                // if (response.status == 200) {
-                this.alldate = response.data
-                this.mount()
-                // }
+                if (response.status == 200) {
+                    this.alldate = response.data
+                    this.mount()
+                }
             })
         },
         getTrend() {
-            const link = url +'/trend'
+            const link = url + '/trend'
             axios.get(link).then(response => {
-                // if (response.status == 200) {
-                this.trend = response.data
-                this.mount()
-                // }
+                if (response.status == 200) {
+                    this.trend = response.data
+                    this.trendLoading = false
+                    this.mount()
+                }
             })
         },
         getFeed() {
