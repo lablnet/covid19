@@ -1,13 +1,13 @@
 <template>
-  <div class="container">
+<div class="container">
     <h1 class="title mt-3 mx-2">Map</h1>
     <div class="card mt-3">
-      <div class="card-header">
-        <h3 class="subtitle">Pakistan</h3>
-      </div>
-      <div id="map"></div>
+        <div class="card-header">
+            <h3 class="subtitle">Pakistan</h3>
+        </div>
+        <div id="map"></div>
     </div>
-  </div>
+</div>
 </template>
 
 <script lang="js">
@@ -18,18 +18,18 @@ import axios from 'axios'
 export default {
     name: "Map",
 
-  data () {
-    return {
-      loading: true,
-      provience: {},
-    }
-  },
+    data() {
+        return {
+            loading: true,
+            provience: {},
+        }
+    },
 
     mounted() {
         this.getProvience()
     },
     methods: {
-        getProvience () {
+        getProvience() {
             const url = 'http://127.0.0.1:5000/provience'
             const lbls = []
             axios.get(url).then(response => {
