@@ -55,3 +55,11 @@
     </div>
 </div>
 </template>
+<script lang="js">
+export default {
+  name: "About",
+  mounted() {
+    window.scrollTo(0, 0)
+  }
+}
+</script>

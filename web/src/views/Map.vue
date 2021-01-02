@@ -1,5 +1,5 @@
 <template>
-<div class="container">
+<div class="container mt-2 mb-3">
     <h1 class="title mt-3 mx-2">Map</h1>
     <div class="card mt-3">
         <div class="card-header">
@@ -11,8 +11,6 @@
 </template>
 
 <script lang="js">
-//var Highcharts = require('highcharts/highmaps.js'),
-//map = require('@highcharts/map-collection/custom/world.geo.json');
 import axios from 'axios'
 
 export default {
@@ -26,6 +24,7 @@ export default {
     },
 
     mounted() {
+        window.scrollTo(0, 0);
         this.getProvience()
     },
     methods: {
