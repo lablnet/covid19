@@ -145,8 +145,8 @@ class _sqlite:
         sql = "SELECT * FROM " + table + " ORDER BY id DESC LIMIT 1 ;"
         _sqlite.cur.execute(sql, ())
         ID = int(_sqlite.cur.fetchone()[0])
-        FROM = ID - (10*(int(Page) - 1))
-        TO = ID - (10*int(Page))
+        FROM = ID - (7*(int(Page) - 1))
+        TO = ID - (7*int(Page))
 
         sql = "SELECT * FROM " + table
         sql += " WHERE id <= " + str(FROM)
