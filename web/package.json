@@ -10,14 +10,17 @@
     "test": "jest"
   },
   "dependencies": {
+    "@seregpie/vue-chart": "^1.0.1",
     "axios": "^0.21.1",
     "bootstrap": "^5.0.0-alpha1",
     "bootstrap-icons": "^1.2.2",
+    "chart.js": "^2.9.4",
     "core-js": "^3.6.5",
     "d3": "^6.3.1",
     "popper.js": "^1.16.1",
     "register-service-worker": "^1.7.1",
     "vue": "^3.0.0",
+    "vue-chartjs": "^3.5.1",
     "vue-class-component": "^8.0.0-0",
     "vue-router": "^4.0.0-0",
     "vue-template-compiler": "^2.6.12",

@@ -49,7 +49,11 @@
           <div class="card-header">
             <div style="display: flex">
               <h3 class="subtitle">Cases Confirmations</h3>
-              <div :class="(page >= 2) ? 'float-right offset-8'  : 'float-right offset-9' ">
+              <div
+                :class="
+                  page >= 2 ? 'float-right offset-8' : 'float-right offset-9'
+                "
+              >
                 <a style="cursor: pointer" v-if="page >= 2" @click="prevPage"
                   >Prev</a
                 >&nbsp; &nbsp; &nbsp; &nbsp;
@@ -62,17 +66,17 @@
           </div>
           <div class="container">
             <ol class="mt-3">
-            <div class="spinner-border text-info text-center" v-if="loading" role="status">
-              <span class="sr-only">Loading...</span>
-            </div>
+              <div
+                class="spinner-border text-info text-center"
+                v-if="loading"
+                role="status"
+              >
+                <span class="sr-only">Loading...</span>
+              </div>
               <li v-for="(item, idx) in data" :key="idx" style="display: block">
-                
-                <p 
-                :class="getClass(item.type)"
-                style="display: inline"
-                >
-                 
-                {{ item.desc }}</p>
+                <p :class="getClass(item.type)" style="display: inline">
+                  {{ item.desc }}
+                </p>
                 <p class="content" style="font-size: 11px">
                   {{ item.date }} &nbsp; &nbsp;
                   <a v-if="item.ref" :href="item.ref" target="_blank"
@@ -92,7 +96,8 @@
                       /></svg
                   ></a>
                 </p>
-              </li><br>
+              </li>
+              <br />
             </ol>
           </div>
         </div>
@@ -111,6 +116,7 @@
         <div class="card">
           <div class="container">
             <h1 class="title twelve mt-2">Daily Trend</h1>
+            <canvas id="myChart"></canvas>
           </div>
         </div>
       </div>
@@ -139,29 +145,108 @@
 import { Options, Vue } from "vue-class-component";
 import HelloWorld from "@/components/HelloWorld.vue"; // @ is an alias to /src
 import axios from "axios";
+import Chart from 'chart.js';
 
 @Options({
   components: {
-    HelloWorld
+    HelloWorld,
   },
 
   mounted() {
-    this.getFeed();
+    this.getFeed()
+    this.getAll()
+    this.fillData()
+  
   },
 
   data() {
     return {
       page: 1,
       loading: true,
-      data: []
+      data: [],
+      alldate: [],
+      datacollection: null,
+      dataLabels: [],
+      dataset: [],
     };
   },
 
   methods: {
+    mount() {
+      var ctx = document.getElementById('myChart');
+      let labels = []
+      let dataset = []
+      console.log("Daata", this.data)
+      let months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+      this.alldate.map(e => {
+          //if (e.type == "INFECTED")  {
+            let num = e.desc.match(/\b\d[\d,.]*\b/g);
+            num = num[0]
+            let d = e.date.split('-')
+            let date = months[d[1] - 1] + "/" + d[2].split("T")[0] 
+
+            console.log(e.desc)
+            console.log(num)
+            labels.push(date)
+            dataset.push(num)
+          //}
+       
+      })
+      console.log("laabel", this.data)
+var myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: labels,
+        datasets: [{
+            label: '# of INFECTED',
+            data: dataset,
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+});
+    }
+    getAll() {
+      const url = `http://127.0.0.1:5000/`;
+      let lbls = []
+      axios.get(url).then(response => {
+        console.log(response.status);
+        //if (response.status == 200) {
+        this.alldate = response.data;
+        this.mount()
+        //}
+      });
+
+    },
     getFeed() {
       this.data = []
       this.loading = true
       const url = `http://127.0.0.1:5000/feed?page=${this.page}`;
+      let lbls = []
       axios.get(url).then(response => {
         console.log(response.status);
         //if (response.status == 200) {
@@ -169,7 +254,9 @@ import axios from "axios";
         this.loading = false
         //}
       });
+
     },
+
 
   prevPage() {
     this.page--
@@ -189,8 +276,27 @@ import axios from "axios";
         return "content alert-warning"
       else if (item.toString() == "DECEASED")
         return "content alert-danger"
-    }
-  
+    },
+    fillData () {
+        this.datacollection = {
+          labels: [this.getRandomInt(), this.getRandomInt()],
+          datasets: [
+            {
+              label: 'Data One',
+              backgroundColor: '#f87979',
+              data: [this.getRandomInt(), this.getRandomInt()]
+            }, {
+              label: 'Data One',
+              backgroundColor: '#f87979',
+              data: [this.getRandomInt(), this.getRandomInt()]
+            }
+          ]
+        }
+      },
+      getRandomInt () {
+        return Math.floor(Math.random() * (50 - 5 + 1)) + 5
+      }
+
   },
 
   computed: {

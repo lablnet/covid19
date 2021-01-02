@@ -116,14 +116,27 @@ class _sqlite:
         if From is not None:
             sql += " WHERE datetime > '" + From + "'"
         if To is not None:
-            sql += " AND datetime < '" + To + "'"
-        sql += " ORDER BY datetime ;"
-        try:
-            _sqlite.cur.execute(sql, ())
-            data = _sqlite.cur.fetchall()
-            return data
-        except:
-            return False
+            sql += " AND datetime < '" + To + "' AND "
+
+        # group by Date(datetime)
+        sql += " where type='INFECTED' ORDER BY Date(datetime) DESC limit 20;"
+        # where Date(datetime) in (select DISTINCT DATE(datetime) from " + table + ")
+       # try:
+        _sqlite.cur.execute(sql, ())
+        data = _sqlite.cur.fetchall()
+        print(data)
+        dataDict = []
+        for item in data:
+            dataDict.append({
+                'id': item[0],
+                'date': item[2],
+                'type': item[3],
+                'ref': item[4],
+                'desc': item[5],
+            })
+        return dataDict
+        #except:
+         #   return False
 
 
     @staticmethod
