@@ -91,4 +91,4 @@ def chat():
     data = request.form.to_dict()
 
 
-app.run()
+app.run("173.82.154.26")
