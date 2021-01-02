@@ -3,6 +3,7 @@
 from src._sqlite import _sqlite
 from src.__config import get_config
 from urllib.request import Request, urlopen
+from urllib.error import URLError, HTTPError
 import json
 
 # sqlite instance
