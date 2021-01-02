@@ -34,10 +34,38 @@ body {
     font-weight: 400;
     margin: 4px 0 0;
 }
+.content-about {
+    font-size: 14px;
+    color: #959595;
+    font-weight: 400;
+    margin: 4px 0 0;
+}
 .twelve {
     font-size: 13px;
 }
 .stat {
     color: #959595;
     font-size: 15px;
+}
+.card-header {
+    background-color: #fff;
+}
+ ul li {
+    font-size: 14px;
+    margin: 4px 0 0;
+    font-weight: 300;
+}
+a, a:hover {
+    text-decoration: none;
+}
+ol {
+    font-size: 0;
+}
+ol li {
+    display: inline-block;
+    font-size: 14px;
+}
+ol li a {
+    color: #959595;
+    font-weight: bold;
 }

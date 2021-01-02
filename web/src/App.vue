@@ -32,4 +32,21 @@
   </div>
 </nav>
   <router-view/>
+
+  <footer class="footer text-center justify-content-center">
+    <p class="content-about"><b>Disclaimer:</b> Error and Omissions expected</p>
+    <p class="content-about" style="font-size: 11px">
+    Information displayed here is carefully calibrated and is mostly updated manually based on reporting of government officals on Website.
+    </p>
+    <p class="content-about mt-2">
+      <ol>
+        <li><router-link class="nav-link" to="/about">About</router-link></li>
+        <li><router-link class="nav-link" to="/about">Feedback</router-link></li>
+        <li><router-link class="nav-link" to="/about">Data Request</router-link></li>
+      </ol>
+    </p>
+    <p class="content-about mt-2 mb-3">
+      Copyright © 2020 - Developers
+    </p>
+  </footer>
 </template>
