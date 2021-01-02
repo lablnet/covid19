@@ -25,7 +25,33 @@ const routes: Array<RouteRecordRaw> = [
     meta: {
       title: 'Map',
     },
-  }
+  },
+    {
+      path: '/feedback',
+      name: 'Feedback',
+      component: () => import(/* webpackChunkName: "about" */ '../views/Feedback.vue'),
+      meta: {
+        title: 'Feedback',
+      },
+    },
+      {
+        path: '/request',
+        name: 'request',
+        component: () => import(/* webpackChunkName: "about" */ '../views/Request.vue'),
+        meta: {
+          title: 'Request',
+        },
+      },
+
+      {
+        path: '/:pathMatch(.*)*',
+        name: '404',
+        component: () => import(/* webpackChunkName: "about" */ '../views/404.vue'),
+        meta: {
+          title: '404',
+        },
+      },
+  
 ]
 
 const router = createRouter({
