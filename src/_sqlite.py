@@ -117,7 +117,8 @@ class _sqlite:
         year = int(date[:4])
         return str(datetime(year, month, day) - timedelta(1))[:10]
 
-    def get_processed(self, table):
+    @staticmethod
+    def get_processed(table):
         # gets last date from database
         sq = "SELECT datetime FROM " + table + " ORDER BY datetime DESC LIMIT 1 ;"
         _sqlite.cur.execute(sq, ())
@@ -125,6 +126,7 @@ class _sqlite:
         prev_date = None
         data_list = []
         i = 0
+        maxDays = 10
         while True:
             i += 1
             print(i)        # Just to check line number / iteration number
@@ -134,6 +136,9 @@ class _sqlite:
             day_data = {}
             sql = "SELECT * FROM " + table
             sql += " WHERE datetime > '" + date + "'"
+
+            if i == maxDays: break;
+
             if prev_date is not None:
                 sql += " AND datetime < '" + prev_date + "'"
             sql += ";"
@@ -145,6 +150,7 @@ class _sqlite:
             # Returns DataList if Null output is given from Sqlite
             if data is None:
                 return data_list
+
 
             for row in data:
                 if row[3] == "INFECTED":
@@ -190,7 +196,9 @@ class _sqlite:
             })
             data_list.append(day_data)
             prev_date = date
-            date = self.get_previous_date(date)
+            date = _sqlite.get_previous_date(date)
+
+        return data_list
 
     @staticmethod
     def get_data(table, From=None, To=None):

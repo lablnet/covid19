@@ -26,14 +26,14 @@ def index():
     return json.dumps(data)
 
 
-@app.route('/processed')
+@app.route('/trend')
 def processed():
     s = _sqlite
     conn = s.conn(get_config("database", './'))
     data = conn.get_processed("cases")
     conn.close()
 
-    return data  # List of Dictionaries
+    return json.dumps(data)  # List of Dictionaries
 
 
 @app.route('/percent')

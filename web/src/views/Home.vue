@@ -180,6 +180,7 @@ export default {
 
         this.getPercentage()
         this.getProvience()
+        this.getTrend()
         // this.fillData()
         // this.getAll()
     },
@@ -195,6 +196,7 @@ export default {
             dataset: [],
             percent: {},
             provience: {},
+            trend: [],
         }
     },
 
@@ -235,44 +237,61 @@ export default {
             const ctx = document.getElementById('myChart')
 
             const labels = []
-            const dataset = []
-            const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-            this.alldate.map(e => {
-                // if (e.type == "INFECTED")  {
-                let num = e.desc.match(/\b\d[\d,.]*\b/g)
-                num = num[0]
-                const d = e.date.split('-')
-                const date = months[d[1] - 1] + '/' + d[2].split('T')[0]
+            const INFECTED = []
+            const DECEASED = []
+            const RECOVERED = []
 
-                labels.push(date)
-                dataset.push(num)
+            const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+            this.trend.map(e => {
+                // if (e.type == "INFECTED")  {
+                //let num = e.desc.match(/\b\d[\d,.]*\b/g)
+                //num = num[0]
+                //const d = e.date.split('-')
+                //const date = months[d[1] - 1] + '/' + d[2].split('T')[0]
+
+                labels.push(e.DATE)
+                INFECTED.push(e.INFECTED)
+                DECEASED.push(e.DECEASED)
+                RECOVERED.push(e.RECOVERED)
                 // }
             })
             const myChart = new Chart(ctx, {
                 type: 'line',
                 data: {
                     labels: labels,
-                    datasets: [{
-                        label: '# of INFECTED',
-                        data: dataset,
-                        backgroundColor: [
-                            'rgba(255, 99, 132, 0.2)',
-                            'rgba(54, 162, 235, 0.2)',
-                            'rgba(255, 206, 86, 0.2)',
-                            'rgba(75, 192, 192, 0.2)',
-                            'rgba(153, 102, 255, 0.2)',
-                            'rgba(255, 159, 64, 0.2)'
-                        ],
+                    datasets: [
+                        {
+ 
+                        label: '#RECOVERED',
+                        data: RECOVERED,
                         borderColor: [
-                            'rgba(255, 99, 132, 1)',
-                            'rgba(54, 162, 235, 1)',
-                            'rgba(255, 206, 86, 1)',
-                            'rgba(75, 192, 192, 1)',
-                            'rgba(153, 102, 255, 1)',
-                            'rgba(255, 159, 64, 1)'
+                            'rgba(47, 148, 96, 1)',
                         ],
+                       
                         borderWidth: 1
-                    }]
+                    
+                        },
+                        {
+                        label: '#INFECTED',
+                        data: INFECTED,
+                        borderColor: [
+                            'rgba(95, 188, 222, 1)',
+                        ],
+                        
+                        borderWidth: 1
+                    },
+                    {
+ 
+                        label: '#DECEASED',
+                        data: DECEASED,
+                        borderColor: [
+                            'rgba(224, 43, 40, 1)',
+                        ],
+                        
+                        borderWidth: 1
+                    
+                        },
+                    ]
                 },
                 options: {
                     responsive: true,
@@ -313,6 +332,15 @@ export default {
             axios.get(link).then(response => {
                 // if (response.status == 200) {
                 this.alldate = response.data
+                this.mount()
+                // }
+            })
+        },
+        getTrend() {
+            const link = url +'/trend'
+            axios.get(link).then(response => {
+                // if (response.status == 200) {
+                this.trend = response.data
                 this.mount()
                 // }
             })
