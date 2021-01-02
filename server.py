@@ -26,6 +26,15 @@ def index():
     return json.dumps(data)
 
 
+@app.route('/percent')
+def percent():
+    s = _sqlite
+    conn = s.conn(get_config("database", './'))
+    data = conn.get_type_percent("cases")
+    conn.close()
+
+    return data  # Dictionary
+
 @app.route('/feed')
 def feed():
     page = request.args['page']

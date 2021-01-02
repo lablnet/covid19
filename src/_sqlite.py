@@ -169,6 +169,40 @@ class _sqlite:
             return False
 
     @staticmethod
+    def get_type(table):
+        sql = "SELECT * FROM " + table + " ORDER BY type; "
+
+    @staticmethod
+    def get_type_percent(table):
+        sql = "SELECT * FROM " + table + " ORDER BY type; "
+        try:
+            _sqlite.cur.execute(sql, ())
+            data = _sqlite.cur.fetchall()
+            dec = 0  # DECEASED
+            inf = 0   # INFECTED
+            recv = 0   # RECOVERED
+            total = 0   # Total Cases
+            for row in data:
+                if row[3] == "DECEASED":
+                    dec += 1
+                elif row[3] == "INFECTED":
+                    inf += 1
+                elif row[3].startswith("RECOVERED"):
+                    recv += 1
+                else:
+                    total += 1
+            total += dec + inf + recv
+            dataDict = {
+                'DECEASED': dec,
+                'INFECTED': inf,
+                'RECOVERED': recv,
+                'TOTAL': total
+            }
+            return dataDict
+        except:
+            return False
+
+    @staticmethod
     def delete(table, field, value):
         sql = "DELETE FROM " + table + " WHERE " + field + " = ? ;"
         try:

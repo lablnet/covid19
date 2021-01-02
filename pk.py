@@ -11,6 +11,9 @@ s = _sqlite()
 # open connection and passing the configs
 conn = s.conn(get_config("database", './'))
 
+s.get_type_percent("cases")
+quit()
+
 # creating the table.
 conn.create_tables()
 i = 0
