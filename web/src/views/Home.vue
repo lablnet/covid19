@@ -171,6 +171,7 @@ import {
 } from 'vue-class-component'
 import axios from 'axios'
 import Chart from 'chart.js'
+import url from "@/url.js"
 
 export default {
      mounted() {
@@ -289,18 +290,17 @@ export default {
         },
 
         getProvience() {
-            const url = 'http://127.0.0.1:5000/provience'
+            const link = url + '/provience'
             const lbls = []
-            axios.get(url).then(response => {
+            axios.get(link).then(response => {
                 // if (response.status == 200) {
                 this.provience = response.data
                 // }
             })
         },
         getPercentage() {
-            const url = 'http://127.0.0.1:5000/percent'
-            const lbls = []
-            axios.get(url).then(response => {
+            const link = url +'/percent'
+            axios.get(link).then(response => {
                 // if (response.status == 200) {
                 this.percent = response.data
                 this.percentage()
@@ -308,9 +308,9 @@ export default {
             })
         },
         getAll() {
-            const url = 'http://127.0.0.1:5000/'
+            const link = url +'/'
             const lbls = []
-            axios.get(url).then(response => {
+            axios.get(link).then(response => {
                 // if (response.status == 200) {
                 this.alldate = response.data
                 this.mount()
@@ -320,9 +320,9 @@ export default {
         getFeed() {
             this.data = []
             this.loading = true
-            const url = `http://127.0.0.1:5000/feed?page=${this.page}`
+            const link = url + `/feed?page=${this.page}`
             const lbls = []
-            axios.get(url).then(response => {
+            axios.get(link).then(response => {
                 console.log(response.status)
                 console.log(response.data)
                 // if (response.status == 200) {

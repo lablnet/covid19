@@ -12,6 +12,8 @@
 
 <script lang="js">
 import axios from 'axios'
+import url from "@/url.js"
+
 
 export default {
     name: "Map",
@@ -29,9 +31,9 @@ export default {
     },
     methods: {
         getProvience() {
-            const url = 'http://127.0.0.1:5000/provience'
+            const link =   url + '/provience'
             const lbls = []
-            axios.get(url).then(response => {
+            axios.get(link).then(response => {
                 // if (response.status == 200) {
                 this.provience = response.data
                 // }
