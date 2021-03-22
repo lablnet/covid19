@@ -1,10 +1,10 @@
 # Usman code goes here...
 from selenium import webdriver
+from webdriver_manager.chrome import ChromeDriverManager
 import time
 
 def get_covid_data() :
-    PATH = "C:\Program Files (x86)\chromedriver.exe"        # Path where chromedriver is located
-    driver = webdriver.Chrome(PATH)
+    driver = webdriver.Chrome(ChromeDriverManager().install())
     driver.set_page_load_timeout(30)
     driver.get("https://datastudio.google.com/embed/u/0/reporting/1PLVi5amcc_R5Gh928gTE8-8r8-fLXJQF/page/R24IB")
     time.sleep(25)          # Lower this if you have good internet connection
