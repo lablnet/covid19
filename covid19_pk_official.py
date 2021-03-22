@@ -1,3 +1,7 @@
+# Usman code goes here...
+
+# Umer's code...
+"""
 from urllib.request import Request, urlopen
 import requests
 from bs4 import BeautifulSoup
@@ -42,7 +46,8 @@ def get_soup(url):
 
 url = "https://datastudio.google.com/embed/u/0/reporting/1PLVi5amcc_R5Gh928gTE8-8r8-fLXJQF/page/R24IB"
 
-"""
+# comment 
+
 url = "http://covid.gov.pk/"
 
 soup = BeautifulSoup(get_page(url), 'html.parser')
@@ -64,7 +69,7 @@ CASES = {
     "AJK": cases[5],
     "GB": cases[6]
 }
-"""
+# Comment
 
 # soup = BeautifulSoup(get_page(url), 'html.parser')
 soup = get_soup(url)
@@ -73,3 +78,4 @@ items = soup.find_all("div", class_="valueLabel")
 
 for item in items:
     print(item)
+"""
