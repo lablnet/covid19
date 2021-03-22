@@ -1,4 +1,32 @@
 # Usman code goes here...
+from selenium import webdriver
+import time
+
+def get_covid_data() :
+    PATH = "C:\Program Files (x86)\chromedriver.exe"        # Path where chromedriver is located
+    driver = webdriver.Chrome(PATH)
+    driver.set_page_load_timeout(30)
+    driver.get("https://datastudio.google.com/embed/u/0/reporting/1PLVi5amcc_R5Gh928gTE8-8r8-fLXJQF/page/R24IB")
+    time.sleep(25)          # Lower this if you have good internet connection
+    parsed_data = driver.find_elements_by_class_name("cell")
+    data = {
+        "date": parsed_data[0].text      # Date
+    }
+    i = 1
+    while True :
+        if i > len(parsed_data) - 1:
+            break
+        data.update({
+            parsed_data[i].text: {                      # Province name
+                "confirmed": parsed_data[i + 1].text,   # Confirmed Cases
+                "active": parsed_data[i + 2].text,      # Active Cases
+                "deaths": parsed_data[i + 3].text,      # Deaths
+                "recoveries": parsed_data[i + 4].text   # Recoveries
+            }})
+        i += 5
+
+    return data     # Dictionary containing all data
+
 
 # Umer's code...
 """
@@ -7,7 +35,6 @@ import requests
 from bs4 import BeautifulSoup
 import re
 
-from selenium import webdriver
 import selenium as se
 from webdriver_manager.firefox import GeckoDriverManager
 
