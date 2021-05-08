@@ -9,6 +9,7 @@ from bs4 import BeautifulSoup
 import re
 from src._sqlite import _sqlite
 from src.__config import get_config
+from datetime import datetime
 
 def get_covid_daily_stat(timer=15):
     driver = webdriver.Chrome(ChromeDriverManager().install())
@@ -35,34 +36,18 @@ def get_covid_daily_stat(timer=15):
     return data
 
 
-def get_soup(url):
-    driver = webdriver.Chrome(ChromeDriverManager().install())
-    driver.get(url)
-    time.sleep(10)
-    html = driver.page_source
-    soup = BeautifulSoup(html, features="lxml")
-    return soup
+# Prepare current datetime.
+now = datetime.now()
+date = datetime.strftime(now, "%Y-%m-%dT%H:%M:%S GMT+5")
+date = date.replace(" GMT+5", "")
 
-
-# url = "http://covid.gov.pk/"
-#
-# soup = get_soup(url)
-# items = soup.find_all("li", class_="deaths")
-# for item in items:
-#     # totalD = items.find_all('spam', class_='counter')
-#     # print(totalD)
-#     print(item)
-
-
+# Get cases from website.
 today = get_covid_daily_stat()
-date = today['date']
 
+# Get cases form database.
 s = _sqlite
 conn = s.conn(get_config("database", './'))
 cases = (conn.get_provience_wise("cases"))
-
-print(today)
-print(cases)
 
 for key in cases.keys():
     _prov = prov = key
@@ -79,6 +64,32 @@ for key in cases.keys():
     recovered = str(str(int(recoveredToday) - recoveredTotal) + " recoveries reported in " + _prov + " taking the tally to " + recoveredToday)
     deaths = str(str(int(infectedToday) - infectedTotal) + " deaths reported in " + _prov + " taking the tally to " + deceasedToday)
 
-    print(infected)
-    print(recovered)
-    print(deaths)
+    if (int(infectedToday) - infectedTotal) > 0:
+        conn.insert("cases", {
+            "datetime": date,
+            # "_id": 0,
+            "type": "INFECTED",
+            "description": infected,
+            "reference": "http://covid.gov.pk/",
+        })
+
+    if (int(recoveredToday) - recoveredTotal) > 0:
+        conn.insert("cases", {
+            "datetime": date,
+            # "_id": 0,
+            "type": "RECOVERED",
+            "description": recovered,
+            "reference": "http://covid.gov.pk/",
+        })
+
+    if (int(deceasedToday) - deceasedTotal) > 0:
+        conn.insert("cases", {
+            "datetime": date,
+            # "_id": 0,
+            "type": "DECEASED",
+            "description": deaths,
+            "reference": "http://covid.gov.pk/",
+        })
+
+# Finally, Done.
+print("Done, Thanks")
