@@ -13,7 +13,7 @@
                 We have tried to sketch a clear picture for you in the simplest and the easiest manner so that you can explain everything to others in a convenient way, saving time and eliminating misconceptions about COVID-19.
             </p>
             <p class="content-about mt-2 mx-2">
-                If you have any idea/suggestion to improve this dashboard, please write to 19681@student.riphah.edu.pk
+                If you have any idea/suggestion to improve this dashboard, please write to mumerfarooqlablnet01@gmail.com
             </p>
             <p class="content-about mt-2 mx-2">Yours, </p>
             <p class="content-about mt-2 mx-2 mb-3">Serving Humanity.</p>
@@ -25,7 +25,7 @@
         </div>
         <div class="container">
             <p class="content-about mt-4 mx-2">
-                Some of our data fetched automatically, but we trying to update manually as its less error pros. Here are some of resources from where the data is gathered:
+                Our data fetched automatically, but we trying to make its less error pros. Here are some of resources from where the data is gathered:
             </p>
             <p class="content-about mt-2 mx-2">
                 <ul>

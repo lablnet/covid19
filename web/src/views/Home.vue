@@ -13,7 +13,7 @@
             <div class="card">
                 <div class="container">
                     <h1 class="title twelve mt-2">Total tests</h1>
-                    <p class="stat mx-2 mt-2">7,536,134</p>
+                    <p class="stat mx-2 mt-2">{{summery.total_tests}} <sub>+{{summery.last_tests}}</sub></p>
                 </div>
             </div>
         </div>
@@ -21,7 +21,7 @@
             <div class="card">
                 <div class="container">
                     <h1 class="title twelve mt-2">Total Cases</h1>
-                    <p class="stat mx-2 mt-2">7,536,134</p>
+                    <p class="stat mx-2 mt-2">{{summery.total_cases}} <sub>+{{summery.last_cases}}</sub></p>
                 </div>
             </div>
         </div>
@@ -29,7 +29,8 @@
             <div class="card">
                 <div class="container">
                     <h1 class="title twelve mt-2">Recoveries</h1>
-                    <p class="stat mx-2 mt-2">7,536,134</p>
+                    <p class="stat mx-2 mt-2">{{summery.total_recovered}} <sub>+{{summery.last_recovered}}</sub></p>
+
                 </div>
             </div>
         </div>
@@ -37,14 +38,14 @@
             <div class="card">
                 <div class="container">
                     <h1 class="title twelve mt-2">Deceased</h1>
-                    <p class="stat mx-2 mt-2">7,536,134</p>
+                    <p class="stat mx-2 mt-2">{{summery.total_deaths}} <sub>+{{summery.last_deaths}}</sub></p>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="row mt-5">
-        <div class="col-md-8">
+        <div class="col-md-6">
             <div class="card">
                 <div class="card-header">
                     <div style="display: flex">
@@ -62,10 +63,7 @@
                 </div>
                 <div class="container">
                     <ol class="mt-3">
-                        <div class="spinner-border text-info text-center" v-if="loading" role="status">
-                            <span class="sr-only">Loading...</span>
-                        </div>
-                        <li v-for="(item, idx) in data" :key="idx" style="display: block">
+                        <li v-for="(item, idx) in feed" :key="idx" style="display: block">
                             <p :class="getClass(item.type)" style="display: inline">
                                 {{ item.desc }}
                             </p>
@@ -81,7 +79,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-6">
             <div class="card">
                 <div class="card-header">
                     <h1 class="subtitle">Cases Provience wise</h1>
@@ -95,40 +93,26 @@
                                         Name
                                     </th>
                                     <th>
-                                        Case
+                                        Infected
+                                    </th>
+                                    <th>
+                                      Recovered
+                                    </th>
+                                    <th>
+                                      Deceased
                                     </th>
                                 </tr>
 
                             </thead>
                             <tbody class="content">
-                                <tr>
-                                    <td>Islamabad</td>
-                                    <td>{{provience.isb}}</td>
-                                </tr>
-                                <tr>
-                                    <td>Punjab</td>
-                                    <td>{{provience.punjab}}</td>
-                                </tr>
-                                <tr>
-                                    <td>Sindh</td>
-                                    <td>{{provience.sindh}}</td>
-                                </tr>
-                                <tr>
-                                    <td>Balochistan</td>
-                                    <td>{{provience.balochistan}}</td>
-                                </tr>
-                                <tr>
-                                    <td>Gilgit Baltistan</td>
-                                    <td>{{provience.gb}}</td>
-                                </tr>
-                                <tr>
-                                    <td>KKP</td>
-                                    <td>{{provience.kpk}}</td>
-                                </tr>
-                                <tr>
-                                    <td>AJK</td>
-                                    <td>{{provience.ajk}}</td>
-                                </tr>
+                            <span style="display: none">{{i = 0}}</span>
+                            <tr v-for="item in provience" :key="item">
+                                <td>{{provienceName[i]}}</td>
+                                 <td>{{item.infected}}</td>
+                                <td>{{item.recovered}}</td>
+                                <td>{{item.deceased}}</td>
+                              <span style="display: none">{{i++}}</span>
+                              </tr>
 
                             </tbody>
                         </table>
@@ -144,9 +128,6 @@
                 <div class="card-header">
                     <h1 class="subtitle">Daily Trend</h1>
                 </div>
-                <div class="spinner-border text-info text-center" v-if="trendLoading" role="status">
-                    <span class="sr-only">Loading...</span>
-                </div>
                 <div class="container">
                     <canvas id="myChart" style="width: 100%"></canvas>
                 </div>
@@ -156,9 +137,6 @@
             <div class="card">
                 <div class="card-header">
                     <h1 class="subtitle">Cases Breakdown</h1>
-                </div>
-                <div class="spinner-border text-info text-center" v-if="breakdownLoading" role="status">
-                    <span class="sr-only">Loading...</span>
                 </div>
                 <div class="container">
                     <canvas id="percentage" style="width: 100%"></canvas>
@@ -180,42 +158,52 @@ import url from "@/url.js"
 
 export default {
     mounted() {
+      this.getSummery()
         window.scrollTo(0, 0);
         this.getFeed()
 
-        this.getPercentage()
         this.getProvience()
         this.getTrend()
-        // this.fillData()
-        // this.getAll()
+      this.getPercentage()
+
+      // this.getAll()
     },
 
     data() {
         return {
+            provienceName: [
+              'Islamabad',
+              'Punjab',
+              'Sindh',
+              "KPK",
+              'GB',
+              'Balochistan',
+              'AJK'
+            ],
+            summery: {},
             page: 1,
-            loading: true,
-            trendLoading: true,
-            breakdownLoading: true,
-            provienceLoading: true,
             data: [],
-            alldate: [],
-            datacollection: null,
-            dataLabels: [],
-            dataset: [],
             percent: {},
             provience: {},
             trend: [],
+            feed: {},
         }
     },
 
     methods: {
+      getSummery()
+      {
+        // eslint-disable-next-line no-undef
+        let highest = summery[ Object.keys(summery).sort().pop() ];
+        this.summery = highest
+      },
         percentage() {
             const ctx = document.getElementById('percentage')
             const INFECTED = this.percent.inf
             const DECEASED = this.percent.des
             const RECOVERED = this.percent.rec
             const TOTAL = this.percent.total
-            const data = [(INFECTED / TOTAL) * 100, (DECEASED / TOTAL) * 100, (RECOVERED / TOTAL) * 100]
+            const data = [Math.round((INFECTED / TOTAL) * 100, 2), Math.round((DECEASED / TOTAL) * 100, 2), Math.round((RECOVERED / TOTAL) * 100, 2)]
 
             const myChart = new Chart(ctx, {
                 type: 'doughnut',
@@ -327,56 +315,53 @@ export default {
         },
 
         getProvience() {
-            const link = url + '/provience'
-            const lbls = []
-            axios.get(link).then(response => {
-                if (response.status == 200) {
-                    this.provience = response.data
-                    this.provienceLoading = false
-                }
-            })
+            // eslint-disable-next-line no-undef
+            this.provience = provience
         },
         getPercentage() {
-            const link = url + '/percent'
-            axios.get(link).then(response => {
-                if (response.status == 200) {
-                    this.percent = response.data
-                    this.breakdownLoading = false
-                    this.percentage()
-                }
-            })
-        },
-        getAll() {
-            const link = url + '/'
-            const lbls = []
-            axios.get(link).then(response => {
-                if (response.status == 200) {
-                    this.alldate = response.data
-                    this.mount()
-                }
-            })
+            let percent = 0;
+            let inf = 0
+            let dec = 0
+            let recv = 0
+            let total = 0
+            for (let item in this.provience) {
+              inf += this.provience[item].infected
+              dec += this.provience[item].deceased
+              recv += this.provience[item].recovered
+            }
+          total = inf
+
+          inf = inf - recv - dec
+            this.percent = {
+              "des": dec,
+              "inf": inf,
+              "rec": recv,
+              "total": total
+            }
+
+          this.percentage()
         },
         getTrend() {
-            const link = url + '/trend'
-            axios.get(link).then(response => {
-                if (response.status == 200) {
-                    this.trend = response.data
-                    this.trendLoading = false
-                    this.mount()
-                }
-            })
+          // eslint-disable-next-line no-undef
+          this.trend = trend
+          this.mount()
+        },
+        getAll() {
+          // eslint-disable-next-line no-undef
+          this.data = feed
+
         },
         getFeed() {
-            this.data = []
-            this.loading = true
-            const link = url + `/feed?page=${this.page}`
-            const lbls = []
-            axios.get(link).then(response => {
-                // if (response.status == 200) {
-                this.data = response.data
-                this.loading = false
-                // }
-            })
+            this.getAll();
+            let records = 7 * this.page
+            let start = 0;
+            if (this.page !== 1) start = records - 7
+            this.feed = []
+            let feed = []
+            for (let i = start; i <= records; i++) {
+              feed.push(this.data[i])
+            }
+            this.feed = feed
         },
 
         prevPage() {
@@ -396,20 +381,6 @@ export default {
                 return 'content alert-warning'
             } else if (item.toString() == 'DECEASED') {
                 return 'content alert-danger'
-            }
-        },
-        fillData() {
-            this.datacollection = {
-                labels: [this.getRandomInt(), this.getRandomInt()],
-                datasets: [{
-                    label: 'Data One',
-                    backgroundColor: '#f87979',
-                    data: [this.getRandomInt(), this.getRandomInt()]
-                }, {
-                    label: 'Data One',
-                    backgroundColor: '#f87979',
-                    data: [this.getRandomInt(), this.getRandomInt()]
-                }]
             }
         },
         getRandomInt() {

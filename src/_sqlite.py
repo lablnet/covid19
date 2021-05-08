@@ -129,7 +129,7 @@ class _sqlite:
         maxDays = 10
         while True:
             i += 1
-            print(i)        # Just to check line number / iteration number
+            # print(i)        # Just to check line number / iteration number
             dec = 0  # DECEASED
             inf = 0  # INFECTED
             recv = 0  # RECOVERED
@@ -147,45 +147,20 @@ class _sqlite:
                 data = _sqlite.cur.fetchall()
             except:
                 return False
-            # Returns DataList if Null output is given from Sqlite
-            if data is None:
-                return data_list
-
 
             for row in data:
                 if row[3] == "INFECTED":
-                    num = row[5].split(" ")[0]
+                    num = row[5].split(" ")[0].replace(',', '')
                     if num.isdigit():
                         inf += int(num)
-                    else:
-                        num = num.split(",")
-                        if num[0].isdigit:
-                            if len(num) == 2:
-                                inf += (int(num[0]) * 1000 + int(num[1]))
-                            elif len(num) == 3:
-                                inf += (int(num[0]) * 1000000 + int(num[1]) * 1000 + int(num[2]))
                 elif row[3] == "DECEASED":
-                    num = row[5].split(" ")[0]
+                    num = row[5].split(" ")[0].replace(',', '')
                     if num.isdigit():
                         dec += int(num)
-                    else:
-                        num = num.split(",")
-                        if num[0].isdigit:
-                            if len(num) == 2:
-                                dec += (int(num[0]) * 1000 + int(num[1]))
-                            elif len(num) == 3:
-                                dec += (int(num[0]) * 1000000 + int(num[1]) * 1000 + int(num[2]))
                 elif row[3].startswith("RECOVERED"):
-                    num = row[5].split(" ")[0]
+                    num = row[5].split(" ")[0].replace(',', '')
                     if num.isdigit():
                         recv += int(num)
-                    else:
-                        num = num.split(",")
-                        if num[0].isdigit:
-                            if len(num) == 2:
-                                recv += (int(num[0]) * 1000 + int(num[1]))
-                            elif len(num) == 3:
-                                recv += (int(num[0]) * 1000000 + int(num[1]) * 1000 + int(num[2]))
             total = inf + dec + recv
             day_data.update({
                 'DATE': date,
@@ -198,6 +173,7 @@ class _sqlite:
             prev_date = date
             date = _sqlite.get_previous_date(date)
 
+        data_list.reverse()
         return data_list
 
     @staticmethod
@@ -232,15 +208,15 @@ class _sqlite:
 
     @staticmethod
     def get_page_data(table, Page):
-        sql = "SELECT * FROM " + table + " ORDER BY id DESC LIMIT 1 ;"
-        _sqlite.cur.execute(sql, ())
-        ID = int(_sqlite.cur.fetchone()[0])
-        FROM = ID - (6*(int(Page) - 1))
-        TO = ID - (6*int(Page))
-
-        sql = "SELECT * FROM " + table
-        sql += " WHERE id <= " + str(FROM)
-        sql += " AND id > " + str(TO) + " ;"
+        sql = "SELECT * FROM " + table + " ORDER BY id DESC;"
+        # _sqlite.cur.execute(sql, ())
+        # ID = int(_sqlite.cur.fetchone()[0])
+        # FROM = ID - (6*(int(Page) - 1))
+        # TO = ID - (6*int(Page))
+        #
+        # sql = "SELECT * FROM " + table
+        # sql += " WHERE id <= " + str(FROM)
+        # sql += " AND id > " + str(TO) + " ;"
         try:
             _sqlite.cur.execute(sql, ())
             data = _sqlite.cur.fetchall()

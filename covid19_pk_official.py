@@ -63,7 +63,7 @@ for key in cases.keys():
     deceasedTotal = cases[prov]['deceased']
     infected = str(str(int(infectedToday) - infectedTotal) + " new cases reported in  " + _prov + " taking the tally to " + infectedToday)
     recovered = str(str(int(recoveredToday) - recoveredTotal) + " recoveries reported in " + _prov + " taking the tally to " + recoveredToday)
-    deaths = str(str(int(infectedToday) - infectedTotal) + " deaths reported in " + _prov + " taking the tally to " + deceasedToday)
+    deaths = str(str(int(deceasedToday) - deceasedTotal) + " deaths reported in " + _prov + " taking the tally to " + deceasedToday)
 
     if (int(infectedToday) - infectedTotal) > 0:
         conn.insert("cases", {
@@ -83,6 +83,7 @@ for key in cases.keys():
             "reference": "http://covid.gov.pk/",
         })
 
+    print(deaths)
     if (int(deceasedToday) - deceasedTotal) > 0:
         conn.insert("cases", {
             "datetime": date,

@@ -11,9 +11,6 @@
 </template>
 
 <script lang="js">
-import axios from 'axios'
-import url from "@/url.js"
-import Highcharts from "highcharts"
 
 export default {
     name: "Map",
@@ -31,38 +28,33 @@ export default {
     },
     methods: {
         getProvience() {
-            const link =   url + '/provience'
-            const lbls = []
-            axios.get(link).then(response => {
-                // if (response.status == 200) {
-                this.provience = response.data
-                // }
-
-                this.getMap()
-            })
+          // eslint-disable-next-line no-undef
+             this.provience = provience
+             this.getMap()
         },
         getMap() {
             // Prepare demo data
             // Data is joined to map using value of 'hc-key' property by default.
             // See API docs for 'joinBy' for more info on linking data and map.
             var data = [
-                ['pk-sd', this.provience.sindh],
-                ['pk-ba', this.provience.balochistan],
-                ['pk-jk', this.provience.ajk],
-                ['pk-na', this.provience.kpk],
-                ['pk-gb', this.provience.gb],
-                ['pk-pb', this.provience.punjab],
-                ['pk-is', this.provience.isb]
+                ['pk-sd', this.provience['Sindh'].infected],
+                ['pk-ba', this.provience['Balochistan'].infected],
+                ['pk-jk', this.provience['AJK'].infected],
+                ['pk-na', this.provience['KPK'].infected],
+                ['pk-gb', this.provience['GB'].infected],
+                ['pk-pb', this.provience['Punjab'].infected],
+                ['pk-is', this.provience['Islamabad'].infected]
             ];
 
             // Create the chart
+          // eslint-disable-next-line no-undef
             Highcharts.mapChart('map', {
                 chart: {
                     map: 'countries/pk/pk-all'
                 },
 
                 title: {
-                    text: 'Map'
+                    text: 'Map co.vid.alphasofthub.com'
                 },
 
                 subtitle: {
