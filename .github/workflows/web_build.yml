@@ -1,9 +1,11 @@
 name: 'Web Build and Deploy'
 
 on:
-  push:
-    branches:
-      - master
+  workflow_dispatch
+#  push:
+#    branches:
+#      - master
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest

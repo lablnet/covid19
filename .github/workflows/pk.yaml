@@ -1,6 +1,10 @@
 name: Update Records from Pak gov website
 
-on: workflow_dispatch
+on:
+  schedule:
+    - cron:  '0 6 * * *'
+  workflow_dispatch
+
 
 jobs:
   build-and-deploy:
@@ -18,6 +22,8 @@ jobs:
         run: pip install -r requirements.txt
       - name: Update dataset
         run: python covid19_pk_official.py
+      - name: Update summery dataset
+        run: python today.py
       - name: Export from sqlite to CSV
         run: python toCsv.py
       - name: Commit and push if it changed
