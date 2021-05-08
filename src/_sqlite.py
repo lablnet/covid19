@@ -52,7 +52,7 @@ class _sqlite:
             sql += ");"
 
             _sqlite.cur.executescript(sql)
-            print(tabl[tab]['name'], "Table Created.")
+
 
     @staticmethod
     def getCur():
