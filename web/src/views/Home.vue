@@ -4,8 +4,8 @@
     <h2 class="subtitle mt-1">COVID-19 SITUATION IN PAKISTAN</h2>
     <p class="content mt-3 mb-5">
         The coronavirus aka COVID-19, is igniting fear worldwide because of number
-        of reasons. As COVID-19 is a new virus, there is no available vaccine for
-        this. Alongside developing vaccine for COVID-19, researchers are also
+        of reasons. there are vaccines available for
+        COVID-19. Alongside developing vaccine for COVID-19, researchers are also
         trying to predict its behaviour.
     </p>
     <div class="row">

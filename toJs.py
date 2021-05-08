@@ -38,3 +38,5 @@ data = conn.get_page_data("cases", 1)  # TableName, Page(Number)
 write_json("./web/public/data/feed.js", data, "feed")
 conn.close()
 
+# Finally, Done.
+print("Done, Thanks")

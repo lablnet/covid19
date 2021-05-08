@@ -83,7 +83,6 @@ for key in cases.keys():
             "reference": "http://covid.gov.pk/",
         })
 
-    print(deaths)
     if (int(deceasedToday) - deceasedTotal) > 0:
         conn.insert("cases", {
             "datetime": date,
