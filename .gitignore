@@ -132,7 +132,7 @@ dmypy.json
 # Sqlite file
 # *.sqlite
 
-*.csv
+# *.csv
 test
 *.pdf
 
