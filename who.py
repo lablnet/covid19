@@ -3,6 +3,8 @@ from src.__config import get_config
 import requests
 import json
 import csv
+import os
+
 
 def csv_to_dict() -> dict:
     data = dict()
@@ -50,3 +52,12 @@ for item in data:
         conn.insert(_sqlite.db['tables']["2"]["name"], data[item])
         print(item)
     else : print("Duplicate Data")
+
+
+# delete csv file form current directory.
+# WHO-COVID-19-global-data.csv
+if os.path.exists("WHO-COVID-19-global-data.csv"):
+  os.remove("WHO-COVID-19-global-data.csv")
+
+# Finally, Done
+print("Done, Thanks")
