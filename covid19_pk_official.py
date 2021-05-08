@@ -54,10 +54,31 @@ def get_soup(url):
 #     print(item)
 
 
-# data = get_covid_daily_stat()
+today = get_covid_daily_stat()
+date = today['date']
 
 s = _sqlite
 conn = s.conn(get_config("database", './'))
-
 cases = (conn.get_provience_wise("cases"))
+
+print(today)
 print(cases)
+
+for key in cases.keys():
+    _prov = prov = key
+    if (_prov == "GB"): _prov = "Gilgit Baltistan"
+
+
+    infectedToday = today[prov]['confirmed'].replace(',', '')
+    recoveredToday = today[prov]['recoveries'].replace(',', '')
+    deceasedToday = today[prov]['deaths'].replace(',', '')
+    infectedTotal = cases[prov]['infected']
+    recoveredTotal = cases[prov]['recovered']
+    deceasedTotal = cases[prov]['deceased']
+    infected = str(str(int(infectedToday) - infectedTotal) + " new cases reported in  " + _prov + " taking the tally to " + infectedToday)
+    recovered = str(str(int(recoveredToday) - recoveredTotal) + " recoveries reported in " + _prov + " taking the tally to " + recoveredToday)
+    deaths = str(str(int(infectedToday) - infectedTotal) + " deaths reported in " + _prov + " taking the tally to " + deceasedToday)
+
+    print(infected)
+    print(recovered)
+    print(deaths)
