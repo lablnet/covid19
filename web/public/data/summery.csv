@@ -1,2 +1,2 @@
 ,id,datetime,total_tests,total_cases,total_recovered,total_deaths,total_critical,last_tests,last_cases,last_recovered,last_deaths,last_critical,reference
-0,3,2021-05-08T12:39:59,"12,149,935","854,240","752,712","18,797","4,986","Last 24 hours: 48,103","Last 24 hours: 4,109","Last 24 hours: 4,957",Last 24 hours: 120,Last 24 hours: 0,https://covid.gov.pk/
+0,4,2021-05-08T12:46:11,"12,149,935","854,240","752,712","18,797","4,986","48,103","4,109","4,957",120,0,https://covid.gov.pk/
