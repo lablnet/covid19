@@ -13,7 +13,7 @@
 <script lang="js">
 import axios from 'axios'
 import url from "@/url.js"
-
+import Highcharts from "highcharts"
 
 export default {
     name: "Map",
