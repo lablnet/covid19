@@ -1,6 +1,13 @@
 <template>
 <div class="container">
-    <h1 class="title mt-3">COVID-19 SITUATION IN PAKISTAN</h1>
+    <div class="row">
+      <div class="col-md-8">
+        <h1 class="title mt-3">COVID-19 SITUATION IN PAKISTAN</h1>
+      </div>
+      <div class="col-md-4">
+        <p class="content mt-3">Last Update: {{update}}</p>
+      </div>
+    </div>
     <h2 class="subtitle mt-1">COVID-19 SITUATION IN PAKISTAN</h2>
     <p class="content mt-3 mb-5">
         The coronavirus aka COVID-19, is igniting fear worldwide because of number
@@ -158,6 +165,8 @@ import url from "@/url.js"
 
 export default {
     mounted() {
+      // eslint-disable-next-line no-undef
+      this.update = update['update']
       this.getSummery()
         window.scrollTo(0, 0);
         this.getFeed()
@@ -171,6 +180,7 @@ export default {
 
     data() {
         return {
+            update: "",
             provienceName: [
               'Islamabad',
               'Punjab',
