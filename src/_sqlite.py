@@ -301,28 +301,107 @@ class _sqlite:
         try:
             _sqlite.cur.execute(sql, ())
             data = _sqlite.cur.fetchall()
-            gb = kpk = isb = punjab = sindh = balochistan = ajk  = 0
+            gb = {
+                'infected': 0,
+                'recovered': 0,
+                'deceased': 0,
+            }
+            kpk = {
+                'infected': 0,
+                'recovered': 0,
+                'deceased': 0,
+            }
+            isb = {
+                'infected': 0,
+                'recovered': 0,
+                'deceased': 0,
+            }
+            punjab = {
+                'infected': 0,
+                'recovered': 0,
+                'deceased': 0,
+            }
+            sindh = {
+                'infected': 0,
+                'recovered': 0,
+                'deceased': 0,
+            }
+            balochistan = {
+                'infected': 0,
+                'recovered': 0,
+                'deceased': 0,
+            }
+            ajk  = {
+                'infected': 0,
+                'recovered': 0,
+                'deceased': 0,
+            }
             for row in data:
                 if row[3] == "INFECTED":
                     count = 0
                     desc = row[5].split(" ")[0]
+                    desc = str(desc).replace(',', '')
                     if (desc.isdigit()):
                         count = int(desc)
-
                     if row[5].find("Balochistan") != -1:
-                        balochistan += count
+                        balochistan['infected'] = count + balochistan['infected']
                     elif row[5].find("Punjab") != -1:
-                        punjab += count
+                        print(row[2], row[3], row[5])
+                        print(count, " + ", punjab['infected'])
+                        punjab['infected'] += count
                     elif row[5].find("KPK") != -1:
-                        kpk += count
+                        kpk['infected'] += count
                     elif row[5].find("Sindh") != -1:
-                        sindh += count
+                        sindh['infected'] += count
                     elif row[5].find("Islamabad") != -1:
-                        isb += count
+                        isb['infected'] += count
                     elif row[5].find("Gilgit Baltistan") != -1:
-                        gb += count
+                        gb['infected'] += count
                     elif row[5].find("AJK") != -1:
-                        ajk += count
+                        ajk['infected'] += count
+
+
+                if row[3] == "DECEASED":
+                    count = 0
+                    desc = row[5].split(" ")[0]
+                    desc = str(desc).replace(',', '')
+                    if (desc.isdigit()):
+                        count = int(desc)
+                    if row[5].find("Balochistan") != -1:
+                        balochistan['deceased'] += count
+                    elif row[5].find("Punjab") != -1:
+                        punjab['deceased'] += count
+                    elif row[5].find("KPK") != -1:
+                        kpk['deceased'] += count
+                    elif row[5].find("Sindh") != -1:
+                        sindh['deceased'] += count
+                    elif row[5].find("Islamabad") != -1:
+                        isb['deceased'] += count
+                    elif row[5].find("Gilgit Baltistan") != -1:
+                        gb['deceased'] += count
+                    elif row[5].find("AJK") != -1:
+                        ajk['deceased'] += count
+
+                if row[3] == "RECOVERED":
+                    count = 0
+                    desc = row[5].split(" ")[0]
+                    desc = str(desc).replace(',', '')
+                    if (desc.isdigit()):
+                        count = int(desc)
+                    if row[5].find("Balochistan") != -1:
+                        balochistan['recovered'] += count
+                    elif row[5].find("Punjab") != -1:
+                        punjab['recovered'] += count
+                    elif row[5].find("KPK") != -1:
+                        kpk['recovered'] += count
+                    elif row[5].find("Sindh") != -1:
+                        sindh['recovered'] += count
+                    elif row[5].find("Islamabad") != -1:
+                        isb['recovered'] += count
+                    elif row[5].find("Gilgit Baltistan") != -1:
+                        gb['recovered'] += count
+                    elif row[5].find("AJK") != -1:
+                        ajk['recovered'] += count
 
             dataDict = {
                 'isb': isb,
