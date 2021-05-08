@@ -7,7 +7,6 @@
 # covid19-parser
 
 COVID-19 Dashboard and parser
-
   
   The sole purpose of this dashboard is to make the general public aware of the current situation about COVID-19 virus outbreak in Pakistan.
 
@@ -16,30 +15,20 @@ We have tried to sketch a clear picture for you in the simplest and the easiest 
 If you have any idea/suggestion to improve this dashboard, please write to mumerfarooqlablnet01@gmail.com
 
 ## Purpose
-
 1. Develop awareness among the public.
-
 2. Visualized the data for everyone to understand.
-
-3. Gather data for research/experiences.
-
-  
+3. Gather data for research/experiences.  
 
 ## Features
-
 1. Parse data from government websites automatically daily, automated using GitHub Action.
-
 2. Parse data from WHO automatically on every Monday, automated using GitHub Actions
-
 3. Dashboard to visualize data.
-
 4. Publicly Data downloading.
 
-  ## How it works?
+## How it works?
   This project use GitHub Actions to automate the task/workflow, and export data into CSV and JavaScript JSON for quickly accessible into website without having any server. (serverless  😎)
 
 ## Contribution
-
 You're welcome to contribute to this project.
 
 You should follow contribution guideline [Contribution guideline](https://github.com/lablnet/covid19-parser/blob/master/CONTRIBUTING.md)
@@ -47,19 +36,26 @@ You should follow contribution guideline [Contribution guideline](https://github
   
   ## File Structure
   ```sh covid19_pakistan.sqlite``` Core Database File
+  
   ```sh today.py``` Gather Data from  https://covid.gov.pk/ last 24 hrs stat.
-     ```sh covid19_pk_official.py``` Gather Data from  https://covid.gov.pk/
+  
+  ```sh covid19_pk_official.py``` Gather Data from  https://covid.gov.pk/
+  
   ```sh who.py``` Gather Data from  https://covid19.who.int
-    ```sh toCsv.py``` Export Date to CSV
-    ```sh toJs.py``` Export Date to JavaScript  JSON
-    ```sh config.json``` Config File for the project.
-        ```sh src/__config.json``` Helper file for getting value from config.
-    ```sh src/_sqlite.json``` SQLite helper class.
-    ```sh /web``` Folder contain web Dashboard.
-    ```sh server.py```Backend Server deprecated.
-
-    
-   
+  
+  ```sh toCsv.py``` Export Date to CSV
+  
+  ```sh toJs.py``` Export Date to JavaScript  JSON
+  
+  ```sh config.json``` Config File for the project.
+  
+  ```sh src/__config.json``` Helper file for getting value from config.
+  
+  ```sh src/_sqlite.json``` SQLite helper class.
+  
+  ```sh /web``` Folder contain web Dashboard.
+  
+  ```sh server.py```Backend Server deprecated.
 
 
 ## License
