@@ -8,3 +8,6 @@ df = pd.read_sql("SELECT * FROM cases", conn)
 df.to_csv('./web/public/data/cases.csv')
 df = pd.read_sql("SELECT * FROM global", conn)
 df.to_csv('./web/public/data/global.csv')
+
+# Finally, Done
+print("Done, Thanks)
