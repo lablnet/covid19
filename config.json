@@ -26,6 +26,23 @@
             "new_deaths": "INTEGER",
             "cumulative_deaths": "INTEGER"
           }
+      },
+      "3" : {
+          "name": "summery",
+          "fields": {
+            "datetime": "varchar",
+            "total_tests": "varchar",
+            "total_cases": "varchar",
+            "total_recovered": "varchar",
+            "total_deaths": "varchar",
+            "total_critical": "varchar",
+            "last_tests": "varchar",
+            "last_cases": "varchar",
+            "last_recovered": "varchar",
+            "last_deaths": "varchar",
+            "last_critical": "varchar",
+            "reference": "varchar"
+          }
       }
     }
   }
