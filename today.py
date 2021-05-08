@@ -14,11 +14,11 @@ soup.prettify()
 
 patients = soup.find_all('span', class_='counter')  # cases counter....
 
-last_24hr_cases = soup.find('span', class_='tests').text  # cases in last 24 hr
-last_deaths = soup.find('span', class_='deaths').text  # death in last day
-last_recoveries = soup.find('span', class_='recovered').text  # recoveries in last day
-last_tests = soup.find("span", class_="active").text  # currrently active cases
-critical_cases = soup.find("span", class_="total").text  # critical cases
+last_24hr_cases = soup.find('span', class_='tests').text.replace("Last 24 hours: ", "")  # cases in last 24 hr
+last_deaths = soup.find('span', class_='deaths').text.replace("Last 24 hours: ", "")  # death in last day
+last_recoveries = soup.find('span', class_='recovered').text.replace("Last 24 hours: ", "")  # recoveries in last day
+last_tests = soup.find("span", class_="active").text.replace("Last 24 hours: ", "")  # currrently active cases
+critical_cases = soup.find("span", class_="total").text.replace("Last 24 hours: ", "")  # critical cases
 
 confirm_total = patients[0].text  # confirmed total case
 deaths = patients[1].text  # deaths confirmed
