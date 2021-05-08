@@ -3,7 +3,7 @@ name: Update Records from Pak gov website
 on:
   schedule:
     - cron:  '0 6 * * *'
-  workflow_dispatch
+  workflow_dispatch:
 
 jobs:
   build-and-deploy:
