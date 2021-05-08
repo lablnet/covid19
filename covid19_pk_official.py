@@ -2,11 +2,6 @@ from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 import time
 import selenium as se
-from webdriver_manager.firefox import GeckoDriverManager
-from urllib.request import Request, urlopen
-import requests
-from bs4 import BeautifulSoup
-import re
 from src._sqlite import _sqlite
 from src.__config import get_config
 from datetime import datetime
