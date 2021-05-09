@@ -158,10 +158,8 @@ export default {
         "beds": 0,
       }
 
-      console.log(this.labs)
       for (let index in this.labs) {
         let lab = this.labs[index]
-        console.log(lab)
         if (lab.provience === "Fedral") {
           isb.total += 1
         }
