@@ -2,10 +2,12 @@ from _csv import reader
 import urllib.request
 import tabula
 import os
+from src._sqlite import _sqlite
+from src.__config import get_config
+from datetime import datetime
 
 pdf_path = "https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan" \
            ".pdf "
-
 
 def download_file(download_url, filename):
     response = urllib.request.urlopen(download_url)
@@ -14,8 +16,8 @@ def download_file(download_url, filename):
     file.close()
 
 # Comment for fast processing.
-# download_file(pdf_path, "Quarantine_Center")
-# tabula.convert_into("Quarantine_Center.pdf", "centers.csv", output_format='csv', pages='all')  # converted to csv
+download_file(pdf_path, "Quarantine_Center")
+tabula.convert_into("Quarantine_Center.pdf", "centers.csv", output_format='csv', pages='all')  # converted to csv
 
 
 # lists to store dictionaries of different provinces qaurantine centers
@@ -30,7 +32,6 @@ kashmir_tot = 0
 gilgit_tot = 0
 
 center = dict()
-# with open("centers.csv", "r+") as fh: pass
 with open("./centers.csv", 'r') as _file:
     data = reader(_file, delimiter=',')
     for line in data:
@@ -66,14 +67,6 @@ with open("./centers.csv", 'r') as _file:
             center_copy = center.copy()
             quarantine_center.append(center_copy)
 
-print('Isb Total = ', isb_total)
-print('sindh total = ', sindh_tot)
-print('punjab total = ', punjab_tot)
-print('Kpk Total = ', KPK_total)
-print('Balochistan Total = ', Balochistan_tot)
-print('Kashmir Total = ', kashmir_tot)
-print('Gilgit Baltistan Total = ', gilgit_tot)
-
 seen = set()
 new_centers = []
 for d in quarantine_center:
@@ -83,13 +76,12 @@ for d in quarantine_center:
         new_centers.append(d)
 
 quarantine_center = new_centers
+
 # Add provience to centers.
 beds = 0
 for center in quarantine_center:
     center['provience'] = ""
     beds += int(center['beds'].replace(',', ''))
-
-    print(center['address'], center['beds'], beds)
 
     if int(beds) == int(isb_total):
         beds = 0
@@ -97,7 +89,6 @@ for center in quarantine_center:
 
     elif int(beds) == int(Balochistan_tot):
         beds = 0
-        print(beds)
         center['provience'] = "Balochistan"
 
     elif int(beds) == int(KPK_total):
@@ -105,7 +96,6 @@ for center in quarantine_center:
         center['provience'] = "KPK"
 
     elif int(beds) == int(punjab_tot):
-        print("punjab")
         beds = 0
         center['provience'] = "Punjab"
 
@@ -149,17 +139,33 @@ for center in quarantine_center:
     if center['provience'] == "GB": break
     if center['provience'] == "": center['provience'] = "GB"
 
-print('Locations details \n')
 
+# Prepare current datetime.
+now = datetime.now()
+date = datetime.strftime(now, "%Y-%m-%dT%H:%M:%S GMT+5")
+date = date.replace(" GMT+5", "")
 
-# print('Location = ', center['address'], '------------------ Beds = ', center['beds'])
-for center in quarantine_center:
-    print(center)
+# Database
+s = _sqlite()
+conn = s.conn(get_config("database", './'))
+# conn.create_tables()
+
+# # Insert into database.
+# for center in quarantine_center:
+#     conn.insert("quarantines", {
+#         "datetime": date,
+#         "provience": center['provience'],
+#         "name": center['address'],
+#         "beds": str(center['beds']),
+#         "reference": pdf_path
+#     })
+
+conn.close()
 
 # delete files now.....
-
 if os.path.exists('centers.csv') and os.path.exists('Quarantine_Center.pdf'):
-    # os.remove('centers.csv')
+    os.remove('centers.csv')
     os.remove("Quarantine_Center.pdf")
-else:
-    print('Files not exists')
+
+# Finally, Done
+print("Done, Thanks")

@@ -78299,18 +78299,8 @@ var cases = {
         "description": "453 recoveries reported in Islamabad taking the tally to 65977",
         "extra": ""
     },
-    "23482": {
-        "": "7830",
-        "id": "23482",
-        "_id": "",
-        "datetime": "2021-05-08T06:12:17",
-        "type": "DECEASED",
-        "reference": "http://covid.gov.pk/",
-        "description": "270 deaths reported in Islamabad taking the tally to 706",
-        "extra": ""
-    },
     "23483": {
-        "": "7831",
+        "": "7830",
         "id": "23483",
         "_id": "",
         "datetime": "2021-05-08T06:12:17",
@@ -78320,7 +78310,7 @@ var cases = {
         "extra": ""
     },
     "23484": {
-        "": "7832",
+        "": "7831",
         "id": "23484",
         "_id": "",
         "datetime": "2021-05-08T06:12:17",
@@ -78329,18 +78319,8 @@ var cases = {
         "description": "2098 recoveries reported in Punjab taking the tally to 266745",
         "extra": ""
     },
-    "23485": {
-        "": "7833",
-        "id": "23485",
-        "_id": "",
-        "datetime": "2021-05-08T06:12:17",
-        "type": "DECEASED",
-        "reference": "http://covid.gov.pk/",
-        "description": "1817 deaths reported in Punjab taking the tally to 8951",
-        "extra": ""
-    },
     "23486": {
-        "": "7834",
+        "": "7832",
         "id": "23486",
         "_id": "",
         "datetime": "2021-05-08T06:12:17",
@@ -78350,7 +78330,7 @@ var cases = {
         "extra": ""
     },
     "23487": {
-        "": "7835",
+        "": "7833",
         "id": "23487",
         "_id": "",
         "datetime": "2021-05-08T06:12:17",
@@ -78359,18 +78339,8 @@ var cases = {
         "description": "1034 recoveries reported in Sindh taking the tally to 268558",
         "extra": ""
     },
-    "23488": {
-        "": "7836",
-        "id": "23488",
-        "_id": "",
-        "datetime": "2021-05-08T06:12:17",
-        "type": "DECEASED",
-        "reference": "http://covid.gov.pk/",
-        "description": "1110 deaths reported in Sindh taking the tally to 4722",
-        "extra": ""
-    },
     "23489": {
-        "": "7837",
+        "": "7834",
         "id": "23489",
         "_id": "",
         "datetime": "2021-05-08T06:12:17",
@@ -78380,7 +78350,7 @@ var cases = {
         "extra": ""
     },
     "23490": {
-        "": "7838",
+        "": "7835",
         "id": "23490",
         "_id": "",
         "datetime": "2021-05-08T06:12:17",
@@ -78389,18 +78359,8 @@ var cases = {
         "description": "1147 recoveries reported in KPK taking the tally to 109609",
         "extra": ""
     },
-    "23491": {
-        "": "7839",
-        "id": "23491",
-        "_id": "",
-        "datetime": "2021-05-08T06:12:17",
-        "type": "DECEASED",
-        "reference": "http://covid.gov.pk/",
-        "description": "630 deaths reported in KPK taking the tally to 3562",
-        "extra": ""
-    },
     "23492": {
-        "": "7840",
+        "": "7836",
         "id": "23492",
         "_id": "",
         "datetime": "2021-05-08T06:12:17",
@@ -78410,7 +78370,7 @@ var cases = {
         "extra": ""
     },
     "23493": {
-        "": "7841",
+        "": "7837",
         "id": "23493",
         "_id": "",
         "datetime": "2021-05-08T06:12:17",
@@ -78420,7 +78380,7 @@ var cases = {
         "extra": ""
     },
     "23494": {
-        "": "7842",
+        "": "7838",
         "id": "23494",
         "_id": "",
         "datetime": "2021-05-08T06:12:17",
@@ -78430,7 +78390,7 @@ var cases = {
         "extra": ""
     },
     "23495": {
-        "": "7843",
+        "": "7839",
         "id": "23495",
         "_id": "",
         "datetime": "2021-05-08T06:12:17",
@@ -78439,18 +78399,8 @@ var cases = {
         "description": "148 recoveries reported in Balochistan taking the tally to 21509",
         "extra": ""
     },
-    "23496": {
-        "": "7844",
-        "id": "23496",
-        "_id": "",
-        "datetime": "2021-05-08T06:12:17",
-        "type": "DECEASED",
-        "reference": "http://covid.gov.pk/",
-        "description": "170 deaths reported in Balochistan taking the tally to 246",
-        "extra": ""
-    },
     "23497": {
-        "": "7845",
+        "": "7840",
         "id": "23497",
         "_id": "",
         "datetime": "2021-05-08T06:12:17",
@@ -78460,7 +78410,7 @@ var cases = {
         "extra": ""
     },
     "23498": {
-        "": "7846",
+        "": "7841",
         "id": "23498",
         "_id": "",
         "datetime": "2021-05-08T06:12:17",
@@ -78469,14 +78419,64 @@ var cases = {
         "description": "70 recoveries reported in AJK taking the tally to 15168",
         "extra": ""
     },
-    "23499": {
-        "": "7847",
-        "id": "23499",
+    "23500": {
+        "": "7842",
+        "id": "23500",
         "_id": "",
-        "datetime": "2021-05-08T06:12:17",
+        "datetime": "2021-05-08T16:32:10",
         "type": "DECEASED",
         "reference": "http://covid.gov.pk/",
-        "description": "103 deaths reported in AJK taking the tally to 503",
+        "description": "4 deaths reported in Islamabad taking the tally to 706",
+        "extra": ""
+    },
+    "23501": {
+        "": "7843",
+        "id": "23501",
+        "_id": "",
+        "datetime": "2021-05-08T16:32:10",
+        "type": "DECEASED",
+        "reference": "http://covid.gov.pk/",
+        "description": "60 deaths reported in Punjab taking the tally to 8951",
+        "extra": ""
+    },
+    "23502": {
+        "": "7844",
+        "id": "23502",
+        "_id": "",
+        "datetime": "2021-05-08T16:32:10",
+        "type": "DECEASED",
+        "reference": "http://covid.gov.pk/",
+        "description": "213 deaths reported in Sindh taking the tally to 4722",
+        "extra": ""
+    },
+    "23503": {
+        "": "7845",
+        "id": "23503",
+        "_id": "",
+        "datetime": "2021-05-08T16:32:10",
+        "type": "DECEASED",
+        "reference": "http://covid.gov.pk/",
+        "description": "25 deaths reported in KPK taking the tally to 3562",
+        "extra": ""
+    },
+    "23504": {
+        "": "7846",
+        "id": "23504",
+        "_id": "",
+        "datetime": "2021-05-08T16:32:10",
+        "type": "DECEASED",
+        "reference": "http://covid.gov.pk/",
+        "description": "3 deaths reported in Balochistan taking the tally to 246",
+        "extra": ""
+    },
+    "23505": {
+        "": "7847",
+        "id": "23505",
+        "_id": "",
+        "datetime": "2021-05-08T16:32:10",
+        "type": "DECEASED",
+        "reference": "http://covid.gov.pk/",
+        "description": "4 deaths reported in AJK taking the tally to 503",
         "extra": ""
     }
 }

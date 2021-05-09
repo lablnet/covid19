@@ -43,6 +43,16 @@
             "last_critical": "varchar",
             "reference": "varchar"
           }
+      },
+      "4": {
+        "name": "quarantines",
+        "fields": {
+            "datetime": "varchar",
+            "provience": "varchar",
+            "name": "varchar",
+            "beds": "varchar",
+            "reference": "varchar"
+          }
       }
     }
   }

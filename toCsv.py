@@ -10,6 +10,8 @@ df = pd.read_sql("SELECT * FROM global", conn)
 df.to_csv('./web/public/data/global.csv')
 df = pd.read_sql("SELECT * FROM summery", conn)
 df.to_csv('./web/public/data/summery.csv')
+df = pd.read_sql("SELECT * FROM quarantines", conn)
+df.to_csv('./web/public/data/quarantines.csv')
 
 # Finally, Done
 print("Done, Thanks")
