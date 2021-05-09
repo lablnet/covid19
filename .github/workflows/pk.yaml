@@ -2,7 +2,7 @@ name: Update Records from Pak gov website
 
 on:
   schedule:
-    - cron:  '0 5 * * *'
+    - cron:  '0 5,10 * * *'
   workflow_dispatch:
 
 jobs:
@@ -25,6 +25,8 @@ jobs:
         run: python today.py
       - name: Export from sqlite to CSV
         run: python toCsv.py
+      - name: Export from CSV to JavaScript JSON
+        run: python toJs.py
       - name: Commit and push if it changed
         run: |
           git config user.name "${GITHUB_ACTOR}"
