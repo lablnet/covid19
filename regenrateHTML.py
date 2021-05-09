@@ -13,7 +13,7 @@ print(ts)
 for chars in content:
     html += chars
     if chars == "j" and content[index + 1] == "s":
-        if html[:16] == "<!--modified-->\n":
+        gif html[:16] == "<!--modified-->\n":
             print("tesr")
             html = html[: -10]
             print("Test", html)
