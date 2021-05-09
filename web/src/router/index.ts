@@ -11,6 +11,14 @@ const routes: Array<RouteRecordRaw> = [
     },
   },
   {
+    path: '/quarantine',
+    name: 'Quarantine',
+    component: () => import('../views/Quarantine.vue'),
+    meta: {
+      title: 'Quarantine',
+    },
+  },
+  {
     path: '/about',
     name: 'About',
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
@@ -51,7 +59,7 @@ const routes: Array<RouteRecordRaw> = [
           title: '404',
         },
       },
-  
+
 ]
 
 const router = createRouter({

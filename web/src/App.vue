@@ -11,18 +11,14 @@
                     <li class="nav-item">
                         <router-link class="nav-link" to="/">Home</router-link>
                     </li>
-<!--                  <li class="nav-item dropdown">-->
-<!--                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
-<!--                      Deep Dive-->
-<!--                    </a>-->
-<!--                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">-->
-<!--                      <a class="dropdown-item" href="#">Labs</a>-->
-<!--                      <a class="dropdown-item" href="#">Quarantine Facilities</a>-->
-<!--                      <div class="dropdown-divider"></div>-->
-<!--                      <a class="dropdown-item" href="#">Timeline</a>-->
-<!--                      <a class="dropdown-item" href="#">Forecast</a>-->
-<!--                    </div>-->
-<!--                  </li>-->
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Deep Dive
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <router-link class="dropdown-item" to="/quarantine">Quarantine Facilities</router-link>
+                    </div>
+                  </li>
                     <li class="nav-item">
                         <a class="nav-link" href="https://ncoc.gov.pk/covid-vaccination-en.php" target="_blank">Vaccine</a>
                     </li>
