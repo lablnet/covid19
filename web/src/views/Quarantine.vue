@@ -83,7 +83,23 @@
 
       <div class="card mt-3">
         <div class="card-header">
-          <h3 class="subtitle">All Quarantine Centers</h3>
+          <div class="row">
+            <div class="col-md-8">
+              <h3 class="subtitle">All Quarantine Centers</h3>
+            </div>
+            <div class="col-md-4">
+              <select class="form-control" v-model="selected">
+                <option value="all">All</option>
+                <option value="Islamabad">Islamabad</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Sindh">Sindh</option>
+                <option value="AJK">AJK</option>
+                <option value="KPK">KPK</option>
+                <option value="GB">Gilgit Baltistan</option>
+                <option value="Balochistan">Balochistan</option>
+              </select>
+            </div>
+          </div>
         </div>
         <div class="container">
           <table class="table table-bordered">
@@ -95,7 +111,7 @@
               </tr>
             </thead>
             <tbody class="content">
-              <tr v-for="center in centers" :key="center" >
+              <tr v-for="center in getFiltered()" :key="center" >
                 <td v-if="center.name !== 'GRAND TOTAL'">{{center.name}}</td>
                 <td v-if="center.name !== 'GRAND TOTAL'">{{center.beds}}</td>
                 <td v-if="center.name !== 'GRAND TOTAL'">{{center.provience}}</td>
@@ -125,6 +141,7 @@ export default {
     return {
       totalCenters: 0,
       total: 0,
+      selected: "all",
       region: {
         "Islamabad": {
           "total": 0,
@@ -233,6 +250,18 @@ export default {
         "Balochistan": Balochistan,
         "GB": gb,
       }
+    },
+    getFiltered() {
+      if (this.selected == "all") {return this.centers}
+      let data = []
+      for (let index in this.centers) {
+        let center = this.centers[index]
+        if (center.provience === this.selected) {
+            data.push(center)
+        }
+      }
+
+      return data
     }
   },
 }
