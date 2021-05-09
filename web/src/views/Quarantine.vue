@@ -193,12 +193,10 @@ export default {
       }
 
       for (let index in this.centers) {
-        //console.log("test", this.centers[center])
         let center = this.centers[index]
         if (center.provience === "Islamabad") {
           isb.total += 1
           isb.beds += parseInt(String(center.beds).replace(",", ""))
-          console.log("isb")
         }
         if (center.provience === "Balochistan") {
           Balochistan.total += 1
@@ -211,7 +209,6 @@ export default {
         if (center.provience === "Punjab") {
           punjab.total += 1
           punjab.beds += parseInt(String(center.beds).replace(",", ""))
-          console.log("punjab", center.beds)
         }
         if (center.provience === "Sindh") {
           sindh.total += 1

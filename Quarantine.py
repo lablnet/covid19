@@ -159,7 +159,7 @@ conn = s.conn(get_config("database", './'))
 #         "name": center['address'],
 #         "beds": str(center['beds']),
 #         "reference": pdf_path
-#     })    
+#     })
 
 conn.close()
 
