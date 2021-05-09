@@ -2,10 +2,10 @@
 <div class="container">
     <div class="row">
       <div class="col-md-8">
-        <h1 class="title mt-3">COVID-19 SITUATION IN PAKISTAN</h1>
+        <h1 class="title mt-3"><b>COVID-19 SITUATION IN PAKISTAN</b></h1>
       </div>
       <div class="col-md-4">
-        <p class="content mt-3">Last Update: {{update}}</p>
+        <p class="content mt-3"><b>Last Update:</b> {{update}}</p>
       </div>
     </div>
     <h2 class="subtitle mt-1">COVID-19 SITUATION IN PAKISTAN</h2>
@@ -19,24 +19,24 @@
         <div class="col-md-3">
             <div class="card">
                 <div class="container">
-                    <h1 class="title twelve mt-2">Total tests</h1>
-                    <p class="stat mx-2 mt-2">{{summery.total_tests}} <sub>+{{summery.last_tests}}</sub></p>
+                    <h1 class="title twelve mt-2"><b>Total tests</b></h1>
+                    <p class="stat mx-2 mt-2 text-info"><b>{{summery.total_tests}}</b> <sub>+{{summery.last_tests}}</sub></p>
                 </div>
             </div>
         </div>
         <div class="col-md-3">
             <div class="card">
                 <div class="container">
-                    <h1 class="title twelve mt-2">Total Cases</h1>
-                    <p class="stat mx-2 mt-2">{{summery.total_cases}} <sub>+{{summery.last_cases}}</sub></p>
+                    <h1 class="title twelve mt-2"><b>Total Cases</b></h1>
+                  <p class="stat mx-2 mt-2 text-warning"><b>{{summery.total_cases}}</b> <sub>+{{summery.last_cases}}</sub></p>
                 </div>
             </div>
         </div>
         <div class="col-md-3">
             <div class="card">
                 <div class="container">
-                    <h1 class="title twelve mt-2">Recoveries</h1>
-                    <p class="stat mx-2 mt-2">{{summery.total_recovered}} <sub>+{{summery.last_recovered}}</sub></p>
+                    <h1 class="title twelve mt-2"><b>Recoveries</b></h1>
+                  <p class="stat mx-2 mt-2 text-success"><b>{{summery.total_recovered}}</b> <sub>+{{summery.last_recovered}}</sub></p>
 
                 </div>
             </div>
@@ -44,8 +44,8 @@
         <div class="col-md-3">
             <div class="card">
                 <div class="container">
-                    <h1 class="title twelve mt-2">Deceased</h1>
-                    <p class="stat mx-2 mt-2">{{summery.total_deaths}} <sub>+{{summery.last_deaths}}</sub></p>
+                    <h1 class="title twelve mt-2"><b>Deceased</b></h1>
+                    <p class="stat mx-2 mt-2 text-danger"><b>{{summery.total_deaths}}</b> <sub>+{{summery.last_deaths}}</sub></p>
                 </div>
             </div>
         </div>
@@ -97,16 +97,16 @@
                             <thead class="subtitle">
                                 <tr>
                                     <th>
-                                        Name
+                                        <span class="text-info">Name</span>
                                     </th>
                                     <th>
-                                        Infected
+                                      <span class="text-warning">Infected</span>
                                     </th>
                                     <th>
-                                      Recovered
+                                      <span class="text-success">Recovered</span>
                                     </th>
                                     <th>
-                                      Deceased
+                                      <span class="text-danger">Deceased</span>
                                     </th>
                                 </tr>
 
@@ -114,7 +114,7 @@
                             <tbody class="content">
                             <span style="display: none">{{i = 0}}</span>
                             <tr v-for="item in provience" :key="item">
-                                <td>{{provienceName[i]}}</td>
+                                <td><b>{{provienceName[i]}}</b></td>
                                  <td>{{item.infected}}</td>
                                 <td>{{item.recovered}}</td>
                                 <td>{{item.deceased}}</td>
@@ -273,7 +273,7 @@ export default {
                     labels: labels,
                     datasets: [{
 
-                            label: '#RECOVERED',
+                            label: 'RECOVERED',
                             data: RECOVERED,
                             borderColor: [
                                 'rgba(0, 255, 0, 1)',
@@ -284,7 +284,7 @@ export default {
 
                         },
                         {
-                            label: '#INFECTED',
+                            label: 'INFECTED',
                             data: INFECTED,
                             borderColor: [
                                 'rgba(255, 153, 0, 1)',
@@ -296,7 +296,7 @@ export default {
                         },
                         {
 
-                            label: '#DECEASED',
+                            label: 'DECEASED',
                             data: DECEASED,
                             borderColor: [
                                 'rgba(255, 0, 0, 1)',
@@ -386,11 +386,11 @@ export default {
 
         getClass(item) {
             if (item.toString() == 'RECOVERED') {
-                return 'content alert-success'
+                return 'content text-success'
             } else if (item.toString() == 'INFECTED') {
-                return 'content alert-warning'
+                return 'content text-warning'
             } else if (item.toString() == 'DECEASED') {
-                return 'content alert-danger'
+                return 'content text-danger'
             }
         },
         getRandomInt() {

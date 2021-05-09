@@ -40,7 +40,7 @@
         <p class="content-about"><b>Disclaimer:</b> Error and Omissions expected</p>
         <p class="content-about text-danger">The testing capacity in Pakistan is very low, the real cases can be much higher.</p>
         <p class="content-about" style="font-size: 11px">
-            Information displayed here is carefully calibrated and is updated automatically based on reporting of government officials on Website.
+            Information displayed here is carefully calibrated and is updated automatically based on reporting of Government officials Site(s).
         </p>
         <p class="content-about mt-2">
             <ol>
@@ -56,7 +56,7 @@
             </ol>
         </p>
         <p class="content-about mt-2 mb-3">
-            Copyright © 2020-2021 - Developers
+          Copyright © 2020-2021 - <b>AlphaSoftHub Pvt Ltd</b>.
         </p>
     </footer>
 </div>
