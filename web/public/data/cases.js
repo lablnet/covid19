@@ -78478,5 +78478,195 @@ var cases = {
         "reference": "http://covid.gov.pk/",
         "description": "4 deaths reported in AJK taking the tally to 503",
         "extra": ""
+    },
+    "23506": {
+        "": "7848",
+        "id": "23506",
+        "_id": "",
+        "datetime": "2021-05-09T05:05:21",
+        "type": "INFECTED",
+        "reference": "http://covid.gov.pk/",
+        "description": "290 new cases reported in  Islamabad taking the tally to 77974",
+        "extra": ""
+    },
+    "23507": {
+        "": "7849",
+        "id": "23507",
+        "_id": "",
+        "datetime": "2021-05-09T05:05:21",
+        "type": "RECOVERED",
+        "reference": "http://covid.gov.pk/",
+        "description": "543 recoveries reported in Islamabad taking the tally to 66520",
+        "extra": ""
+    },
+    "23508": {
+        "": "7850",
+        "id": "23508",
+        "_id": "",
+        "datetime": "2021-05-09T05:05:21",
+        "type": "DECEASED",
+        "reference": "http://covid.gov.pk/",
+        "description": "2 deaths reported in Islamabad taking the tally to 708",
+        "extra": ""
+    },
+    "23509": {
+        "": "7851",
+        "id": "23509",
+        "_id": "",
+        "datetime": "2021-05-09T05:05:21",
+        "type": "INFECTED",
+        "reference": "http://covid.gov.pk/",
+        "description": "1638 new cases reported in  Punjab taking the tally to 317972",
+        "extra": ""
+    },
+    "23510": {
+        "": "7852",
+        "id": "23510",
+        "_id": "",
+        "datetime": "2021-05-09T05:05:21",
+        "type": "RECOVERED",
+        "reference": "http://covid.gov.pk/",
+        "description": "2610 recoveries reported in Punjab taking the tally to 269355",
+        "extra": ""
+    },
+    "23511": {
+        "": "7853",
+        "id": "23511",
+        "_id": "",
+        "datetime": "2021-05-09T05:05:21",
+        "type": "DECEASED",
+        "reference": "http://covid.gov.pk/",
+        "description": "81 deaths reported in Punjab taking the tally to 9032",
+        "extra": ""
+    },
+    "23512": {
+        "": "7854",
+        "id": "23512",
+        "_id": "",
+        "datetime": "2021-05-09T05:05:21",
+        "type": "INFECTED",
+        "reference": "http://covid.gov.pk/",
+        "description": "912 new cases reported in  Sindh taking the tally to 291668",
+        "extra": ""
+    },
+    "23513": {
+        "": "7855",
+        "id": "23513",
+        "_id": "",
+        "datetime": "2021-05-09T05:05:21",
+        "type": "RECOVERED",
+        "reference": "http://covid.gov.pk/",
+        "description": "676 recoveries reported in Sindh taking the tally to 269234",
+        "extra": ""
+    },
+    "23514": {
+        "": "7856",
+        "id": "23514",
+        "_id": "",
+        "datetime": "2021-05-09T05:05:21",
+        "type": "DECEASED",
+        "reference": "http://covid.gov.pk/",
+        "description": "4 deaths reported in Sindh taking the tally to 4726",
+        "extra": ""
+    },
+    "23515": {
+        "": "7857",
+        "id": "23515",
+        "_id": "",
+        "datetime": "2021-05-09T05:05:21",
+        "type": "INFECTED",
+        "reference": "http://covid.gov.pk/",
+        "description": "692 new cases reported in  KPK taking the tally to 123842",
+        "extra": ""
+    },
+    "23516": {
+        "": "7858",
+        "id": "23516",
+        "_id": "",
+        "datetime": "2021-05-09T05:05:21",
+        "type": "RECOVERED",
+        "reference": "http://covid.gov.pk/",
+        "description": "570 recoveries reported in KPK taking the tally to 110179",
+        "extra": ""
+    },
+    "23517": {
+        "": "7859",
+        "id": "23517",
+        "_id": "",
+        "datetime": "2021-05-09T05:05:21",
+        "type": "DECEASED",
+        "reference": "http://covid.gov.pk/",
+        "description": "26 deaths reported in KPK taking the tally to 3588",
+        "extra": ""
+    },
+    "23518": {
+        "": "7860",
+        "id": "23518",
+        "_id": "",
+        "datetime": "2021-05-09T05:05:21",
+        "type": "INFECTED",
+        "reference": "http://covid.gov.pk/",
+        "description": "13 new cases reported in  Gilgit Baltistan taking the tally to 5380",
+        "extra": ""
+    },
+    "23519": {
+        "": "7861",
+        "id": "23519",
+        "_id": "",
+        "datetime": "2021-05-09T05:05:21",
+        "type": "INFECTED",
+        "reference": "http://covid.gov.pk/",
+        "description": "138 new cases reported in  Balochistan taking the tally to 23324",
+        "extra": ""
+    },
+    "23520": {
+        "": "7862",
+        "id": "23520",
+        "_id": "",
+        "datetime": "2021-05-09T05:05:21",
+        "type": "RECOVERED",
+        "reference": "http://covid.gov.pk/",
+        "description": "48 recoveries reported in Balochistan taking the tally to 21557",
+        "extra": ""
+    },
+    "23521": {
+        "": "7863",
+        "id": "23521",
+        "_id": "",
+        "datetime": "2021-05-09T05:05:21",
+        "type": "DECEASED",
+        "reference": "http://covid.gov.pk/",
+        "description": "1 deaths reported in Balochistan taking the tally to 247",
+        "extra": ""
+    },
+    "23522": {
+        "": "7864",
+        "id": "23522",
+        "_id": "",
+        "datetime": "2021-05-09T05:05:21",
+        "type": "INFECTED",
+        "reference": "http://covid.gov.pk/",
+        "description": "103 new cases reported in  AJK taking the tally to 17866",
+        "extra": ""
+    },
+    "23523": {
+        "": "7865",
+        "id": "23523",
+        "_id": "",
+        "datetime": "2021-05-09T05:05:21",
+        "type": "RECOVERED",
+        "reference": "http://covid.gov.pk/",
+        "description": "122 recoveries reported in AJK taking the tally to 15290",
+        "extra": ""
+    },
+    "23524": {
+        "": "7866",
+        "id": "23524",
+        "_id": "",
+        "datetime": "2021-05-09T05:05:21",
+        "type": "DECEASED",
+        "reference": "http://covid.gov.pk/",
+        "description": "4 deaths reported in AJK taking the tally to 507",
+        "extra": ""
     }
 }

@@ -1,37 +1,37 @@
 var provience = {
     "Islamabad": {
-        "infected": 77684,
-        "recovered": 65977,
-        "deceased": 706
+        "infected": 77974,
+        "recovered": 66520,
+        "deceased": 708
     },
     "Punjab": {
-        "infected": 316334,
-        "recovered": 266745,
-        "deceased": 8951
+        "infected": 317972,
+        "recovered": 269355,
+        "deceased": 9032
     },
     "Sindh": {
-        "infected": 290756,
-        "recovered": 268558,
-        "deceased": 4722
+        "infected": 291668,
+        "recovered": 269234,
+        "deceased": 4726
     },
     "KPK": {
-        "infected": 123150,
-        "recovered": 109609,
-        "deceased": 3562
+        "infected": 123842,
+        "recovered": 110179,
+        "deceased": 3588
     },
     "GB": {
-        "infected": 5367,
+        "infected": 5380,
         "recovered": 5146,
         "deceased": 107
     },
     "Balochistan": {
-        "infected": 23186,
-        "recovered": 21509,
-        "deceased": 246
+        "infected": 23324,
+        "recovered": 21557,
+        "deceased": 247
     },
     "AJK": {
-        "infected": 17763,
-        "recovered": 15168,
-        "deceased": 503
+        "infected": 17866,
+        "recovered": 15290,
+        "deceased": 507
     }
 }
