@@ -3,6 +3,8 @@ from src.__config import get_config
 import requests
 import json
 import csv
+import os
+
 
 def csv_to_dict() -> dict:
     data = dict()
@@ -35,7 +37,7 @@ def csv_to_dict() -> dict:
 
 def c_exists(date_reported, country_code) :
     cursor = conn.getCur()
-    sql = "SELECT * FROM cases WHERE date_reported = ? and country_code = ?"
+    sql = "SELECT * FROM global WHERE date_reported = ? and country_code = ?"
     match = conn.getCur().execute(sql, (date_reported, country_code)).fetchall()
     if len(match) >= 1 :
         return False
@@ -43,11 +45,19 @@ def c_exists(date_reported, country_code) :
 
 data = csv_to_dict()
 s = _sqlite()
-conn = s.conn(get_config("database", './','who.json'))
+conn = s.conn(get_config("database", './'))
 conn.create_tables()
-
 for item in data:
     if c_exists(data[item]['date_reported'], data[item]['country_code']) :
-        conn.insert(_sqlite.db['tables']["1"]["name"], data[item])
+        conn.insert(_sqlite.db['tables']["2"]["name"], data[item])
         print(item)
     else : print("Duplicate Data")
+
+
+# delete csv file form current directory.
+# WHO-COVID-19-global-data.csv
+if os.path.exists("WHO-COVID-19-global-data.csv"):
+  os.remove("WHO-COVID-19-global-data.csv")
+
+# Finally, Done
+print("Done, Thanks")

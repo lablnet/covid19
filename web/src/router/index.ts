@@ -5,16 +5,53 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: Home,
+    meta: {
+      title: 'Home',
+    },
   },
   {
     path: '/about',
     name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  }
+    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
+    meta: {
+      title: 'About',
+    },
+  },
+  {
+    path: '/map',
+    name: 'Map',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Map.vue'),
+    meta: {
+      title: 'Map',
+    },
+  },
+    {
+      path: '/feedback',
+      name: 'Feedback',
+      component: () => import(/* webpackChunkName: "about" */ '../views/Feedback.vue'),
+      meta: {
+        title: 'Feedback',
+      },
+    },
+      {
+        path: '/request',
+        name: 'request',
+        component: () => import(/* webpackChunkName: "about" */ '../views/Request.vue'),
+        meta: {
+          title: 'Request',
+        },
+      },
+
+      {
+        path: '/:pathMatch(.*)*',
+        name: '404',
+        component: () => import(/* webpackChunkName: "about" */ '../views/404.vue'),
+        meta: {
+          title: '404',
+        },
+      },
+  
 ]
 
 const router = createRouter({

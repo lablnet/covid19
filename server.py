@@ -26,14 +26,14 @@ def index():
     return json.dumps(data)
 
 
-@app.route('/processed')
+@app.route('/trend')
 def processed():
     s = _sqlite
     conn = s.conn(get_config("database", './'))
     data = conn.get_processed("cases")
     conn.close()
 
-    return data  # List of Dictionaries
+    return json.dumps(data)  # List of Dictionaries
 
 
 @app.route('/percent')
@@ -43,7 +43,18 @@ def percent():
     data = conn.get_type_percent("cases")
     conn.close()
 
-    return data  # Dictionary
+    return json.dumps(data)  # Dictionary
+
+
+@app.route('/provience')
+def provience():
+    s = _sqlite
+    conn = s.conn(get_config("database", './'))
+    data = conn.get_provience_wise("cases")
+    conn.close()
+
+    return json.dumps(data)  # Dictionary
+
 
 @app.route('/feed')
 def feed():
@@ -80,4 +91,4 @@ def chat():
     data = request.form.to_dict()
 
 
-app.run()
+app.run("173.82.154.26")

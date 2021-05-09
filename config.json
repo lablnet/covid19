@@ -14,12 +14,46 @@
             "extra": "varchar"
           }
         },
-      "2": {
-          "name": "url",
+      "2" : {
+          "name": "global",
           "fields": {
-            "url": "varchar"
+            "date_reported": "varchar",
+            "country_code": "varchar",
+            "country": "TEXT",
+            "who_region": "varchar",
+            "new_cases": "INTEGER",
+            "cumulative_cases": "INTEGER",
+            "new_deaths": "INTEGER",
+            "cumulative_deaths": "INTEGER"
           }
-        }
+      },
+      "3" : {
+          "name": "summery",
+          "fields": {
+            "datetime": "varchar",
+            "total_tests": "varchar",
+            "total_cases": "varchar",
+            "total_recovered": "varchar",
+            "total_deaths": "varchar",
+            "total_critical": "varchar",
+            "last_tests": "varchar",
+            "last_cases": "varchar",
+            "last_recovered": "varchar",
+            "last_deaths": "varchar",
+            "last_critical": "varchar",
+            "reference": "varchar"
+          }
+      },
+      "4": {
+        "name": "quarantines",
+        "fields": {
+            "datetime": "varchar",
+            "provience": "varchar",
+            "name": "varchar",
+            "beds": "varchar",
+            "reference": "varchar"
+          }
+      }
     }
   }
 }

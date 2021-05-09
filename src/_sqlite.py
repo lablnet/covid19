@@ -52,7 +52,7 @@ class _sqlite:
             sql += ");"
 
             _sqlite.cur.executescript(sql)
-            print(tabl[tab]['name'], "Table Created.")
+
 
     @staticmethod
     def getCur():
@@ -117,7 +117,8 @@ class _sqlite:
         year = int(date[:4])
         return str(datetime(year, month, day) - timedelta(1))[:10]
 
-    def get_processed(self, table):
+    @staticmethod
+    def get_processed(table):
         # gets last date from database
         sq = "SELECT datetime FROM " + table + " ORDER BY datetime DESC LIMIT 1 ;"
         _sqlite.cur.execute(sq, ())
@@ -125,15 +126,19 @@ class _sqlite:
         prev_date = None
         data_list = []
         i = 0
+        maxDays = 10
         while True:
             i += 1
-            print(i)        # Just to check line number / iteration number
+            # print(i)        # Just to check line number / iteration number
             dec = 0  # DECEASED
             inf = 0  # INFECTED
             recv = 0  # RECOVERED
             day_data = {}
             sql = "SELECT * FROM " + table
             sql += " WHERE datetime > '" + date + "'"
+
+            if i == maxDays: break;
+
             if prev_date is not None:
                 sql += " AND datetime < '" + prev_date + "'"
             sql += ";"
@@ -142,44 +147,20 @@ class _sqlite:
                 data = _sqlite.cur.fetchall()
             except:
                 return False
-            # Returns DataList if Null output is given from Sqlite
-            if data is None:
-                return data_list
 
             for row in data:
                 if row[3] == "INFECTED":
-                    num = row[5].split(" ")[0]
+                    num = row[5].split(" ")[0].replace(',', '')
                     if num.isdigit():
                         inf += int(num)
-                    else:
-                        num = num.split(",")
-                        if num[0].isdigit:
-                            if len(num) == 2:
-                                inf += (int(num[0]) * 1000 + int(num[1]))
-                            elif len(num) == 3:
-                                inf += (int(num[0]) * 1000000 + int(num[1]) * 1000 + int(num[2]))
                 elif row[3] == "DECEASED":
-                    num = row[5].split(" ")[0]
+                    num = row[5].split(" ")[0].replace(',', '')
                     if num.isdigit():
                         dec += int(num)
-                    else:
-                        num = num.split(",")
-                        if num[0].isdigit:
-                            if len(num) == 2:
-                                dec += (int(num[0]) * 1000 + int(num[1]))
-                            elif len(num) == 3:
-                                dec += (int(num[0]) * 1000000 + int(num[1]) * 1000 + int(num[2]))
                 elif row[3].startswith("RECOVERED"):
-                    num = row[5].split(" ")[0]
+                    num = row[5].split(" ")[0].replace(',', '')
                     if num.isdigit():
                         recv += int(num)
-                    else:
-                        num = num.split(",")
-                        if num[0].isdigit:
-                            if len(num) == 2:
-                                recv += (int(num[0]) * 1000 + int(num[1]))
-                            elif len(num) == 3:
-                                recv += (int(num[0]) * 1000000 + int(num[1]) * 1000 + int(num[2]))
             total = inf + dec + recv
             day_data.update({
                 'DATE': date,
@@ -190,7 +171,10 @@ class _sqlite:
             })
             data_list.append(day_data)
             prev_date = date
-            date = self.get_previous_date(date)
+            date = _sqlite.get_previous_date(date)
+
+        data_list.reverse()
+        return data_list
 
     @staticmethod
     def get_data(table, From=None, To=None):
@@ -224,15 +208,15 @@ class _sqlite:
 
     @staticmethod
     def get_page_data(table, Page):
-        sql = "SELECT * FROM " + table + " ORDER BY id DESC LIMIT 1 ;"
-        _sqlite.cur.execute(sql, ())
-        ID = int(_sqlite.cur.fetchone()[0])
-        FROM = ID - (10*(int(Page) - 1))
-        TO = ID - (10*int(Page))
-
-        sql = "SELECT * FROM " + table
-        sql += " WHERE id <= " + str(FROM)
-        sql += " AND id > " + str(TO) + " ;"
+        sql = "SELECT * FROM " + table + " ORDER BY id DESC;"
+        # _sqlite.cur.execute(sql, ())
+        # ID = int(_sqlite.cur.fetchone()[0])
+        # FROM = ID - (6*(int(Page) - 1))
+        # TO = ID - (6*int(Page))
+        #
+        # sql = "SELECT * FROM " + table
+        # sql += " WHERE id <= " + str(FROM)
+        # sql += " AND id > " + str(TO) + " ;"
         try:
             _sqlite.cur.execute(sql, ())
             data = _sqlite.cur.fetchall()
@@ -262,24 +246,249 @@ class _sqlite:
             recv = 0   # RECOVERED
             total = 0   # Total Cases
             for row in data:
+                count = 0
+                desc = row[5].split(" ")[0]
+                if (desc.isdigit()):
+                    count = int(desc)
+
                 if row[3] == "DECEASED":
-                    dec += 1
+                    dec += count
                 elif row[3] == "INFECTED":
-                    inf += 1
+                    inf += count
                 elif row[3].startswith("RECOVERED"):
-                    recv += 1
+                    recv += count
                 else:
                     total += 1
             total += dec + inf + recv
             dataDict = {
-                'DECEASED': dec,
-                'INFECTED': inf,
-                'RECOVERED': recv,
-                'TOTAL': total
+                'des': dec,
+                'inf': inf,
+                'rec': recv,
+                'total': total
             }
             return dataDict
         except:
             return False
+
+
+    @staticmethod
+    def get_provience_wise(table):
+        count = 0
+        gb = {
+            'infected': 0,
+            'recovered': 0,
+            'deceased': 0,
+        }
+        kpk = {
+            'infected': 0,
+            'recovered': 0,
+            'deceased': 0,
+        }
+        isb = {
+            'infected': 0,
+            'recovered': 0,
+            'deceased': 0,
+        }
+        punjab = {
+            'infected': 0,
+            'recovered': 0,
+            'deceased': 0,
+        }
+        sindh = {
+            'infected': 0,
+            'recovered': 0,
+            'deceased': 0,
+        }
+        balochistan = {
+            'infected': 0,
+            'recovered': 0,
+            'deceased': 0,
+        }
+        ajk  = {
+            'infected': 0,
+            'recovered': 0,
+            'deceased': 0,
+        }
+
+        # isb
+        isbSql = "SELECT * FROM " + table + " Where type='INFECTED' and description LIKE '%Islamabad%' ORDER BY id desc LIMIT 1; "
+        _sqlite.cur.execute(isbSql, ())
+        isbData = _sqlite.cur.fetchall()
+        count = isbData[0][5].split(" ")[-1]
+        count = str(count).replace(',', '')
+        if (count.isdigit()):
+            isb['infected'] = int(count)
+        isbSql = "SELECT * FROM " + table + " Where type='RECOVERED' and description LIKE '%Islamabad%' ORDER BY id desc LIMIT 1; "
+        _sqlite.cur.execute(isbSql, ())
+        isbData = _sqlite.cur.fetchall()
+        count = isbData[0][5].split(" ")[-1]
+        count = str(count).replace(',', '')
+        if (count.isdigit()):
+            isb['recovered'] = int(count)
+        isbSql = "SELECT * FROM " + table + " Where type='DECEASED' and description LIKE '%Islamabad%' ORDER BY id desc LIMIT 1; "
+        _sqlite.cur.execute(isbSql, ())
+        isbData = _sqlite.cur.fetchall()
+        count = isbData[0][5].split(" ")[-1]
+        count = str(count).replace(',', '')
+        if (count.isdigit()):
+            isb['deceased'] = int(count)
+
+        # punjab
+        punjabSql = "SELECT * FROM " + table + " Where type='INFECTED' and description LIKE '%Punjab%' ORDER BY id desc LIMIT 1; "
+        _sqlite.cur.execute(punjabSql, ())
+        pujnabData = _sqlite.cur.fetchall()
+        count = pujnabData[0][5].split(" ")[-1]
+        count = str(count).replace(',', '')
+        if (count.isdigit()):
+            punjab['infected'] = int(count)
+        punjabSql = "SELECT * FROM " + table + " Where type='RECOVERED' and description LIKE '%Punjab%' ORDER BY id desc LIMIT 1; "
+        _sqlite.cur.execute(punjabSql, ())
+        pujnabData = _sqlite.cur.fetchall()
+        count = pujnabData[0][5].split(" ")[-1]
+        count = str(count).replace(',', '')
+        if (count.isdigit()):
+            punjab['recovered'] = int(count)
+        punjabSql = "SELECT * FROM " + table + " Where type='DECEASED' and description LIKE '%Punjab%' ORDER BY id desc LIMIT 1; "
+        _sqlite.cur.execute(punjabSql, ())
+        pujnabData = _sqlite.cur.fetchall()
+        count = pujnabData[0][5].split(" ")[-1]
+        count = str(count).replace(',', '')
+        if (count.isdigit()):
+            punjab['deceased'] = int(count)
+
+        # sindth
+        sindhSql = "SELECT * FROM " + table + " Where type='INFECTED' and description LIKE '%Sindh%' ORDER BY id desc LIMIT 1; "
+        _sqlite.cur.execute(sindhSql, ())
+        sindhData = _sqlite.cur.fetchall()
+        count = sindhData[0][5].split(" ")[-1]
+        count = str(count).replace(',', '')
+        if (count.isdigit()):
+            sindh['infected'] = int(count)
+        sindhSql = "SELECT * FROM " + table + " Where type='RECOVERED' and description LIKE '%Sindh%' ORDER BY id desc LIMIT 1; "
+        _sqlite.cur.execute(sindhSql, ())
+        sindhData = _sqlite.cur.fetchall()
+        count = sindhData[0][5].split(" ")[-1]
+        count = str(count).replace(',', '')
+        if (count.isdigit()):
+            sindh['recovered'] = int(count)
+        sindhSql = "SELECT * FROM " + table + " Where type='DECEASED' and description LIKE '%Sindh%' ORDER BY id desc LIMIT 1; "
+        _sqlite.cur.execute(sindhSql, ())
+        sindhData = _sqlite.cur.fetchall()
+        count = sindhData[0][5].split(" ")[-1]
+        count = str(count).replace(',', '')
+        if (count.isdigit()):
+            sindh['deceased'] = int(count)
+
+        # KPK
+        kpkSql = "SELECT * FROM " + table + " Where type='INFECTED' and description LIKE '%KPK%' ORDER BY id desc LIMIT 1; "
+        _sqlite.cur.execute(kpkSql, ())
+        kpkData = _sqlite.cur.fetchall()
+        count = kpkData[0][5].split(" ")[-1]
+        count = str(count).replace(',', '')
+        if (count.isdigit()):
+            kpk['infected'] = int(count)
+        kpkSql = "SELECT * FROM " + table + " Where type='RECOVERED' and description LIKE '%KPK%' ORDER BY id desc LIMIT 1; "
+        _sqlite.cur.execute(kpkSql, ())
+        kpkData = _sqlite.cur.fetchall()
+        count = kpkData[0][5].split(" ")[-1]
+        count = str(count).replace(',', '')
+        if (count.isdigit()):
+            kpk['recovered'] = int(count)
+        kpkSql = "SELECT * FROM " + table + " Where type='DECEASED' and description LIKE '%KPK%' ORDER BY id desc LIMIT 1; "
+        _sqlite.cur.execute(kpkSql, ())
+        kpkData = _sqlite.cur.fetchall()
+        count = kpkData[0][5].split(" ")[-1]
+        count = str(count).replace(',', '')
+        if (count.isdigit()):
+            kpk['deceased'] = int(count)
+
+
+        # GB
+        gbSql = "SELECT * FROM " + table + " Where type='INFECTED' and description LIKE '%Gilgit Baltistan%' ORDER BY id desc LIMIT 1; "
+        _sqlite.cur.execute(gbSql, ())
+        gbData = _sqlite.cur.fetchall()
+        count = gbData[0][5].split(" ")[-1]
+        count = str(count).replace(',', '')
+        if (count.isdigit()):
+            gb['infected'] = int(count)
+
+        gbSql = "SELECT * FROM " + table + " Where type='RECOVERED' and description LIKE '%Gilgit Baltistan%' ORDER BY id desc LIMIT 1; "
+        _sqlite.cur.execute(gbSql, ())
+        gbData = _sqlite.cur.fetchall()
+        count = gbData[0][5].split(" ")[-1]
+        count = str(count).replace(',', '')
+        if (count.isdigit()):
+            gb['recovered'] = int(count)
+
+        gbSql = "SELECT * FROM " + table + " Where type='DECEASED' and description LIKE '%Gilgit Baltistan%' ORDER BY id desc LIMIT 1; "
+        _sqlite.cur.execute(gbSql, ())
+        gbData = _sqlite.cur.fetchall()
+        count = gbData[0][5].split(" ")[-1]
+        count = str(count).replace(',', '')
+        if (count.isdigit()):
+            gb['deceased'] = int(count)
+
+        # AJK
+        ajkSql = "SELECT * FROM " + table + " Where type='INFECTED' and description LIKE '%AJK%' ORDER BY id desc LIMIT 1; "
+        _sqlite.cur.execute(ajkSql, ())
+        ajkData = _sqlite.cur.fetchall()
+        count = ajkData[0][5].split(" ")[-1]
+        count = str(count).replace(',', '')
+        if (count.isdigit()):
+            ajk['infected'] = int(count)
+
+        ajkSql = "SELECT * FROM " + table + " Where type='RECOVERED' and description LIKE '%AJK%' ORDER BY id desc LIMIT 1; "
+        _sqlite.cur.execute(ajkSql, ())
+        ajkData = _sqlite.cur.fetchall()
+        count = ajkData[0][5].split(" ")[-1]
+        count = str(count).replace(',', '')
+        if (count.isdigit()):
+            ajk['recovered'] = int(count)
+
+        ajkSql = "SELECT * FROM " + table + " Where type='DECEASED' and description LIKE '%AJK%' ORDER BY id desc LIMIT 1; "
+        _sqlite.cur.execute(ajkSql, ())
+        ajkData = _sqlite.cur.fetchall()
+        count = ajkData[0][5].split(" ")[-1]
+        count = str(count).replace(',', '')
+        if (count.isdigit()):
+            ajk['deceased'] = int(count)
+
+        # balochistan
+        balochistanSql = "SELECT * FROM " + table + " Where type='INFECTED' and description LIKE '%Balochistan%' ORDER BY id desc LIMIT 1; "
+        _sqlite.cur.execute(balochistanSql, ())
+        balochistanData = _sqlite.cur.fetchall()
+        count = balochistanData[0][5].split(" ")[-1]
+        count = str(count).replace(',', '')
+        if (count.isdigit()):
+            balochistan['infected'] = int(count)
+
+        balochistanSql = "SELECT * FROM " + table + " Where type='RECOVERED' and description LIKE '%Balochistan%' ORDER BY id desc LIMIT 1; "
+        _sqlite.cur.execute(balochistanSql, ())
+        balochistanData = _sqlite.cur.fetchall()
+        count = balochistanData[0][5].split(" ")[-1]
+        count = str(count).replace(',', '')
+        if (count.isdigit()):
+            balochistan['recovered'] = int(count)
+
+        balochistanSql = "SELECT * FROM " + table + " Where type='DECEASED' and description LIKE '%Balochistan%' ORDER BY id desc LIMIT 1; "
+        _sqlite.cur.execute(balochistanSql, ())
+        balochistanData = _sqlite.cur.fetchall()
+        count = balochistanData[0][5].split(" ")[-1]
+        count = str(count).replace(',', '')
+        if (count.isdigit()):
+            balochistan['deceased'] = int(count)
+
+
+        dataDict = {
+            'Islamabad': isb,
+            'Punjab': punjab,
+            'Sindh': sindh,
+            'KPK': kpk,
+            'GB': gb,
+            'Balochistan': balochistan,
+            'AJK': ajk,
+        }
+        return dataDict
 
 
     @staticmethod
@@ -294,5 +503,6 @@ class _sqlite:
 
     @staticmethod
     def close():
-        _sqlite.connection.close()
+        pass
+        #_sqlite.connection.close()
 

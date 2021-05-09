@@ -1,75 +1,96 @@
-from urllib.request import Request, urlopen
-import requests
-from bs4 import BeautifulSoup
-import re
-
 from selenium import webdriver
+from webdriver_manager.chrome import ChromeDriverManager
+import time
 import selenium as se
-from webdriver_manager.firefox import GeckoDriverManager
+from src._sqlite import _sqlite
+from src.__config import get_config
+from datetime import datetime
+
+def get_covid_daily_stat(timer=15):
+    options = webdriver.ChromeOptions()
+    options.add_argument('--disable-extensions')
+    options.add_argument('--headless')
+    options.add_argument('--disable-gpu')
+    options.add_argument('--no-sandbox')
+    # driver = webdriver.Chrome(chrome_options=options, webdriver=ChromeDriverManager().install())
+    driver = webdriver.Chrome(ChromeDriverManager().install(), chrome_options=options)
+    driver.set_page_load_timeout(30)
+    driver.get("https://datastudio.google.com/embed/u/0/reporting/1PLVi5amcc_R5Gh928gTE8-8r8-fLXJQF/page/R24IB")
+    time.sleep(timer) # Lower this if you have good internet connection
+    parsed_data = driver.find_elements_by_class_name("cell")
+    data = {
+        "date": parsed_data[0].text      # Date
+    }
+    i = 1
+    while True :
+        if i > len(parsed_data) - 1:
+            break
+        data.update({
+            parsed_data[i].text: {                      # Province name
+                "confirmed": parsed_data[i + 1].text,   # Confirmed Cases
+                "active": parsed_data[i + 2].text,      # Active Cases
+                "deaths": parsed_data[i + 3].text,      # Deaths
+                "recoveries": parsed_data[i + 4].text   # Recoveries
+            }})
+        i += 5
+
+    return data
 
 
-def get_page(url):
-    if url is None:
-        return None
-    page = requests.get(url)
-    if page.status_code != 200:
-        print("Error")
-        return None
-    else:
-        try:
-            return page.content.decode()
-        except:
-            return page.content
+# Prepare current datetime.
+now = datetime.now()
+date = datetime.strftime(now, "%Y-%m-%dT%H:%M:%S GMT+5")
+date = date.replace(" GMT+5", "")
+
+# Get cases from website.
+today = get_covid_daily_stat()
+
+# Get cases form database.
+s = _sqlite
+conn = s.conn(get_config("database", './'))
+cases = (conn.get_provience_wise("cases"))
+
+for key in cases.keys():
+    _prov = prov = key
+    if (_prov == "GB"): _prov = "Gilgit Baltistan"
 
 
-def get_soup(url):
+    infectedToday = today[prov]['confirmed'].replace(',', '')
+    recoveredToday = today[prov]['recoveries'].replace(',', '')
+    deceasedToday = today[prov]['deaths'].replace(',', '')
+    infectedTotal = cases[prov]['infected']
+    recoveredTotal = cases[prov]['recovered']
+    deceasedTotal = cases[prov]['deceased']
+    infected = str(str(int(infectedToday) - infectedTotal) + " new cases reported in  " + _prov + " taking the tally to " + infectedToday)
+    recovered = str(str(int(recoveredToday) - recoveredTotal) + " recoveries reported in " + _prov + " taking the tally to " + recoveredToday)
+    deaths = str(str(int(deceasedToday) - deceasedTotal) + " deaths reported in " + _prov + " taking the tally to " + deceasedToday)
 
-    # options = se.webdriver.ChromeOptions()
-    # chrome_options.add_argument("--headless")
-    # driver = webdriver.Firefox()
-    options = se.webdriver.ChromeOptions()
-    options.add_argument("--headless")
-    # driver = se.webdriver.Chrome(chrome_options=options)
-    driver = webdriver.Firefox(executable_path=GeckoDriverManager().install())
+    if (int(infectedToday) - infectedTotal) > 0:
+        conn.insert("cases", {
+            "datetime": date,
+            # "_id": 0,
+            "type": "INFECTED",
+            "description": infected,
+            "reference": "http://covid.gov.pk/",
+        })
 
-    driver.get(url)
-    html = driver.page_source
-    soup = BeautifulSoup(html, features="lxml")
+    if (int(recoveredToday) - recoveredTotal) > 0:
+        conn.insert("cases", {
+            "datetime": date,
+            # "_id": 0,
+            "type": "RECOVERED",
+            "description": recovered,
+            "reference": "http://covid.gov.pk/",
+        })
 
-    # p_element = c.find_element_by_id(id_='intro-text')
-    return soup
+    if (int(deceasedToday) - deceasedTotal) > 0:
+        conn.insert("cases", {
+            "datetime": date,
+            # "_id": 0,
+            "type": "DECEASED",
+            "description": deaths,
+            "reference": "http://covid.gov.pk/",
+        })
 
-
-url = "https://datastudio.google.com/embed/u/0/reporting/1PLVi5amcc_R5Gh928gTE8-8r8-fLXJQF/page/R24IB"
-
-"""
-url = "http://covid.gov.pk/"
-
-soup = BeautifulSoup(get_page(url), 'html.parser')
-
-elements = soup.find('div', class_='status')
-
-status_note = elements.find("span", class_='status-note').text
-new_cases = elements.find("div", class_="new-cases").text
-status_items = elements.find_all("div", class_="status-item")
-
-cases = re.findall('[0-9\,0-9]{2,10}', str(status_items))
-
-CASES = {
-    "SINDH": cases[0],
-    "KPK": cases[1],
-    "PUNJAB": cases[2],
-    "ISLAMABAD": cases[3],
-    "BALOCHISTAN": cases[4],
-    "AJK": cases[5],
-    "GB": cases[6]
-}
-"""
-
-# soup = BeautifulSoup(get_page(url), 'html.parser')
-soup = get_soup(url)
-
-items = soup.find_all("div", class_="valueLabel")
-
-for item in items:
-    print(item)
+# Finally, Done.
+print("Done, Thanks")
