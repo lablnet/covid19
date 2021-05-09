@@ -63,11 +63,11 @@ export default {
     name: "app",
     watch: {
         $route(to, from) {
-            let title = "COVID-19 Pakistan"
+            let title = "COVID-19 Pakistan Dashboard"
             if (typeof to.meta.title == "string")
-                title = `${to.meta.title} - COVID-19 Pakistan`
+                title = `${to.meta.title} - COVID-19 Pakistan Dashboard`
             else if (typeof to.meta.title == "function")
-                title = `${to.meta.title(to)} - COVID-19 Pakistan`
+                title = `${to.meta.title(to)} - COVID-19 Pakistan Dashboard`
             document.title = title
         },
     },
