@@ -13,12 +13,9 @@ def download_file(download_url, filename):
     file.write(response.read())
     file.close()
 
-
-download_file(pdf_path, "Quarantine_Center")
-
-
-def convertTableToCSV(fileName):
-    tabula.convert_into(fileName, "centers.csv", output_format='csv', pages='all')  # converted to csv
+# Comment for fast processing.
+# download_file(pdf_path, "Quarantine_Center")
+# tabula.convert_into("Quarantine_Center.pdf", "centers.csv", output_format='csv', pages='all')  # converted to csv
 
 
 # lists to store dictionaries of different provinces qaurantine centers
@@ -33,7 +30,8 @@ kashmir_tot = 0
 gilgit_tot = 0
 
 center = dict()
-with open("centers.csv", 'r') as _file:
+# with open("centers.csv", "r+") as fh: pass
+with open("./centers.csv", 'r') as _file:
     data = reader(_file, delimiter=',')
     for line in data:
         if len(line[0]) < 4:
@@ -48,20 +46,22 @@ with open("centers.csv", 'r') as _file:
         center['beds'] = line[2]
 
         if center['address'] == 'Total':
+
             if isb_total == 0:
-                isb_total = center['beds']
+                isb_total = center['beds'].replace(',', '')
             elif Balochistan_tot == 0:
-                Balochistan_tot = center['beds']
+                Balochistan_tot = center['beds'].replace(',', '')
             elif KPK_total == 0:
-                KPK_total = center['beds']
+                KPK_total = center['beds'].replace(',', '')
             elif punjab_tot == 0:
-                punjab_tot = center['beds']
+                punjab_tot = center['beds'].replace(',', '')
+
             elif sindh_tot == 0:
-                sindh_tot = center['beds']
+                sindh_tot = center['beds'].replace(',', '')
             elif kashmir_tot == 0:
-                kashmir_tot = center['beds']
+                kashmir_tot = center['beds'].replace(',', '')
             else:
-                gilgit_tot = center['beds']
+                gilgit_tot = center['beds'].replace(',', '')
         if center['beds'] != "" and str(center['beds']).isdigit() and center['address'] != 'Total':
             center_copy = center.copy()
             quarantine_center.append(center_copy)
@@ -74,15 +74,83 @@ print('Balochistan Total = ', Balochistan_tot)
 print('Kashmir Total = ', kashmir_tot)
 print('Gilgit Baltistan Total = ', gilgit_tot)
 
-print('Locations details \n')
+# # Add provience to centers.
+# beds = 0
+# for center in quarantine_center:
+#     center['provience'] = ""
+#     beds += int(center['beds'])
+#
+#     print(center['address'], center['beds'], beds)
+#
+#     if int(beds) == int(isb_total):
+#         beds = 0
+#         center['provience'] = "Islamabad"
+#
+#     elif int(beds) == int(Balochistan_tot):
+#         beds = 0
+#         print(beds)
+#         center['provience'] = "Balochistan"
+#
+#     elif int(beds) == int(KPK_total):
+#         beds = 0
+#         center['provience'] = "KPK"
+#
+#     elif int(beds) == int(punjab_tot):
+#         print("punjab")
+#         beds = 0
+#         center['provience'] = "Punjab"
+#
+#     elif int(beds) == int(sindh_tot):
+#         beds = 0
+#         center['provience'] = "Sindh"
+#
+#     elif int(beds) == int(kashmir_tot):
+#         beds = 0
+#         center['provience'] = "AJK"
+#
+#     elif int(beds) == int(gilgit_tot):
+#         beds = 0
+#         center['provience'] = "GB"
+#
+# for center in quarantine_center:
+#     if center['provience'] == "Islamabad": break
+#     if center['provience'] == "": center['provience'] = "Islamabad"
+#
+# for center in quarantine_center:
+#     if center['provience'] == "Balochistan": break
+#     if center['provience'] == "": center['provience'] = "Balochistan"
+#
+# for center in quarantine_center:
+#     if center['provience'] == "KPK": break
+#     if center['provience'] == "": center['provience'] = "KPK"
+#
+# for center in quarantine_center:
+#     if center['provience'] == "Punjab": break
+#     if center['provience'] == "": center['provience'] = "Punjab"
+#
+# for center in quarantine_center:
+#     if center['provience'] == "Sindh": break
+#     if center['provience'] == "": center['provience'] = "Sindh"
+#
+# for center in quarantine_center:
+#     if center['provience'] == "AJK": break
+#     if center['provience'] == "": center['provience'] = "AJK"
+#
+# for center in quarantine_center:
+#     if center['provience'] == "GB": break
+#     if center['provience'] == "": center['provience'] = "GB"
+#
+# print('Locations details \n')
 
+
+# print('Location = ', center['address'], '------------------ Beds = ', center['beds'])
 for center in quarantine_center:
-    print('Location = ', center['address'], '------------------ Beds = ', center['beds'])
+    print(center)
 
 # delete files now.....
 
 if os.path.exists('centers.csv') and os.path.exists('Quarantine_Center.pdf'):
-    os.remove('centers.csv')
+    # os.remove('centers.csv')
     os.remove("Quarantine_Center.pdf")
 else:
     print('Files not exists')
