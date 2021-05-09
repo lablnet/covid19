@@ -12,6 +12,8 @@ df = pd.read_sql("SELECT * FROM summery", conn)
 df.to_csv('./web/public/data/summery.csv')
 df = pd.read_sql("SELECT * FROM quarantines", conn)
 df.to_csv('./web/public/data/quarantines.csv')
+df = pd.read_sql("SELECT * FROM labs", conn)
+df.to_csv('./web/public/data/labs.csv')
 
 # Finally, Done
 print("Done, Thanks")

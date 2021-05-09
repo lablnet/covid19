@@ -3,6 +3,9 @@ from _csv import reader
 import os
 import csv
 import tabula
+from src._sqlite import _sqlite
+from src.__config import get_config
+from datetime import datetime
 
 ## To Remove all unnecessry white spaces (or anyother characters)
 def getstr(string, param = None):
@@ -123,4 +126,31 @@ def readFromPdf():
     "Gilgit": gilgit,
     "PAF": paf}
 
-print(readFromPdf())
+data = readFromPdf()
+
+# Prepare current datetime.
+now = datetime.now()
+date = datetime.strftime(now, "%Y-%m-%dT%H:%M:%S GMT+5")
+date = date.replace(" GMT+5", "")
+
+# Database
+s = _sqlite()
+conn = s.conn(get_config("database", './'))
+# conn.create_tables()
+
+# Inserting into Database
+for item in data:
+    provience = item
+    for name in data[provience]:
+        conn.insert("labs", {
+            "datetime": date,
+            "provience": provience,
+            "name": name,
+            "reference": "https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf"
+        })
+
+
+conn.close()
+
+# Finally, Done
+print("Done, Thanks")

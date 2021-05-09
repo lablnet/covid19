@@ -53,6 +53,15 @@
             "beds": "varchar",
             "reference": "varchar"
           }
+      },
+      "5": {
+        "name": "labs",
+        "fields": {
+            "datetime": "varchar",
+            "provience": "varchar",
+            "name": "varchar",
+            "reference": "varchar"
+          }
       }
     }
   }
