@@ -62,7 +62,7 @@ with open("./centers.csv", 'r') as _file:
                 kashmir_tot = center['beds'].replace(',', '')
             else:
                 gilgit_tot = center['beds'].replace(',', '')
-        if center['beds'] != "" and str(center['beds']).isdigit() and center['address'] != 'Total':
+        if center['beds'] != "" and str(center['beds'].replace(',', '')).isdigit() and center['address'] != 'Total':
             center_copy = center.copy()
             quarantine_center.append(center_copy)
 
@@ -74,73 +74,82 @@ print('Balochistan Total = ', Balochistan_tot)
 print('Kashmir Total = ', kashmir_tot)
 print('Gilgit Baltistan Total = ', gilgit_tot)
 
-# # Add provience to centers.
-# beds = 0
-# for center in quarantine_center:
-#     center['provience'] = ""
-#     beds += int(center['beds'])
-#
-#     print(center['address'], center['beds'], beds)
-#
-#     if int(beds) == int(isb_total):
-#         beds = 0
-#         center['provience'] = "Islamabad"
-#
-#     elif int(beds) == int(Balochistan_tot):
-#         beds = 0
-#         print(beds)
-#         center['provience'] = "Balochistan"
-#
-#     elif int(beds) == int(KPK_total):
-#         beds = 0
-#         center['provience'] = "KPK"
-#
-#     elif int(beds) == int(punjab_tot):
-#         print("punjab")
-#         beds = 0
-#         center['provience'] = "Punjab"
-#
-#     elif int(beds) == int(sindh_tot):
-#         beds = 0
-#         center['provience'] = "Sindh"
-#
-#     elif int(beds) == int(kashmir_tot):
-#         beds = 0
-#         center['provience'] = "AJK"
-#
-#     elif int(beds) == int(gilgit_tot):
-#         beds = 0
-#         center['provience'] = "GB"
-#
-# for center in quarantine_center:
-#     if center['provience'] == "Islamabad": break
-#     if center['provience'] == "": center['provience'] = "Islamabad"
-#
-# for center in quarantine_center:
-#     if center['provience'] == "Balochistan": break
-#     if center['provience'] == "": center['provience'] = "Balochistan"
-#
-# for center in quarantine_center:
-#     if center['provience'] == "KPK": break
-#     if center['provience'] == "": center['provience'] = "KPK"
-#
-# for center in quarantine_center:
-#     if center['provience'] == "Punjab": break
-#     if center['provience'] == "": center['provience'] = "Punjab"
-#
-# for center in quarantine_center:
-#     if center['provience'] == "Sindh": break
-#     if center['provience'] == "": center['provience'] = "Sindh"
-#
-# for center in quarantine_center:
-#     if center['provience'] == "AJK": break
-#     if center['provience'] == "": center['provience'] = "AJK"
-#
-# for center in quarantine_center:
-#     if center['provience'] == "GB": break
-#     if center['provience'] == "": center['provience'] = "GB"
-#
-# print('Locations details \n')
+seen = set()
+new_centers = []
+for d in quarantine_center:
+    t = tuple(d.items())
+    if t not in seen:
+        seen.add(t)
+        new_centers.append(d)
+
+quarantine_center = new_centers
+# Add provience to centers.
+beds = 0
+for center in quarantine_center:
+    center['provience'] = ""
+    beds += int(center['beds'].replace(',', ''))
+
+    print(center['address'], center['beds'], beds)
+
+    if int(beds) == int(isb_total):
+        beds = 0
+        center['provience'] = "Islamabad"
+
+    elif int(beds) == int(Balochistan_tot):
+        beds = 0
+        print(beds)
+        center['provience'] = "Balochistan"
+
+    elif int(beds) == int(KPK_total):
+        beds = 0
+        center['provience'] = "KPK"
+
+    elif int(beds) == int(punjab_tot):
+        print("punjab")
+        beds = 0
+        center['provience'] = "Punjab"
+
+    elif int(beds) == int(sindh_tot):
+        beds = 0
+        center['provience'] = "Sindh"
+
+    elif int(beds) == int(kashmir_tot):
+        beds = 0
+        center['provience'] = "AJK"
+
+    elif int(beds) == int(gilgit_tot):
+        beds = 0
+        center['provience'] = "GB"
+
+for center in quarantine_center:
+    if center['provience'] == "Islamabad": break
+    if center['provience'] == "": center['provience'] = "Islamabad"
+
+for center in quarantine_center:
+    if center['provience'] == "Balochistan": break
+    if center['provience'] == "": center['provience'] = "Balochistan"
+
+for center in quarantine_center:
+    if center['provience'] == "KPK": break
+    if center['provience'] == "": center['provience'] = "KPK"
+
+for center in quarantine_center:
+    if center['provience'] == "Punjab": break
+    if center['provience'] == "": center['provience'] = "Punjab"
+
+for center in quarantine_center:
+    if center['provience'] == "Sindh": break
+    if center['provience'] == "": center['provience'] = "Sindh"
+
+for center in quarantine_center:
+    if center['provience'] == "AJK": break
+    if center['provience'] == "": center['provience'] = "AJK"
+
+for center in quarantine_center:
+    if center['provience'] == "GB": break
+    if center['provience'] == "": center['provience'] = "GB"
+
+print('Locations details \n')
 
 
 # print('Location = ', center['address'], '------------------ Beds = ', center['beds'])
