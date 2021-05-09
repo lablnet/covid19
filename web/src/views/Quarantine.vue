@@ -35,9 +35,9 @@
           <table class="table table-bordered">
             <thead>
             <tr>
-              <th><b>Region</b></th>
-              <th><b>Facilities</b></th>
-              <th><b>Beds</b></th>
+              <th>Region</th>
+              <th>Facilities</th>
+              <th>Beds</th>
             </tr>
             </thead>
             <tbody class="content">
@@ -89,19 +89,16 @@
           <table class="table table-bordered">
             <thead>
               <tr>
-                <th><b>Name</b></th>
-                <th><b>Beds</b></th>
-                <th><b>Province</b></th>
+                <th>Name</th>
+                <th>Beds</th>
+                <th>Province</th>
               </tr>
             </thead>
             <tbody class="content">
               <tr v-for="center in centers" :key="center" >
-
                 <td v-if="center.name !== 'GRAND TOTAL'">{{center.name}}</td>
                 <td v-if="center.name !== 'GRAND TOTAL'">{{center.beds}}</td>
                 <td v-if="center.name !== 'GRAND TOTAL'">{{center.provience}}</td>
-
-
               </tr>
             </tbody>
           </table>
