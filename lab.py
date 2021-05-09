@@ -112,9 +112,6 @@ def readFromPdf():
                 gilgit.append(getLab(row))
             elif current == "paf":
                 paf.append(getLab(row))
-            city = row["City"]
-            category = row["Category"]
-            site = row["Functional Lab/Site"]
 
     deleteFiles(files)
     return {"Fedral": federal,
