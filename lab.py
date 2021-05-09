@@ -138,16 +138,16 @@ s = _sqlite()
 conn = s.conn(get_config("database", './'))
 # conn.create_tables()
 
-# Inserting into Database
-for item in data:
-    provience = item
-    for name in data[provience]:
-        conn.insert("labs", {
-            "datetime": date,
-            "provience": provience,
-            "name": name,
-            "reference": "https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf"
-        })
+# # Inserting into Database
+# for item in data:
+#     provience = item
+#     for name in data[provience]:
+#         conn.insert("labs", {
+#             "datetime": date,
+#             "provience": provience,
+#             "name": name,
+#             "reference": "https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf"
+#         })
 
 
 conn.close()
