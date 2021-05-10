@@ -70,11 +70,10 @@
       <div class="card mt-3">
         <div class="card-header">
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-8">
               <h3 class="subtitle">All Testing Labs</h3>
             </div>
-            <div class="col-md-6">
-              <div class="col-md-4">
+            <div class="col-md-4">
                 <select class="form-control" v-model="selected">
                   <option value="all">All</option>
                   <option value="Islamabad">Islamabad</option>
@@ -83,10 +82,9 @@
                   <option value="Sindh">Sindh</option>
                   <option value="AJK">AJK</option>
                   <option value="KP">KPK</option>
-                  <option value="GB">Gilgit Baltistan</option>
+                  <option value="Gilgit Baltistan">Gilgit Baltistan</option>
                   <option value="Balochistan">Balochistan</option>
                 </select>
-              </div>
             </div>
           </div>
         </div>
@@ -181,16 +179,16 @@ export default {
 
       for (let index in this.labs) {
         let lab = this.labs[index]
-        if (lab.provience === "Fedral") {
+        if (lab.provience === "Federal" || lab.provience == "Islamabad") {
           isb.total += 1
         }
-        if (lab.provience === "Baluchistan") {
+        if (lab.provience === "Balochistan") {
           Balochistan.total += 1
         }
         if (lab.provience === "KP") {
           kpk.total += 1
         }
-        if (lab.provience === "Punjab") {
+        if (lab.provience === "Punjab" || lab.provience === "Federal") {
           punjab.total += 1
         }
         if (lab.provience === "Sindh") {
@@ -199,7 +197,7 @@ export default {
         if (lab.provience === "AJK") {
           ajk.total += 1
         }
-        if (lab.provience === "GB") {
+        if (lab.provience === "Gilgit Baltistan") {
           gb.total += 1
         }
         this.totallabs++;

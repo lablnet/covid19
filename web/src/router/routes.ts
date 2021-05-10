@@ -26,6 +26,14 @@ const routes: Array<RouteRecordRaw> = [
     },
   },
   {
+    path: '/forecast',
+    name: 'Forecast',
+    component: () => import('../views/forecast.vue'),
+    meta: {
+      title: 'Forecast',
+    },
+  },
+  {
     path: '/about',
     name: 'About',
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),

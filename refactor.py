@@ -66,7 +66,7 @@ def createCSV(fileName):
             i += 1
         _file.close()
 
-
+dbToCsv()
 createCSV('./analysis/dailyStats.csv')
 
 # Finally, Done

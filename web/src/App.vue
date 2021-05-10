@@ -18,6 +18,8 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                       <router-link class="dropdown-item" to="/quarantine">Quarantine Facilities</router-link>
                       <router-link class="dropdown-item" to="/labs">Labs</router-link>
+                      <div class="dropdown-divider"></div>
+                      <router-link class="dropdown-item" to="/forecast">Forecast</router-link>
 
                     </div>
 
