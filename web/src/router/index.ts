@@ -1,78 +1,24 @@
-import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
-import Home from '../views/Home.vue'
+import { createRouter, createWebHistory } from 'vue-router'
+import routes from "./routes"
 
-const routes: Array<RouteRecordRaw> = [
-  {
-    path: '/',
-    name: 'Home',
-    component: Home,
-    meta: {
-      title: 'Home',
-    },
-  },
-  {
-    path: '/quarantine',
-    name: 'Quarantine',
-    component: () => import('../views/Quarantine.vue'),
-    meta: {
-      title: 'Quarantine',
-    },
-  },
-  {
-    path: '/labs',
-    name: 'Labs',
-    component: () => import('../views/Labs.vue'),
-    meta: {
-      title: 'Labs',
-    },
-  },
-  {
-    path: '/about',
-    name: 'About',
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
-    meta: {
-      title: 'About',
-    },
-  },
-  {
-    path: '/map',
-    name: 'Map',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Map.vue'),
-    meta: {
-      title: 'Map',
-    },
-  },
-    {
-      path: '/feedback',
-      name: 'Feedback',
-      component: () => import(/* webpackChunkName: "about" */ '../views/Feedback.vue'),
-      meta: {
-        title: 'Feedback',
-      },
-    },
-      {
-        path: '/request',
-        name: 'request',
-        component: () => import(/* webpackChunkName: "about" */ '../views/Request.vue'),
-        meta: {
-          title: 'Request',
-        },
-      },
-
-      {
-        path: '/:pathMatch(.*)*',
-        name: '404',
-        component: () => import(/* webpackChunkName: "about" */ '../views/404.vue'),
-        meta: {
-          title: '404',
-        },
-      },
-
-]
+// Nprogress
+const Nprogress = require('nprogress')
+// Nprogress CSS
+import 'nprogress/nprogress.css';
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes
+})
+
+router.beforeEach((to, from, next) => {
+    Nprogress.start()
+    next()
+})
+
+router.afterEach((to, from) => {
+  // Complete the animation of the route progress bar.
+  Nprogress.done()
 })
 
 export default router
