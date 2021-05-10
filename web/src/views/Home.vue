@@ -215,7 +215,7 @@ export default {
             const DECEASED = this.percent.des
             const RECOVERED = this.percent.rec
             const TOTAL = this.percent.total
-            const data = [round((INFECTED / TOTAL) * 100), round((DECEASED / TOTAL) * 100), round((RECOVERED / TOTAL) * 100)]
+            const data = [((INFECTED / TOTAL) * 100), ((DECEASED / TOTAL) * 100), ((RECOVERED / TOTAL) * 100)]
 
             const myChart = new Chart(ctx, {
                 type: 'doughnut',
@@ -399,7 +399,7 @@ export default {
       {
         let date = new Date()
         date = date.getDate()
-        let updated = parseInt(this.update.split('-')[2].split(' ')[0])
+        let updated = parseInt(String(this.update.split('-')[2]).split(' ')[0])
         return updated === date
       }
      },
