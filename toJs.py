@@ -23,29 +23,29 @@ def make_json(csvFilePath, jsonFilePath, varname):
     write_json(jsonFilePath, data, varname)
 
 
-# # Csv to js
-# make_json("./web/public/data/cases.csv", "./web/public/data/cases.js", "cases")
-# make_json("./web/public/data/summery.csv", "./web/public/data/summery.js", "summery")
-# make_json("./web/public/data/global.csv", "./web/public/data/global.js", "global")
-# make_json("./web/public/data/quarantines.csv", "./web/public/data/quarantines.js", "quarantines")
-# make_json("./web/public/data/labs.csv", "./web/public/data/labs.js", "labs")
-#
-# # Database to js
+# Csv to js
+make_json("./web/public/data/cases.csv", "./web/public/data/cases.js", "cases")
+make_json("./web/public/data/summery.csv", "./web/public/data/summery.js", "summery")
+make_json("./web/public/data/global.csv", "./web/public/data/global.js", "global")
+make_json("./web/public/data/quarantines.csv", "./web/public/data/quarantines.js", "quarantines")
+make_json("./web/public/data/labs.csv", "./web/public/data/labs.js", "labs")
+
+# Database to js
 s = _sqlite
 conn = s.conn(get_config("database", './'))
 data = conn.get_provience_wise("cases")
 write_json("./web/public/data/provience.js", data, "provience")
-# data = conn.get_processed("cases")
-# write_json("./web/public/data/trend.js", data, "trend")
-# data = conn.get_page_data("cases", 1)  # TableName, Page(Number)
-# write_json("./web/public/data/feed.js", data, "feed")
-# conn.close()
+data = conn.get_processed("cases")
+write_json("./web/public/data/trend.js", data, "trend")
+data = conn.get_page_data("cases", 1)  # TableName, Page(Number)
+write_json("./web/public/data/feed.js", data, "feed")
+conn.close()
 
-# # Prepare current datetime.
-# now = datetime.now()
-# date = datetime.strftime(now, "%Y-%m-%d %H:%M:%S GMT+5")
-# date = date.replace(" GMT+5", "")
-# write_json("./web/public/data/last_update.js", {"update": date}, "update")
+# Prepare current datetime.
+now = datetime.now()
+date = datetime.strftime(now, "%Y-%m-%d %H:%M:%S GMT+5")
+date = date.replace(" GMT+5", "")
+write_json("./web/public/data/last_update.js", {"update": date}, "update")
 
 
 # Finally, Done.
