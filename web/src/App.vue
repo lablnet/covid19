@@ -11,18 +11,14 @@
                     <li class="nav-item">
                         <router-link class="nav-link" to="/">Home</router-link>
                     </li>
-<!--                  <li class="nav-item dropdown">-->
-<!--                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
-<!--                      Deep Dive-->
-<!--                    </a>-->
-<!--                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">-->
-<!--                      <a class="dropdown-item" href="#">Labs</a>-->
-<!--                      <a class="dropdown-item" href="#">Quarantine Facilities</a>-->
-<!--                      <div class="dropdown-divider"></div>-->
-<!--                      <a class="dropdown-item" href="#">Timeline</a>-->
-<!--                      <a class="dropdown-item" href="#">Forecast</a>-->
-<!--                    </div>-->
-<!--                  </li>-->
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Deep Dive
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <router-link class="dropdown-item" to="/quarantine">Quarantine Facilities</router-link>
+                    </div>
+                  </li>
                     <li class="nav-item">
                         <a class="nav-link" href="https://ncoc.gov.pk/covid-vaccination-en.php" target="_blank">Vaccine</a>
                     </li>
@@ -40,7 +36,7 @@
         <p class="content-about"><b>Disclaimer:</b> Error and Omissions expected</p>
         <p class="content-about text-danger">The testing capacity in Pakistan is very low, the real cases can be much higher.</p>
         <p class="content-about" style="font-size: 11px">
-            Information displayed here is carefully calibrated and is updated automatically based on reporting of government officials on Website.
+            Information displayed here is carefully calibrated and is updated automatically based on reporting of Government officials Site(s).
         </p>
         <p class="content-about mt-2">
             <ol>
@@ -56,7 +52,7 @@
             </ol>
         </p>
         <p class="content-about mt-2 mb-3">
-            Copyright © 2020-2021 - Developers
+          Copyright © 2020-2021 - <b>AlphaSoftHub Pvt Ltd</b> <a href="https://github.com/lablnet/covid19-parser" target="_blank">Source Code</a>.
         </p>
     </footer>
 </div>
@@ -67,11 +63,11 @@ export default {
     name: "app",
     watch: {
         $route(to, from) {
-            let title = "COVID-19 Pakistan"
+            let title = "COVID-19 Pakistan Dashboard"
             if (typeof to.meta.title == "string")
-                title = `${to.meta.title} - COVID-19 Pakistan`
+                title = `${to.meta.title} - COVID-19 Pakistan Dashboard`
             else if (typeof to.meta.title == "function")
-                title = `${to.meta.title(to)} - COVID-19 Pakistan`
+                title = `${to.meta.title(to)} - COVID-19 Pakistan Dashboard`
             document.title = title
         },
     },

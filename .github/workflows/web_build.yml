@@ -19,6 +19,8 @@ jobs:
         run: |
           npm install
           npm run build
+          cd dist
+          cp index.html 404.html
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.6.2

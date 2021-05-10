@@ -1,29 +1,48 @@
 <!--modified-->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js?v=10788s"></script>
-    <script src="data/summery.js?v=10788s"></script>
-      <script src="data/percent.js?v=10788s"></script>
-      <script src="data/provience.js?v=10788s"></script>
-      <script src="data/trend.js?v=10788s"></script>
-      <script src="data/feed.js?v=10788s"></script>
-      <script src="data/last_update.js?v=10788s"></script>
+    <meta property=og:title content="COVID-19 Pakistan Dashboard">
+    <meta property=article:tag content=Coronavirus>
+    <meta property=article:tag content="Coronavirus Update">
+    <meta property=article:tag content="Coronavirus Pakistan">
+    <meta property=article:tag content="Coronavirus live">
+    <meta property=article:tag content="coronavirus Total Cases">
+    <meta property=article:tag content="coronavirus Stats">
+    <meta property=article:tag content=COVID-19>
+    <meta property=article:tag content="Coronavirus New Cases">
+    <meta name=keywords content="COVID-19 in Pakistan, Coronavirus in Pakistan">
+    <meta property=og:description content="Useful data visualisation regarding the COVID-19 virus outbreak in Pakistan">
+    <meta name=description content="Useful data visualisation regarding the COVID-19 virus outbreak in Pakistan">
+    <meta name=robots content="index, follow">
+    <meta property=og:type content=website>
+    <meta property=og:image content="<%= BASE_URL %>favicon.jpg"">
+    <link rel="icon" href="<%= BASE_URL %>favicon.jpg">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js?v=94528"></script>
+    <script src="data/summery.js?v=18161"></script>
+    <script src="data/percent.js?v=68798"></script>
+    <script src="data/provience.js?v=53775"></script>
+    <script src="data/trend.js?v=33130"></script>
+    <script src="data/feed.js?v=73343"></script>
+    <script src="data/last_update.js?v=62980"></script>
+    <script src="data/quarantines.js?v=98538"></script>
+    <script src="data/labs.js?v=30854"></script>
+    <title>
+        <%= htmlWebpackPlugin.options.title %>
+    </title>
+    <script src="https://code.highcharts.com/maps/highmaps.js?v=66981"></script>
+    <script src="https://code.highcharts.com/maps/modules/exporting.js?v=43563"></script>
+    <script src="https://code.highcharts.com/mapdata/countries/pk/pk-all.js?v=99667"></script>
+</head>
 
-      <title><%= htmlWebpackPlugin.options.title %></title>
-    <script src="https://code.highcharts.com/maps/highmaps.js?v=10788s"></script>
-    <script src="https://code.highcharts.com/maps/modules/exporting.js?v=10788s"></script>
-    <script src="https://code.highcharts.com/mapdata/countries/pk/pk-all.js?v=10788s"></script>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+<body>
+<noscript> <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong> </noscript>
+<div id="app"></div>
+<!-- built files will be auto injected -->
+</body>
+
 </html>

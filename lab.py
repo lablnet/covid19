@@ -135,6 +135,7 @@ def readFromPdf():
     deleteFiles(files)
     return Data
 
+
 data = readFromPdf()
 
 # Prepare current datetime.

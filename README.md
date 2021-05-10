@@ -40,11 +40,17 @@ You should follow contribution guideline [Contribution guideline](https://github
   ```sh covid19_pk_official.py``` Gather Data from  https://covid.gov.pk/
   
   ```sh who.py``` Gather Data from  https://covid19.who.int
+
+  ```sh lab.py``` Export Labs from PDF and save it to Database
   
+  ```sh Quarantine.py``` Export Quarantine centers from PDF and save it to Database
+
   ```sh toCsv.py``` Export Date to CSV
   
   ```sh toJs.py``` Export Date to JavaScript  JSON
-  
+ 
+  ```sh updateJsVersions.py.py``` Regenerate HTML to update JavaScript versions to avoid Caching problem 
+
   ```sh config.json``` Config File for the project.
   
   ```sh src/__config.json``` Helper file for getting value from config.

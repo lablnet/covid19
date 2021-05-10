@@ -58,9 +58,9 @@ for key in cases.keys():
     infectedToday = today[prov]['confirmed'].replace(',', '')
     recoveredToday = today[prov]['recoveries'].replace(',', '')
     deceasedToday = today[prov]['deaths'].replace(',', '')
-    infectedTotal = cases[prov]['infected']
-    recoveredTotal = cases[prov]['recovered']
-    deceasedTotal = cases[prov]['deceased']
+    infectedTotal = cases[prov]['infected']['total']
+    recoveredTotal = cases[prov]['recovered']['total']
+    deceasedTotal = cases[prov]['deceased']['total']
     infected = str(str(int(infectedToday) - infectedTotal) + " new cases reported in  " + _prov + " taking the tally to " + infectedToday)
     recovered = str(str(int(recoveredToday) - recoveredTotal) + " recoveries reported in " + _prov + " taking the tally to " + recoveredToday)
     deaths = str(str(int(deceasedToday) - deceasedTotal) + " deaths reported in " + _prov + " taking the tally to " + deceasedToday)

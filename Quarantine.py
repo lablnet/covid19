@@ -152,6 +152,7 @@ conn = s.conn(get_config("database", './'))
 
 # # Insert into database.
 # for center in quarantine_center:
+#     print(center)
 #     conn.insert("quarantines", {
 #         "datetime": date,
 #         "provience": center['provience'],

@@ -1,162 +1,136 @@
 ,id,datetime,provience,name,beds,reference
-0,136,2021-05-09T09:31:33,Islamabad, Hajji Camp,300,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-1,137,2021-05-09T09:31:33,Islamabad, Pak-China Friendship Centre,50,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-2,138,2021-05-09T09:31:33,Balochistan," Turkish Colony, District Jaffarabad",50,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-3,139,2021-05-09T09:31:33,Balochistan," Midwifery School, District Naseerabad",50,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-4,140,2021-05-09T09:31:33,Balochistan, DHQ Hospital Kachi,50,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-5,141,2021-05-09T09:31:33,Balochistan," Boys Highschool Gandawah, District Jhal Magsi",50,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-6,142,2021-05-09T09:31:33,Balochistan," Boys Highschool Digri, District Sohbatpur",50,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-7,143,2021-05-09T09:31:33,Balochistan," Sheikh Khalif Bin Zayed Hospital, District Quetta",56,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-8,144,2021-05-09T09:31:33,Balochistan," Gynae & General Private Hospital, District Quetta",24,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-9,145,2021-05-09T09:31:33,Balochistan, Customs House Taftan,17,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-10,146,2021-05-09T09:31:33,Balochistan, Taftan Quarantine,"4,950",https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-11,147,2021-05-09T09:31:33,Balochistan, PCSIR Laboratory Compound,600,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-12,148,2021-05-09T09:31:33,KPK," Landi Kotal, District Khyber",102,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-13,149,2021-05-09T09:31:33,KPK," Darazinda, District Dera Ismail Khan",200,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-14,150,2021-05-09T09:31:33,KPK, Peshawar,500,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-15,151,2021-05-09T09:31:33,KPK," Gomal Medical College, District Dera Ismail Khan",200,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-16,152,2021-05-09T09:31:33,KPK," RHC Dassu, District Kohistan",2,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-17,153,2021-05-09T09:31:33,KPK," RHC Shetyal, District Kohistan",2,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-18,154,2021-05-09T09:31:33,KPK," GHSS Boys, District Mohmand",20,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-19,155,2021-05-09T09:31:33,KPK," GHS Ekkaghund, District Mohmand",30,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-20,156,2021-05-09T09:31:33,KPK," Hostel Bahai Daag AC Complex, District Mohmand",20,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-21,157,2021-05-09T09:31:33,KPK," DHQ Hospital Nursing Hostel, District Bajaur",30,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-22,158,2021-05-09T09:31:33,KPK," Type D Hospital Nawagai, District Bajaur",30,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-23,159,2021-05-09T09:31:33,KPK," Type D Hospital Larkhalozo, District Bajaur",60,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-24,160,2021-05-09T09:31:33,KPK," Post Graduate College, District Bajaur",50,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-25,161,2021-05-09T09:31:33,KPK," Degree College Nawagai, District Bajaur",50,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-26,162,2021-05-09T09:31:33,KPK," Degree College Barkhalozo, District Bajaur",50,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-27,163,2021-05-09T09:31:33,KPK," Bachelor Hostel Daag Qilla, District Bajaur",20,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-28,164,2021-05-09T09:31:33,KPK," BHU Dehrakai, District Bajaur",10,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-29,165,2021-05-09T09:31:33,KPK," RHC Arang, District Bajaur",10,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-30,166,2021-05-09T09:31:33,KPK," GHS Khar No-2, District Bajaur",20,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-31,167,2021-05-09T09:31:33,KPK," Govt. Degree College Wari, District Dir Upper",55,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-32,168,2021-05-09T09:31:33,KPK," Govt. Degree College, District Dir Upper",35,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-33,169,2021-05-09T09:31:33,KPK," Govt. Technical College, District Nowshera",50,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-34,170,2021-05-09T09:31:33,KPK," Govt. Post Graduate College, District Nowshera",100,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-35,171,2021-05-09T09:31:33,KPK," GHSS Khairabad, District Nowshera",20,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-36,172,2021-05-09T09:31:33,KPK," GHSS Taru Jabba/ UET Jalozai, District Nowshera",483,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-37,173,2021-05-09T09:31:33,KPK," GHSS Rashakai, District Nowshera",20,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-38,174,2021-05-09T09:31:33,KPK,"Landi Kotal, District Khyber",102,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-39,175,2021-05-09T09:31:33,KPK,"Darazinda, District Dera Ismail Khan",200,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-40,176,2021-05-09T09:31:33,KPK,Peshawar,500,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-41,177,2021-05-09T09:31:33,KPK,"Gomal Medical College, District Dera Ismail Khan",200,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-42,178,2021-05-09T09:31:33,KPK,"RHC Dassu, District Kohistan",2,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-43,179,2021-05-09T09:31:33,KPK,"RHC Shetyal, District Kohistan",2,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-44,180,2021-05-09T09:31:33,KPK,"GHSS Boys, District Mohmand",20,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-45,181,2021-05-09T09:31:33,KPK,"GHS Ekkaghund, District Mohmand",30,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-46,182,2021-05-09T09:31:33,KPK,"Hostel Bahai Daag AC Complex, District Mohmand",20,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-47,183,2021-05-09T09:31:33,KPK,"DHQ Hospital Nursing Hostel, District Bajaur",30,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-48,184,2021-05-09T09:31:33,KPK,"Type D Hospital Nawagai, District Bajaur",30,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-49,185,2021-05-09T09:31:33,KPK,"Type D Hospital Larkhalozo, District Bajaur",60,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-50,186,2021-05-09T09:31:33,KPK,"Post Graduate College, District Bajaur",50,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-51,187,2021-05-09T09:31:33,KPK,"Degree College Nawagai, District Bajaur",50,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-52,188,2021-05-09T09:31:33,KPK,"Degree College Barkhalozo, District Bajaur",50,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-53,189,2021-05-09T09:31:33,KPK,"Bachelor Hostel Daag Qilla, District Bajaur",20,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-54,190,2021-05-09T09:31:33,KPK,"BHU Dehrakai, District Bajaur",10,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-55,191,2021-05-09T09:31:33,KPK,"RHC Arang, District Bajaur",10,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-56,192,2021-05-09T09:31:33,KPK,"GHS Khar No-2, District Bajaur",20,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-57,193,2021-05-09T09:31:33,KPK,"Govt. Degree College Wari, District Dir Upper",55,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-58,194,2021-05-09T09:31:33,KPK,"Govt. Degree College, District Dir Upper",35,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-59,195,2021-05-09T09:31:33,KPK,"Govt. Technical College, District Nowshera",50,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-60,196,2021-05-09T09:31:33,KPK,"Govt. Post Graduate College, District Nowshera",100,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-61,197,2021-05-09T09:31:33,KPK,"GHSS Khairabad, District Nowshera",20,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-62,198,2021-05-09T09:31:33,KPK,"GHSS Taru Jabba/ UET Jalozai, District Nowshera",483,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-63,199,2021-05-09T09:31:33,KPK,"GHSS Rashakai, District Nowshera",20,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-64,200,2021-05-09T09:31:33,KPK," Govt. College Akora Khattak, District Nowshera",50,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-65,201,2021-05-09T09:31:33,KPK," GHSS Khesgi, District Nowshera",20,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-66,202,2021-05-09T09:31:33,KPK, DHQ Bannu,18,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-67,203,2021-05-09T09:31:33,KPK," RHC Ghoriwala, District Bannu",21,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-68,204,2021-05-09T09:31:33,KPK," RHC Domel, District Bannu",10,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-69,205,2021-05-09T09:31:33,KPK," Type D Hospital Kakki, District Bannu",10,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-70,206,2021-05-09T09:31:33,KPK," Type D Hospital Jani Khel, District Bannu",20,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-71,207,2021-05-09T09:31:33,KPK," GPS Mandraza (POE), District Kohistan Lower",5,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-72,208,2021-05-09T09:31:33,KPK," THQ Pattan, District Kohistan Lower",23,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-73,209,2021-05-09T09:31:33,KPK," GHS Chakai, District Kohistan Lower",10,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-74,210,2021-05-09T09:31:33,KPK," RHC Ranolia, District Kohistan Lower",4,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-75,211,2021-05-09T09:31:33,KPK," Type-B BHU Daurmera, District Torghar",2,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-76,212,2021-05-09T09:31:33,KPK," Type-B BHU Kandar, District Torghar",2,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-77,213,2021-05-09T09:31:33,KPK," Type-B BHU Mera M.K, District Torghar",2,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-78,214,2021-05-09T09:31:33,KPK," Type-B BHU Shagal, District Torghar",2,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-79,215,2021-05-09T09:31:33,KPK," Bachelor Hostel Kandar, District Torghar",20,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-80,216,2021-05-09T09:31:33,KPK," Ayub Teaching Hospital, District Abbottabad",24,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-81,217,2021-05-09T09:31:33,KPK, BBST(DHQ) Hospital Abbottabad,52,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-82,218,2021-05-09T09:31:33,KPK," Sports Hostel, Kunj Football Ground, District Abbottabad",100,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-83,219,2021-05-09T09:31:33,KPK, Shelter Home Social Welfare Office Building Abbottabad,28,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-84,220,2021-05-09T09:31:33,KPK, DHQ Karak,20,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-85,221,2021-05-09T09:31:33,KPK," Type-D Hospital T/Nasrati, District Karak",10,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-86,222,2021-05-09T09:31:33,KPK," THQ Hospital B.D. Shah, District Karak",8,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-87,223,2021-05-09T09:31:33,KPK," THQ Hospital Sabir Abad, District Karak",8,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-88,224,2021-05-09T09:31:33,KPK," Doctor Hostel Building (rooms), District Buner",72,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-89,225,2021-05-09T09:31:33,KPK, DHQ Hospital Lakki Marwat,50,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-90,226,2021-05-09T09:31:33,KPK," Ghazi University, District Dera Ghazi Khan","1,740",https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-91,227,2021-05-09T09:31:33,KPK," Islamia University, District Bahawalpur","2,000",https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-92,228,2021-05-09T09:31:33,KPK, Lahore,"1,708",https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-93,229,2021-05-09T09:31:33,KPK, Sialkot,812,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-94,230,2021-05-09T09:31:33,KPK, Multan,"1,836",https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-95,231,2021-05-09T09:31:33,KPK, Faisalabad,"2,852",https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-96,232,2021-05-09T09:31:33,KPK, Sukkur Labour Colony,"2,000",https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-97,233,2021-05-09T09:31:33,KPK, Karachi Doaba Hospital,100,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-98,234,2021-05-09T09:31:33,KPK," College of Medical Technology (CMT) Hostel, Mirpur",100,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-99,235,2021-05-09T09:31:33,KPK," Chinese Camp at Khunbanway, Muzaffarabad",350,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-100,236,2021-05-09T09:31:33,KPK," Block D at District Complex, Rawalakot (Poonch)",40,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-101,237,2021-05-09T09:31:33,KPK, Poonch University Hostel,40,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-102,238,2021-05-09T09:31:33,KPK,Combined Military Hospital (CMH) Skardu,57,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-103,239,2021-05-09T09:31:33,KPK,"Muhammadabad Civil Hospital, Gilgit",15,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-104,240,2021-05-09T09:31:33,KPK,"Ice Cap Hotel, Gilgit",10,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-105,241,2021-05-09T09:31:33,KPK,"Capital Lodge Hotel, Gilgit",70,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-106,242,2021-05-09T09:31:33,KPK,"Dreamworld Hotel, Gilgit",46,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-107,243,2021-05-09T09:31:33,KPK,"Fida Hotel Chalt, Nagar",15,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-108,244,2021-05-09T09:31:33,KPK,"Hikal Hotel Jaffarabad, Nagar",7,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-109,245,2021-05-09T09:31:33,KPK,"Edan View Hotel Qasimabad, Nagar",7,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-110,246,2021-05-09T09:31:33,KPK,"Odasy Hotel Gulmit, Nagar",10,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-111,247,2021-05-09T09:31:33,KPK,"Rakaposhi Front Place Jaffarabad, Nagar",10,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-112,248,2021-05-09T09:31:33,KPK,"Mashabroom, Skardu",56,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-113,249,2021-05-09T09:31:33,KPK,"Sadpara, Skardu",22,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-114,250,2021-05-09T09:31:33,KPK,"Baltistan Resort, Skardu",20,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-115,251,2021-05-09T09:31:33,KPK,"Serene Baltistan, Skardu",6,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-116,252,2021-05-09T09:31:33,KPK,"Baltistan Continental Hotel, Skardu",23,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-117,253,2021-05-09T09:31:33,KPK,"Village Guesthouse, Skardu",3,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-118,254,2021-05-09T09:31:33,KPK,"Snowland, Skardu",18,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-119,255,2021-05-09T09:31:33,KPK,"Summaith Hotel, Skardu",23,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-120,256,2021-05-09T09:31:33,KPK,"Hotel One, Skardu",23,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-121,257,2021-05-09T09:31:33,KPK,"Grandview, Skardu",10,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-122,258,2021-05-09T09:31:33,KPK,"Tibbat Motel, Skardu",26,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-123,259,2021-05-09T09:31:33,KPK,"Shalimar, Skardu",7,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-124,260,2021-05-09T09:31:33,KPK,"Ghazalee Guesthouse, Skardu",4,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-125,261,2021-05-09T09:31:33,KPK,"Kachora Continental, Skardu",10,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-126,262,2021-05-09T09:31:33,KPK,"Other Guesthouse, Skardu",21,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-127,263,2021-05-09T09:31:33,KPK,"Ghazi Hotel, Skardu",4,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-128,264,2021-05-09T09:31:33,KPK,"Upper Lake Guesthouse, Skardu",3,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-129,265,2021-05-09T09:31:33,KPK,"Khadim Hotel, Skardu",2,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-130,266,2021-05-09T09:31:33,KPK,"Lakeview Hotel, Skardu",2,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-131,267,2021-05-09T09:31:33,KPK,"Shaheen Guesthouse, Skardu",2,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-132,268,2021-05-09T09:31:33,KPK,"Superstar Hotel, Skardu",6,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-133,269,2021-05-09T09:31:33,KPK,"Kachura Guesthouse, Skardu",3,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-134,270,2021-05-09T09:31:33,KPK,"Green One Hotel, Skardu",4,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-135,271,2021-05-09T09:31:33,KPK,"Shangrila Resort, Skardu",70,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-136,272,2021-05-09T09:31:33,KPK,"Karakorum Inn, Skardu",31,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-137,273,2021-05-09T09:31:33,KPK,"Kashmir Inn, Skardu",8,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-138,274,2021-05-09T09:31:33,KPK,"Paradise Hotel, Skardu",14,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-139,275,2021-05-09T09:31:33,KPK,"Kamal Palace, Skardu",10,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-140,276,2021-05-09T09:31:33,KPK,"Rehman Hotel, Skardu",10,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-141,277,2021-05-09T09:31:33,KPK,"Indus Motel, Skardu",18,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-142,278,2021-05-09T09:31:33,KPK,"Ansar Hotel, Skardu",14,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-143,279,2021-05-09T09:31:33,KPK,"Baltistan Mountain Hall, Skardu",10,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-144,280,2021-05-09T09:31:33,KPK,"PTDC, Skardu",20,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-145,281,2021-05-09T09:31:33,KPK,"Concordia Motel, Skardu",25,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-146,282,2021-05-09T09:31:33,KPK,"Baltistan Continental, Skardu",20,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-147,283,2021-05-09T09:31:33,KPK,"Mountain Lodge, Skardu",10,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-148,284,2021-05-09T09:31:33,KPK," Serena, Shigar",20,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-149,285,2021-05-09T09:31:33,KPK," Riverview, Shigar",12,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-150,286,2021-05-09T09:31:33,KPK," Space, Shigar",18,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-151,287,2021-05-09T09:31:33,KPK," Kakuram Lodge, Ghanche",18,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-152,288,2021-05-09T09:31:33,KPK," Taj Mohel, Ghanche",2,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-153,289,2021-05-09T09:31:33,KPK," Chiqchan Palace, Ghanche",4,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-154,290,2021-05-09T09:31:33,KPK," K-2 Hotel, Ghanche",12,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-155,291,2021-05-09T09:31:33,KPK," Shyoke Hotel, Ghanche",4,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-156,292,2021-05-09T09:31:33,KPK," Staling, Kharmang",15,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-157,293,2021-05-09T09:31:33,KPK," Qazburg Thang (2), Kharmang",8,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-158,294,2021-05-09T09:31:33,KPK," Reserve Camp, Kharmang",11,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-159,295,2021-05-09T09:31:33,KPK," Lahore Qalandar Hotel, Astore",17,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
-160,296,2021-05-09T09:31:33,KPK,GRAND TOTAL,"23,557",https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+0,641,2021-05-09T16:29:47,Islamabad, Hajji Camp,300,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+1,642,2021-05-09T16:29:47,Islamabad, Pak-China Friendship Centre,50,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+2,643,2021-05-09T16:29:47,Balochistan," Turkish Colony, District Jaffarabad",50,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+3,644,2021-05-09T16:29:47,Balochistan," Midwifery School, District Naseerabad",50,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+4,645,2021-05-09T16:29:47,Balochistan, DHQ Hospital Kachi,50,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+5,646,2021-05-09T16:29:47,Balochistan," Boys Highschool Gandawah, District Jhal Magsi",50,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+6,647,2021-05-09T16:29:47,Balochistan," Boys Highschool Digri, District Sohbatpur",50,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+7,648,2021-05-09T16:29:47,Balochistan," Sheikh Khalif Bin Zayed Hospital, District Quetta",56,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+8,649,2021-05-09T16:29:47,Balochistan," Gynae & General Private Hospital, District Quetta",24,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+9,650,2021-05-09T16:29:47,Balochistan, Customs House Taftan,17,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+10,651,2021-05-09T16:29:47,Balochistan, Taftan Quarantine,"4,950",https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+11,652,2021-05-09T16:29:47,Balochistan, PCSIR Laboratory Compound,600,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+12,653,2021-05-09T16:29:47,KPK,"Landi Kotal, District Khyber",102,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+13,654,2021-05-09T16:29:47,KPK,"Darazinda, District Dera Ismail Khan",200,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+14,655,2021-05-09T16:29:47,KPK,Peshawar,500,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+15,656,2021-05-09T16:29:47,KPK,"Gomal Medical College, District Dera Ismail Khan",200,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+16,657,2021-05-09T16:29:47,KPK,"RHC Dassu, District Kohistan",2,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+17,658,2021-05-09T16:29:47,KPK,"RHC Shetyal, District Kohistan",2,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+18,659,2021-05-09T16:29:47,KPK,"GHSS Boys, District Mohmand",20,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+19,660,2021-05-09T16:29:47,KPK,"GHS Ekkaghund, District Mohmand",30,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+20,661,2021-05-09T16:29:47,KPK,"Hostel Bahai Daag AC Complex, District Mohmand",20,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+21,662,2021-05-09T16:29:47,KPK,"DHQ Hospital Nursing Hostel, District Bajaur",30,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+22,663,2021-05-09T16:29:47,KPK,"Type D Hospital Nawagai, District Bajaur",30,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+23,664,2021-05-09T16:29:47,KPK,"Type D Hospital Larkhalozo, District Bajaur",60,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+24,665,2021-05-09T16:29:47,KPK,"Post Graduate College, District Bajaur",50,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+25,666,2021-05-09T16:29:47,KPK,"Degree College Nawagai, District Bajaur",50,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+26,667,2021-05-09T16:29:47,KPK,"Degree College Barkhalozo, District Bajaur",50,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+27,668,2021-05-09T16:29:47,KPK,"Bachelor Hostel Daag Qilla, District Bajaur",20,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+28,669,2021-05-09T16:29:47,KPK,"BHU Dehrakai, District Bajaur",10,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+29,670,2021-05-09T16:29:47,KPK,"RHC Arang, District Bajaur",10,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+30,671,2021-05-09T16:29:47,KPK,"GHS Khar No-2, District Bajaur",20,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+31,672,2021-05-09T16:29:47,KPK,"Govt. Degree College Wari, District Dir Upper",55,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+32,673,2021-05-09T16:29:47,KPK,"Govt. Degree College, District Dir Upper",35,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+33,674,2021-05-09T16:29:47,KPK,"Govt. Technical College, District Nowshera",50,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+34,675,2021-05-09T16:29:47,KPK,"Govt. Post Graduate College, District Nowshera",100,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+35,676,2021-05-09T16:29:47,KPK,"GHSS Khairabad, District Nowshera",20,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+36,677,2021-05-09T16:29:47,KPK,"GHSS Taru Jabba/ UET Jalozai, District Nowshera",483,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+37,678,2021-05-09T16:29:47,KPK,"GHSS Rashakai, District Nowshera",20,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+38,679,2021-05-09T16:29:47,KPK," Govt. College Akora Khattak, District Nowshera",50,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+39,680,2021-05-09T16:29:47,KPK," GHSS Khesgi, District Nowshera",20,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+40,681,2021-05-09T16:29:47,KPK, DHQ Bannu,18,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+41,682,2021-05-09T16:29:47,KPK," RHC Ghoriwala, District Bannu",21,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+42,683,2021-05-09T16:29:47,KPK," RHC Domel, District Bannu",10,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+43,684,2021-05-09T16:29:47,KPK," Type D Hospital Kakki, District Bannu",10,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+44,685,2021-05-09T16:29:47,KPK," Type D Hospital Jani Khel, District Bannu",20,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+45,686,2021-05-09T16:29:47,KPK," GPS Mandraza (POE), District Kohistan Lower",5,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+46,687,2021-05-09T16:29:47,KPK," THQ Pattan, District Kohistan Lower",23,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+47,688,2021-05-09T16:29:47,KPK," GHS Chakai, District Kohistan Lower",10,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+48,689,2021-05-09T16:29:47,KPK," RHC Ranolia, District Kohistan Lower",4,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+49,690,2021-05-09T16:29:47,KPK," Type-B BHU Daurmera, District Torghar",2,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+50,691,2021-05-09T16:29:47,KPK," Type-B BHU Kandar, District Torghar",2,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+51,692,2021-05-09T16:29:47,KPK," Type-B BHU Mera M.K, District Torghar",2,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+52,693,2021-05-09T16:29:47,KPK," Type-B BHU Shagal, District Torghar",2,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+53,694,2021-05-09T16:29:47,KPK," Bachelor Hostel Kandar, District Torghar",20,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+54,695,2021-05-09T16:29:47,KPK," Ayub Teaching Hospital, District Abbottabad",24,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+55,696,2021-05-09T16:29:47,KPK, BBST(DHQ) Hospital Abbottabad,52,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+56,697,2021-05-09T16:29:47,KPK," Sports Hostel, Kunj Football Ground, District Abbottabad",100,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+57,698,2021-05-09T16:29:47,KPK, Shelter Home Social Welfare Office Building Abbottabad,28,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+58,699,2021-05-09T16:29:47,KPK, DHQ Karak,20,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+59,700,2021-05-09T16:29:47,KPK," Type-D Hospital T/Nasrati, District Karak",10,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+60,701,2021-05-09T16:29:47,KPK," THQ Hospital B.D. Shah, District Karak",8,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+61,702,2021-05-09T16:29:47,KPK," THQ Hospital Sabir Abad, District Karak",8,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+62,703,2021-05-09T16:29:47,KPK," Doctor Hostel Building (rooms), District Buner",72,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+63,704,2021-05-09T16:29:47,KPK, DHQ Hospital Lakki Marwat,50,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+64,705,2021-05-09T16:29:47,Punjab," Ghazi University, District Dera Ghazi Khan","1,740",https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+65,706,2021-05-09T16:29:47,Punjab," Islamia University, District Bahawalpur","2,000",https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+66,707,2021-05-09T16:29:47,Punjab, Lahore,"1,708",https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+67,708,2021-05-09T16:29:47,Punjab, Sialkot,812,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+68,709,2021-05-09T16:29:47,Punjab, Multan,"1,836",https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+69,710,2021-05-09T16:29:47,Punjab, Faisalabad,"2,852",https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+70,711,2021-05-09T16:29:47,Sindh, Sukkur Labour Colony,"2,000",https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+71,712,2021-05-09T16:29:47,Sindh, Karachi Doaba Hospital,100,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+72,713,2021-05-09T16:29:47,AJK," College of Medical Technology (CMT) Hostel, Mirpur",100,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+73,714,2021-05-09T16:29:47,AJK," Chinese Camp at Khunbanway, Muzaffarabad",350,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+74,715,2021-05-09T16:29:47,AJK," Block D at District Complex, Rawalakot (Poonch)",40,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+75,716,2021-05-09T16:29:47,AJK, Poonch University Hostel,40,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+76,717,2021-05-09T16:29:47,GB,Combined Military Hospital (CMH) Skardu,57,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+77,718,2021-05-09T16:29:47,GB,"Muhammadabad Civil Hospital, Gilgit",15,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+78,719,2021-05-09T16:29:47,GB,"Ice Cap Hotel, Gilgit",10,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+79,720,2021-05-09T16:29:47,GB,"Capital Lodge Hotel, Gilgit",70,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+80,721,2021-05-09T16:29:47,GB,"Dreamworld Hotel, Gilgit",46,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+81,722,2021-05-09T16:29:47,GB,"Fida Hotel Chalt, Nagar",15,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+82,723,2021-05-09T16:29:47,GB,"Hikal Hotel Jaffarabad, Nagar",7,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+83,724,2021-05-09T16:29:47,GB,"Edan View Hotel Qasimabad, Nagar",7,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+84,725,2021-05-09T16:29:47,GB,"Odasy Hotel Gulmit, Nagar",10,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+85,726,2021-05-09T16:29:47,GB,"Rakaposhi Front Place Jaffarabad, Nagar",10,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+86,727,2021-05-09T16:29:47,GB,"Mashabroom, Skardu",56,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+87,728,2021-05-09T16:29:47,GB,"Sadpara, Skardu",22,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+88,729,2021-05-09T16:29:47,GB,"Baltistan Resort, Skardu",20,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+89,730,2021-05-09T16:29:47,GB,"Serene Baltistan, Skardu",6,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+90,731,2021-05-09T16:29:47,GB,"Baltistan Continental Hotel, Skardu",23,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+91,732,2021-05-09T16:29:47,GB,"Village Guesthouse, Skardu",3,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+92,733,2021-05-09T16:29:47,GB,"Snowland, Skardu",18,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+93,734,2021-05-09T16:29:47,GB,"Summaith Hotel, Skardu",23,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+94,735,2021-05-09T16:29:47,GB,"Hotel One, Skardu",23,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+95,736,2021-05-09T16:29:47,GB,"Grandview, Skardu",10,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+96,737,2021-05-09T16:29:47,GB,"Tibbat Motel, Skardu",26,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+97,738,2021-05-09T16:29:47,GB,"Shalimar, Skardu",7,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+98,739,2021-05-09T16:29:47,GB,"Ghazalee Guesthouse, Skardu",4,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+99,740,2021-05-09T16:29:47,GB,"Kachora Continental, Skardu",10,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+100,741,2021-05-09T16:29:47,GB,"Other Guesthouse, Skardu",21,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+101,742,2021-05-09T16:29:47,GB,"Ghazi Hotel, Skardu",4,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+102,743,2021-05-09T16:29:47,GB,"Upper Lake Guesthouse, Skardu",3,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+103,744,2021-05-09T16:29:47,GB,"Khadim Hotel, Skardu",2,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+104,745,2021-05-09T16:29:47,AJK,"Lakeview Hotel, Skardu",2,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+105,746,2021-05-09T16:29:47,GB,"Shaheen Guesthouse, Skardu",2,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+106,747,2021-05-09T16:29:47,GB,"Superstar Hotel, Skardu",6,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+107,748,2021-05-09T16:29:47,GB,"Kachura Guesthouse, Skardu",3,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+108,749,2021-05-09T16:29:47,GB,"Green One Hotel, Skardu",4,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+109,750,2021-05-09T16:29:47,GB,"Shangrila Resort, Skardu",70,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+110,751,2021-05-09T16:29:47,GB,"Karakorum Inn, Skardu",31,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+111,752,2021-05-09T16:29:47,GB,"Kashmir Inn, Skardu",8,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+112,753,2021-05-09T16:29:47,GB,"Paradise Hotel, Skardu",14,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+113,754,2021-05-09T16:29:47,GB,"Kamal Palace, Skardu",10,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+114,755,2021-05-09T16:29:47,GB,"Rehman Hotel, Skardu",10,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+115,756,2021-05-09T16:29:47,GB,"Indus Motel, Skardu",18,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+116,757,2021-05-09T16:29:47,GB,"Ansar Hotel, Skardu",14,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+117,758,2021-05-09T16:29:47,GB,"Baltistan Mountain Hall, Skardu",10,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+118,759,2021-05-09T16:29:47,GB,"PTDC, Skardu",20,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+119,760,2021-05-09T16:29:47,GB,"Concordia Motel, Skardu",25,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+120,761,2021-05-09T16:29:47,GB,"Baltistan Continental, Skardu",20,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+121,762,2021-05-09T16:29:47,GB,"Mountain Lodge, Skardu",10,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+122,763,2021-05-09T16:29:47,GB," Serena, Shigar",20,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+123,764,2021-05-09T16:29:47,GB," Riverview, Shigar",12,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+124,765,2021-05-09T16:29:47,GB," Space, Shigar",18,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+125,766,2021-05-09T16:29:47,GB," Kakuram Lodge, Ghanche",18,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+126,767,2021-05-09T16:29:47,GB," Taj Mohel, Ghanche",2,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+127,768,2021-05-09T16:29:47,GB," Chiqchan Palace, Ghanche",4,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+128,769,2021-05-09T16:29:47,GB," K-2 Hotel, Ghanche",12,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+129,770,2021-05-09T16:29:47,GB," Shyoke Hotel, Ghanche",4,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+130,771,2021-05-09T16:29:47,GB," Staling, Kharmang",15,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+131,772,2021-05-09T16:29:47,GB," Qazburg Thang (2), Kharmang",8,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+132,773,2021-05-09T16:29:47,GB," Reserve Camp, Kharmang",11,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+133,774,2021-05-09T16:29:47,GB," Lahore Qalandar Hotel, Astore",17,https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 
+134,775,2021-05-09T16:29:47,GB,GRAND TOTAL,"23,557",https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan.pdf 

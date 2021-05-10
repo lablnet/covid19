@@ -2,10 +2,10 @@
 <div class="container">
     <div class="row">
       <div class="col-md-8">
-        <h1 class="title mt-3">COVID-19 SITUATION IN PAKISTAN</h1>
+        <h1 class="title mt-3"><b>COVID-19 SITUATION IN PAKISTAN</b></h1>
       </div>
       <div class="col-md-4">
-        <p class="content mt-3">Last Update: {{update}}</p>
+        <p class="content mt-3"><b>Last Update:</b> {{update}}</p>
       </div>
     </div>
     <h2 class="subtitle mt-1">COVID-19 SITUATION IN PAKISTAN</h2>
@@ -19,24 +19,24 @@
         <div class="col-md-3">
             <div class="card">
                 <div class="container">
-                    <h1 class="title twelve mt-2">Total tests</h1>
-                    <p class="stat mx-2 mt-2">{{summery.total_tests}} <sub>+{{summery.last_tests}}</sub></p>
+                    <h1 class="title twelve mt-2"><b>Total tests</b></h1>
+                    <p class="stat mx-2 mt-2 text-info"><b>{{summery.total_tests}}</b> <sub v-if="isToday()">+{{summery.last_tests}}</sub></p>
                 </div>
             </div>
         </div>
         <div class="col-md-3">
             <div class="card">
                 <div class="container">
-                    <h1 class="title twelve mt-2">Total Cases</h1>
-                    <p class="stat mx-2 mt-2">{{summery.total_cases}} <sub>+{{summery.last_cases}}</sub></p>
+                    <h1 class="title twelve mt-2"><b>Total Cases</b></h1>
+                  <p class="stat mx-2 mt-2 text-warning"><b>{{summery.total_cases}}</b> <sub v-if="isToday()">+{{summery.last_cases}}</sub></p>
                 </div>
             </div>
         </div>
         <div class="col-md-3">
             <div class="card">
                 <div class="container">
-                    <h1 class="title twelve mt-2">Recoveries</h1>
-                    <p class="stat mx-2 mt-2">{{summery.total_recovered}} <sub>+{{summery.last_recovered}}</sub></p>
+                    <h1 class="title twelve mt-2"><b>Recoveries</b></h1>
+                  <p class="stat mx-2 mt-2 text-success"><b>{{summery.total_recovered}}</b> <sub v-if="isToday()">+{{summery.last_recovered}}</sub></p>
 
                 </div>
             </div>
@@ -44,8 +44,8 @@
         <div class="col-md-3">
             <div class="card">
                 <div class="container">
-                    <h1 class="title twelve mt-2">Deceased</h1>
-                    <p class="stat mx-2 mt-2">{{summery.total_deaths}} <sub>+{{summery.last_deaths}}</sub></p>
+                    <h1 class="title twelve mt-2"><b>Deceased</b></h1>
+                    <p class="stat mx-2 mt-2 text-danger"><b>{{summery.total_deaths}}</b> <sub v-if="isToday()">+{{summery.last_deaths}}</sub></p>
                 </div>
             </div>
         </div>
@@ -55,24 +55,26 @@
         <div class="col-md-6">
             <div class="card">
                 <div class="card-header">
-                    <div style="display: flex">
-                        <h3 class="subtitle">Cases Confirmations</h3>
-                        <div :class="
-                  page >= 2 ? 'float-right offset-8' : 'float-right offset-9'
-                ">
-                            <a style="cursor: pointer" v-if="page >= 2" @click="prevPage">Prev</a>&nbsp; &nbsp; &nbsp; &nbsp;
-
-                            <a style="cursor: pointer" @click="nextPage">
-                                Next
-                            </a>
+                    <div>
+                        <div class="" style="float: left">
+                          <h3 class="subtitle feed-title">Cases Confirmations</h3>
+                        </div>
+                        <div class="col " style="float:right">
+                            <button class="feedbutton" v-if="page >= 2" @click="prevPage">
+                              <svg viewBox="64 64 896 896" width="1em" height="1em" fill="currentColor" aria-hidden="true" focusable="false" class=""><path d="M724 218.3V141c0-6.7-7.7-10.4-12.9-6.3L260.3 486.8a31.86 31.86 0 0 0 0 50.3l450.8 352.1c5.3 4.1 12.9.4 12.9-6.3v-77.3c0-4.9-2.3-9.6-6.1-12.6l-360-281 360-281.1c3.8-3 6.1-7.7 6.1-12.6z"></path></svg>
+                            </button>
+                            <button class="feedbutton" @click="nextPage">
+                              <svg viewBox="64 64 896 896" width="1em" height="1em" fill="currentColor" aria-hidden="true" focusable="false" class=""><path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 0 0 302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 0 0 0-50.4z"></path></svg>
+                            </button>
                         </div>
                     </div>
                 </div>
                 <div class="container">
-                    <ol class="mt-3">
+                    <ol class="mt-3 feed-content">
                         <li v-for="(item, idx) in feed" :key="idx" style="display: block">
                             <p :class="getClass(item.type)" style="display: inline">
                                 {{ item.desc }}
+
                             </p>
                             <p class="content" style="font-size: 11px">
                                 {{ item.date }} &nbsp; &nbsp;
@@ -97,16 +99,16 @@
                             <thead class="subtitle">
                                 <tr>
                                     <th>
-                                        Name
+                                        <span class="text-info">Name</span>
                                     </th>
                                     <th>
-                                        Infected
+                                      <span class="text-warning">Infected</span>
                                     </th>
                                     <th>
-                                      Recovered
+                                      <span class="text-success">Recovered</span>
                                     </th>
                                     <th>
-                                      Deceased
+                                      <span class="text-danger">Deceased</span>
                                     </th>
                                 </tr>
 
@@ -114,10 +116,10 @@
                             <tbody class="content">
                             <span style="display: none">{{i = 0}}</span>
                             <tr v-for="item in provience" :key="item">
-                                <td>{{provienceName[i]}}</td>
-                                 <td>{{item.infected}}</td>
-                                <td>{{item.recovered}}</td>
-                                <td>{{item.deceased}}</td>
+                                <td><b>{{provienceName[i]}}</b></td>
+                                 <td>{{item.infected.total}} <sub v-if="isToday()">+{{item.infected.last}}</sub></td>
+                                <td>{{item.recovered.total}} <sub v-if="isToday()">+{{item.recovered.last}}</sub></td>
+                                <td>{{item.deceased.total}} <sub v-if="isToday()">+{{item.deceased.last}}</sub></td>
                               <span style="display: none">{{i++}}</span>
                               </tr>
 
@@ -159,9 +161,8 @@ import {
     Options,
     Vue
 } from 'vue-class-component'
-import axios from 'axios'
 import Chart from 'chart.js'
-import url from "@/url.js"
+import round from "@/round"
 
 export default {
     mounted() {
@@ -174,8 +175,7 @@ export default {
         this.getProvience()
         this.getTrend()
       this.getPercentage()
-
-      // this.getAll()
+      this.isToday()
     },
 
     data() {
@@ -213,7 +213,7 @@ export default {
             const DECEASED = this.percent.des
             const RECOVERED = this.percent.rec
             const TOTAL = this.percent.total
-            const data = [Math.round((INFECTED / TOTAL) * 100, 2), Math.round((DECEASED / TOTAL) * 100, 2), Math.round((RECOVERED / TOTAL) * 100, 2)]
+            const data = [round((INFECTED / TOTAL) * 100), round((DECEASED / TOTAL) * 100), round((RECOVERED / TOTAL) * 100)]
 
             const myChart = new Chart(ctx, {
                 type: 'doughnut',
@@ -273,7 +273,7 @@ export default {
                     labels: labels,
                     datasets: [{
 
-                            label: '#RECOVERED',
+                            label: 'RECOVERED',
                             data: RECOVERED,
                             borderColor: [
                                 'rgba(0, 255, 0, 1)',
@@ -284,7 +284,7 @@ export default {
 
                         },
                         {
-                            label: '#INFECTED',
+                            label: 'INFECTED',
                             data: INFECTED,
                             borderColor: [
                                 'rgba(255, 153, 0, 1)',
@@ -296,7 +296,7 @@ export default {
                         },
                         {
 
-                            label: '#DECEASED',
+                            label: 'DECEASED',
                             data: DECEASED,
                             borderColor: [
                                 'rgba(255, 0, 0, 1)',
@@ -335,9 +335,9 @@ export default {
             let recv = 0
             let total = 0
             for (let item in this.provience) {
-              inf += this.provience[item].infected
-              dec += this.provience[item].deceased
-              recv += this.provience[item].recovered
+              inf += this.provience[item].infected.total
+              dec += this.provience[item].deceased.total
+              recv += this.provience[item].recovered.total
             }
           total = inf
 
@@ -386,20 +386,20 @@ export default {
 
         getClass(item) {
             if (item.toString() == 'RECOVERED') {
-                return 'content alert-success'
+                return 'content text-success'
             } else if (item.toString() == 'INFECTED') {
-                return 'content alert-warning'
+                return 'content text-warning'
             } else if (item.toString() == 'DECEASED') {
-                return 'content alert-danger'
+                return 'content text-danger'
             }
         },
-        getRandomInt() {
-            return Math.floor(Math.random() * (50 - 5 + 1)) + 5
-        }
-
-    },
-
-    computed: {}
-
+      isToday()
+      {
+        let date = new Date()
+        date = date.getDate()
+        let updated = parseInt(String(this.update.split('-')[2]).split(' ')[0])
+        return updated === date
+      }
+     },
 }
 </script>
