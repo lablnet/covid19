@@ -159,9 +159,8 @@ import {
     Options,
     Vue
 } from 'vue-class-component'
-import axios from 'axios'
 import Chart from 'chart.js'
-import url from "@/url.js"
+import round from "@/round"
 
 export default {
     mounted() {
@@ -213,7 +212,7 @@ export default {
             const DECEASED = this.percent.des
             const RECOVERED = this.percent.rec
             const TOTAL = this.percent.total
-            const data = [Math.round((INFECTED / TOTAL) * 100, 2), Math.round((DECEASED / TOTAL) * 100, 2), Math.round((RECOVERED / TOTAL) * 100, 2)]
+            const data = [round((INFECTED / TOTAL) * 100), round((DECEASED / TOTAL) * 100), round((RECOVERED / TOTAL) * 100)]
 
             const myChart = new Chart(ctx, {
                 type: 'doughnut',
@@ -393,13 +392,6 @@ export default {
                 return 'content text-danger'
             }
         },
-        getRandomInt() {
-            return Math.floor(Math.random() * (50 - 5 + 1)) + 5
-        }
-
-    },
-
-    computed: {}
-
+     },
 }
 </script>

@@ -5,13 +5,12 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "test:unit": "vue-cli-service test:unit",
-    "lint": "vue-cli-service lint",
-    "test": "jest"
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "@highcharts/map-collection": "^1.1.3",
     "@seregpie/vue-chart": "^1.0.1",
+    "apexcharts": "^3.26.2",
     "axios": "^0.21.1",
     "babel-eslint": "^10.1.0",
     "bootstrap": "^5.0.0-alpha1",
