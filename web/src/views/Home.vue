@@ -176,8 +176,6 @@ export default {
         this.getTrend()
       this.getPercentage()
       this.isToday()
-
-      // this.getAll()
     },
 
     data() {
@@ -215,7 +213,7 @@ export default {
             const DECEASED = this.percent.des
             const RECOVERED = this.percent.rec
             const TOTAL = this.percent.total
-            const data = [((INFECTED / TOTAL) * 100), ((DECEASED / TOTAL) * 100), ((RECOVERED / TOTAL) * 100)]
+            const data = [round((INFECTED / TOTAL) * 100), round((DECEASED / TOTAL) * 100), round((RECOVERED / TOTAL) * 100)]
 
             const myChart = new Chart(ctx, {
                 type: 'doughnut',
@@ -337,9 +335,9 @@ export default {
             let recv = 0
             let total = 0
             for (let item in this.provience) {
-              inf += this.provience[item].infected
-              dec += this.provience[item].deceased
-              recv += this.provience[item].recovered
+              inf += this.provience[item].infected.total
+              dec += this.provience[item].deceased.total
+              recv += this.provience[item].recovered.total
             }
           total = inf
 
