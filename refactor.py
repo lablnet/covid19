@@ -1,6 +1,13 @@
 from src._sqlite import _sqlite
 from src.__config import get_config
 import csv
+import os
+
+# delete prev files.
+if os.path.exists("./analysis/data.csv"):
+    os.remove("./analysis/data.csv")
+if os.path.exists("./analysis/dailyStats.csv"):
+    os.remove("./analysis/dailyStats.csv")
 
 def dbToCsv():
     s = _sqlite
