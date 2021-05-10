@@ -105,7 +105,7 @@
               <td>{{lab.name}}</td>
               <td>{{lab.provience}}</td>
               <td>{{lab.city}}</td>
-              <td>{{lab.sector}}</td>
+              <td>{{lab.sector == ""? 'Government' : lab.sector}}</td>
             </tr>
             </tbody>
           </table>
