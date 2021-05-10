@@ -29,6 +29,7 @@ make_json("./web/public/data/summery.csv", "./web/public/data/summery.js", "summ
 make_json("./web/public/data/global.csv", "./web/public/data/global.js", "global")
 make_json("./web/public/data/quarantines.csv", "./web/public/data/quarantines.js", "quarantines")
 make_json("./web/public/data/labs.csv", "./web/public/data/labs.js", "labs")
+make_json("./web/public/data/forecast.csv", "./web/public/data/forecast.js", "forecast")
 
 # Database to js
 s = _sqlite

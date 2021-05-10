@@ -51,8 +51,10 @@
             <p class="content-about mt-2 mx-2">
                 <ul>
                     <li><a href="https://github.com/lablnet" target="_blank">Muhammad Umer Farooq</a> <span class="content-about">(Lead Developer)</span></li>
+                    <li><a href="https://github.com/AmeerHamza0220" target="_blank">Muhammad Ameer Hamza</a> <span class="content-about">(Python Developer)</span></li>
                     <li><a href="https://github.com/Usman-Naeem" target="_blank">Muhammad Usman Naeem</a> <span class="content-about">(Python Developer)</span></li>
                     <li><a href="https://github.com/Zain-ul-Abdin1417" target="_blank">Zain ul Abdin</a> <span class="content-about">(Python Developer)</span></li>
+
                 </ul>
             </p>
         </div>

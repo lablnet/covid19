@@ -58,10 +58,11 @@ export default {
         INFECTED.push(e.INFECTED)
         PREDICTED.push(NaN)
       })
-      this.forecast.map(e => {
-        labels.push(e.DATE)
-        PREDICTED.push(e.PREDICTED)
-      })
+      for (let item in this.forecast) {
+        labels.push(this.forecast[item].Date)
+        PREDICTED.push(this.forecast[item].PREDICT)
+      }
+
       const myChart = new Chart(ctx, {
         type: 'line',
         data: {
