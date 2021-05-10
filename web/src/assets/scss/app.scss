@@ -74,3 +74,15 @@ ul {
     list-style-type: disc;
 }
 
+.feedbutton {
+    background: #fff;
+    border: none;
+    border: 1px solid lightgray;
+    white-space: nowrap;
+    text-align: center;
+    cursor: pointer;
+    padding: 3px;
+}
+.feed-content {
+    margin-left: -25px;
+}
