@@ -57,7 +57,7 @@
                 <div class="card-header">
                     <div>
                         <div class="" style="float: left">
-                          <h3 class="title">Cases Confirmations</h3>
+                          <h3 class="subtitle feed-title">Cases Confirmations</h3>
                         </div>
                         <div class="col " style="float:right">
                             <button class="feedbutton" v-if="page >= 2" @click="prevPage">

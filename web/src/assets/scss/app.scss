@@ -73,7 +73,11 @@ ol li a {
 ul {
     list-style-type: disc;
 }
-
+.feed-title {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 17px;
+}
 .feedbutton {
     background: #fff;
     border: none;
