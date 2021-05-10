@@ -35,19 +35,68 @@ def deleteFiles(files):
             os.remove(file)
 
 ## To get Lab name from the row (as labs are the last entry of the row)
-# Parameter = Row if csv file
+# Parameter = Row of csv file
 # Return = name of Lab Institute
 def getLab(row):
     if row['Functional Lab/Site'] != "":
-        return row['Functional Lab/Site']
+        return getstr(row['Functional Lab/Site'])
     elif row['Category'] != "":
-        return row['Category']
+        return getstr(row['Category'])
     elif row['City'] != "":
-        return row['City']
+        return getstr(row['City'])
     elif row['Province/\nRegion (No)'] != "":
-        return row['Province/\nRegion (No)']
+        return getstr(row['Province/\nRegion (No)'])
 
-# To read the pdf data
+## To get Province name from the row
+# Parameter = Row of csv file
+# Return = name of province or none
+def getProvince(row):
+    if row["Province/\nRegion (No)"].startswith("Federal"):
+        return "Federal"
+    elif row["Province/\nRegion (No)"].startswith("Punjab"):
+        return "Punjab"
+    elif row["Province/\nRegion (No)"].startswith("Sindh"):
+        return "Sindh"
+    elif row["Province/\nRegion (No)"].startswith("KP"):
+        return "KP"
+    elif row["Province/\nRegion (No)"].startswith("Baluchistan"):
+        return "Baluchistan"
+    elif row["Province/\nRegion (No)"].startswith("AJ"):
+        return "AJK"
+    elif row["Province/\nRegion (No)"].startswith("Gilgit"):
+        return "Gilgit Baltistan"
+    elif row["Province/\nRegion (No)"].startswith("Pakis"):
+        return "PAF"
+    else: return None
+
+## To get City name from the row
+# Parameter = Row of csv file
+# Return = name of city or none
+def getCity(row):
+    if row['Functional Lab/Site'] != "":
+        if row['City'] == "": return None
+        else: return getstr(row['City'])
+    elif row['Category'] != "":
+        if row['Province/\nRegion (No)'] == "": return None
+        else: return getstr(row['Province/\nRegion (No)'])
+    else: return None
+
+## To get Categiry from the row
+# Parameter = Row of csv file
+# Return = Private, Public, Military or none
+def getCategory(row):
+    if row['Functional Lab/Site'] != "":
+        return row['Category']
+    elif row['Category'] != "":
+        if row['City'] == "Public" or row['City'] == "Private":
+            return row['City']
+    elif row['City'] != "":
+        if row['Province/\nRegion (No)'] == "Public" or row['Province/\nRegion (No)'] == "Private":
+            return row['Province/\nRegion (No)']
+    elif row['Province/\nRegion (No)'] == "": return None
+    else: return None
+
+## To read the pdf data
 # Parameter = None (can add url later)
 # Return = dictionary of data
 def readFromPdf():
@@ -60,71 +109,32 @@ def readFromPdf():
     if not os.path.exists("labs.csv"):
         tabula.convert_into(name, "labs.csv", output_format='csv', pages='all')
     files = [name, "labs.csv"]
-    federal = []
-    punjab = []
-    sindh = []
-    kp = []
-    baluchistan = []
-    ajk = []
-    gilgit = []
-    paf = []
-    current = ""
+    Data = []
     with open("labs.csv", "r") as file:
         csv_reader = csv.DictReader(file)
         for row in csv_reader:
             # To overcome newline at the very last or blank entries
             try: id = row["S. No."]
             except: continue
-            if row["Province/\nRegion (No)"] == "Federal\n(32)":
-                current = "fedral"
-                continue
-            elif row["Province/\nRegion (No)"] == "Punjab\n(68)":
-                current = "punjab"
-                continue
-            elif row["Province/\nRegion (No)"] == "Sindh  (41)":
-                current = "sindh"
-                continue
-            elif row["Province/\nRegion (No)"] == "KP ( 23)":
-                current = "kp"
-                continue
-            elif row["Province/\nRegion (No)"] == "Baluchistan\n(0 6)":
-                current = "baluchistan"
-                continue
-            elif row["Province/\nRegion (No)"] == "AJ K\n(0 4)":
-                current = "ajk"
-                continue
-            elif row["Province/\nRegion (No)"] == "Gilgit-\nBalti stan\n(0 3)":
-                current = "gilgit"
-                continue
-            elif row["Province/\nRegion (No)"] == "Pakist an Air\nFor ce":
-                current = "paf"
-                continue
-            if current == "fedral":
-                federal.append(getLab(row))
-            elif current == "punjab":
-                punjab.append(getLab(row))
-            elif current == "sindh":
-                sindh.append(getLab(row))
-            elif current == "kp":
-                kp.append(getLab(row))
-            elif current == "baluchistan":
-                baluchistan.append(getLab(row))
-            elif current == "ajk":
-                ajk.append(getLab(row))
-            elif current == "gilgit":
-                gilgit.append(getLab(row))
-            elif current == "paf":
-                paf.append(getLab(row))
+            new_province = getProvince(row)
+            if new_province != None:
+                province = new_province
+            new_category = getCategory(row)
+            if new_category != None:
+                category = new_category
+            new_city = getCity(row)
+            if new_city != None:
+                city = new_city
+            Data.append({
+            "lab name": getLab(row),
+            "city": city,
+            "provience": province,
+            "category": category
+            })
 
     deleteFiles(files)
-    return {"Fedral": federal,
-    "Punjab": punjab,
-    "Sindh": sindh,
-    "KP": kp,
-    "Baluchistan": baluchistan,
-    "AJK": ajk,
-    "Gilgit": gilgit,
-    "PAF": paf}
+    return Data
+
 
 data = readFromPdf()
 
