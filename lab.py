@@ -60,7 +60,7 @@ def getProvince(row):
     elif row["Province/\nRegion (No)"].startswith("KP"):
         return "KP"
     elif row["Province/\nRegion (No)"].startswith("Baluchistan"):
-        return "Baluchistan"
+        return "Balochistan"
     elif row["Province/\nRegion (No)"].startswith("AJ"):
         return "AJK"
     elif row["Province/\nRegion (No)"].startswith("Gilgit"):
@@ -72,14 +72,36 @@ def getProvince(row):
 ## To get City name from the row
 # Parameter = Row of csv file
 # Return = name of city or none
-def getCity(row):
+def getCity(row, province = None):
+    if province != None:
+        if row['Functional Lab/Site'] != "":
+            return row['City']
+        else: return row["Province/\nRegion (No)"]
     if row['Functional Lab/Site'] != "":
         if row['City'] == "": return None
-        else: return getstr(row['City'])
+        else:
+            city = getstr(row['City']).split("(")
+            return city[0]
     elif row['Category'] != "":
         if row['Province/\nRegion (No)'] == "": return None
-        else: return getstr(row['Province/\nRegion (No)'])
+        else:
+            city = getstr(row['Province/\nRegion (No)']).split("(")
+            return city[0]
     else: return None
+
+## To get province name from the city name
+# Parameter = province name
+# Return = city name
+def getProv(city):
+    if city.startswith("Karachi"): return "Sindh"
+    elif city.startswith("Mianwali"): return "Punjab"
+    elif city.startswith("Peshawar"): return "KP"
+    elif city.startswith("Islamabad"): return "Federal"
+    elif city.startswith("Kamra"): return "Punjab"
+    elif city.startswith("Shorkot"): return "Punjab"
+    elif city.startswith("Quetta"): return "Balochistan"
+    elif city.startswith("Lahore"): return "Punjab"
+    elif city.startswith("Sargodha"): return "Punjab"
 
 ## To get Categiry from the row
 # Parameter = Row of csv file
@@ -122,11 +144,14 @@ def readFromPdf():
             new_category = getCategory(row)
             if new_category != None:
                 category = new_category
-            new_city = getCity(row)
+            if category == "PAF":
+                new_city = getCity(row, province)
+                province = getProv(new_city)
+            else: new_city = getCity(row)
             if new_city != None:
                 city = new_city
             Data.append({
-            "lab name": getLab(row),
+            "lab_name": getLab(row),
             "city": city,
             "provience": province,
             "category": category
@@ -147,7 +172,17 @@ date = date.replace(" GMT+5", "")
 s = _sqlite()
 conn = s.conn(get_config("database", './'))
 # conn.create_tables()
-
+#
+# for item in data:
+#     print(item)
+#     conn.insert("labs", {
+#             "datetime": date,
+#             "provience": item['provience'],
+#             "name": item['lab_name'],
+#             "city": item['city'],
+#             "sector": item['category'],
+#             "reference": "https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf"
+#         })
 # # Inserting into Database
 # for item in data:
 #     provience = item

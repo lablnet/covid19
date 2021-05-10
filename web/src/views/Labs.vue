@@ -69,21 +69,42 @@
 
       <div class="card mt-3">
         <div class="card-header">
-          <h3 class="subtitle">All Testing Labs</h3>
+          <div class="row">
+            <div class="col-md-6">
+              <h3 class="subtitle">All Testing Labs</h3>
+            </div>
+            <div class="col-md-6">
+              <div class="col-md-4">
+                <select class="form-control" v-model="selected">
+                  <option value="all">All</option>
+                  <option value="Islamabad">Islamabad</option>
+                  <option value="Federal">Federal</option>
+                  <option value="Punjab">Punjab</option>
+                  <option value="Sindh">Sindh</option>
+                  <option value="AJK">AJK</option>
+                  <option value="KP">KPK</option>
+                  <option value="GB">Gilgit Baltistan</option>
+                  <option value="Balochistan">Balochistan</option>
+                </select>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="container">
           <table class="table table-bordered">
             <thead>
             <tr>
-              <th><b>Name</b></th>
-              <th><b>Province</b></th>
-              <th><b>Sector</b></th>
+              <th>Name</th>
+              <th>Province</th>
+              <th>City</th>
+              <th>Sector</th>
             </tr>
             </thead>
             <tbody class="content">
-            <tr v-for="lab in labs" :key="lab" >
+            <tr v-for="lab in getFiltered()" :key="lab" >
               <td>{{lab.name}}</td>
               <td>{{lab.provience}}</td>
+              <td>{{lab.city}}</td>
               <td>{{lab.sector}}</td>
             </tr>
             </tbody>
@@ -107,6 +128,7 @@ export default {
     return {
       totallabs: 0,
       total: 0,
+      selected: "all",
       region: {
         "Islamabad": {
           "total": 0,
@@ -155,7 +177,6 @@ export default {
       }
       let sindh = {
         "total": 0,
-        "beds": 0,
       }
 
       for (let index in this.labs) {
@@ -192,6 +213,18 @@ export default {
         "Balochistan": Balochistan,
         "GB": gb,
       }
+    },
+    getFiltered() {
+      if (this.selected == "all") {return this.labs}
+      let data = []
+      for (let index in this.labs) {
+        let lab = this.labs[index]
+        if (lab.provience === this.selected) {
+          data.push(lab)
+        }
+      }
+
+      return data
     }
   },
 }

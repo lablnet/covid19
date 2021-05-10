@@ -17,7 +17,10 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                       <router-link class="dropdown-item" to="/quarantine">Quarantine Facilities</router-link>
+                      <router-link class="dropdown-item" to="/labs">Labs</router-link>
+
                     </div>
+
                   </li>
                     <li class="nav-item">
                         <a class="nav-link" href="https://ncoc.gov.pk/covid-vaccination-en.php" target="_blank">Vaccine</a>
