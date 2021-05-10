@@ -172,7 +172,17 @@ date = date.replace(" GMT+5", "")
 s = _sqlite()
 conn = s.conn(get_config("database", './'))
 # conn.create_tables()
-
+#
+# for item in data:
+#     print(item)
+#     conn.insert("labs", {
+#             "datetime": date,
+#             "provience": item['provience'],
+#             "name": item['lab_name'],
+#             "city": item['city'],
+#             "sector": item['category'],
+#             "reference": "https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf"
+#         })
 # # Inserting into Database
 # for item in data:
 #     provience = item

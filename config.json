@@ -60,6 +60,8 @@
             "datetime": "varchar",
             "provience": "varchar",
             "name": "varchar",
+            "city": "varchar",
+            "sector": "varchar",
             "reference": "varchar"
           }
       }

@@ -1,184 +1,192 @@
-,id,datetime,provience,name,reference
-0,1,2021-05-09T11:09:47,Fedral,PIMS – (POCT + PCR),https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-1,2,2021-05-09T11:09:47,Fedral,Islamabad Diagnostic Center (IDC),https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-2,3,2021-05-09T11:09:47,Fedral,Biotech Lab and Research Center,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-3,4,2021-05-09T11:09:47,Fedral,Metropole Laboratories,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-4,5,2021-05-09T11:09:47,Fedral,Capital Diagnostic Centre,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-5,6,2021-05-09T11:09:47,Fedral,Biogene,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-6,7,2021-05-09T11:09:47,Fedral,Shifa International,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-7,8,2021-05-09T11:09:47,Fedral,Excel Labs,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-8,9,2021-05-09T11:09:47,Fedral,Global Clinical Care Diagnostic Centre,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-9,10,2021-05-09T11:09:47,Fedral,Temar Diagnostics,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-10,11,2021-05-09T11:09:47,Fedral,Margalla Diagnostics and Clinics,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-11,12,2021-05-09T11:09:47,Fedral,Advanced Diagnostics Centre,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-12,13,2021-05-09T11:09:47,Fedral,Kulsum Intl Hospital,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-13,14,2021-05-09T11:09:47,Fedral,Maroof Hospital,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-14,15,2021-05-09T11:09:47,Fedral,Nayab Labs,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-15,16,2021-05-09T11:09:47,Fedral,Medikay Pvt limited,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-16,17,2021-05-09T11:09:47,Fedral,Akbar Niazi Teaching Hospital,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-17,18,2021-05-09T11:09:47,Fedral,"Real Time PCR Diagnostic, Research & Reference Laboratories",https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-18,19,2021-05-09T11:09:47,Fedral,Shaafi Hospital PWD,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-19,20,2021-05-09T11:09:47,Fedral,Crown Diagnostic Centre,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-20,21,2021-05-09T11:09:47,Fedral,Shaheen Medical Laboratories & Health Services,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-21,22,2021-05-09T11:09:47,Fedral,DAHA Lab and Diagnostic,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-22,23,2021-05-09T11:09:47,Fedral,Rehman Laboratories,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-23,24,2021-05-09T11:09:47,Fedral,Islamabad Health Care Laboratory,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-24,25,2021-05-09T11:09:47,Fedral,Biomaxx Lab and Diagnostic Centre,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-25,26,2021-05-09T11:09:47,Fedral,Ali Medical Centre,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-26,27,2021-05-09T11:09:47,Fedral,Ideal Labs & Diagnostic Center,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-27,28,2021-05-09T11:09:47,Fedral,European Diagnostic Center,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-28,29,2021-05-09T11:09:47,Fedral,BEKS Advanced Medical Services (Pvt) Ltd,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-29,30,2021-05-09T11:09:47,Fedral,MedAsk,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-30,31,2021-05-09T11:09:47,Fedral,IHITC Lab,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-31,32,2021-05-09T11:09:47,Punjab,Punjab Forensic Science Auth Lab,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-32,33,2021-05-09T11:09:47,Punjab,Jinnah Hospital,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-33,34,2021-05-09T11:09:47,Punjab,PKLI,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-34,35,2021-05-09T11:09:47,Punjab,Lahore General Hospital,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-35,36,2021-05-09T11:09:47,Punjab,CAMB,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-36,37,2021-05-09T11:09:47,Punjab,UVAS (BSL-3),https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-37,38,2021-05-09T11:09:47,Punjab,Lahore TB Program (BSL-3),https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-38,39,2021-05-09T11:09:47,Punjab,IPH Lahore,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-39,40,2021-05-09T11:09:47,Punjab,Chughtai Lab,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-40,41,2021-05-09T11:09:47,Punjab,Shaukat Khanum Memorial Hospital,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-41,42,2021-05-09T11:09:47,Punjab,Islamabad Diagnostic Center (IDC),https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-42,43,2021-05-09T11:09:47,Punjab,Rahila Research and Reference Lab,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-43,44,2021-05-09T11:09:47,Punjab,Venous Diagnostics,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-44,45,2021-05-09T11:09:47,Punjab,Hameed Lateef Hospital,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-45,46,2021-05-09T11:09:47,Punjab,Citilab & Research Centre,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-46,47,2021-05-09T11:09:47,Punjab,Alam International Lab,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-47,48,2021-05-09T11:09:47,Punjab,Horizon Molecular Laboratory,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-48,49,2021-05-09T11:09:47,Punjab,Agha Khan,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-49,50,2021-05-09T11:09:47,Punjab,Surgimed Lab,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-50,51,2021-05-09T11:09:47,Punjab,Testzone,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-51,52,2021-05-09T11:09:47,Punjab,Zeenat Lab,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-52,53,2021-05-09T11:09:47,Punjab,Genome Lab,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-53,54,2021-05-09T11:09:47,Punjab,Al Nasar Lab,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-54,55,2021-05-09T11:09:47,Punjab,Doctor Hospital,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-55,56,2021-05-09T11:09:47,Punjab,University of Lahore,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-56,57,2021-05-09T11:09:47,Punjab,Mughal Lab,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-57,58,2021-05-09T11:09:47,Punjab,Lab Genetix,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-58,59,2021-05-09T11:09:47,Punjab,Hormone Lab,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-59,60,2021-05-09T11:09:47,Punjab,Lahore Diagnostic Centre,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-60,61,2021-05-09T11:09:47,Punjab,INNOVA Labs and Diagnostics,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-61,62,2021-05-09T11:09:47,Punjab,Shalamar Hospital Pathology Lab,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-62,63,2021-05-09T11:09:47,Punjab,CLINLAB,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-63,64,2021-05-09T11:09:47,Punjab,Decent Hormone Lab,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-64,65,2021-05-09T11:09:47,Punjab,Global Diagnostic Laboratory,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-65,66,2021-05-09T11:09:47,Punjab,Al-Khidmat Foundation Lab,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-66,67,2021-05-09T11:09:47,Punjab,Bahria Intl Hospital,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-67,68,2021-05-09T11:09:47,Punjab,Armed Forces Institute of Pathology (AFIP),https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-68,69,2021-05-09T11:09:47,Punjab,Rawalpindi Medical University (Holy Family),https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-69,70,2021-05-09T11:09:47,Punjab,Benazir Bhutto Hospital (BBH) Rawalpindi,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-70,71,2021-05-09T11:09:47,Punjab,Rawalpindi Institute of Cardiology,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-71,72,2021-05-09T11:09:47,Punjab,Premium Diagnostics,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-72,73,2021-05-09T11:09:47,Punjab,Citi Lab,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-73,74,2021-05-09T11:09:47,Punjab,Fauji Foundation Hospital,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-74,75,2021-05-09T11:09:47,Punjab,Health Ways,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-75,76,2021-05-09T11:09:47,Punjab,Twin City Diagnostics,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-76,77,2021-05-09T11:09:47,Punjab,Future Labs,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-77,78,2021-05-09T11:09:47,Punjab,Care Laboratories,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-78,79,2021-05-09T11:09:47,Punjab,Biotech Molecular & Clinical Lab,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-79,80,2021-05-09T11:09:47,Punjab,IBN’E SENA Laboratory & Diagnostic Centre,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-80,81,2021-05-09T11:09:47,Punjab,Life Care Lab & Medical Diagnostic Center,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-81,82,2021-05-09T11:09:47,Punjab,Bahria Intl Hosp,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-82,83,2021-05-09T11:09:47,Punjab,POF Hospital,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-83,84,2021-05-09T11:09:47,Punjab,Nishtar Medical College,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-84,85,2021-05-09T11:09:47,Punjab,Multan TB Program (BSL-3),https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-85,86,2021-05-09T11:09:47,Punjab,Islamabad Diagnostic Center (IDC),https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-86,87,2021-05-09T11:09:47,Punjab,Bakhtawar Amin Medical College,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-87,88,2021-05-09T11:09:47,Punjab,South Punjab Hospital Laboratories,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-88,89,2021-05-09T11:09:47,Punjab,Mukhtar A. Sheikh Hospital,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-89,90,2021-05-09T11:09:47,Punjab,Nishat Labs,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-90,91,2021-05-09T11:09:47,Punjab,Excel Labs,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-91,92,2021-05-09T11:09:47,Punjab,Khan Labs,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-92,93,2021-05-09T11:09:47,Punjab,Allied Hospital,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-93,94,2021-05-09T11:09:47,Punjab,Islamabad Diagnostic Center (IDC),https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-94,95,2021-05-09T11:09:47,Punjab,Abwa Hospital & Research Centre,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-95,96,2021-05-09T11:09:47,Punjab,Excel Labs,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-96,97,2021-05-09T11:09:47,Punjab,Trauma Centre THQ (BSL-3),https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-97,98,2021-05-09T11:09:47,Punjab,Civil Hospital,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-98,99,2021-05-09T11:09:47,Punjab,DHQ,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-99,100,2021-05-09T11:09:47,Punjab,Erdogan – (Indus) Hospital,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-100,101,2021-05-09T11:09:47,Punjab,Khan Lab,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-101,102,2021-05-09T11:09:47,Punjab,Pak Medical Centre (PMC Laboratory),https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-102,103,2021-05-09T11:09:47,Sindh,PCMD Karachi University,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-103,104,2021-05-09T11:09:47,Sindh,Liaqat National Hospital,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-104,105,2021-05-09T11:09:47,Sindh,Civil Hospital,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-105,106,2021-05-09T11:09:47,Sindh,Jinnah PG Medical Institute,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-106,107,2021-05-09T11:09:47,Sindh,SIUT,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-107,108,2021-05-09T11:09:47,Sindh,Civil Hospital North Karachi,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-108,109,2021-05-09T11:09:47,Sindh,NIBD,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-109,110,2021-05-09T11:09:47,Sindh,AKUH,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-110,111,2021-05-09T11:09:47,Sindh,Chughtai,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-111,112,2021-05-09T11:09:47,Sindh,Ziauddin Hospital,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-112,113,2021-05-09T11:09:47,Sindh,Essa Lab,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-113,114,2021-05-09T11:09:47,Sindh,Rahila Research and Reference Lab,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-114,115,2021-05-09T11:09:47,Sindh,Community Health Solutions (CHS),https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-115,116,2021-05-09T11:09:47,Sindh,Al Khidmat Diagnostic Center & Blood Bank,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-116,117,2021-05-09T11:09:47,Sindh,Mosajee,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-117,118,2021-05-09T11:09:47,Sindh,Children Hospital,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-118,119,2021-05-09T11:09:47,Sindh,Cancer Foundation Hospital,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-119,120,2021-05-09T11:09:47,Sindh,South City,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-120,121,2021-05-09T11:09:47,Sindh,Advanced Lab,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-121,122,2021-05-09T11:09:47,Sindh,One Health Lab,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-122,123,2021-05-09T11:09:47,Sindh,Karachi Laboratory Diagnostic Centre,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-123,124,2021-05-09T11:09:47,Sindh,Hashmanis,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-124,125,2021-05-09T11:09:47,Sindh,OMI,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-125,126,2021-05-09T11:09:47,Sindh,SindLab Diagnostics,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-126,127,2021-05-09T11:09:47,Sindh,Taba Heart,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-127,128,2021-05-09T11:09:47,Sindh,"Reliance Diagnostics, Laborator",https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-128,129,2021-05-09T11:09:47,Sindh,Citilab,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-129,130,2021-05-09T11:09:47,Sindh,Patel Hospital,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-130,131,2021-05-09T11:09:47,Sindh,Memon Medical Institute Hospital (MMIH),https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-131,132,2021-05-09T11:09:47,Sindh,Bahria Town International Hospital,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-132,133,2021-05-09T11:09:47,Sindh,Global Research & Reference Laboratories,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-133,134,2021-05-09T11:09:47,Sindh,Excel Labs,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-134,135,2021-05-09T11:09:47,Sindh,Medicare Cardiac & General Hospital,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-135,136,2021-05-09T11:09:47,Sindh,Indus Hospital,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-136,137,2021-05-09T11:09:47,Sindh,LUMHS,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-137,138,2021-05-09T11:09:47,Sindh,SASIMS,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-138,139,2021-05-09T11:09:47,Sindh,Gambit Institute of Medical Sciences,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-139,140,2021-05-09T11:09:47,Sindh,Civil Hospital,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-140,141,2021-05-09T11:09:47,Sindh,Larkano Lab,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-141,142,2021-05-09T11:09:47,Sindh,Chandka Medical College Hospital,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-142,143,2021-05-09T11:09:47,KP,Hayatabad Medical Complex,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-143,144,2021-05-09T11:09:47,KP,Khyber Teaching Hospital,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-144,145,2021-05-09T11:09:47,KP,IDC (Contract signed),https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-145,146,2021-05-09T11:09:47,KP,Excel Labs,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-146,147,2021-05-09T11:09:47,KP,RMI,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-147,148,2021-05-09T11:09:47,KP,Al Khidmat Diagnostic Center & Blood Bank,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-148,149,2021-05-09T11:09:47,KP,NWGH,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-149,150,2021-05-09T11:09:47,KP,Peshawar Medical College,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-150,151,2021-05-09T11:09:47,KP,IBN’E Adam Medical & Diagnostic Center,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-151,152,2021-05-09T11:09:47,KP,"Real Time PCR Diagnostic, Research & Reference Laboratories",https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-152,153,2021-05-09T11:09:47,KP,Public Health Lab Ayub Teaching Hospital,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-153,154,2021-05-09T11:09:47,KP,Shaheena Jameel Hospital,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-154,155,2021-05-09T11:09:47,KP,Excel Labs,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-155,156,2021-05-09T11:09:47,KP,Saidu Sharif Medical College Hospital,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-156,157,2021-05-09T11:09:47,KP,Anwar Lab,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-157,158,2021-05-09T11:09:47,KP,Mufti Mehmood Memorial Teaching Hospital,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-158,159,2021-05-09T11:09:47,KP,Khalifa Gul Nawaz Teaching Hospital,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-159,160,2021-05-09T11:09:47,KP,Mardan Medical Complex,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-160,161,2021-05-09T11:09:47,KP,Swabi Public Health Lab BKMC,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-161,162,2021-05-09T11:09:47,KP,Rehber Diagnostic Center & Lab Service,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-162,163,2021-05-09T11:09:47,KP,DHQ,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-163,164,2021-05-09T11:09:47,KP,Agha Khan,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-164,165,2021-05-09T11:09:47,Baluchistan,Sheikh Zaid Hospital,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-165,166,2021-05-09T11:09:47,Baluchistan,Bolan Medical College,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-166,167,2021-05-09T11:09:47,Baluchistan,TB Lab,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-167,168,2021-05-09T11:09:47,Baluchistan,Public  Health Lab,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-168,169,2021-05-09T11:09:47,Baluchistan,Mobile Diagnostic Unit,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-169,170,2021-05-09T11:09:47,AJK,CMH,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-170,171,2021-05-09T11:09:47,AJK,DHQ,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-171,172,2021-05-09T11:09:47,AJK,CMH,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-172,173,2021-05-09T11:09:47,AJK,DHQ,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-173,174,2021-05-09T11:09:47,Gilgit,CMH (Army),https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-174,175,2021-05-09T11:09:47,Gilgit,Chalas (TB Lab),https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-175,176,2021-05-09T11:09:47,PAF,MM Alam,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-176,177,2021-05-09T11:09:47,PAF,PAF Hospital,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-177,178,2021-05-09T11:09:47,PAF,PAF Hospital,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-178,179,2021-05-09T11:09:47,PAF,PAF Hospital,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-179,180,2021-05-09T11:09:47,PAF,Rafiqui Shaheed PAF Hospital,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-180,181,2021-05-09T11:09:47,PAF,Samugli PAF Hospital,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-181,182,2021-05-09T11:09:47,PAF,PAF Hospital,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
-182,183,2021-05-09T11:09:47,PAF,PAF Hospital,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+,id,datetime,provience,name,city,sector,reference
+0,1,2021-05-10T11:48:21,Federal,National Institute of Health - (NIH) ,Islamabad ,Public,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+1,2,2021-05-10T11:48:21,Federal,PIMS – (POCT + PCR) ,Islamabad ,Public,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+2,3,2021-05-10T11:48:21,Federal,Islamabad Diagnostic Center (IDC) ,Islamabad ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+3,4,2021-05-10T11:48:21,Federal,Biotech Lab and Research Center ,Islamabad ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+4,5,2021-05-10T11:48:21,Federal,Metropole Laboratories ,Islamabad ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+5,6,2021-05-10T11:48:21,Federal,Capital Diagnostic Centre ,Islamabad ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+6,7,2021-05-10T11:48:21,Federal,Biogene ,Islamabad ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+7,8,2021-05-10T11:48:21,Federal,Shifa International ,Islamabad ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+8,9,2021-05-10T11:48:21,Federal,Excel Labs ,Islamabad ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+9,10,2021-05-10T11:48:21,Federal,Global Clinical Care Diagnostic Centre ,Islamabad ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+10,11,2021-05-10T11:48:21,Federal,Temar Diagnostics ,Islamabad ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+11,12,2021-05-10T11:48:21,Federal,Margalla Diagnostics and Clinics ,Islamabad ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+12,13,2021-05-10T11:48:21,Federal,Advanced Diagnostics Centre ,Islamabad ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+13,14,2021-05-10T11:48:21,Federal,Kulsum Intl Hospital ,Islamabad ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+14,15,2021-05-10T11:48:21,Federal,Maroof Hospital ,Islamabad ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+15,16,2021-05-10T11:48:21,Federal,Nayab Labs ,Islamabad ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+16,17,2021-05-10T11:48:21,Federal,Medikay Pvt limited ,Islamabad ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+17,18,2021-05-10T11:48:21,Federal,Akbar Niazi Teaching Hospital ,Islamabad ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+18,19,2021-05-10T11:48:21,Federal,"Real Time PCR Diagnostic, Research & Reference Laboratories ",Islamabad ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+19,20,2021-05-10T11:48:21,Federal,Shaafi Hospital PWD ,Islamabad ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+20,21,2021-05-10T11:48:21,Federal,Crown Diagnostic Centre ,Islamabad ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+21,22,2021-05-10T11:48:21,Federal,Shaheen Medical Laboratories & Health Services ,Islamabad ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+22,23,2021-05-10T11:48:21,Federal,DAHA Lab and Diagnostic ,Islamabad ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+23,24,2021-05-10T11:48:21,Federal,Rehman Laboratories ,Islamabad ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+24,25,2021-05-10T11:48:21,Federal,Islamabad Health Care Laboratory ,Islamabad ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+25,26,2021-05-10T11:48:21,Federal,Biomaxx Lab and Diagnostic Centre ,Islamabad ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+26,27,2021-05-10T11:48:21,Federal,Ali Medical Centre ,Islamabad ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+27,28,2021-05-10T11:48:21,Federal,Ideal Labs & Diagnostic Center ,Islamabad ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+28,29,2021-05-10T11:48:21,Federal,European Diagnostic Center ,Islamabad ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+29,30,2021-05-10T11:48:21,Federal,BEKS Advanced Medical Services (Pvt) Ltd ,Islamabad ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+30,31,2021-05-10T11:48:21,Federal,MedAsk ,Islamabad ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+31,32,2021-05-10T11:48:21,Federal,IHITC Lab ,Islamabad ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+32,33,2021-05-10T11:48:21,Punjab,Punjab AIDS Control Program incl Hepatitis Lab ,Lahore ,Public,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+33,34,2021-05-10T11:48:21,Punjab,Punjab Forensic Science Auth Lab ,Lahore ,Public,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+34,35,2021-05-10T11:48:21,Punjab,Jinnah Hospital ,Lahore ,Public,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+35,36,2021-05-10T11:48:21,Punjab,PKLI ,Lahore ,Public,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+36,37,2021-05-10T11:48:21,Punjab,Lahore General Hospital ,Lahore ,Public,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+37,38,2021-05-10T11:48:21,Punjab,CAMB ,Lahore ,Public,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+38,39,2021-05-10T11:48:21,Punjab,UVAS (BSL-3) ,Lahore ,Public,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+39,40,2021-05-10T11:48:21,Punjab,Lahore TB Program (BSL-3) ,Lahore ,Public,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+40,41,2021-05-10T11:48:21,Punjab,IPH Lahore ,Lahore ,Public,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+41,42,2021-05-10T11:48:21,Punjab,Chughtai Lab ,Lahore ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+42,43,2021-05-10T11:48:21,Punjab,Shaukat Khanum Memorial Hospital ,Lahore ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+43,44,2021-05-10T11:48:21,Punjab,Islamabad Diagnostic Center (IDC) ,Lahore ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+44,45,2021-05-10T11:48:21,Punjab,Rahila Research and Reference Lab ,Lahore ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+45,46,2021-05-10T11:48:21,Punjab,Venous Diagnostics ,Lahore ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+46,47,2021-05-10T11:48:21,Punjab,Hameed Lateef Hospital ,Lahore ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+47,48,2021-05-10T11:48:21,Punjab,Citilab & Research Centre ,Lahore ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+48,49,2021-05-10T11:48:21,Punjab,Alam International Lab ,Lahore ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+49,50,2021-05-10T11:48:21,Punjab,Horizon Molecular Laboratory ,Lahore ,,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+50,51,2021-05-10T11:48:21,Punjab,Agha Khan ,Lahore ,,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+51,52,2021-05-10T11:48:21,Punjab,Surgimed Lab ,Lahore ,,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+52,53,2021-05-10T11:48:21,Punjab,Testzone ,Lahore ,,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+53,54,2021-05-10T11:48:21,Punjab,Zeenat Lab ,Lahore ,,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+54,55,2021-05-10T11:48:21,Punjab,Genome Lab ,Lahore ,,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+55,56,2021-05-10T11:48:21,Punjab,Al Nasar Lab ,Lahore ,,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+56,57,2021-05-10T11:48:21,Punjab,Doctor Hospital ,Lahore ,,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+57,58,2021-05-10T11:48:21,Punjab,University of Lahore ,Lahore ,,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+58,59,2021-05-10T11:48:21,Punjab,Mughal Lab ,Lahore ,,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+59,60,2021-05-10T11:48:21,Punjab,Lab Genetix ,Lahore ,,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+60,61,2021-05-10T11:48:21,Punjab,Hormone Lab ,Lahore ,,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+61,62,2021-05-10T11:48:21,Punjab,Lahore Diagnostic Centre ,Lahore ,,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+62,63,2021-05-10T11:48:21,Punjab,INNOVA Labs and Diagnostics ,Lahore ,,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+63,64,2021-05-10T11:48:21,Punjab,Shalamar Hospital Pathology Lab ,Lahore ,,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+64,65,2021-05-10T11:48:21,Punjab,CLINLAB ,Lahore ,,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+65,66,2021-05-10T11:48:21,Punjab,Decent Hormone Lab ,Lahore ,,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+66,67,2021-05-10T11:48:21,Punjab,Global Diagnostic Laboratory ,Lahore ,,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+67,68,2021-05-10T11:48:21,Punjab,Al-Khidmat Foundation Lab ,Lahore ,,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+68,69,2021-05-10T11:48:21,Punjab,Bahria Intl Hospital ,Lahore ,,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+69,70,2021-05-10T11:48:21,Punjab,Armed Forces Institute of Pathology (AFIP) ,Rawalpindi ,Public,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+70,71,2021-05-10T11:48:21,Punjab,Rawalpindi Medical University (Holy Family) ,Rawalpindi ,Public,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+71,72,2021-05-10T11:48:21,Punjab,Benazir Bhutto Hospital (BBH) Rawalpindi ,Rawalpindi ,Public,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+72,73,2021-05-10T11:48:21,Punjab,Rawalpindi Institute of Cardiology ,Rawalpindi ,Public,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+73,74,2021-05-10T11:48:21,Punjab,Premium Diagnostics ,Rawalpindi ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+74,75,2021-05-10T11:48:21,Punjab,Citi Lab ,Rawalpindi ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+75,76,2021-05-10T11:48:21,Punjab,Fauji Foundation Hospital ,Rawalpindi ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+76,77,2021-05-10T11:48:21,Punjab,Health Ways ,Rawalpindi ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+77,78,2021-05-10T11:48:21,Punjab,Twin City Diagnostics ,Rawalpindi ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+78,79,2021-05-10T11:48:21,Punjab,Future Labs ,Rawalpindi ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+79,80,2021-05-10T11:48:21,Punjab,Care Laboratories ,Rawalpindi ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+80,81,2021-05-10T11:48:21,Punjab,Biotech Molecular & Clinical Lab ,Rawalpindi ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+81,82,2021-05-10T11:48:21,Punjab,IBN’E SENA Laboratory & Diagnostic Centre ,Rawalpindi ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+82,83,2021-05-10T11:48:21,Punjab,Life Care Lab & Medical Diagnostic Center ,Rawalpindi ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+83,84,2021-05-10T11:48:21,Punjab,Bahria Intl Hosp ,Rawalpindi ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+84,85,2021-05-10T11:48:21,Punjab,POF Hospital ,Wah ,Public,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+85,86,2021-05-10T11:48:21,Punjab,Nishtar Medical College ,Multan ,Public,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+86,87,2021-05-10T11:48:21,Punjab,Multan TB Program (BSL-3) ,Multan ,Public,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+87,88,2021-05-10T11:48:21,Punjab,Islamabad Diagnostic Center (IDC) ,Multan ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+88,89,2021-05-10T11:48:21,Punjab,Bakhtawar Amin Medical College ,Multan ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+89,90,2021-05-10T11:48:21,Punjab,South Punjab Hospital Laboratories ,Multan ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+90,91,2021-05-10T11:48:21,Punjab,Mukhtar A. Sheikh Hospital ,Multan ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+91,92,2021-05-10T11:48:21,Punjab,Nishat Labs ,Multan ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+92,93,2021-05-10T11:48:21,Punjab,Excel Labs ,Multan ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+93,94,2021-05-10T11:48:21,Punjab,Khan Labs ,Multan ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+94,95,2021-05-10T11:48:21,Punjab,Allied Hospital ,Faisalabad ,Public,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+95,96,2021-05-10T11:48:21,Punjab,Islamabad Diagnostic Center (IDC) ,Faisalabad ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+96,97,2021-05-10T11:48:21,Punjab,Abwa Hospital & Research Centre ,Faisalabad ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+97,98,2021-05-10T11:48:21,Punjab,Excel Labs ,Faisalabad ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+98,99,2021-05-10T11:48:21,Punjab,Trauma Centre THQ (BSL-3) ,Wazirabad ,Public,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+99,100,2021-05-10T11:48:21,Punjab,Civil Hospital ,Bahawalpur ,Public,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+100,101,2021-05-10T11:48:21,Punjab,DHQ ,DG Khan ,Public,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+101,102,2021-05-10T11:48:21,Punjab,Erdogan – (Indus) Hospital ,Muzaffargarh ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+102,103,2021-05-10T11:48:21,Punjab,Khan Lab ,Sargodha ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+103,104,2021-05-10T11:48:21,Punjab,Pak Medical Centre (PMC Laboratory) ,Sialkot ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+104,105,2021-05-10T11:48:21,Sindh,"Dow University, Ojha ",Karachi ,Public,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+105,106,2021-05-10T11:48:21,Sindh,PCMD Karachi University ,Karachi ,,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+106,107,2021-05-10T11:48:21,Sindh,Liaqat National Hospital ,Karachi ,,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+107,108,2021-05-10T11:48:21,Sindh,Civil Hospital ,Karachi ,,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+108,109,2021-05-10T11:48:21,Sindh,Jinnah PG Medical Institute ,Karachi ,,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+109,110,2021-05-10T11:48:21,Sindh,SIUT ,Karachi ,,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+110,111,2021-05-10T11:48:21,Sindh,Civil Hospital North Karachi ,Karachi ,,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+111,112,2021-05-10T11:48:21,Sindh,NIBD ,Karachi ,,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+112,113,2021-05-10T11:48:21,Sindh,AKUH ,Karachi ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+113,114,2021-05-10T11:48:21,Sindh,Chughtai ,Karachi ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+114,115,2021-05-10T11:48:21,Sindh,Ziauddin Hospital ,Karachi ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+115,116,2021-05-10T11:48:21,Sindh,Essa Lab ,Karachi ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+116,117,2021-05-10T11:48:21,Sindh,Rahila Research and Reference Lab ,Karachi ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+117,118,2021-05-10T11:48:21,Sindh,Community Health Solutions (CHS) ,Karachi ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+118,119,2021-05-10T11:48:21,Sindh,Al Khidmat Diagnostic Center & Blood Bank ,Karachi ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+119,120,2021-05-10T11:48:21,Sindh,Mosajee ,Karachi ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+120,121,2021-05-10T11:48:21,Sindh,Children Hospital ,Karachi ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+121,122,2021-05-10T11:48:21,Sindh,Cancer Foundation Hospital ,Karachi ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+122,123,2021-05-10T11:48:21,Sindh,South City ,Karachi ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+123,124,2021-05-10T11:48:21,Sindh,Advanced Lab ,Karachi ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+124,125,2021-05-10T11:48:21,Sindh,One Health Lab ,Karachi ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+125,126,2021-05-10T11:48:21,Sindh,Karachi Laboratory Diagnostic Centre ,Karachi ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+126,127,2021-05-10T11:48:21,Sindh,Hashmanis ,Karachi ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+127,128,2021-05-10T11:48:21,Sindh,OMI ,Karachi ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+128,129,2021-05-10T11:48:21,Sindh,SindLab Diagnostics ,Karachi ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+129,130,2021-05-10T11:48:21,Sindh,Taba Heart ,Karachi ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+130,131,2021-05-10T11:48:21,Sindh,"Reliance Diagnostics, Laborator ",Karachi ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+131,132,2021-05-10T11:48:21,Sindh,Citilab ,Karachi ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+132,133,2021-05-10T11:48:21,Sindh,Patel Hospital ,Karachi ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+133,134,2021-05-10T11:48:21,Sindh,Memon Medical Institute Hospital (MMIH) ,Karachi ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+134,135,2021-05-10T11:48:21,Sindh,Bahria Town International Hospital ,Karachi ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+135,136,2021-05-10T11:48:21,Sindh,Global Research & Reference Laboratories ,Karachi ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+136,137,2021-05-10T11:48:21,Sindh,Excel Labs ,Karachi ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+137,138,2021-05-10T11:48:21,Sindh,Medicare Cardiac & General Hospital ,Karachi ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+138,139,2021-05-10T11:48:21,Sindh,Indus Hospital ,Karachi ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+139,140,2021-05-10T11:48:21,Sindh,LUMHS ,Hyderabad ,Public,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+140,141,2021-05-10T11:48:21,Sindh,SASIMS ,Sehwan ,Public,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+141,142,2021-05-10T11:48:21,Sindh,Gambit Institute of Medical Sciences ,Sukkur ,Public,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+142,143,2021-05-10T11:48:21,Sindh,Civil Hospital ,Sukkur ,Public,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+143,144,2021-05-10T11:48:21,Sindh,Larkano Lab ,Larkana ,Public,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+144,145,2021-05-10T11:48:21,Sindh,Chandka Medical College Hospital ,Larkana ,Public,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+145,146,2021-05-10T11:48:21,KP,Khyber Medical University ,Peshawar ,Public,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+146,147,2021-05-10T11:48:21,KP,Hayatabad Medical Complex ,Peshawar ,Public,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+147,148,2021-05-10T11:48:21,KP,Khyber Teaching Hospital ,Peshawar ,Public,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+148,149,2021-05-10T11:48:21,KP,IDC (Contract signed) ,Peshawar ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+149,150,2021-05-10T11:48:21,KP,Excel Labs ,Peshawar ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+150,151,2021-05-10T11:48:21,KP,RMI ,Peshawar ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+151,152,2021-05-10T11:48:21,KP,Al Khidmat Diagnostic Center & Blood Bank ,Peshawar ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+152,153,2021-05-10T11:48:21,KP,NWGH ,Peshawar ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+153,154,2021-05-10T11:48:21,KP,Peshawar Medical College ,Peshawar ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+154,155,2021-05-10T11:48:21,KP,IBN’E Adam Medical & Diagnostic Center ,Peshawar ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+155,156,2021-05-10T11:48:21,KP,"Real Time PCR Diagnostic, Research & Reference Laboratories ",Peshawar ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+156,157,2021-05-10T11:48:21,KP,Public Health Lab Ayub Teaching Hospital ,Abbottabad ,Public,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+157,158,2021-05-10T11:48:21,KP,Shaheena Jameel Hospital ,Abbottabad ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+158,159,2021-05-10T11:48:21,KP,Excel Labs ,Abbottabad ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+159,160,2021-05-10T11:48:21,KP,Saidu Sharif Medical College Hospital ,Sawat ,Public,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+160,161,2021-05-10T11:48:21,KP,Anwar Lab ,Sawat ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+161,162,2021-05-10T11:48:21,KP,Mufti Mehmood Memorial Teaching Hospital ,D I Khan ,Public,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+162,163,2021-05-10T11:48:21,KP,Khalifa Gul Nawaz Teaching Hospital ,Bannu ,Public,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+163,164,2021-05-10T11:48:21,KP,Mardan Medical Complex ,Mardan ,Public,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+164,165,2021-05-10T11:48:21,KP,Swabi Public Health Lab BKMC ,Public ,,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+165,166,2021-05-10T11:48:21,KP,Rehber Diagnostic Center & Lab Service ,Private ,,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+166,167,2021-05-10T11:48:21,KP,DHQ ,Temargara ,Public,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+167,168,2021-05-10T11:48:21,KP,Agha Khan ,Chitral ,Private,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+168,169,2021-05-10T11:48:21,Balochistan,Fatima Jinnah Hospital ,Quetta ,Public,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+169,170,2021-05-10T11:48:21,Balochistan,Sheikh Zaid Hospital ,Quetta ,Public,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+170,171,2021-05-10T11:48:21,Balochistan,Bolan Medical College ,Quetta ,Public,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+171,172,2021-05-10T11:48:21,Balochistan,TB Lab ,Khuzdar ,Public,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+172,173,2021-05-10T11:48:21,Balochistan,Public Health Lab ,Taftan ,Public,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+173,174,2021-05-10T11:48:21,Balochistan,Mobile Diagnostic Unit ,Gawadar ,Public,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+174,175,2021-05-10T11:48:21,AJK,Abbas Institute of Medical Sciences ,Muzaffarabad ,Public,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+175,176,2021-05-10T11:48:21,AJK,CMH ,Muzaffarabad ,Public,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+176,177,2021-05-10T11:48:21,AJK,DHQ ,Mirpur ,Public,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+177,178,2021-05-10T11:48:21,AJK,CMH ,Rawlakot ,Public,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+178,179,2021-05-10T11:48:21,AJK,DHQ ,Kotli ,Public,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+179,180,2021-05-10T11:48:21,Gilgit Baltistan,DHQ ,Gilgit ,Public,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+180,181,2021-05-10T11:48:21,Gilgit Baltistan,CMH (Army) ,Skardu ,Public,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+181,182,2021-05-10T11:48:21,Gilgit Baltistan,Chalas (TB Lab) ,Chalas ,Public,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+182,183,2021-05-10T11:48:21,Sindh,Faisal Base Hospital ,Karachi,PAF,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+183,184,2021-05-10T11:48:21,Punjab,MM Alam ,Mianwali,PAF,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+184,185,2021-05-10T11:48:21,KP,PAF Hospital ,Peshawar,PAF,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+185,186,2021-05-10T11:48:21,Federal,PAF Hospital ,Islamabad,PAF,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+186,187,2021-05-10T11:48:21,Punjab,PAF Hospital ,Kamra,PAF,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+187,188,2021-05-10T11:48:21,Punjab,Rafiqui Shaheed PAF Hospital ,Shorkot,PAF,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+188,189,2021-05-10T11:48:21,Balochistan,Samugli PAF Hospital ,Quetta,PAF,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+189,190,2021-05-10T11:48:21,Punjab,PAF Hospital ,Lahore,PAF,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
+190,191,2021-05-10T11:48:21,Punjab,PAF Hospital ,Sargodha,PAF,https://covid.gov.pk/facilities/29%20April%202021%20Current%20Laboratory%20Testing%20Capacity%20for%20COVID%20Web.pdf
