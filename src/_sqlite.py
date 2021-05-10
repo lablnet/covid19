@@ -275,39 +275,102 @@ class _sqlite:
     def get_provience_wise(table):
         count = 0
         gb = {
-            'infected': 0,
-            'recovered': 0,
-            'deceased': 0,
+            'infected': {
+                "last": 0,
+                "total": 0,
+            },
+            'recovered': {
+                "last": 0,
+                "total": 0,
+            },
+            'deceased': {
+                "last": 0,
+                "total": 0,
+            },
         }
         kpk = {
-            'infected': 0,
-            'recovered': 0,
-            'deceased': 0,
+            'infected': {
+                "last": 0,
+                "total": 0,
+            },
+            'recovered': {
+                "last": 0,
+                "total": 0,
+            },
+            'deceased': {
+                "last": 0,
+                "total": 0,
+            },
         }
         isb = {
-            'infected': 0,
-            'recovered': 0,
-            'deceased': 0,
+            'infected': {
+                "last": 0,
+                "total": 0,
+            },
+            'recovered': {
+                "last": 0,
+                "total": 0,
+            },
+            'deceased': {
+                "last": 0,
+                "total": 0,
+            },
         }
         punjab = {
-            'infected': 0,
-            'recovered': 0,
-            'deceased': 0,
+            'infected': {
+                "last": 0,
+                "total": 0,
+            },
+            'recovered': {
+                "last": 0,
+                "total": 0,
+            },
+            'deceased': {
+                "last": 0,
+                "total": 0,
+            },
         }
         sindh = {
-            'infected': 0,
-            'recovered': 0,
-            'deceased': 0,
+            'infected': {
+                "last": 0,
+                "total": 0,
+            },
+            'recovered': {
+                "last": 0,
+                "total": 0,
+            },
+            'deceased': {
+                "last": 0,
+                "total": 0,
+            },
         }
         balochistan = {
-            'infected': 0,
-            'recovered': 0,
-            'deceased': 0,
+            'infected': {
+                "last": 0,
+                "total": 0,
+            },
+            'recovered': {
+                "last": 0,
+                "total": 0,
+            },
+            'deceased': {
+                "last": 0,
+                "total": 0,
+            },
         }
         ajk  = {
-            'infected': 0,
-            'recovered': 0,
-            'deceased': 0,
+            'infected': {
+                "last": 0,
+                "total": 0,
+            },
+            'recovered': {
+                "last": 0,
+                "total": 0,
+            },
+            'deceased': {
+                "last": 0,
+                "total": 0,
+            },
         }
 
         # isb
@@ -316,22 +379,30 @@ class _sqlite:
         isbData = _sqlite.cur.fetchall()
         count = isbData[0][5].split(" ")[-1]
         count = str(count).replace(',', '')
+        last = int(str(isbData[0][5].split(" ")[0].replace(',', '')))
         if (count.isdigit()):
-            isb['infected'] = int(count)
+            isb['infected']['total'] = int(count)
+            isb['infected']['last'] = last
+
         isbSql = "SELECT * FROM " + table + " Where type='RECOVERED' and description LIKE '%Islamabad%' ORDER BY id desc LIMIT 1; "
         _sqlite.cur.execute(isbSql, ())
         isbData = _sqlite.cur.fetchall()
         count = isbData[0][5].split(" ")[-1]
         count = str(count).replace(',', '')
+        last = int(str(isbData[0][5].split(" ")[0].replace(',', '')))
         if (count.isdigit()):
-            isb['recovered'] = int(count)
+            isb['recovered']['total'] = int(count)
+            isb['recovered']['last'] = last
+
         isbSql = "SELECT * FROM " + table + " Where type='DECEASED' and description LIKE '%Islamabad%' ORDER BY id desc LIMIT 1; "
         _sqlite.cur.execute(isbSql, ())
         isbData = _sqlite.cur.fetchall()
         count = isbData[0][5].split(" ")[-1]
         count = str(count).replace(',', '')
+        last = int(str(isbData[0][5].split(" ")[0].replace(',', '')))
         if (count.isdigit()):
-            isb['deceased'] = int(count)
+            isb['deceased']['total'] = int(count)
+            isb['deceased']['last'] = last
 
         # punjab
         punjabSql = "SELECT * FROM " + table + " Where type='INFECTED' and description LIKE '%Punjab%' ORDER BY id desc LIMIT 1; "
@@ -339,22 +410,30 @@ class _sqlite:
         pujnabData = _sqlite.cur.fetchall()
         count = pujnabData[0][5].split(" ")[-1]
         count = str(count).replace(',', '')
+        last = int(str(isbData[0][5].split(" ")[0].replace(',', '')))
         if (count.isdigit()):
-            punjab['infected'] = int(count)
+            punjab['infected']['total'] = int(count)
+            punjab['infected']['last'] = last
+
         punjabSql = "SELECT * FROM " + table + " Where type='RECOVERED' and description LIKE '%Punjab%' ORDER BY id desc LIMIT 1; "
         _sqlite.cur.execute(punjabSql, ())
         pujnabData = _sqlite.cur.fetchall()
         count = pujnabData[0][5].split(" ")[-1]
         count = str(count).replace(',', '')
+        last = int(str(isbData[0][5].split(" ")[0].replace(',', '')))
         if (count.isdigit()):
-            punjab['recovered'] = int(count)
+            punjab['recovered']['total'] = int(count)
+            punjab['recovered']['last'] = last
+
         punjabSql = "SELECT * FROM " + table + " Where type='DECEASED' and description LIKE '%Punjab%' ORDER BY id desc LIMIT 1; "
         _sqlite.cur.execute(punjabSql, ())
         pujnabData = _sqlite.cur.fetchall()
         count = pujnabData[0][5].split(" ")[-1]
         count = str(count).replace(',', '')
+        last = int(str(isbData[0][5].split(" ")[0].replace(',', '')))
         if (count.isdigit()):
-            punjab['deceased'] = int(count)
+            punjab['deceased']['total'] = int(count)
+            punjab['deceased']['last'] = last
 
         # sindth
         sindhSql = "SELECT * FROM " + table + " Where type='INFECTED' and description LIKE '%Sindh%' ORDER BY id desc LIMIT 1; "
@@ -362,22 +441,30 @@ class _sqlite:
         sindhData = _sqlite.cur.fetchall()
         count = sindhData[0][5].split(" ")[-1]
         count = str(count).replace(',', '')
+        last = int(str(isbData[0][5].split(" ")[0].replace(',', '')))
         if (count.isdigit()):
-            sindh['infected'] = int(count)
+            sindh['infected']['total'] = int(count)
+            sindh['infected']['last'] = last
+
         sindhSql = "SELECT * FROM " + table + " Where type='RECOVERED' and description LIKE '%Sindh%' ORDER BY id desc LIMIT 1; "
         _sqlite.cur.execute(sindhSql, ())
         sindhData = _sqlite.cur.fetchall()
         count = sindhData[0][5].split(" ")[-1]
         count = str(count).replace(',', '')
+        last = int(str(isbData[0][5].split(" ")[0].replace(',', '')))
         if (count.isdigit()):
-            sindh['recovered'] = int(count)
+            sindh['recovered']['total'] = int(count)
+            sindh['recovered']['last'] = last
+
         sindhSql = "SELECT * FROM " + table + " Where type='DECEASED' and description LIKE '%Sindh%' ORDER BY id desc LIMIT 1; "
         _sqlite.cur.execute(sindhSql, ())
         sindhData = _sqlite.cur.fetchall()
         count = sindhData[0][5].split(" ")[-1]
         count = str(count).replace(',', '')
+        last = int(str(isbData[0][5].split(" ")[0].replace(',', '')))
         if (count.isdigit()):
-            sindh['deceased'] = int(count)
+            sindh['deceased']['total'] = int(count)
+            sindh['deceased']['last'] = last
 
         # KPK
         kpkSql = "SELECT * FROM " + table + " Where type='INFECTED' and description LIKE '%KPK%' ORDER BY id desc LIMIT 1; "
@@ -385,23 +472,30 @@ class _sqlite:
         kpkData = _sqlite.cur.fetchall()
         count = kpkData[0][5].split(" ")[-1]
         count = str(count).replace(',', '')
+        last = int(str(isbData[0][5].split(" ")[0].replace(',', '')))
         if (count.isdigit()):
-            kpk['infected'] = int(count)
+            kpk['infected']['total'] = int(count)
+            kpk['infected']['last'] = last
+
         kpkSql = "SELECT * FROM " + table + " Where type='RECOVERED' and description LIKE '%KPK%' ORDER BY id desc LIMIT 1; "
         _sqlite.cur.execute(kpkSql, ())
         kpkData = _sqlite.cur.fetchall()
         count = kpkData[0][5].split(" ")[-1]
         count = str(count).replace(',', '')
+        last = int(str(isbData[0][5].split(" ")[0].replace(',', '')))
         if (count.isdigit()):
-            kpk['recovered'] = int(count)
+            kpk['recovered']['total'] = int(count)
+            kpk['recovered']['last'] = last
+
         kpkSql = "SELECT * FROM " + table + " Where type='DECEASED' and description LIKE '%KPK%' ORDER BY id desc LIMIT 1; "
         _sqlite.cur.execute(kpkSql, ())
         kpkData = _sqlite.cur.fetchall()
         count = kpkData[0][5].split(" ")[-1]
         count = str(count).replace(',', '')
+        last = int(str(isbData[0][5].split(" ")[0].replace(',', '')))
         if (count.isdigit()):
-            kpk['deceased'] = int(count)
-
+            kpk['deceased']['total'] = int(count)
+            kpk['deceased']['last'] = last
 
         # GB
         gbSql = "SELECT * FROM " + table + " Where type='INFECTED' and description LIKE '%Gilgit Baltistan%' ORDER BY id desc LIMIT 1; "
@@ -409,24 +503,30 @@ class _sqlite:
         gbData = _sqlite.cur.fetchall()
         count = gbData[0][5].split(" ")[-1]
         count = str(count).replace(',', '')
+        last = int(str(isbData[0][5].split(" ")[0].replace(',', '')))
         if (count.isdigit()):
-            gb['infected'] = int(count)
+            gb['infected']['total'] = int(count)
+            gb['infected']['last'] = last
 
         gbSql = "SELECT * FROM " + table + " Where type='RECOVERED' and description LIKE '%Gilgit Baltistan%' ORDER BY id desc LIMIT 1; "
         _sqlite.cur.execute(gbSql, ())
         gbData = _sqlite.cur.fetchall()
         count = gbData[0][5].split(" ")[-1]
         count = str(count).replace(',', '')
+        last = int(str(isbData[0][5].split(" ")[0].replace(',', '')))
         if (count.isdigit()):
-            gb['recovered'] = int(count)
+            gb['recovered']['total'] = int(count)
+            gb['recovered']['last'] = last
 
         gbSql = "SELECT * FROM " + table + " Where type='DECEASED' and description LIKE '%Gilgit Baltistan%' ORDER BY id desc LIMIT 1; "
         _sqlite.cur.execute(gbSql, ())
         gbData = _sqlite.cur.fetchall()
         count = gbData[0][5].split(" ")[-1]
         count = str(count).replace(',', '')
+        last = int(str(isbData[0][5].split(" ")[0].replace(',', '')))
         if (count.isdigit()):
-            gb['deceased'] = int(count)
+            gb['deceased']['total'] = int(count)
+            gb['deceased']['last'] = last
 
         # AJK
         ajkSql = "SELECT * FROM " + table + " Where type='INFECTED' and description LIKE '%AJK%' ORDER BY id desc LIMIT 1; "
@@ -434,24 +534,30 @@ class _sqlite:
         ajkData = _sqlite.cur.fetchall()
         count = ajkData[0][5].split(" ")[-1]
         count = str(count).replace(',', '')
+        last = int(str(isbData[0][5].split(" ")[0].replace(',', '')))
         if (count.isdigit()):
-            ajk['infected'] = int(count)
+            ajk['infected']['total'] = int(count)
+            ajk['infected']['last'] = last
 
         ajkSql = "SELECT * FROM " + table + " Where type='RECOVERED' and description LIKE '%AJK%' ORDER BY id desc LIMIT 1; "
         _sqlite.cur.execute(ajkSql, ())
         ajkData = _sqlite.cur.fetchall()
         count = ajkData[0][5].split(" ")[-1]
         count = str(count).replace(',', '')
+        last = int(str(isbData[0][5].split(" ")[0].replace(',', '')))
         if (count.isdigit()):
-            ajk['recovered'] = int(count)
+            ajk['recovered']['total'] = int(count)
+            ajk['recovered']['last'] = last
 
         ajkSql = "SELECT * FROM " + table + " Where type='DECEASED' and description LIKE '%AJK%' ORDER BY id desc LIMIT 1; "
         _sqlite.cur.execute(ajkSql, ())
         ajkData = _sqlite.cur.fetchall()
         count = ajkData[0][5].split(" ")[-1]
         count = str(count).replace(',', '')
+        last = int(str(isbData[0][5].split(" ")[0].replace(',', '')))
         if (count.isdigit()):
-            ajk['deceased'] = int(count)
+            ajk['deceased']['total'] = int(count)
+            ajk['deceased']['last'] = last
 
         # balochistan
         balochistanSql = "SELECT * FROM " + table + " Where type='INFECTED' and description LIKE '%Balochistan%' ORDER BY id desc LIMIT 1; "
@@ -459,25 +565,30 @@ class _sqlite:
         balochistanData = _sqlite.cur.fetchall()
         count = balochistanData[0][5].split(" ")[-1]
         count = str(count).replace(',', '')
+        last = int(str(isbData[0][5].split(" ")[0].replace(',', '')))
         if (count.isdigit()):
-            balochistan['infected'] = int(count)
+            balochistan['infected']['total'] = int(count)
+            balochistan['infected']['last'] = last
 
         balochistanSql = "SELECT * FROM " + table + " Where type='RECOVERED' and description LIKE '%Balochistan%' ORDER BY id desc LIMIT 1; "
         _sqlite.cur.execute(balochistanSql, ())
         balochistanData = _sqlite.cur.fetchall()
         count = balochistanData[0][5].split(" ")[-1]
         count = str(count).replace(',', '')
+        last = int(str(isbData[0][5].split(" ")[0].replace(',', '')))
         if (count.isdigit()):
-            balochistan['recovered'] = int(count)
+            balochistan['recovered']['total'] = int(count)
+            balochistan['recovered']['last'] = last
 
         balochistanSql = "SELECT * FROM " + table + " Where type='DECEASED' and description LIKE '%Balochistan%' ORDER BY id desc LIMIT 1; "
         _sqlite.cur.execute(balochistanSql, ())
         balochistanData = _sqlite.cur.fetchall()
         count = balochistanData[0][5].split(" ")[-1]
         count = str(count).replace(',', '')
+        last = int(str(isbData[0][5].split(" ")[0].replace(',', '')))
         if (count.isdigit()):
-            balochistan['deceased'] = int(count)
-
+            balochistan['deceased']['total'] = int(count)
+            balochistan['deceased']['last'] = last
 
         dataDict = {
             'Islamabad': isb,

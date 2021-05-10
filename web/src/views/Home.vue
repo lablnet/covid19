@@ -117,9 +117,9 @@
                             <span style="display: none">{{i = 0}}</span>
                             <tr v-for="item in provience" :key="item">
                                 <td><b>{{provienceName[i]}}</b></td>
-                                 <td>{{item.infected}}</td>
-                                <td>{{item.recovered}}</td>
-                                <td>{{item.deceased}}</td>
+                                 <td>{{item.infected.total}} <sub>+{{item.infected.last}}</sub></td>
+                                <td>{{item.recovered.total}} <sub>+{{item.recovered.last}}</sub></td>
+                                <td>{{item.deceased.total}} <sub>+{{item.deceased.last}}</sub></td>
                               <span style="display: none">{{i++}}</span>
                               </tr>
 
