@@ -420,7 +420,7 @@ class _sqlite:
         pujnabData = _sqlite.cur.fetchall()
         count = pujnabData[0][5].split(" ")[-1]
         count = str(count).replace(',', '')
-        last = int(str(isbData[0][5].split(" ")[0].replace(',', '')))
+        last = int(str(pujnabData[0][5].split(" ")[0].replace(',', '')))
         if (count.isdigit()):
             punjab['recovered']['total'] = int(count)
             punjab['recovered']['last'] = last
@@ -430,7 +430,7 @@ class _sqlite:
         pujnabData = _sqlite.cur.fetchall()
         count = pujnabData[0][5].split(" ")[-1]
         count = str(count).replace(',', '')
-        last = int(str(isbData[0][5].split(" ")[0].replace(',', '')))
+        last = int(str(pujnabData[0][5].split(" ")[0].replace(',', '')))
         if (count.isdigit()):
             punjab['deceased']['total'] = int(count)
             punjab['deceased']['last'] = last
@@ -441,7 +441,7 @@ class _sqlite:
         sindhData = _sqlite.cur.fetchall()
         count = sindhData[0][5].split(" ")[-1]
         count = str(count).replace(',', '')
-        last = int(str(isbData[0][5].split(" ")[0].replace(',', '')))
+        last = int(str(sindhData[0][5].split(" ")[0].replace(',', '')))
         if (count.isdigit()):
             sindh['infected']['total'] = int(count)
             sindh['infected']['last'] = last
@@ -451,7 +451,7 @@ class _sqlite:
         sindhData = _sqlite.cur.fetchall()
         count = sindhData[0][5].split(" ")[-1]
         count = str(count).replace(',', '')
-        last = int(str(isbData[0][5].split(" ")[0].replace(',', '')))
+        last = int(str(sindhData[0][5].split(" ")[0].replace(',', '')))
         if (count.isdigit()):
             sindh['recovered']['total'] = int(count)
             sindh['recovered']['last'] = last
@@ -461,7 +461,7 @@ class _sqlite:
         sindhData = _sqlite.cur.fetchall()
         count = sindhData[0][5].split(" ")[-1]
         count = str(count).replace(',', '')
-        last = int(str(isbData[0][5].split(" ")[0].replace(',', '')))
+        last = int(str(sindhData[0][5].split(" ")[0].replace(',', '')))
         if (count.isdigit()):
             sindh['deceased']['total'] = int(count)
             sindh['deceased']['last'] = last
@@ -472,7 +472,7 @@ class _sqlite:
         kpkData = _sqlite.cur.fetchall()
         count = kpkData[0][5].split(" ")[-1]
         count = str(count).replace(',', '')
-        last = int(str(isbData[0][5].split(" ")[0].replace(',', '')))
+        last = int(str(kpkData[0][5].split(" ")[0].replace(',', '')))
         if (count.isdigit()):
             kpk['infected']['total'] = int(count)
             kpk['infected']['last'] = last
@@ -482,7 +482,7 @@ class _sqlite:
         kpkData = _sqlite.cur.fetchall()
         count = kpkData[0][5].split(" ")[-1]
         count = str(count).replace(',', '')
-        last = int(str(isbData[0][5].split(" ")[0].replace(',', '')))
+        last = int(str(kpkData[0][5].split(" ")[0].replace(',', '')))
         if (count.isdigit()):
             kpk['recovered']['total'] = int(count)
             kpk['recovered']['last'] = last
@@ -492,7 +492,7 @@ class _sqlite:
         kpkData = _sqlite.cur.fetchall()
         count = kpkData[0][5].split(" ")[-1]
         count = str(count).replace(',', '')
-        last = int(str(isbData[0][5].split(" ")[0].replace(',', '')))
+        last = int(str(kpkData[0][5].split(" ")[0].replace(',', '')))
         if (count.isdigit()):
             kpk['deceased']['total'] = int(count)
             kpk['deceased']['last'] = last
@@ -503,7 +503,7 @@ class _sqlite:
         gbData = _sqlite.cur.fetchall()
         count = gbData[0][5].split(" ")[-1]
         count = str(count).replace(',', '')
-        last = int(str(isbData[0][5].split(" ")[0].replace(',', '')))
+        last = int(str(gbData[0][5].split(" ")[0].replace(',', '')))
         if (count.isdigit()):
             gb['infected']['total'] = int(count)
             gb['infected']['last'] = last
@@ -513,7 +513,7 @@ class _sqlite:
         gbData = _sqlite.cur.fetchall()
         count = gbData[0][5].split(" ")[-1]
         count = str(count).replace(',', '')
-        last = int(str(isbData[0][5].split(" ")[0].replace(',', '')))
+        last = int(str(gbData[0][5].split(" ")[0].replace(',', '')))
         if (count.isdigit()):
             gb['recovered']['total'] = int(count)
             gb['recovered']['last'] = last
@@ -523,7 +523,7 @@ class _sqlite:
         gbData = _sqlite.cur.fetchall()
         count = gbData[0][5].split(" ")[-1]
         count = str(count).replace(',', '')
-        last = int(str(isbData[0][5].split(" ")[0].replace(',', '')))
+        last = int(str(gbData[0][5].split(" ")[0].replace(',', '')))
         if (count.isdigit()):
             gb['deceased']['total'] = int(count)
             gb['deceased']['last'] = last
@@ -534,7 +534,7 @@ class _sqlite:
         ajkData = _sqlite.cur.fetchall()
         count = ajkData[0][5].split(" ")[-1]
         count = str(count).replace(',', '')
-        last = int(str(isbData[0][5].split(" ")[0].replace(',', '')))
+        last = int(str(ajkData[0][5].split(" ")[0].replace(',', '')))
         if (count.isdigit()):
             ajk['infected']['total'] = int(count)
             ajk['infected']['last'] = last
@@ -544,7 +544,7 @@ class _sqlite:
         ajkData = _sqlite.cur.fetchall()
         count = ajkData[0][5].split(" ")[-1]
         count = str(count).replace(',', '')
-        last = int(str(isbData[0][5].split(" ")[0].replace(',', '')))
+        last = int(str(ajkData[0][5].split(" ")[0].replace(',', '')))
         if (count.isdigit()):
             ajk['recovered']['total'] = int(count)
             ajk['recovered']['last'] = last
@@ -554,7 +554,7 @@ class _sqlite:
         ajkData = _sqlite.cur.fetchall()
         count = ajkData[0][5].split(" ")[-1]
         count = str(count).replace(',', '')
-        last = int(str(isbData[0][5].split(" ")[0].replace(',', '')))
+        last = int(str(ajkData[0][5].split(" ")[0].replace(',', '')))
         if (count.isdigit()):
             ajk['deceased']['total'] = int(count)
             ajk['deceased']['last'] = last
@@ -565,7 +565,7 @@ class _sqlite:
         balochistanData = _sqlite.cur.fetchall()
         count = balochistanData[0][5].split(" ")[-1]
         count = str(count).replace(',', '')
-        last = int(str(isbData[0][5].split(" ")[0].replace(',', '')))
+        last = int(str(balochistanData[0][5].split(" ")[0].replace(',', '')))
         if (count.isdigit()):
             balochistan['infected']['total'] = int(count)
             balochistan['infected']['last'] = last
@@ -575,7 +575,7 @@ class _sqlite:
         balochistanData = _sqlite.cur.fetchall()
         count = balochistanData[0][5].split(" ")[-1]
         count = str(count).replace(',', '')
-        last = int(str(isbData[0][5].split(" ")[0].replace(',', '')))
+        last = int(str(balochistanData[0][5].split(" ")[0].replace(',', '')))
         if (count.isdigit()):
             balochistan['recovered']['total'] = int(count)
             balochistan['recovered']['last'] = last
@@ -585,7 +585,7 @@ class _sqlite:
         balochistanData = _sqlite.cur.fetchall()
         count = balochistanData[0][5].split(" ")[-1]
         count = str(count).replace(',', '')
-        last = int(str(isbData[0][5].split(" ")[0].replace(',', '')))
+        last = int(str(balochistanData[0][5].split(" ")[0].replace(',', '')))
         if (count.isdigit()):
             balochistan['deceased']['total'] = int(count)
             balochistan['deceased']['last'] = last

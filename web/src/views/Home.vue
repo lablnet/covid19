@@ -20,7 +20,7 @@
             <div class="card">
                 <div class="container">
                     <h1 class="title twelve mt-2"><b>Total tests</b></h1>
-                    <p class="stat mx-2 mt-2 text-info"><b>{{summery.total_tests}}</b> <sub>+{{summery.last_tests}}</sub></p>
+                    <p class="stat mx-2 mt-2 text-info"><b>{{summery.total_tests}}</b> <sub v-if="isToday()">+{{summery.last_tests}}</sub></p>
                 </div>
             </div>
         </div>
@@ -28,7 +28,7 @@
             <div class="card">
                 <div class="container">
                     <h1 class="title twelve mt-2"><b>Total Cases</b></h1>
-                  <p class="stat mx-2 mt-2 text-warning"><b>{{summery.total_cases}}</b> <sub>+{{summery.last_cases}}</sub></p>
+                  <p class="stat mx-2 mt-2 text-warning"><b>{{summery.total_cases}}</b> <sub v-if="isToday()">+{{summery.last_cases}}</sub></p>
                 </div>
             </div>
         </div>
@@ -36,7 +36,7 @@
             <div class="card">
                 <div class="container">
                     <h1 class="title twelve mt-2"><b>Recoveries</b></h1>
-                  <p class="stat mx-2 mt-2 text-success"><b>{{summery.total_recovered}}</b> <sub>+{{summery.last_recovered}}</sub></p>
+                  <p class="stat mx-2 mt-2 text-success"><b>{{summery.total_recovered}}</b> <sub v-if="isToday()">+{{summery.last_recovered}}</sub></p>
 
                 </div>
             </div>
@@ -45,7 +45,7 @@
             <div class="card">
                 <div class="container">
                     <h1 class="title twelve mt-2"><b>Deceased</b></h1>
-                    <p class="stat mx-2 mt-2 text-danger"><b>{{summery.total_deaths}}</b> <sub>+{{summery.last_deaths}}</sub></p>
+                    <p class="stat mx-2 mt-2 text-danger"><b>{{summery.total_deaths}}</b> <sub v-if="isToday()">+{{summery.last_deaths}}</sub></p>
                 </div>
             </div>
         </div>
@@ -117,9 +117,9 @@
                             <span style="display: none">{{i = 0}}</span>
                             <tr v-for="item in provience" :key="item">
                                 <td><b>{{provienceName[i]}}</b></td>
-                                 <td>{{item.infected.total}} <sub>+{{item.infected.last}}</sub></td>
-                                <td>{{item.recovered.total}} <sub>+{{item.recovered.last}}</sub></td>
-                                <td>{{item.deceased.total}} <sub>+{{item.deceased.last}}</sub></td>
+                                 <td>{{item.infected.total}} <sub v-if="isToday()">+{{item.infected.last}}</sub></td>
+                                <td>{{item.recovered.total}} <sub v-if="isToday()">+{{item.recovered.last}}</sub></td>
+                                <td>{{item.deceased.total}} <sub v-if="isToday()">+{{item.deceased.last}}</sub></td>
                               <span style="display: none">{{i++}}</span>
                               </tr>
 
@@ -175,6 +175,7 @@ export default {
         this.getProvience()
         this.getTrend()
       this.getPercentage()
+      this.isToday()
 
       // this.getAll()
     },
@@ -394,6 +395,13 @@ export default {
                 return 'content text-danger'
             }
         },
+      isToday()
+      {
+        let date = new Date()
+        date = date.getDate()
+        let updated = parseInt(this.update.split('-')[2].split(' ')[0])
+        return updated === date
+      }
      },
 }
 </script>
