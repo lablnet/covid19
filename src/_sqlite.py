@@ -410,7 +410,7 @@ class _sqlite:
         pujnabData = _sqlite.cur.fetchall()
         count = pujnabData[0][5].split(" ")[-1]
         count = str(count).replace(',', '')
-        last = int(str(isbData[0][5].split(" ")[0].replace(',', '')))
+        last = int(str(pujnabData[0][5].split(" ")[0].replace(',', '')))
         if (count.isdigit()):
             punjab['infected']['total'] = int(count)
             punjab['infected']['last'] = last

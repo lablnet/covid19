@@ -15,7 +15,7 @@ var provience = {
     },
     "Punjab": {
         "infected": {
-            "last": 7,
+            "last": 1393,
             "total": 319365
         },
         "recovered": {
