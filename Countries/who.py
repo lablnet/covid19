@@ -48,12 +48,12 @@ def c_exists(date_reported, country_code) :
 
 data = csv_to_dict()
 s = _sqlite()
-folder = str(Path("").parent.absolute()).replace("Countries", "") + "\\"
+folder = str(Path("").parent.absolute()).replace("Countries", "")
 conn = s.conn(get_config("database",  folder), folder)
 conn.create_tables()
 for item in data:
     if c_exists(data[item]['date_reported'], data[item]['country_code']) :
-        # conn.insert(_sqlite.db['tables']["2"]["name"], data[item])
+        conn.insert(_sqlite.db['tables']["2"]["name"], data[item])
         print(item)
     else : print("Duplicate Data")
 
