@@ -28,7 +28,7 @@ for the database you should its better to use class that can be found inside `sr
 you can load files from `src` as below
 ```py
 import sys  
-sys.path.append('../../')  
+sys.path.append('./')  
    
 from src._sqlite import _sqlite  
 from src.__config import get_config
@@ -37,7 +37,7 @@ you can define folder variable which points to root of the project so you can ea
 ```py
 from pathlib import Path  
   
-folder = str(Path("").parent.absolute()).replace("Countries\coubtry_name_goes_here", "")```
+folder = str(Path("").parent.absolute()).replace("Countries\coubtry_name_goes_here", "") + "/"```
  ```
 
 **NOTE: Currently our frontend do not support multiple country, but we're willing to as we got new country be added. 
