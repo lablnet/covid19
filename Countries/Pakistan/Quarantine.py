@@ -1,5 +1,5 @@
 import sys
-sys.path.append('../../')
+sys.path.append('./')
 
 from _csv import reader
 import urllib.request
@@ -10,7 +10,7 @@ from src.__config import get_config
 from datetime import datetime
 from pathlib import Path
 
-folder = str(Path("").parent.absolute()).replace("Countries\Pakistan", "")
+folder = str(Path("").parent.absolute()).replace("Countries\Pakistan", "") + "/"
 
 pdf_path = "https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan" \
            ".pdf "

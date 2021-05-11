@@ -1,5 +1,5 @@
 import sys
-sys.path.append('../../')
+sys.path.append('./')
 
 import time
 from urllib.request import Request, urlopen
@@ -11,7 +11,7 @@ from src.__config import get_config
 from datetime import datetime
 from pathlib import Path
 
-folder = str(Path("").parent.absolute()).replace("Countries\Pakistan", "")
+folder = str(Path("").parent.absolute()).replace("Countries\Pakistan", "") + "/"
 
 url = 'https://covid.gov.pk/'
 page = requests.get(url)

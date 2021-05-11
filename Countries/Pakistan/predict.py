@@ -1,5 +1,5 @@
 import sys
-sys.path.append('../../')
+sys.path.append('./')
 
 import pandas as pd
 import numpy as np
@@ -13,7 +13,7 @@ import math
 import os
 from pathlib import Path
 
-folder = str(Path("").parent.absolute()).replace("Countries\Pakistan", "")
+folder = str(Path("").parent.absolute()).replace("Countries\Pakistan", "") + "/"
 
 # delete file from public
 if os.path.exists(folder+"web/public/data/forecast.csv"):

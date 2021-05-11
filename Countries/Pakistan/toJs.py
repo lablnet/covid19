@@ -1,5 +1,5 @@
 import sys
-sys.path.append('../../')
+sys.path.append('./')
 
 import csv
 import json
@@ -8,7 +8,7 @@ from src.__config import get_config
 from datetime import datetime
 from pathlib import Path
 
-folder = str(Path("").parent.absolute()).replace("Countries\Pakistan", "")
+folder = str(Path("").parent.absolute()).replace("Countries\Pakistan", "") + "/"
 
 def write_json(jsonFilePath, data, varname):
     with open(jsonFilePath, 'w', encoding='utf-8') as jsonf:

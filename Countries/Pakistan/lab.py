@@ -1,5 +1,5 @@
 import sys
-sys.path.append('../../')
+sys.path.append('./')
 
 import urllib.request
 from _csv import reader
@@ -11,7 +11,7 @@ from src.__config import get_config
 from datetime import datetime
 from pathlib import Path
 
-folder = str(Path("").parent.absolute()).replace("Countries\Pakistan", "")
+folder = str(Path("").parent.absolute()).replace("Countries\Pakistan", "") + "/"
 
 ## To Remove all unnecessry white spaces (or anyother characters)
 def getstr(string, param = None):

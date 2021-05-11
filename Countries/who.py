@@ -1,5 +1,5 @@
 import sys
-sys.path.append('../')
+sys.path.append('./')
 
 from src._sqlite import _sqlite
 from src.__config import get_config

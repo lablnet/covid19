@@ -1,5 +1,5 @@
 import sys
-sys.path.append('../../')
+sys.path.append('./')
 
 from src._sqlite import _sqlite
 from src.__config import get_config
@@ -7,7 +7,7 @@ import csv
 import os
 from pathlib import Path
 
-folder = str(Path("").parent.absolute()).replace("Countries\Pakistan", "")
+folder = str(Path("").parent.absolute()).replace("Countries\Pakistan", "") + "/"
 
 # delete prev files.
 if os.path.exists(folder+"analysis/data.csv"):

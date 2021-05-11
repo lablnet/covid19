@@ -1,5 +1,5 @@
 import sys
-sys.path.append('../../')
+sys.path.append('./')
 
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
@@ -10,7 +10,7 @@ from src.__config import get_config
 from datetime import datetime
 from pathlib import Path
 
-folder = str(Path("").parent.absolute()).replace("Countries\Pakistan", "")
+folder = str(Path("").parent.absolute()).replace("Countries\Pakistan", "") + "/"
 
 def get_covid_daily_stat(timer=15):
     options = webdriver.ChromeOptions()
