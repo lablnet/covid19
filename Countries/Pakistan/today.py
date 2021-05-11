@@ -1,3 +1,6 @@
+import sys
+sys.path.append('../../')
+
 import time
 from urllib.request import Request, urlopen
 import requests
@@ -6,6 +9,9 @@ import re
 from src._sqlite import _sqlite
 from src.__config import get_config
 from datetime import datetime
+from pathlib import Path
+
+folder = str(Path("").parent.absolute()).replace("Countries\Pakistan", "")
 
 url = 'https://covid.gov.pk/'
 page = requests.get(url)
@@ -28,7 +34,7 @@ critical = patients[4].text  # critical cases
 
 # Database
 s = _sqlite()
-conn = s.conn(get_config("database", './'))
+conn = s.conn(get_config("database", folder), folder)
 # conn.create_tables()
 
 # Prepare current datetime.

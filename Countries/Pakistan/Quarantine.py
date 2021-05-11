@@ -1,3 +1,6 @@
+import sys
+sys.path.append('../../')
+
 from _csv import reader
 import urllib.request
 import tabula
@@ -5,6 +8,9 @@ import os
 from src._sqlite import _sqlite
 from src.__config import get_config
 from datetime import datetime
+from pathlib import Path
+
+folder = str(Path("").parent.absolute()).replace("Countries\Pakistan", "")
 
 pdf_path = "https://covid.gov.pk/facilities/List%20of%20Province-wise%20COVID-19%20Quarantine%20Facilities%20Pakistan" \
            ".pdf "
@@ -147,7 +153,7 @@ date = date.replace(" GMT+5", "")
 
 # Database
 s = _sqlite()
-conn = s.conn(get_config("database", './'))
+conn = s.conn(get_config("database", folder), folder)
 # conn.create_tables()
 
 # # Insert into database.

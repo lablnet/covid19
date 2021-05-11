@@ -1,3 +1,6 @@
+import sys
+sys.path.append('../../')
+
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 import time
@@ -5,6 +8,9 @@ import selenium as se
 from src._sqlite import _sqlite
 from src.__config import get_config
 from datetime import datetime
+from pathlib import Path
+
+folder = str(Path("").parent.absolute()).replace("Countries\Pakistan", "")
 
 def get_covid_daily_stat(timer=15):
     options = webdriver.ChromeOptions()
@@ -47,7 +53,7 @@ today = get_covid_daily_stat()
 
 # Get cases form database.
 s = _sqlite
-conn = s.conn(get_config("database", './'))
+conn = s.conn(get_config("database", folder), folder)
 cases = (conn.get_provience_wise("cases"))
 
 for key in cases.keys():

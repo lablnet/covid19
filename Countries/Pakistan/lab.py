@@ -1,3 +1,6 @@
+import sys
+sys.path.append('../../')
+
 import urllib.request
 from _csv import reader
 import os
@@ -6,6 +9,9 @@ import tabula
 from src._sqlite import _sqlite
 from src.__config import get_config
 from datetime import datetime
+from pathlib import Path
+
+folder = str(Path("").parent.absolute()).replace("Countries\Pakistan", "")
 
 ## To Remove all unnecessry white spaces (or anyother characters)
 def getstr(string, param = None):
@@ -170,7 +176,7 @@ date = date.replace(" GMT+5", "")
 
 # Database
 s = _sqlite()
-conn = s.conn(get_config("database", './'))
+conn = s.conn(get_config("database", folder), folder)
 # conn.create_tables()
 #
 # for item in data:

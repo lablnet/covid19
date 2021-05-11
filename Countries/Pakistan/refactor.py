@@ -1,21 +1,27 @@
+import sys
+sys.path.append('../../')
+
 from src._sqlite import _sqlite
 from src.__config import get_config
 import csv
 import os
+from pathlib import Path
+
+folder = str(Path("").parent.absolute()).replace("Countries\Pakistan", "")
 
 # delete prev files.
-if os.path.exists("./analysis/data.csv"):
-    os.remove("./analysis/data.csv")
-if os.path.exists("./analysis/dailyStats.csv"):
-    os.remove("./analysis/dailyStats.csv")
+if os.path.exists(folder+"analysis/data.csv"):
+    os.remove(folder+"analysis/data.csv")
+if os.path.exists(folder+"/analysis/dailyStats.csv"):
+    os.remove(folder+"analysis/dailyStats.csv")
 
 def dbToCsv():
     s = _sqlite
-    conn = s.conn(get_config("database", './'))
+    conn = s.conn(get_config("database", folder), folder)
 
     data = conn.get('cases').fetchall()
     states = ["Islamabad", "Punjab", "Sindh", "KPK", "AJK", "GB", 'Balochistan']
-    f = open('./analysis/data.csv', 'a')
+    f = open(folder+'analysis/data.csv', 'a')
     f.write('ID,datetime,province,new_cases,cumulative_cases,type,reference\n')
 
     for row in data:
@@ -66,7 +72,7 @@ def dayWiseTotalCases(fileName):
 def createCSV(fileName):
     with open(fileName, 'w') as _file:
         i = 1
-        data = dayWiseTotalCases("./analysis/data.csv")
+        data = dayWiseTotalCases(folder+"analysis/data.csv")
         _file.write("sr# ,datetime,new_cases, \n")
         for details in data:
             _file.write(f" {i},{details['date']},{details['new_cases']}\n")
@@ -74,7 +80,7 @@ def createCSV(fileName):
         _file.close()
 
 dbToCsv()
-createCSV('./analysis/dailyStats.csv')
+createCSV(folder+'analysis/dailyStats.csv')
 
 # Finally, Done
 print("Done, Thanks")

@@ -20,17 +20,17 @@ jobs:
       - name: Install Requirements                             
         run: pip install -r requirements.txt
       - name: Update dataset
-        run: python covid19_pk_official.py
+        run: python Countries/Pakistan/covid19_pk_official.py
       - name: Update summery dataset
-        run: python today.py
+        run: python Countries/Pakistan/today.py
       - name: Export cases for forecast
-        run: python refactor.py
+        run: python Countries/Pakistan/refactor.py
       - name: Make Prediction
-        run: python predict.py
+        run: python Countries/Pakistan/predict.py
       - name: Export from sqlite to CSV
-        run: python toCsv.py
+        run: python Countries/Pakistan/toCsv.py
       - name: Export from CSV to JavaScript JSON
-        run: python toJs.py
+        run: python Countries/Pakistan/toJs.py
       - name: Update JavaScript file versions in HTML
         run: python updateJsVersions.py
       - name: Commit and push if it changed

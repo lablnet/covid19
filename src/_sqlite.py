@@ -23,10 +23,10 @@ class _sqlite:
     connection = cur = None
 
     @staticmethod
-    def conn(config):
+    def conn(config, folder):
         _sqlite.db_name = config['db_name']
         _sqlite.db = config
-        _sqlite.connection = sqlite3.connect(_sqlite.db_name + ".sqlite")
+        _sqlite.connection = sqlite3.connect(folder+_sqlite.db_name + ".sqlite")
         # _sqlite.connection.row_factory = sqlite3.Row
         _sqlite.cur = _sqlite.connection.cursor()
         return _sqlite
