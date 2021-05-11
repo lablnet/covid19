@@ -64,6 +64,19 @@
             "sector": "varchar",
             "reference": "varchar"
           }
+      },
+      "6" : {
+          "name": "vaccine",
+          "fields": {
+            "datetime": "varchar",
+            "total_fully": "varchar",
+            "total_partially": "varchar",
+            "total_doses": "varchar",
+            "last_fully": "varchar",
+            "last_partially": "varchar",
+            "last_doses": "varchar",
+            "reference": "varchar"
+          }
       }
     }
   }

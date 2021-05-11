@@ -57,5 +57,45 @@ if not date1 == date2:
         "reference": url,
     })
 
+# vaccinated
+last_partially_vaccine = soup.find('div', class_='blue').text.replace('Partially Vaccinated', '').replace("Last", "").replace('\n', '').replace('\r', '')
+last_fully_vaccine = soup.find('div', class_='green').text.replace('Fully Vaccinated', '').replace("Last", "").replace('\n', '').replace('\r', '')
+last_doses = soup.find('div', class_='purple').text.replace('Total Doses Administered', '').replace("Last", "").replace('\n', '').replace('\r', '')
+
+total_partially = int(last_partially_vaccine.split(" ")[0].replace(',', ''))
+total_fully = str(last_fully_vaccine.split(" ")[0].replace(',', ''))
+total_doses = str(last_doses.split(" ")[0].replace(',', ''))
+last_partially = str(last_fully_vaccine.split(" ")[-2].replace(',', ''))
+last_fully = str(last_fully_vaccine.split(" ")[-2].replace(',', ''))
+last_doses = str(last_doses.split(" ")[-2].replace(',', ''))
+data_vaccine = {
+    "datetime": datetime,
+    "total_fully": total_fully,
+    "total_partially": total_partially,
+    "total_doses": total_doses,
+    "last_fully": last_fully,
+    "last_partially": last_partially,
+    "last_doses": last_doses,
+    "reference": url,
+}
+
+date1 = ""
+date2 = ""
+already = conn.get_last("vaccine").fetchall()
+if  len(already) != 0: date1 = already[0][1].split("-")[2].split("T")[0]
+date2 = date.split("-")[2].split("T")[0]
+
+if not date1 == date2:
+    conn.insert("vaccine", {
+        "datetime": date,
+        "total_fully": total_fully,
+        "total_partially": total_partially,
+        "total_doses": total_doses,
+        "last_fully": last_fully,
+        "last_partially": last_partially,
+        "last_doses": last_doses,
+        "reference": url,
+    })
+
 # Finally, Done
 print("Done, Thanks")

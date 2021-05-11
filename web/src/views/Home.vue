@@ -15,6 +15,36 @@
         COVID-19. Alongside developing vaccine for COVID-19, researchers are also
         trying to predict its behaviour.
     </p>
+
+    <h2 class="subtitle mt-2 mb-2"><b>Vaccine Statistic</b> <span class="badge badge-danger">new</span></h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="container">
+            <h1 class="title twelve mt-2"><b>Partially Vaccinated</b></h1>
+            <p class="stat mx-2 mt-2 text-info"><b>{{vaccine.total_partially}}</b> <sub v-if="isToday()">+{{vaccine.last_partially}}</sub></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="container">
+            <h1 class="title twelve mt-2"><b>Fully Vaccinated</b></h1>
+            <p class="stat mx-2 mt-2 text-success"><b>{{vaccine.total_fully}}</b> <sub v-if="isToday()">+{{vaccine.last_fully}}</sub></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="container">
+            <h1 class="title twelve mt-2"><b>Total Doses Administered</b></h1>
+            <p class="stat mx-2 mt-2 text-primary"><b>{{vaccine.total_doses}}</b> <sub v-if="isToday()">+{{vaccine.last_doses}}</sub></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <h2 class="subtitle mt-2 mb-2"><b>COVID-19 Statistic</b></h2>
     <div class="row">
         <div class="col-md-3">
             <div class="card">
@@ -168,18 +198,19 @@ export default {
     mounted() {
       // eslint-disable-next-line no-undef
       this.update = update['update']
+      this.getVaccine()
       this.getSummery()
-        window.scrollTo(0, 0);
-        this.getFeed()
-
-        this.getProvience()
-        this.getTrend()
+      window.scrollTo(0, 0);
+      this.getFeed()
+      this.getProvience()
+      this.getTrend()
       this.getPercentage()
       this.isToday()
     },
 
     data() {
         return {
+            vaccine: {},
             update: "",
             provienceName: [
               'Islamabad',
@@ -201,6 +232,12 @@ export default {
     },
 
     methods: {
+      getVaccine()
+      {
+        // eslint-disable-next-line no-undef
+        let highest = vaccine[ Object.keys(vaccine).sort().pop() ];
+        this.vaccine = highest
+      },
       getSummery()
       {
         // eslint-disable-next-line no-undef
