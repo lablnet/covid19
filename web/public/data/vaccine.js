@@ -19,7 +19,7 @@ var vaccine = {
         "total_partially": "1,751,707",
         "total_doses": "3,629,065",
         "last_fully": "9,396",
-        "last_partially": "9,396",
+        "last_partially": "92,142",
         "last_doses": "101,538",
         "reference": "https://covid.gov.pk/"
     }

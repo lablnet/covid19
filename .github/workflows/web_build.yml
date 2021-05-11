@@ -1,6 +1,9 @@
 name: 'Web Build and Deploy'
 
 on:
+  schedule:
+    - cron:  '10 4,5,10 * * *'
+  workflow_dispatch:
   push:
     branches:
       - master
