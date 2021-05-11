@@ -191,6 +191,8 @@ import {
     Options,
     Vue
 } from 'vue-class-component'
+import { get_feed_by_province } from "@/helper";
+
 import Chart from 'chart.js'
 import round from "@/round"
 
@@ -393,13 +395,8 @@ export default {
           this.trend = trend
           this.mount()
         },
-        getAll() {
-          // eslint-disable-next-line no-undef
-          this.data = feed
-
-        },
         getFeed() {
-            this.getAll();
+            this.data = get_feed_by_province("all")
             let records = 7 * this.page
             let start = 0;
             if (this.page !== 1) start = records - 7

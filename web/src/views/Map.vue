@@ -25,28 +25,42 @@ export default {
     mounted() {
         window.scrollTo(0, 0);
         this.getProvience()
+        console.log(this.test("AJK"))
     },
     methods: {
+        test(state)
+        {
+          let filtered = []
+          // eslint-disable-next-line no-undef
+          let data = feed
+          for (let item in data) {
+            let des = data[item].desc
+            let words = des.split(" ")
+            for (let word in words) {
+              if (words[word] === state) {
+                filtered.push(data[item])
+              }
+            }
+          }
+
+          return  filtered
+        },
         getProvience() {
           // eslint-disable-next-line no-undef
              this.provience = provience
              this.getMap()
         },
         getMap() {
-            // Prepare demo data
-            // Data is joined to map using value of 'hc-key' property by default.
-            // See API docs for 'joinBy' for more info on linking data and map.
             var data = [
-                ['pk-sd', this.provience['Sindh'].infected],
-                ['pk-ba', this.provience['Balochistan'].infected],
-                ['pk-jk', this.provience['AJK'].infected],
-                ['pk-na', this.provience['KPK'].infected],
-                ['pk-gb', this.provience['GB'].infected],
-                ['pk-pb', this.provience['Punjab'].infected],
-                ['pk-is', this.provience['Islamabad'].infected]
+              ['pk-sd', this.provience['Sindh'].infected.total],
+              ['pk-ba', this.provience['Balochistan'].infected.total],
+              ['pk-jk', this.provience['AJK'].infected.total],
+              ['pk-na', this.provience['KPK'].infected.total],
+              ['pk-gb', this.provience['GB'].infected.total],
+              ['pk-pb', this.provience['Punjab'].infected.total],
+              ['pk-is', this.provience['Islamabad'].infected.total]
             ];
 
-            // Create the chart
           // eslint-disable-next-line no-undef
             Highcharts.mapChart('map', {
                 chart: {
@@ -54,7 +68,7 @@ export default {
                 },
 
                 title: {
-                    text: 'Map co.vid.alphasofthub.com'
+                    text: 'Map COVID-19 Pakistan'
                 },
 
                 subtitle: {
