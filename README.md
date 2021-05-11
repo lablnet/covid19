@@ -4,7 +4,7 @@
 
 # covid19-parser
 
-COVID-19 Dashboard and parser
+Super Fast COVID-19 Dashboard and parser
   
   The sole purpose of this dashboard is to make the general public aware of the current situation about COVID-19 virus outbreak in Pakistan.
 
