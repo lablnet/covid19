@@ -25,26 +25,8 @@ export default {
     mounted() {
         window.scrollTo(0, 0);
         this.getProvience()
-        console.log(this.test("AJK"))
     },
     methods: {
-        test(state)
-        {
-          let filtered = []
-          // eslint-disable-next-line no-undef
-          let data = feed
-          for (let item in data) {
-            let des = data[item].desc
-            let words = des.split(" ")
-            for (let word in words) {
-              if (words[word] === state) {
-                filtered.push(data[item])
-              }
-            }
-          }
-
-          return  filtered
-        },
         getProvience() {
           // eslint-disable-next-line no-undef
              this.provience = provience
