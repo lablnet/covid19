@@ -1,3 +1,4 @@
 ,id,datetime,total_fully,total_partially,total_doses,last_fully,last_partially,last_doses,reference
 0,3,2021-05-9T08:54:46,"938,948","1,751,707","3,629,065","9,396","9,396","101,538",https://covid.gov.pk/
 1,4,2021-05-11T04:17:53,"938,948","1,751,707","3,629,065","9,396","92,142","101,538",https://covid.gov.pk/
+2,5,2021-05-12T04:21:57,"952,518","1,859,208","3,705,244","13,570","109,395","122,965",https://covid.gov.pk/
