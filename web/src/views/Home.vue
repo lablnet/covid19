@@ -243,7 +243,7 @@ export default {
       getSummery()
       {
         // eslint-disable-next-line no-undef
-        let highest = summery[ Object.keys(summery).sort().pop() ];
+        let highest = summery[ Object.keys(summery).pop() ];
         this.summery = highest
       },
         percentage() {
