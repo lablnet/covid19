@@ -34,6 +34,14 @@ const routes: Array<RouteRecordRaw> = [
     },
   },
   {
+    path: '/compare-region',
+    name: 'Compare',
+    component: () => import('../views/comparison/Region.vue'),
+    meta: {
+      title: 'Region Comparison',
+    },
+  },
+  {
     path: '/about',
     name: 'About',
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
