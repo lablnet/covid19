@@ -18,6 +18,8 @@ page = requests.get(url)
 soup = BeautifulSoup(page.content, "html.parser")
 soup.prettify()
 
+last_update_in_website = soup.find("span", class_="update-time").text.split(" ")[0]
+
 patients = soup.find_all('span', class_='counter')  # cases counter....
 
 last_24hr_cases = soup.find('span', class_='tests').text.replace("Last 24 hours: ", "")  # cases in last 24 hr
@@ -47,7 +49,7 @@ already = conn.get_last("summery").fetchall()
 if  len(already) != 0: date1 = already[0][1].split("-")[2].split("T")[0]
 date2 = date.split("-")[2].split("T")[0]
 
-if not date1 == date2:
+if not date1 == date2 and date2 == last_update_in_website:
     conn.insert("summery", {
         "datetime": date,
         "total_tests": totalTests,
@@ -81,7 +83,7 @@ already = conn.get_last("vaccine").fetchall()
 if  len(already) != 0: date1 = already[0][1].split("-")[2].split("T")[0]
 date2 = date.split("-")[2].split("T")[0]
 
-if not date1 == date2:
+if not date1 == date2 and date2 == last_update_in_website:
     conn.insert("vaccine", {
         "datetime": date,
         "total_fully": total_fully,
