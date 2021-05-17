@@ -1,8 +1,8 @@
-[![Update Records from Pak gov website](https://github.com/lablnet/covid19-parser/actions/workflows/pk.yaml/badge.svg)](https://github.com/lablnet/covid19-parser/actions/workflows/pk.yaml)
-[![Who update](https://github.com/lablnet/covid19-parser/actions/workflows/who.yaml/badge.svg)](https://github.com/lablnet/covid19-parser/actions/workflows/who.yaml)
-[![Web Build and Deploy](https://github.com/lablnet/covid19-parser/actions/workflows/web_build.yml/badge.svg)](https://github.com/lablnet/covid19-parser/actions/workflows/web_build.yml)
+[![Update Records from Pak gov website](https://github.com/lablnet/covid19/actions/workflows/pk.yaml/badge.svg)](https://github.com/lablnet/covid19-parser/actions/workflows/pk.yaml)
+[![Who update](https://github.com/lablnet/covid19/actions/workflows/who.yaml/badge.svg)](https://github.com/lablnet/covid19-parser/actions/workflows/who.yaml)
+[![Web Build and Deploy](https://github.com/lablnet/covid19/actions/workflows/web_build.yml/badge.svg)](https://github.com/lablnet/covid19-parser/actions/workflows/web_build.yml)
 
-# covid19-parser
+# covid19
 
 Super Fast COVID-19 Dashboard and parser
   
@@ -29,7 +29,7 @@ If you have any idea/suggestion to improve this dashboard, please write to mumer
 ## Contribution
 You're welcome to contribute to this project.
 
-You should follow contribution guideline [Contribution guideline](https://github.com/lablnet/covid19-parser/blob/master/CONTRIBUTING.md)
+You should follow contribution guideline [Contribution guideline](https://github.com/lablnet/covid19/blob/master/CONTRIBUTING.md)
 
 
 ## License
