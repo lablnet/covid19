@@ -10,7 +10,7 @@ fi
 # we can pull before commit or push
 # check if branch is provide, if not make push it to default.
 if [ -z "$2" ]; then
-  git pull
+  git pull --all
 else
   git pull origin $2
 fi
@@ -21,7 +21,7 @@ git commit -m "$1"
 
 # check if branch is provide, if not make push it to default.
 if [ -z "$2" ]; then
-  git push
+  git push --all
 else
   git push origin $2
 fi
