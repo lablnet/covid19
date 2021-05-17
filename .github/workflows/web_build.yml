@@ -28,6 +28,9 @@ jobs:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.6.2
         with:
+          git-config-name: "AlphaSoftHub"
+          git-config-email: "alphasofthub@users.noreply.github.com"
+          single-commit: true
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
           BRANCH: gh-pages
           FOLDER: web//dist

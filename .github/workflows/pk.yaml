@@ -40,4 +40,4 @@ jobs:
           git add -A
           timestamp=$(date -u)
           git commit -m "Last Commit: ${timestamp}" || exit 0
-          git push origin master
+          git push origin main
