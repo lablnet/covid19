@@ -1,0 +1,31 @@
+name: Update CSV Dataset Records from Taiwan CDC website
+
+on:
+  schedule:
+    - cron:  '0 4,5,10 * * *'
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get working copy
+        uses: actions/checkout@master
+        with:
+          fetch-depth: 1
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.8'
+      - name: Install Requirements
+        run: pip install -r requirements.txt
+      - name: Update dataset
+        run: python Countries/Taiwan/covid19_tw_official.py
+      - name: Commit and push if it changed
+        run: |
+          git config user.name "AlphaSoftHub"
+          git config user.email "alphasofthub@users.noreply.github.com"
+          git add -A
+          timestamp=$(date -u)
+          git commit -m "Last Commit: ${timestamp}(TW)" || exit 0
+          git push origin main
