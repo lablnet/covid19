@@ -10,7 +10,7 @@ folder = str(Path("").parent.absolute()).replace("Countries\Taiwan", "") + "/"
 url = "https://od.cdc.gov.tw/eic/covid19/covid19_tw_stats.csv"
 csv_head = 'date,confirmed,recoveries,deaths,screening,excluded,yesterday_confirmed,yesterday_excluded,yesterday_screening'
 
-def get_covid_daily_stat(timer=15):
+def get_covid_daily_stat():
     response = requests.get(url)
     parsed_data = response.text.split('\n')[1]
     csv_reader = csv.reader(parsed_data, delimiter=',', skipinitialspace=True)
@@ -25,7 +25,7 @@ def get_covid_daily_stat(timer=15):
             continue
         tmp += row_arr[0]
     csv_str = ','.join(map(str, rows))
-    csv_str = str(datetime.now()) + ',' + csv_str + '\n'
+    csv_str += '\n'
 
     return csv_str
 
@@ -43,8 +43,18 @@ csv_file_path = './datasets/covid19_tw_stats.csv'
 if os.path.exists(csv_file_path) is False:
     today = csv_head + '\n' + today
 
+file_handler = open(csv_file_path, 'r')
+last_record = ','.join(file_handler.readlines()[-1].split(',')[1:])
+
+if last_record == today:
+    file_handler.close()
+    print("Done. No column record is updated. Thanks.")
+    exit()
+
+file_handler.close()
+
 file_handler = open(csv_file_path, 'a+')
-file_handler.write(today)
+file_handler.write(str(datetime.now()) + ',' + today)
 file_handler.close()
 
 # Finally, Done.
