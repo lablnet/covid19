@@ -18,10 +18,11 @@ If you have any idea/suggestion to improve this dashboard, please write to mumer
 3. Gather data for research/experiences.  
 
 ## Features
-1. Parse data from government websites automatically daily, automated using GitHub Action.
+1. Parse data from government websites automatically daily, automated using GitHub Action of multiple countries.
 2. Parse data from WHO automatically on every Monday, automated using GitHub Actions
 3. Dashboard to visualize data.
 4. Publicly Data downloading.
+5. Multiple country handling frontend.
 
 ## How it works?
   This project use GitHub Actions to automate the task/workflow, and export data into CSV and JavaScript JSON for quickly accessible into website without having any server. (serverless  😎)
