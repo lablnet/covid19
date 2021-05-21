@@ -27,8 +27,7 @@
             <p class="content-about mt-4 mx-2">
                 Our data fetched automatically, but we trying to make its less error pros. Here are some of resources from where the data is gathered:
             </p>
-            <p class="content-about mt-2 mx-2">
-                {{ sources }}
+            <p class="content-about mt-2 mx-2" v-html="sources">
             </p>
         </div>
     </div>
@@ -62,6 +61,8 @@
           <div v-else>
             <div class="spinner-border mt-4 mb-3 ml-4"></div>
           </div>
+
+          <p class="content mt-2 mb-2">You can contribute data of your country for more info <a href="https://github.com/lablnet/covid19/blob/main/CONTRIBUTING.md" target="_blank"> click here </a></p>
         </div>
     </div>
   <div class="card mt-3 mb-4">
@@ -86,11 +87,14 @@
 </div>
 </template>
 <script lang="js">
+var showdown  = require('showdown')
+
 export default {
   name: "About",
   mounted() {
     window.scrollTo(0, 0)
     this.getContributors()
+    this.getSources()
   },
   data() {
     return {
@@ -100,6 +104,16 @@ export default {
     }
   },
   methods: {
+    async getSources() {
+      const response = await fetch("https://api.github.com/repos/lablnet/covid19/contents/source.md")
+      const s = await response.json()
+      var converter = new showdown.Converter();
+      var md = atob(s.content)
+      var html = converter.makeHtml(md);
+      this.sources = html
+      console.log(html)
+
+    },
     async getContributors() {
       let that = this
       fetch("https://api.github.com/repos/lablnet/covid19/contributors").then((resp) => resp.json())
