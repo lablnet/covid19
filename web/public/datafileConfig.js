@@ -11,13 +11,6 @@ var datafileConfig = {
     'quarantines',
     'summery',
     'vaccine',
-    'loaded' // Please do not remove this, this will indicate loading status of javascript files.
   ],
-  "tw": [
-
-    // Please do not remove this, this will indicate loading status of javascript files.
-    'loaded'
-  ],
+  "tw": [],
 }
-
-export default datafileConfig

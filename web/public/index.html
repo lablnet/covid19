@@ -24,9 +24,24 @@
     <link rel="icon" href="<%= BASE_URL %>favicon.jpg">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js?v=49812"></script>
+    <script src="datafileConfig.js?v=49812"></script>
+
     <title>
         <%= htmlWebpackPlugin.options.title %>
     </title>
+    <script>
+        function importJs (file) {
+            let element = document.createElement("script");
+            element.setAttribute("type", "text/javascript");
+            element.setAttribute("src", "data/"+ file +".js");
+            document.getElementsByTagName("head")[0].appendChild(element);
+        }
+        let country = "pk"
+        for (let index in datafileConfig[country]) {
+            let file = datafileConfig[country][index]
+            importJs(file)
+        }
+    </script>
     <script src="https://code.highcharts.com/maps/highmaps.js?v=16291"></script>
     <script src="https://code.highcharts.com/maps/modules/exporting.js?v=39598"></script>
     <script src="https://code.highcharts.com/mapdata/countries/pk/pk-all.js?v=52000"></script>

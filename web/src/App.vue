@@ -63,8 +63,7 @@
 
 <script lang="js">
 import navbarConfig from "@/config/navbarConfig";
-import {get_country, importJs} from "@/countryHelper";
-import datafileConfig from "@/config/datafileConfig";
+import {get_country} from "@/countryHelper";
 
 export default {
     name: "app",
@@ -84,11 +83,6 @@ export default {
     mounted() {
         this.nav = navbarConfig[get_country()]
         this.scrollTop()
-        for (let index in datafileConfig[get_country()]) {
-          let file = datafileConfig[get_country()][index]
-          importJs(file)
-        }
-
     },
     data() {
         return {
