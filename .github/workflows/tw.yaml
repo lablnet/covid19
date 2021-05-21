@@ -23,6 +23,8 @@ jobs:
         run: python Countries/Taiwan/covid19_tw_official.py
       - name: Update COVID-19 checking hospital dataset
         run: python Countries/Taiwan/covid19_pick_check_labs.py
+      - name: Update COVID-19 specimen dataset
+        run: python Countries/Taiwan/covid19_specimen.py
       - name: Commit and push if it changed
         run: |
           git config user.name "AlphaSoftHub"
