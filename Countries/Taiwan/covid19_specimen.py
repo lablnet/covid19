@@ -1,10 +1,5 @@
-from posixpath import join
-import sys
-sys.path.append('./')
 import requests
-from pathlib import Path
 
-folder = str(Path("").parent.absolute()).replace("Countries\Taiwan", "") + "/"
 url = "https://od.cdc.gov.tw/eic/covid19/covid19_tw_specimen.csv"
 csv_head = 'inspection_date,notifiable_inspection,home_quarantine_inspection,expanded_inspection,total'
 
