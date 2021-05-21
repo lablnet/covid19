@@ -43,5 +43,5 @@ const get_province_stat = (state) => {
 }
 export {
   get_feed_by_province,
-  get_province_stat
+  get_province_stat,
 }

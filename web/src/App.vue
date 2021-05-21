@@ -1,5 +1,6 @@
 <template>
 <div>
+
     <nav class="navbar navbar-expand-lg nav">
         <div class="container-fluid">
             <router-link class="navbar-brand" to="/">COVID-19</router-link>
@@ -8,34 +9,26 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <router-link class="nav-link" to="/">Home</router-link>
+                   <span v-for="item in nav" :key="item">
+                     <li class="nav-item" v-if="item['type'] === 'route' && item['hasdropdown'] === false">
+                        <router-link class="nav-link" :to="{path: '' + item['slug']}">{{ item['name'] }}</router-link>
                     </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Deep Dive
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <router-link class="dropdown-item" to="/quarantine">Quarantine Facilities</router-link>
-                      <router-link class="dropdown-item" to="/labs">Labs</router-link>
-                      <div class="dropdown-divider"></div>
-                      <router-link class="dropdown-item" to="/forecast">Forecast</router-link>
-                    </div>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Compare
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <router-link class="dropdown-item" to="/compare-region">Region Comparison</router-link>
-                    </div>
-                  </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://ncoc.gov.pk/covid-vaccination-en.php" target="_blank">Vaccine</a>
+                     <li class="nav-item" v-if="item['type'] === 'url' && item['hasdropdown'] === false">
+                        <a class="nav-link" :href="item['slug']" target="_blank">{{ item['name'] }}</a>
                     </li>
-                    <li class="nav-item">
-                        <router-link class="nav-link" to="/map">Map</router-link>
+                     <li class="nav-item dropdown" v-if="item['hasdropdown'] === true">
+                       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        {{ item['name'] }}
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <span v-for="dropdown in item['dropdown']" :key="dropdown">
+                                <div v-if="dropdown['type'] === 'divider'" class="dropdown-divider"></div>
+                                <router-link v-if="dropdown['type'] === 'route'" class="dropdown-item" :to="{path: '' + dropdown['slug']}">{{ dropdown['name'] }}</router-link>
+                              <a  v-if="dropdown['type'] === 'url'"  class="dropdown-item" :href="dropdown['slug']" target="_blank">{{ dropdown['name'] }}</a>
+                            </span>
+                        </div>
                     </li>
+                   </span>
                 </ul>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             </div>
@@ -45,7 +38,6 @@
 
     <footer class="footer text-center justify-content-center">
         <p class="content-about"><b>Disclaimer:</b> Error and Omissions expected</p>
-        <p class="content-about text-danger">The testing capacity in Pakistan is very low, the real cases can be much higher.</p>
         <p class="content-about" style="font-size: 11px">
             Information displayed here is carefully calibrated and is updated automatically based on reporting of Government officials Site(s).
         </p>
@@ -70,24 +62,38 @@
 </template>
 
 <script lang="js">
+import navbarConfig from "@/config/navbarConfig";
+import {get_country, importJs} from "@/countryHelper";
+import datafileConfig from "@/config/datafileConfig";
+
 export default {
     name: "app",
     watch: {
         $route(to, from) {
-            let title = "COVID-19 Pakistan Dashboard"
+            let country = ""
+            let base =`COVID-19 ${country} Dashboard`
+            let title = ""
             if (typeof to.meta.title == "string")
-                title = `${to.meta.title} - COVID-19 Pakistan Dashboard`
+                title = `${to.meta.title} - ${base}`
             else if (typeof to.meta.title == "function")
-                title = `${to.meta.title(to)} - COVID-19 Pakistan Dashboard`
+                title = `${to.meta.title(to)} - ${base}`
+            else title = base
             document.title = title
         },
     },
     mounted() {
+        this.nav = navbarConfig[get_country()]
         this.scrollTop()
+        for (let index in datafileConfig[get_country()]) {
+          let file = datafileConfig[get_country()][index]
+          console.log(file)
+          importJs(file)
+        }
     },
     data() {
         return {
-            top: false
+            top: false,
+            nav: {},
         }
     },
     created() {
