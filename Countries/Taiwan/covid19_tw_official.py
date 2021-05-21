@@ -24,6 +24,7 @@ def get_covid_daily_stat():
             rows.append(number)
             continue
         tmp += row_arr[0]
+    rows.append(row_arr[-1].replace(',', ''))
     csv_str = ','.join(map(str, rows))
     csv_str += '\n'
 
