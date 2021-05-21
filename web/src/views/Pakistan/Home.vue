@@ -198,6 +198,7 @@ import round from "@/round"
 
 export default {
     mounted() {
+      // Do not remove this line
       // eslint-disable-next-line no-undef
       if (typeof loaded === 'undefined') this.$router.push({ name: 'loading' })
 
