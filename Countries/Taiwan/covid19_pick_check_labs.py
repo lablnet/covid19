@@ -1,10 +1,5 @@
-from posixpath import join
-import sys
-sys.path.append('./')
 import requests
-from pathlib import Path
 
-folder = str(Path("").parent.absolute()).replace("Countries\Taiwan", "") + "/"
 url = "https://od.cdc.gov.tw/icb/%e6%8c%87%e5%ae%9a%e6%8e%a1%e6%aa%a2%e9%86%ab%e9%99%a2%e6%b8%85%e5%96%ae(%e8%8b%b1%e6%96%87%e7%89%88).csv"
 csv_head = 'agency_code,area,county,admin_district,agency_name,address,phone_number,longitude,latitude'
 

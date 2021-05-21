@@ -1,12 +1,8 @@
 import os
-import sys
-sys.path.append('./')
 import csv
 import requests
 from datetime import datetime
-from pathlib import Path
 
-folder = str(Path("").parent.absolute()).replace("Countries\Taiwan", "") + "/"
 url = "https://od.cdc.gov.tw/eic/covid19/covid19_tw_stats.csv"
 csv_head = 'date,confirmed,recoveries,deaths,screening,excluded,yesterday_confirmed,yesterday_excluded,yesterday_screening'
 
