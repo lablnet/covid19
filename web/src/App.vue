@@ -55,7 +55,7 @@
             </ol>
         </p>
         <p class="content-about mt-2 mb-3">
-          Copyright © 2020-2021 - <b>AlphaSoftHub Pvt Ltd</b> <a href="https://github.com/lablnet/covid19" target="_blank">Source Code</a>.
+          Copyright © 2020-2021 - <b>AlphaSoftHub Pvt Ltd & Contributors</b> <a href="https://github.com/lablnet/covid19" target="_blank">Source Code</a>.
         </p>
     </footer>
 </div>

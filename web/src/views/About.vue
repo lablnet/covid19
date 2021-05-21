@@ -28,15 +28,8 @@
                 Our data fetched automatically, but we trying to make its less error pros. Here are some of resources from where the data is gathered:
             </p>
             <p class="content-about mt-2 mx-2">
-                <ul>
-                    <li><a href="http://covid.gov.pk/" target="_blank">Official COVID-19 Dashboard</a></li>
-                    <li><a href="https://covid19.who.int/" target="_blank">WHO</a></li>
-                </ul>
+                {{ sources }}
             </p>
-          <p class="content-about mt-2 mx-2">Previously, we fetched data from this website:</p>
-          <ul>
-            <li><a href="https://co.vid19.pk/" target="_blank">https://co.vid19.pk/</a></li>
-          </ul>
         </div>
     </div>
 
@@ -46,7 +39,7 @@
         </div>
         <div class="container">
             <p class="content-about mt-4 mx-2">
-                Here is our beloved team members:
+                Here is our <b>AlphaSoftHub Pvt Ltd</b> team who initially contribute to this project:
             </p>
             <p class="content-about mt-2 mx-2">
                 <ul>
@@ -54,9 +47,21 @@
                     <li><a href="https://github.com/AmeerHamza0220" target="_blank">Muhammad Ameer Hamza</a> <span class="content-about">(Python Developer)</span></li>
                     <li><a href="https://github.com/Usman-Naeem" target="_blank">Muhammad Usman Naeem</a> <span class="content-about">(Python Developer)</span></li>
                     <li><a href="https://github.com/Zain-ul-Abdin1417" target="_blank">Zain ul Abdin</a> <span class="content-about">(Python Developer)</span></li>
-
                 </ul>
             </p>
+          <p class="content-about mt-4 mx-2">Other Contributors and Contribution status:</p>
+          <div v-if="!loading">
+            <ul class="card contribution-card" v-for="items in contributors" :key="items">
+              <a :href="items.link" target="_blank">
+                <img :src="items.pic " class="image rounded-circle" style="width: 50px; height: 50px" />
+                <h3 class="title name">{{ items.name ?? "Unknown"}}</h3>
+                <p class="content contribution">Contributions: {{ items.contributions }}</p>
+              </a>
+            </ul>
+          </div>
+          <div v-else>
+            <div class="spinner-border mt-4 mb-3 ml-4"></div>
+          </div>
         </div>
     </div>
   <div class="card mt-3 mb-4">
@@ -85,6 +90,37 @@ export default {
   name: "About",
   mounted() {
     window.scrollTo(0, 0)
+    this.getContributors()
+  },
+  data() {
+    return {
+      sources: "",
+      contributors: [],
+      loading: true,
+    }
+  },
+  methods: {
+    async getContributors() {
+      let that = this
+      fetch("https://api.github.com/repos/lablnet/covid19/contributors").then((resp) => resp.json())
+        .then( async (data) => {
+          let items = []
+          for (let index in data) {
+            const response = await fetch(`https://api.github.com/users/${data[index].login}`)
+            const user = await response.json()
+            items.push(
+              {
+                "name": user.name,
+                "pic": data[index].avatar_url,
+                "link": data[index].html_url,
+                "contributions": data[index].contributions
+              }
+            )
+          }
+          that.contributors = items
+          that.loading = false
+        }).catch(function(error) {})
+    }
   }
 }
 </script>
