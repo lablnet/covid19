@@ -72,16 +72,6 @@ var routeConfig: any = {
         title: 'Request',
       },
     },
-
-    // you must copy this route at end.
-    {
-      path: '/:pathMatch(.*)*',
-      name: '404',
-      component: () => import(/* webpackChunkName: "about" */ '../views/404.vue'),
-      meta: {
-        title: '404',
-      },
-    },
   ],
   "tw": []
 }

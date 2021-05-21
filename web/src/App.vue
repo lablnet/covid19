@@ -88,6 +88,7 @@ export default {
           let file = datafileConfig[get_country()][index]
           importJs(file)
         }
+
     },
     data() {
         return {

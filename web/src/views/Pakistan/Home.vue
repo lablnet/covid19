@@ -199,6 +199,9 @@ import round from "@/round"
 export default {
     mounted() {
       // eslint-disable-next-line no-undef
+      if (typeof loaded === 'undefined') this.$router.push({ name: 'loading' })
+
+      // eslint-disable-next-line no-undef
       this.update = update['update']
       this.getVaccine()
       this.getSummery()
