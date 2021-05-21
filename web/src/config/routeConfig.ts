@@ -3,7 +3,7 @@ var routeConfig: any = {
     {
       path: '/',
       name: 'Home',
-      component: () => import('../views/Home.vue'),
+      component: () => import('../views/Pakistan/Home.vue'),
       meta: {
         title: 'Home',
       },
@@ -11,7 +11,7 @@ var routeConfig: any = {
     {
       path: '/quarantine',
       name: 'Quarantine',
-      component: () => import('../views/Quarantine.vue'),
+      component: () => import('../views/Pakistan/Quarantine.vue'),
       meta: {
         title: 'Quarantine',
       },
@@ -19,7 +19,7 @@ var routeConfig: any = {
     {
       path: '/labs',
       name: 'Labs',
-      component: () => import('../views/Labs.vue'),
+      component: () => import('../views/Pakistan/Labs.vue'),
       meta: {
         title: 'Labs',
       },
@@ -27,7 +27,7 @@ var routeConfig: any = {
     {
       path: '/forecast',
       name: 'Forecast',
-      component: () => import('../views/forecast.vue'),
+      component: () => import('../views/Pakistan/forecast.vue'),
       meta: {
         title: 'Forecast',
       },
@@ -35,7 +35,7 @@ var routeConfig: any = {
     {
       path: '/compare-region',
       name: 'Compare',
-      component: () => import('../views/comparison/Region.vue'),
+      component: () => import('../views/Pakistan/comparison/Region.vue'),
       meta: {
         title: 'Region Comparison',
       },
@@ -51,7 +51,7 @@ var routeConfig: any = {
     {
       path: '/map',
       name: 'Map',
-      component: () => import(/* webpackChunkName: "about" */ '../views/Map.vue'),
+      component: () => import(/* webpackChunkName: "about" */ '../views/Pakistan/Map.vue'),
       meta: {
         title: 'Map',
       },
@@ -67,12 +67,13 @@ var routeConfig: any = {
     {
       path: '/request',
       name: 'request',
-      component: () => import(/* webpackChunkName: "about" */ '../views/Request.vue'),
+      component: () => import(/* webpackChunkName: "about" */ '../views/Pakistan/Request.vue'),
       meta: {
         title: 'Request',
       },
     },
 
+    // you must copy this route at end.
     {
       path: '/:pathMatch(.*)*',
       name: '404',
