@@ -1,5 +1,6 @@
 [![Update Records from Pak gov website](https://github.com/lablnet/covid19/actions/workflows/pk.yaml/badge.svg)](https://github.com/lablnet/covid19/actions/workflows/pk.yaml)
 [![Who update](https://github.com/lablnet/covid19/actions/workflows/who.yaml/badge.svg)](https://github.com/lablnet/covid19/actions/workflows/who.yaml)
+[![Update CSV Dataset Records from Taiwan CDC website](https://github.com/lablnet/covid19/actions/workflows/tw.yaml/badge.svg)](https://github.com/lablnet/covid19/actions/workflows/tw.yaml)
 [![Web Build and Deploy](https://github.com/lablnet/covid19/actions/workflows/web_build.yml/badge.svg)](https://github.com/lablnet/covid19/actions/workflows/web_build.yml)
 
 # COVID-19

@@ -43,10 +43,11 @@ folder = str(Path("").parent.absolute()).replace("Countries\coubtry_name_goes_he
 ### Adding frontend
 Adding frontend now is too easy, there are few config file you need to manipulate, are as follow:
 Inside `web/src/config` you will find configuration file.
-1. `datafileConfig.js` defines country wise javascript data file that need's to be loaded, it can be with same name because it load once country match.
-2. `navbarConfig.js` Define navigation for your country site, all possible `{key: value}` in sample which is for  `Pakistan` is given.
-3. `routeConfig.ts` Routes for your country.
-
+1. `navbarConfig.js` Define navigation for your country site, all possible `{key: value}` in sample which is for  `Pakistan` is given.
+2. `routeConfig.ts` Routes for your country.
+3. `datafileConfig.js` defines country wise javascript data file that need's to be loaded, it can be with same name because it load once country match.
+     
+      **Note: the file `datafileConfig.js` can be found inside `web/public/` directory.
 
 once you add configuration now the next step is to write `views` it can be tricky but you can just copy files from `Pakistan` folder inside `web/src/views` and paste into your country folder.
 Once you refer to varialbe that is loaded from JavaScript file that is loaded via dynamically so you have to write above that
