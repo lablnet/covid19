@@ -38,7 +38,7 @@ date = date.replace(" GMT+5", "")
 # Get cases from website.
 today = get_covid_daily_stat()
 
-# Get cases form database.
+# Store cases to datasets.
 csv_file_path = './datasets/covid19_tw_stats.csv'
 if os.path.exists(csv_file_path) is False:
     today = csv_head + '\n' + today

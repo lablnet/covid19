@@ -19,8 +19,10 @@ jobs:
           python-version: '3.8'
       - name: Install Requirements
         run: pip install -r requirements.txt
-      - name: Update dataset
+      - name: Update COVD-19 case dataset
         run: python Countries/Taiwan/covid19_tw_official.py
+      - name: Update COVID-19 checking hospital dataset
+        run: python Countries/Taiwan/covid19_pick_check_labs.py
       - name: Commit and push if it changed
         run: |
           git config user.name "AlphaSoftHub"
