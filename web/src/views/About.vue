@@ -55,7 +55,7 @@
               <a :href="items.link" target="_blank">
                 <img :src="items.pic " class="image rounded-circle" style="width: 50px; height: 50px" />
                 <h3 class="title name">{{ items.name ?? "Unknown"}}</h3>
-                <p class="content contribution">Contributions: {{ items.contributions }}</p>
+                <p class="content contribution">{{ items.contributions }} Contributions</p>
               </a>
             </ul>
           </div>
