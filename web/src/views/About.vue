@@ -111,7 +111,6 @@ export default {
       var md = atob(s.content)
       var html = converter.makeHtml(md);
       this.sources = html
-      console.log(html)
 
     },
     async getContributors() {
