@@ -86,7 +86,6 @@ export default {
         this.scrollTop()
         for (let index in datafileConfig[get_country()]) {
           let file = datafileConfig[get_country()][index]
-          console.log(file)
           importJs(file)
         }
     },
