@@ -240,7 +240,7 @@ export default {
       getVaccine()
       {
         // eslint-disable-next-line no-undef
-        let highest = vaccine[ Object.keys(vaccine).sort().pop() ];
+        let highest = vaccine[ Object.keys(vaccine).pop() ];
         this.vaccine = highest
       },
       getSummery()

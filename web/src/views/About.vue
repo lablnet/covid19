@@ -24,9 +24,6 @@
             <h3 class="subtitle">Data Resources</h3>
         </div>
         <div class="container">
-            <p class="content-about mt-4 mx-2">
-                Our data fetched automatically, but we trying to make its less error pros. Here are some of resources from where the data is gathered:
-            </p>
             <p class="content-about mt-2 mx-2" v-html="sources">
             </p>
         </div>
