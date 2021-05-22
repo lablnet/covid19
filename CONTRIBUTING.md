@@ -61,6 +61,13 @@ npm run serve
 ```
 **Note: currently the function `get_country` just returns  country code for `Pakistan` for testing you can change it to your country code.**
 
+### Testing Frontend Development
+
+Following steps to create frontend development:
+
+- Using the Node.js version is v10.19.0 or newer.
+- Using the `npm ci` to install dependencies without overwriting `package-lock.json` file.
+- Using the `npm run serve` command to build Vue.js and have the static page serving on the devleopment server.
 
 **Thanks**
 ## License  
