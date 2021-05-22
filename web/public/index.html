@@ -33,7 +33,8 @@
         function importJs (file) {
             let element = document.createElement("script");
             element.setAttribute("type", "text/javascript");
-            element.setAttribute("src", "data/"+ file + ".js?v=" + new Date().getTime())
+            //element.setAttribute("src", "data/"+ file + ".js?v=" + new Date().getTime())
+            element.setAttribute("src", "data/"+ file + ".js")
             document.getElementsByTagName("head")[0].appendChild(element);
         }
         let country = "pk"
