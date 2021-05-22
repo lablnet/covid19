@@ -3,7 +3,7 @@ var datafileConfig = {
     // these are the auto generated data file can be found on data folder inside public
     'feed',
     'provience',
-    'cases',
+    //'cases',
     'trend',
     'forecast',
     'labs',
