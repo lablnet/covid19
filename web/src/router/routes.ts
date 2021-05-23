@@ -1,6 +1,6 @@
 import {RouteRecordRaw} from 'vue-router'
 import {get_country} from "@/countryHelper"
-import routeConfig from "@/config/routeConfig"
+import {routeConfig} from "@/config/routeConfig"
 
 // @ts-ignore
 let routes: Array<RouteRecordRaw> = routeConfig[get_country()]

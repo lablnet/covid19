@@ -76,4 +76,4 @@ var routeConfig: any = {
   "tw": []
 }
 
-export default routeConfig
+export {routeConfig}
