@@ -2,9 +2,38 @@ import {RouteRecordRaw} from 'vue-router'
 import {get_country} from "@/countryHelper"
 import {routeConfig} from "@/config/routeConfig"
 
-// @ts-ignore
-let routes: Array<RouteRecordRaw> = routeConfig[get_country()]
+let countries = routeConfig['pk']
+// eslint-disable-next-line no-prototype-builtins
+if (routeConfig.hasOwnProperty(get_country())) {
+  // @ts-ignore
+  countries = routeConfig[get_country()]
+}
+let routes: Array<RouteRecordRaw> = countries
 routes.push(
+  {
+    path: '/about',
+    name: 'About',
+    component: () => import('../views/About.vue'),
+    meta: {
+      title: 'About',
+    },
+  },
+  {
+    path: '/feedback',
+    name: 'Feedback',
+    component: () => import('../views/Feedback.vue'),
+    meta: {
+      title: 'Feedback',
+    },
+  },
+  {
+    path: '/request',
+    name: 'request',
+    component: () => import('../views/Pakistan/Request.vue'),
+    meta: {
+      title: 'Request',
+    },
+  },
   {
     path: '/:pathMatch(.*)*',
     name: '404',

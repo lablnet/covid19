@@ -41,35 +41,11 @@ var routeConfig: any = {
       },
     },
     {
-      path: '/about',
-      name: 'About',
-      component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
-      meta: {
-        title: 'About',
-      },
-    },
-    {
       path: '/map',
       name: 'Map',
-      component: () => import(/* webpackChunkName: "about" */ '../views/Pakistan/Map.vue'),
+      component: () => import('../views/Pakistan/Map.vue'),
       meta: {
         title: 'Map',
-      },
-    },
-    {
-      path: '/feedback',
-      name: 'Feedback',
-      component: () => import(/* webpackChunkName: "about" */ '../views/Feedback.vue'),
-      meta: {
-        title: 'Feedback',
-      },
-    },
-    {
-      path: '/request',
-      name: 'request',
-      component: () => import(/* webpackChunkName: "about" */ '../views/Pakistan/Request.vue'),
-      meta: {
-        title: 'Request',
       },
     },
   ],
