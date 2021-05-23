@@ -96,7 +96,7 @@ export default {
   name: "app",
   watch: {
     $route(to, from) {
-      let country = this.countries[get_country()]
+      let country = this.getCountryNameByCode(get_country())
       let base = `COVID-19 ${country} Dashboard`
       let title = ""
       if (typeof to.meta.title == "string")
@@ -127,6 +127,12 @@ export default {
     window.addEventListener('scroll', this.handleScroll);
   },
   methods: {
+    getCountryNameByCode(code) {
+      for (let c in CountryList) {
+        if (CountryList[c].code === code) return CountryList[c].name
+      }
+      return ""
+    },
     changeCountry() {
       localStorage.setItem("country", this.selectedCode)
       // we need to reload the page, because we load data files in index.html
