@@ -34,6 +34,7 @@
             let response = await fetch("https://alphasofthub.com/ipinfo.php")
             let content = await response.json()
             localStorage.setItem("country", content.country_code.toString().toLocaleLowerCase())
+            location.reload()
         }
 
         if (localStorage.getItem("country") === null) {
