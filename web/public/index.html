@@ -31,7 +31,7 @@
     <script>
         // get the country.
         async function get_country_from_AlphaSoftHub() {
-            let response = await fetch("http://ipinfo.alphasofthub.com")
+            let response = await fetch("https://alphasofthub.com/ipinfo.php")
             let content = await response.json()
             localStorage.setItem("country", content.country_code.toString().toLocaleLowerCase())
         }
