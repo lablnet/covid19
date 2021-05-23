@@ -1,31 +1,13 @@
 import sys
 sys.path.append('./')
-
-import csv
-import json
 from src._sqlite import _sqlite
 from src.__config import get_config
+from src.jsExport import make_json, write_json
 from datetime import datetime
 from pathlib import Path
 
 folder = str(Path("").parent.absolute()).replace("Countries\Pakistan", "") + "/"
 
-def write_json(jsonFilePath, data, varname):
-    with open(jsonFilePath, 'w', encoding='utf-8') as jsonf:
-        jsonf.write("var "+ varname +" = "+json.dumps(data, indent=4))
-
-
-def make_json(csvFilePath, jsonFilePath, varname):
-    # create a dictionary
-    data = {}
-    with open(csvFilePath, encoding='utf-8') as csvf:
-        csvReader = csv.DictReader(csvf)
-
-        for rows in csvReader:
-            key = rows['id']
-            data[key] = rows
-
-    write_json(jsonFilePath, data, varname)
 
 
 # Csv to js
