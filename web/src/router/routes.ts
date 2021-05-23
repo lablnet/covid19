@@ -1,18 +1,18 @@
-import { RouteRecordRaw } from 'vue-router'
+import {RouteRecordRaw} from 'vue-router'
 import {get_country} from "@/countryHelper"
 import routeConfig from "@/config/routeConfig"
 
-let country = get_country()
-let routes: Array<RouteRecordRaw> = routeConfig[country]
+// @ts-ignore
+let routes: Array<RouteRecordRaw> = routeConfig[get_country()]
 routes.push(
-    {
-      path: '/:pathMatch(.*)*',
-      name: '404',
-      component: () => import(/* webpackChunkName: "about" */ '../views/404.vue'),
-      meta: {
-        title: '404',
-      },
+  {
+    path: '/:pathMatch(.*)*',
+    name: '404',
+    component: () => import('../views/404.vue'),
+    meta: {
+      title: '404',
     },
-  )
+  },
+)
 
 export default routes

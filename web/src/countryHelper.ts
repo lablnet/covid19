@@ -1,5 +1,5 @@
 const get_country = () => {
-  return "pk";
+  return localStorage.getItem("country")
 }
 
 export {

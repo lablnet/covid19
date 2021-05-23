@@ -22,7 +22,7 @@
             <div class="col-md-6">
               <div class="container">
                 <h1 class="title twelve mt-2"><b>TOTAL FACILITIES</b></h1>
-                <h1 class="title eight ml-2 mt-2"><b>{{totallabs}}</b></h1>
+                <h1 class="title eight ml-2 mt-2"><b>{{ totallabs }}</b></h1>
               </div>
             </div>
           </div>
@@ -74,17 +74,17 @@
               <h3 class="subtitle">All Testing Labs</h3>
             </div>
             <div class="col-md-4">
-                <select class="form-control" v-model="selected">
-                  <option value="all">All</option>
-                  <option value="Islamabad">Islamabad</option>
-                  <option value="Federal">Federal</option>
-                  <option value="Punjab">Punjab</option>
-                  <option value="Sindh">Sindh</option>
-                  <option value="AJK">AJK</option>
-                  <option value="KP">KPK</option>
-                  <option value="Gilgit Baltistan">Gilgit Baltistan</option>
-                  <option value="Balochistan">Balochistan</option>
-                </select>
+              <select class="form-control" v-model="selected">
+                <option value="all">All</option>
+                <option value="Islamabad">Islamabad</option>
+                <option value="Federal">Federal</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Sindh">Sindh</option>
+                <option value="AJK">AJK</option>
+                <option value="KP">KPK</option>
+                <option value="Gilgit Baltistan">Gilgit Baltistan</option>
+                <option value="Balochistan">Balochistan</option>
+              </select>
             </div>
           </div>
         </div>
@@ -99,11 +99,11 @@
             </tr>
             </thead>
             <tbody class="content">
-            <tr v-for="lab in getFiltered()" :key="lab" >
-              <td>{{lab.name}}</td>
-              <td>{{lab.provience}}</td>
-              <td>{{lab.city}}</td>
-              <td>{{lab.sector == ""? 'Government' : lab.sector}}</td>
+            <tr v-for="lab in getFiltered()" :key="lab">
+              <td>{{ lab.name }}</td>
+              <td>{{ lab.provience }}</td>
+              <td>{{ lab.city }}</td>
+              <td>{{ lab.sector == "" ? 'Government' : lab.sector }}</td>
             </tr>
             </tbody>
           </table>
@@ -213,7 +213,9 @@ export default {
       }
     },
     getFiltered() {
-      if (this.selected == "all") {return this.labs}
+      if (this.selected == "all") {
+        return this.labs
+      }
       let data = []
       for (let index in this.labs) {
         let lab = this.labs[index]

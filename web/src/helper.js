@@ -11,10 +11,10 @@ const get_feed_by_province = (state) => {
     }
   }
 
-  return  filtered
+  return filtered
 }
 
-Object.size = function(obj) {
+Object.size = function (obj) {
   var size = 0,
     key;
   for (key in obj) {
@@ -30,7 +30,7 @@ const get_province_stat = (state) => {
   let filtered = []
   let i = 0
   let index = 0
-  for (;;) {
+  for (; ;) {
     if (index === 10) break;
     if (data[i] !== undefined && data[i].type === "INFECTED") {
       filtered.push(data[i])

@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import {createRouter, createWebHistory} from 'vue-router'
 import routes from "./routes"
 
 // Nprogress
@@ -12,8 +12,8 @@ const router = createRouter({
 })
 
 router.beforeEach((to, from, next) => {
-    Nprogress.start()
-    next()
+  Nprogress.start()
+  next()
 })
 
 router.afterEach((to, from) => {

@@ -48,9 +48,7 @@ var navbarConfig = {
       "hasdropdown": false,
     },
   },
-  "tw": {
-
-  }
+  "tw": {}
 }
 
 export default navbarConfig

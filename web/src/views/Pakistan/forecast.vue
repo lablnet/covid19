@@ -38,7 +38,8 @@ export default {
     this.trend = trend
     // eslint-disable-next-line no-undef
     this.forecast = forecast
-    this.mount()  },
+    this.mount()
+  },
 
   data() {
     return {

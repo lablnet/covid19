@@ -20,9 +20,9 @@
         <div class="container">
           <div class="row mt-3 mb-3">
             <div class="col-md-6">
-               <div class="container">
+              <div class="container">
                 <h1 class="title twelve mt-2"><b>TOTAL FACILITIES</b></h1>
-                 <h1 class="title eight ml-2 mt-2"><b>{{totalCenters}}</b></h1>
+                <h1 class="title eight ml-2 mt-2"><b>{{ totalCenters }}</b></h1>
               </div>
             </div>
             <div class="col-md-6">
@@ -41,41 +41,41 @@
             </tr>
             </thead>
             <tbody class="content">
-              <tr>
-                <td>Islamabad</td>
-                <td>{{ region.Islamabad.total }}</td>
-                <td>{{ region.Islamabad.beds }}</td>
-              </tr>
-              <tr>
-                <td>Punjab</td>
-                <td>{{ region.Islamabad.total }}</td>
-                <td>{{ region.Punjab.beds }}</td>
-              </tr>
-              <tr>
-                <td>Sindh</td>
-                <td>{{ region.Sindh.total }}</td>
-                <td>{{ region.Sindh.beds }}</td>
-              </tr>
-              <tr>
-                <td>KPK</td>
-                <td>{{ region.KPK.total }}</td>
-                <td>{{ region.KPK.beds }}</td>
-              </tr>
-              <tr>
-                <td>AJK</td>
-                <td>{{ region.AJK.total }}</td>
-                <td>{{ region.AJK.beds }}</td>
-              </tr>
-              <tr>
-                <td>Balochistan</td>
-                <td>{{ region.Balochistan.total }}</td>
-                <td>{{ region.Balochistan.beds }}</td>
-              </tr>
-              <tr>
-                <td>Gilgit Baltistan</td>
-                <td>{{ region.GB.total }}</td>
-                <td>{{ region.GB.beds }}</td>
-              </tr>
+            <tr>
+              <td>Islamabad</td>
+              <td>{{ region.Islamabad.total }}</td>
+              <td>{{ region.Islamabad.beds }}</td>
+            </tr>
+            <tr>
+              <td>Punjab</td>
+              <td>{{ region.Islamabad.total }}</td>
+              <td>{{ region.Punjab.beds }}</td>
+            </tr>
+            <tr>
+              <td>Sindh</td>
+              <td>{{ region.Sindh.total }}</td>
+              <td>{{ region.Sindh.beds }}</td>
+            </tr>
+            <tr>
+              <td>KPK</td>
+              <td>{{ region.KPK.total }}</td>
+              <td>{{ region.KPK.beds }}</td>
+            </tr>
+            <tr>
+              <td>AJK</td>
+              <td>{{ region.AJK.total }}</td>
+              <td>{{ region.AJK.beds }}</td>
+            </tr>
+            <tr>
+              <td>Balochistan</td>
+              <td>{{ region.Balochistan.total }}</td>
+              <td>{{ region.Balochistan.beds }}</td>
+            </tr>
+            <tr>
+              <td>Gilgit Baltistan</td>
+              <td>{{ region.GB.total }}</td>
+              <td>{{ region.GB.beds }}</td>
+            </tr>
             </tbody>
           </table>
         </div>
@@ -104,18 +104,18 @@
         <div class="container">
           <table class="table table-bordered">
             <thead>
-              <tr>
-                <th>Name</th>
-                <th>Beds</th>
-                <th>Province</th>
-              </tr>
+            <tr>
+              <th>Name</th>
+              <th>Beds</th>
+              <th>Province</th>
+            </tr>
             </thead>
             <tbody class="content">
-              <tr v-for="center in getFiltered()" :key="center" >
-                <td v-if="center.name !== 'GRAND TOTAL'">{{center.name}}</td>
-                <td v-if="center.name !== 'GRAND TOTAL'">{{center.beds}}</td>
-                <td v-if="center.name !== 'GRAND TOTAL'">{{center.provience}}</td>
-              </tr>
+            <tr v-for="center in getFiltered()" :key="center">
+              <td v-if="center.name !== 'GRAND TOTAL'">{{ center.name }}</td>
+              <td v-if="center.name !== 'GRAND TOTAL'">{{ center.beds }}</td>
+              <td v-if="center.name !== 'GRAND TOTAL'">{{ center.provience }}</td>
+            </tr>
             </tbody>
           </table>
         </div>
@@ -252,12 +252,14 @@ export default {
       }
     },
     getFiltered() {
-      if (this.selected == "all") {return this.centers}
+      if (this.selected == "all") {
+        return this.centers
+      }
       let data = []
       for (let index in this.centers) {
         let center = this.centers[index]
         if (center.provience === this.selected) {
-            data.push(center)
+          data.push(center)
         }
       }
 

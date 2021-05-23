@@ -64,8 +64,7 @@ export default {
   },
 
   methods: {
-    test()
-    {
+    test() {
       let isb = get_province_stat("Islamabad")
       // let punjab = get_province_stat("Punjab")
       // let sindh = get_province_stat("Sindh")
