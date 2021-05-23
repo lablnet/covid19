@@ -7,10 +7,6 @@
 
 Super Fast COVID-19 Dashboard and parser
   
-  The sole purpose of this dashboard is to make the general public aware of the current situation about COVID-19 virus outbreak in Pakistan.
-
-We have tried to sketch a clear picture for you in the simplest and the easiest manner so that you can explain everything to others in a convenient way, saving time and eliminating misconceptions about COVID-19.
-
 If you have any idea/suggestion to improve this dashboard, please write to mumerfarooqlablnet01@gmail.com
 
 ## Purpose
@@ -24,6 +20,8 @@ If you have any idea/suggestion to improve this dashboard, please write to mumer
 3. Dashboard to visualize data.
 4. Publicly Data downloading.
 5. Multiple country handling frontend.
+6. Super Fast performance
+7. Fully customizable for `country` website for more info look  [Contribution guideline](https://github.com/lablnet/covid19/blob/master/CONTRIBUTING.md)
 
 ## How it works?
   This project use GitHub Actions to automate the task/workflow, and export data into CSV and JavaScript JSON for quickly accessible into website without having any server. (serverless  😎)
