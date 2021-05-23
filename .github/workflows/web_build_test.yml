@@ -33,5 +33,5 @@ jobs:
           REPOSITORY_NAME: "covid19-earth/covid19-earth"
           SINGLE_COMMIT: true
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
-          BRANCH: gh-pages
+          BRANCH: main
           FOLDER: web//dist
