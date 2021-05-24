@@ -96,6 +96,10 @@ Following steps to create frontend development:
 
 - Using the `npm run serve` command to build Vue.js and have the static page serving on the development server.
 
+**If you're still confuse or not sure about things, you can open discussion**
+
+https://github.com/lablnet/covid19/discussions
+
 **Thanks**
 
 ## License
