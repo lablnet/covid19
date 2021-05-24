@@ -1,12 +1,12 @@
 name: 'Web Build and Deploy to Earth'
 
 on:
-  # # schedule:
-  # #   - cron:  '10 4,5,10 * * *'
-  # workflow_dispatch:
-  # # push:
-  # #   branches:
-  # #     - main
+  schedule:
+    - cron:  '10 4,5,10 * * *'
+  workflow_dispatch:
+  push:
+    branches:
+      - main
 
 jobs:
   build-and-deploy:
