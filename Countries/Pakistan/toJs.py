@@ -3,7 +3,6 @@ sys.path.append('./')
 from src._sqlite import _sqlite
 from src.__config import get_config
 from src.jsExport import make_json, write_json
-from datetime import datetime
 from pathlib import Path
 
 folder = str(Path("").parent.absolute()).replace("Countries\Pakistan", "") + "/"
@@ -29,13 +28,6 @@ write_json(folder+"web/public/data/trend.js", data, "trend")
 data = conn.get_page_data("cases", 1)  # TableName, Page(Number)
 write_json(folder+"web/public/data/feed.js", data, "feed")
 conn.close()
-
-# Prepare current datetime.
-now = datetime.now()
-date = datetime.strftime(now, "%Y-%m-%d %H:%M:%S GMT+5")
-date = date.replace(" GMT+5", "")
-write_json(folder+"web/public/data/last_update.js", {"update": date}, "update")
-
 
 # Finally, Done.
 print("Done, Thanks")

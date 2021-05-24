@@ -8,6 +8,7 @@ from bs4 import BeautifulSoup
 import re
 from src._sqlite import _sqlite
 from src.__config import get_config
+from src.jsExport import make_json, write_json
 from datetime import datetime
 from pathlib import Path
 
@@ -18,7 +19,9 @@ page = requests.get(url)
 soup = BeautifulSoup(page.content, "html.parser")
 soup.prettify()
 
-last_update_in_website = soup.find("span", class_="update-time").text.split(" ")[0]
+last_update = soup.find("span", class_="update-time").text
+
+last_update_in_website = last_update.split(" ")[0]
 
 patients = soup.find_all('span', class_='counter')  # cases counter....
 
@@ -94,6 +97,10 @@ if not date1 == date2 and date2 == last_update_in_website:
         "last_doses": last_doses,
         "reference": url,
     })
+
+print(last_update)
+# Add last updated date to last update..
+write_json(folder+"web/public/data/last_update.js", {"update": last_update}, "update")
 
 # Finally, Done
 print("Done, Thanks")
