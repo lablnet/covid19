@@ -1,2 +1,2 @@
 web/public/data/* linguist-vendored
-web/src/viwes/App/* linguist-vendored
+web/src/views/App/* linguist-vendored
