@@ -1,12 +1,12 @@
-name: 'Web Build and Deploy'
+name: 'Web Build and Deploy to Earth'
 
 on:
-  schedule:
-    - cron:  '10 4,5,10 * * *'
-  workflow_dispatch:
-  push:
-    branches:
-      - main
+  # # schedule:
+  # #   - cron:  '10 4,5,10 * * *'
+  # workflow_dispatch:
+  # # push:
+  # #   branches:
+  # #     - main
 
 jobs:
   build-and-deploy:
@@ -24,12 +24,12 @@ jobs:
           npm run build
           cd dist
           cp index.html 404.html
-
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.6.2
         with:
-          GIT_CONFIG_NAME: "AlphaSoftHub"
-          GIT_CONFIG_EMAIL: "alphasofthub@users.noreply.github.com"
+          GIT_CONFIG_NAME: "covid19-earth"
+          GIT_CONFIG_EMAIL: "covid19-earth@users.noreply.github.com"
+          REPOSITORY_NAME: "covid19-earth/covid19-earth"
           SINGLE_COMMIT: true
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
           BRANCH: main
