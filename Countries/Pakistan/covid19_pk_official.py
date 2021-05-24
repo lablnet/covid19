@@ -53,7 +53,7 @@ today = get_covid_daily_stat()
 
 # Get cases form database.
 s = _sqlite
-conn = s.conn(get_config("database", folder), folder)
+conn = s.conn(get_config("database", folder+"/Countries/Pakistan"), folder)
 cases = (conn.get_provience_wise("cases"))
 
 for key in cases.keys():

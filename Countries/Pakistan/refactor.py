@@ -17,7 +17,7 @@ if os.path.exists(folder+"/analysis/dailyStats.csv"):
 
 def dbToCsv():
     s = _sqlite
-    conn = s.conn(get_config("database", folder), folder)
+    conn = s.conn(get_config("database", folder+"/Countries/Pakistan"), folder)
 
     data = conn.get('cases').fetchall()
     states = ["Islamabad", "Punjab", "Sindh", "KPK", "AJK", "GB", 'Balochistan']

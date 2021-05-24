@@ -39,7 +39,7 @@ critical = patients[4].text  # critical cases
 
 # Database
 s = _sqlite()
-conn = s.conn(get_config("database", folder), folder)
+conn = s.conn(get_config("database", folder+"/Countries/Pakistan"), folder)
 # conn.create_tables()
 
 # Prepare current datetime.
@@ -98,7 +98,6 @@ if not date1 == date2 and date2 == last_update_in_website:
         "reference": url,
     })
 
-print(last_update)
 # Add last updated date to last update..
 write_json(folder+"web/public/data/last_update.js", {"update": last_update}, "update")
 

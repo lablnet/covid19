@@ -8,7 +8,6 @@ from pathlib import Path
 folder = str(Path("").parent.absolute()).replace("Countries\Pakistan", "") + "/"
 
 
-
 # Csv to js
 make_json(folder+"web/public/data/cases.csv", folder+"web/public/data/cases.js", "cases")
 make_json(folder+"web/public/data/summery.csv", folder+"web/public/data/summery.js", "summery")
@@ -20,7 +19,7 @@ make_json(folder+"web/public/data/vaccine.csv", folder+"web/public/data/vaccine.
 
 # Database to js
 s = _sqlite
-conn = s.conn(get_config("database", folder), folder)
+conn = s.conn(get_config("database", folder+"/Countries/Pakistan"), folder)
 data = conn.get_provience_wise("cases")
 write_json(folder+"web/public/data/provience.js", data, "provience")
 data = conn.get_processed("cases")

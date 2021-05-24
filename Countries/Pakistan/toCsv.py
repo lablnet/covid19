@@ -7,7 +7,8 @@ from src.__config import get_config
 from pathlib import Path
 
 folder = str(Path("").parent.absolute()).replace("Countries\Pakistan", "\\") + "/"
-conn = sqlite3.connect(folder + get_config("database", folder)['db_name'] + '.sqlite')
+
+conn = sqlite3.connect(folder + get_config("database", folder+"/Countries/Pakistan")['db_name'] + '.sqlite')
 
 df = pd.read_sql("SELECT * FROM cases", conn)
 df.to_csv(folder+'web/public/data/cases.csv')

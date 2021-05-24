@@ -153,7 +153,7 @@ date = date.replace(" GMT+5", "")
 
 # Database
 s = _sqlite()
-conn = s.conn(get_config("database", folder), folder)
+conn = s.conn(get_config("database", folder+"/Countries/Pakistan"), folder)
 # conn.create_tables()
 
 # # Insert into database.
