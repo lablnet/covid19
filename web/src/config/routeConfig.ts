@@ -35,7 +35,7 @@ var routeConfig: any = {
     {
       path: '/compare-region',
       name: 'Compare',
-      component: () => import('../views/Pakistan/comparison/Region.vue'),
+      component: () => import('../views/Countries/Pakistan/comparison/Region.vue'),
       meta: {
         title: 'Region Comparison',
       },
@@ -43,7 +43,7 @@ var routeConfig: any = {
     {
       path: '/map',
       name: 'Map',
-      component: () => import('../views/Pakistan/Map.vue'),
+      component: () => import('../views/Countries/Pakistan/Map.vue'),
       meta: {
         title: 'Map',
       },
