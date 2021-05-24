@@ -452,7 +452,7 @@ export default {
     isToday() {
       let date = new Date()
       date = date.getDate()
-      let updated = parseInt(String(this.update.split('-')[2]).split(' ')[0])
+      let updated = parseInt(String(this.update.split(' ')[0]).split(' ')[0])
       return updated === date
     }
   },

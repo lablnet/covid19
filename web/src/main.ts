@@ -5,7 +5,6 @@ import store from './store'
 import 'bootstrap'
 import {get_country} from "@/countryHelper";
 import {routeConfig} from "@/config/routeConfig"
-
 let App = require(`@/App.vue`).default
 
 let _country = get_country()
