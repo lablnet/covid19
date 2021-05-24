@@ -57,7 +57,7 @@
           <router-link class="nav-link" to="/feedback">Feedback</router-link>
         </li>
         <li>
-          <router-link class="nav-link" to="/request">Data Request</router-link>
+          <a class="nav-link" href="https://github.com/lablnet/covid19/blob/main/DATA_REQUEST.md" target="_blank">Data Request</a>
         </li>
       </ol>
       </p>

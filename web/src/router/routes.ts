@@ -27,14 +27,6 @@ routes.push(
     },
   },
   {
-    path: '/request',
-    name: 'request',
-    component: () => import('../views/Pakistan/Request.vue'),
-    meta: {
-      title: 'Request',
-    },
-  },
-  {
     path: '/:pathMatch(.*)*',
     name: '404',
     component: () => import('../views/404.vue'),

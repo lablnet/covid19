@@ -3,7 +3,7 @@ var routeConfig: any = {
     {
       path: '/',
       name: 'Home',
-      component: () => import('../views/Pakistan/Home.vue'),
+      component: () => import('../views/Countries/Pakistan/Home.vue'),
       meta: {
         title: 'Home',
       },
@@ -11,7 +11,7 @@ var routeConfig: any = {
     {
       path: '/quarantine',
       name: 'Quarantine',
-      component: () => import('../views/Pakistan/Quarantine.vue'),
+      component: () => import('../views/Countries/Pakistan/Quarantine.vue'),
       meta: {
         title: 'Quarantine',
       },
@@ -19,7 +19,7 @@ var routeConfig: any = {
     {
       path: '/labs',
       name: 'Labs',
-      component: () => import('../views/Pakistan/Labs.vue'),
+      component: () => import('../views/Countries/Pakistan/Labs.vue'),
       meta: {
         title: 'Labs',
       },
@@ -27,7 +27,7 @@ var routeConfig: any = {
     {
       path: '/forecast',
       name: 'Forecast',
-      component: () => import('../views/Pakistan/forecast.vue'),
+      component: () => import('../views/Countries/Pakistan/forecast.vue'),
       meta: {
         title: 'Forecast',
       },
