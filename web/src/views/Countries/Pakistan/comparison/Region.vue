@@ -30,7 +30,7 @@ import {
 } from 'vue-class-component'
 import Chart from 'chart.js'
 import round from "@/round"
-import {get_province_stat} from "@/helper";
+import {get_province_stat} from "@/views/Countries/Pakistan/helper";
 
 export default {
   mounted() {

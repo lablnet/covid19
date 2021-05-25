@@ -212,7 +212,7 @@ import {
   Options,
   Vue
 } from 'vue-class-component'
-import {get_feed_by_province} from "@/helper";
+import {get_feed_by_province} from "@/views/Countries/Pakistan/helper";
 
 import Chart from 'chart.js'
 import round from "@/round"

@@ -15,7 +15,7 @@ def get_pick_check_hospitals():
 hospital_lists = get_pick_check_hospitals()
 
 # Store cases to datasets.
-csv_file_path = './datasets/covid19_tw_pick_check_labs.csv'
+csv_file_path = './datasets/Countries/Taiwan/covid19_tw_pick_check_labs.csv'
 
 file_handler = open(csv_file_path, 'w')
 file_handler.write(hospital_lists)

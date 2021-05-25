@@ -18,8 +18,8 @@ def get_covid_daily_stat(timer=15):
     options.add_argument('--headless')
     options.add_argument('--disable-gpu')
     options.add_argument('--no-sandbox')
-    # driver = webdriver.Chrome(chrome_options=options, webdriver=ChromeDriverManager().install())
-    driver = webdriver.Chrome(ChromeDriverManager().install(), chrome_options=options)
+    # driver = webdriver.Chrome(options=options, webdriver=ChromeDriverManager().install())
+    driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
     driver.set_page_load_timeout(90)
     driver.get("https://datastudio.google.com/embed/u/0/reporting/1PLVi5amcc_R5Gh928gTE8-8r8-fLXJQF/page/R24IB")
     time.sleep(timer) # Lower this if you have good internet connection

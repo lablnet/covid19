@@ -1,6 +1,6 @@
 {
   "database": {
-    "db_name": "/datasets/covid19_pakistan",
+    "db_name": "/datasets/Countries/Pakistan/covid19_pakistan",
     "tables" : {
         "1": {
           "name": "cases",

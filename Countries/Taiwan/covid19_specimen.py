@@ -15,7 +15,7 @@ def get_daily_specimen():
 hospital_lists = get_daily_specimen()
 
 # Store cases to datasets.
-csv_file_path = './datasets/covid19_tw_specimen.csv'
+csv_file_path = './datasets/Countries/Taiwan/covid19_tw_specimen.csv'
 
 file_handler = open(csv_file_path, 'w')
 file_handler.write(hospital_lists)
