@@ -1,5 +1,131 @@
 var feed = [
     {
+        "id": 23829,
+        "date": "2021-05-25T05:30:23",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "93 new recoveries reported in AJK taking the tally to 16751"
+    },
+    {
+        "id": 23828,
+        "date": "2021-05-25T05:30:23",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "44 new cases reported in  AJK taking the tally to 18852"
+    },
+    {
+        "id": 23827,
+        "date": "2021-05-25T05:30:23",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "81 new recoveries reported in Balochistan taking the tally to 23428"
+    },
+    {
+        "id": 23826,
+        "date": "2021-05-25T05:30:23",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "55 new cases reported in  Balochistan taking the tally to 24638"
+    },
+    {
+        "id": 23825,
+        "date": "2021-05-25T05:30:23",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "9 new recoveries reported in Gilgit Baltistan taking the tally to 5300"
+    },
+    {
+        "id": 23824,
+        "date": "2021-05-25T05:30:23",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "12 new cases reported in  Gilgit Baltistan taking the tally to 5512"
+    },
+    {
+        "id": 23823,
+        "date": "2021-05-25T05:30:23",
+        "type": "DECEASED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "20 new deaths reported in KPK taking the tally to 3970"
+    },
+    {
+        "id": 23822,
+        "date": "2021-05-25T05:30:23",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "255 new recoveries reported in KPK taking the tally to 119986"
+    },
+    {
+        "id": 23821,
+        "date": "2021-05-25T05:30:23",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "304 new cases reported in  KPK taking the tally to 130187"
+    },
+    {
+        "id": 23820,
+        "date": "2021-05-25T05:30:23",
+        "type": "DECEASED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "16 new deaths reported in Sindh taking the tally to 4936"
+    },
+    {
+        "id": 23819,
+        "date": "2021-05-25T05:30:23",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "814 new recoveries reported in Sindh taking the tally to 282410"
+    },
+    {
+        "id": 23818,
+        "date": "2021-05-25T05:30:23",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "910 new cases reported in  Sindh taking the tally to 310557"
+    },
+    {
+        "id": 23817,
+        "date": "2021-05-25T05:30:23",
+        "type": "DECEASED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "55 new deaths reported in Punjab taking the tally to 9839"
+    },
+    {
+        "id": 23816,
+        "date": "2021-05-25T05:30:23",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "1264 new recoveries reported in Punjab taking the tally to 302873"
+    },
+    {
+        "id": 23815,
+        "date": "2021-05-25T05:30:23",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "817 new cases reported in  Punjab taking the tally to 335577"
+    },
+    {
+        "id": 23814,
+        "date": "2021-05-25T05:30:23",
+        "type": "DECEASED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "1 new deaths reported in Islamabad taking the tally to 746"
+    },
+    {
+        "id": 23813,
+        "date": "2021-05-25T05:30:23",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "267 new recoveries reported in Islamabad taking the tally to 72409"
+    },
+    {
+        "id": 23812,
+        "date": "2021-05-25T05:30:23",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "111 new cases reported in  Islamabad taking the tally to 80529"
+    },
+    {
         "id": 23811,
         "date": "2021-05-24T04:15:13",
         "type": "DECEASED",
