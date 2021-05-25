@@ -12,8 +12,6 @@ conn = sqlite3.connect(folder + get_config("database", folder+"/Countries/Pakist
 
 df = pd.read_sql("SELECT * FROM cases", conn)
 df.to_csv(folder+'web/public/data/cases.csv')
-df = pd.read_sql("SELECT * FROM global", conn)
-df.to_csv(folder+'web/public/data/global.csv')
 df = pd.read_sql("SELECT * FROM summery", conn)
 df.to_csv(folder+'web/public/data/summery.csv')
 df = pd.read_sql("SELECT * FROM vaccine", conn)
@@ -22,6 +20,11 @@ df = pd.read_sql("SELECT * FROM quarantines", conn)
 df.to_csv(folder+'web/public/data/quarantines.csv')
 df = pd.read_sql("SELECT * FROM labs", conn)
 df.to_csv(folder+'web/public/data/labs.csv')
+
+# Who dataset.
+conn = sqlite3.connect(folder + get_config("database", folder+"/Countries/", "who.json")['db_name'] + '.sqlite')
+df = pd.read_sql("SELECT * FROM global", conn)
+df.to_csv(folder+'web/public/data/global.csv')
 
 # Finally, Done
 print("Done, Thanks")

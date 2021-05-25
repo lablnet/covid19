@@ -1,0 +1,22 @@
+{
+    "database": {
+      "db_name": "/datasets/covid19_WHO",
+      "tables" : {
+            "1" : {
+                "name": "global",
+                "fields": {
+                "date_reported": "varchar",
+                "country_code": "varchar",
+                "country": "TEXT",
+                "who_region": "varchar",
+                "new_cases": "INTEGER",
+                "cumulative_cases": "INTEGER",
+                "new_deaths": "INTEGER",
+                "cumulative_deaths": "INTEGER"
+                }
+            }
+        }
+    }
+}
+  
+  
