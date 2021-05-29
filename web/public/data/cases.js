@@ -82298,5 +82298,195 @@ var cases = {
         "reference": "http://covid.gov.pk/",
         "description": "1 new deaths reported in AJK taking the tally to 536",
         "extra": ""
+    },
+    "23888": {
+        "": "8230",
+        "id": "23888",
+        "_id": "",
+        "datetime": "2021-05-29T05:49:42",
+        "type": "INFECTED",
+        "reference": "http://covid.gov.pk/",
+        "description": "80 new cases reported in  Islamabad taking the tally to 81007",
+        "extra": ""
+    },
+    "23889": {
+        "": "8231",
+        "id": "23889",
+        "_id": "",
+        "datetime": "2021-05-29T05:49:42",
+        "type": "RECOVERED",
+        "reference": "http://covid.gov.pk/",
+        "description": "528 new recoveries reported in Islamabad taking the tally to 74271",
+        "extra": ""
+    },
+    "23890": {
+        "": "8232",
+        "id": "23890",
+        "_id": "",
+        "datetime": "2021-05-29T05:49:42",
+        "type": "DECEASED",
+        "reference": "http://covid.gov.pk/",
+        "description": "2 new deaths reported in Islamabad taking the tally to 755",
+        "extra": ""
+    },
+    "23891": {
+        "": "8233",
+        "id": "23891",
+        "_id": "",
+        "datetime": "2021-05-29T05:49:42",
+        "type": "INFECTED",
+        "reference": "http://covid.gov.pk/",
+        "description": "602 new cases reported in  Punjab taking the tally to 338377",
+        "extra": ""
+    },
+    "23892": {
+        "": "8234",
+        "id": "23892",
+        "_id": "",
+        "datetime": "2021-05-29T05:49:42",
+        "type": "RECOVERED",
+        "reference": "http://covid.gov.pk/",
+        "description": "559 new recoveries reported in Punjab taking the tally to 308275",
+        "extra": ""
+    },
+    "23893": {
+        "": "8235",
+        "id": "23893",
+        "_id": "",
+        "datetime": "2021-05-29T05:49:42",
+        "type": "DECEASED",
+        "reference": "http://covid.gov.pk/",
+        "description": "35 new deaths reported in Punjab taking the tally to 9960",
+        "extra": ""
+    },
+    "23894": {
+        "": "8236",
+        "id": "23894",
+        "_id": "",
+        "datetime": "2021-05-29T05:49:42",
+        "type": "INFECTED",
+        "reference": "http://covid.gov.pk/",
+        "description": "1252 new cases reported in  Sindh taking the tally to 315410",
+        "extra": ""
+    },
+    "23895": {
+        "": "8237",
+        "id": "23895",
+        "_id": "",
+        "datetime": "2021-05-29T05:49:42",
+        "type": "RECOVERED",
+        "reference": "http://covid.gov.pk/",
+        "description": "572 new recoveries reported in Sindh taking the tally to 285975",
+        "extra": ""
+    },
+    "23896": {
+        "": "8238",
+        "id": "23896",
+        "_id": "",
+        "datetime": "2021-05-29T05:49:42",
+        "type": "DECEASED",
+        "reference": "http://covid.gov.pk/",
+        "description": "15 new deaths reported in Sindh taking the tally to 5003",
+        "extra": ""
+    },
+    "23897": {
+        "": "8239",
+        "id": "23897",
+        "_id": "",
+        "datetime": "2021-05-29T05:49:42",
+        "type": "INFECTED",
+        "reference": "http://covid.gov.pk/",
+        "description": "364 new cases reported in  KPK taking the tally to 131775",
+        "extra": ""
+    },
+    "23898": {
+        "": "8240",
+        "id": "23898",
+        "_id": "",
+        "datetime": "2021-05-29T05:49:42",
+        "type": "RECOVERED",
+        "reference": "http://covid.gov.pk/",
+        "description": "359 new recoveries reported in KPK taking the tally to 122181",
+        "extra": ""
+    },
+    "23899": {
+        "": "8241",
+        "id": "23899",
+        "_id": "",
+        "datetime": "2021-05-29T05:49:42",
+        "type": "DECEASED",
+        "reference": "http://covid.gov.pk/",
+        "description": "18 new deaths reported in KPK taking the tally to 4043",
+        "extra": ""
+    },
+    "23900": {
+        "": "8242",
+        "id": "23900",
+        "_id": "",
+        "datetime": "2021-05-29T05:49:42",
+        "type": "INFECTED",
+        "reference": "http://covid.gov.pk/",
+        "description": "16 new cases reported in  Gilgit Baltistan taking the tally to 5561",
+        "extra": ""
+    },
+    "23901": {
+        "": "8243",
+        "id": "23901",
+        "_id": "",
+        "datetime": "2021-05-29T05:49:42",
+        "type": "RECOVERED",
+        "reference": "http://covid.gov.pk/",
+        "description": "18 new recoveries reported in Gilgit Baltistan taking the tally to 5344",
+        "extra": ""
+    },
+    "23902": {
+        "": "8244",
+        "id": "23902",
+        "_id": "",
+        "datetime": "2021-05-29T05:49:42",
+        "type": "INFECTED",
+        "reference": "http://covid.gov.pk/",
+        "description": "93 new cases reported in  Balochistan taking the tally to 25001",
+        "extra": ""
+    },
+    "23903": {
+        "": "8245",
+        "id": "23903",
+        "_id": "",
+        "datetime": "2021-05-29T05:49:42",
+        "type": "RECOVERED",
+        "reference": "http://covid.gov.pk/",
+        "description": "40 new recoveries reported in Balochistan taking the tally to 23565",
+        "extra": ""
+    },
+    "23904": {
+        "": "8246",
+        "id": "23904",
+        "_id": "",
+        "datetime": "2021-05-29T05:49:42",
+        "type": "INFECTED",
+        "reference": "http://covid.gov.pk/",
+        "description": "48 new cases reported in  AJK taking the tally to 19108",
+        "extra": ""
+    },
+    "23905": {
+        "": "8247",
+        "id": "23905",
+        "_id": "",
+        "datetime": "2021-05-29T05:49:42",
+        "type": "RECOVERED",
+        "reference": "http://covid.gov.pk/",
+        "description": "60 new recoveries reported in AJK taking the tally to 17091",
+        "extra": ""
+    },
+    "23906": {
+        "": "8248",
+        "id": "23906",
+        "_id": "",
+        "datetime": "2021-05-29T05:49:42",
+        "type": "DECEASED",
+        "reference": "http://covid.gov.pk/",
+        "description": "3 new deaths reported in AJK taking the tally to 539",
+        "extra": ""
     }
 }
