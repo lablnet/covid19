@@ -84208,5 +84208,205 @@ var cases = {
         "reference": "http://covid.gov.pk/",
         "description": "52 new recoveries reported in AJK taking the tally to 18261",
         "extra": ""
+    },
+    "24079": {
+        "": "8421",
+        "id": "24079",
+        "_id": "",
+        "datetime": "2021-06-08T05:12:36",
+        "type": "INFECTED",
+        "reference": "http://covid.gov.pk/",
+        "description": "40 new cases reported in  Islamabad taking the tally to 81806",
+        "extra": ""
+    },
+    "24080": {
+        "": "8422",
+        "id": "24080",
+        "_id": "",
+        "datetime": "2021-06-08T05:12:36",
+        "type": "RECOVERED",
+        "reference": "http://covid.gov.pk/",
+        "description": "147 new recoveries reported in Islamabad taking the tally to 78187",
+        "extra": ""
+    },
+    "24081": {
+        "": "8423",
+        "id": "24081",
+        "_id": "",
+        "datetime": "2021-06-08T05:12:36",
+        "type": "DECEASED",
+        "reference": "http://covid.gov.pk/",
+        "description": "1 new deaths reported in Islamabad taking the tally to 766",
+        "extra": ""
+    },
+    "24082": {
+        "": "8424",
+        "id": "24082",
+        "_id": "",
+        "datetime": "2021-06-08T05:12:36",
+        "type": "INFECTED",
+        "reference": "http://covid.gov.pk/",
+        "description": "307 new cases reported in  Punjab taking the tally to 342805",
+        "extra": ""
+    },
+    "24083": {
+        "": "8425",
+        "id": "24083",
+        "_id": "",
+        "datetime": "2021-06-08T05:12:36",
+        "type": "RECOVERED",
+        "reference": "http://covid.gov.pk/",
+        "description": "1341 new recoveries reported in Punjab taking the tally to 319288",
+        "extra": ""
+    },
+    "24084": {
+        "": "8426",
+        "id": "24084",
+        "_id": "",
+        "datetime": "2021-06-08T05:12:36",
+        "type": "DECEASED",
+        "reference": "http://covid.gov.pk/",
+        "description": "35 new deaths reported in Punjab taking the tally to 10349",
+        "extra": ""
+    },
+    "24085": {
+        "": "8427",
+        "id": "24085",
+        "_id": "",
+        "datetime": "2021-06-08T05:12:36",
+        "type": "INFECTED",
+        "reference": "http://covid.gov.pk/",
+        "description": "707 new cases reported in  Sindh taking the tally to 324535",
+        "extra": ""
+    },
+    "24086": {
+        "": "8428",
+        "id": "24086",
+        "_id": "",
+        "datetime": "2021-06-08T05:12:36",
+        "type": "RECOVERED",
+        "reference": "http://covid.gov.pk/",
+        "description": "668 new recoveries reported in Sindh taking the tally to 295504",
+        "extra": ""
+    },
+    "24087": {
+        "": "8429",
+        "id": "24087",
+        "_id": "",
+        "datetime": "2021-06-08T05:12:36",
+        "type": "DECEASED",
+        "reference": "http://covid.gov.pk/",
+        "description": "8 new deaths reported in Sindh taking the tally to 5144",
+        "extra": ""
+    },
+    "24088": {
+        "": "8430",
+        "id": "24088",
+        "_id": "",
+        "datetime": "2021-06-08T05:12:36",
+        "type": "INFECTED",
+        "reference": "http://covid.gov.pk/",
+        "description": "223 new cases reported in  KPK taking the tally to 134781",
+        "extra": ""
+    },
+    "24089": {
+        "": "8431",
+        "id": "24089",
+        "_id": "",
+        "datetime": "2021-06-08T05:12:36",
+        "type": "RECOVERED",
+        "reference": "http://covid.gov.pk/",
+        "description": "207 new recoveries reported in KPK taking the tally to 126242",
+        "extra": ""
+    },
+    "24090": {
+        "": "8432",
+        "id": "24090",
+        "_id": "",
+        "datetime": "2021-06-08T05:12:36",
+        "type": "DECEASED",
+        "reference": "http://covid.gov.pk/",
+        "description": "6 new deaths reported in KPK taking the tally to 4164",
+        "extra": ""
+    },
+    "24091": {
+        "": "8433",
+        "id": "24091",
+        "_id": "",
+        "datetime": "2021-06-08T05:12:36",
+        "type": "INFECTED",
+        "reference": "http://covid.gov.pk/",
+        "description": "13 new cases reported in  Gilgit Baltistan taking the tally to 5655",
+        "extra": ""
+    },
+    "24092": {
+        "": "8434",
+        "id": "24092",
+        "_id": "",
+        "datetime": "2021-06-08T05:12:36",
+        "type": "RECOVERED",
+        "reference": "http://covid.gov.pk/",
+        "description": "9 new recoveries reported in Gilgit Baltistan taking the tally to 5430",
+        "extra": ""
+    },
+    "24093": {
+        "": "8435",
+        "id": "24093",
+        "_id": "",
+        "datetime": "2021-06-08T05:12:36",
+        "type": "INFECTED",
+        "reference": "http://covid.gov.pk/",
+        "description": "74 new cases reported in  Balochistan taking the tally to 25893",
+        "extra": ""
+    },
+    "24094": {
+        "": "8436",
+        "id": "24094",
+        "_id": "",
+        "datetime": "2021-06-08T05:12:36",
+        "type": "RECOVERED",
+        "reference": "http://covid.gov.pk/",
+        "description": "90 new recoveries reported in Balochistan taking the tally to 24481",
+        "extra": ""
+    },
+    "24095": {
+        "": "8437",
+        "id": "24095",
+        "_id": "",
+        "datetime": "2021-06-08T05:12:36",
+        "type": "DECEASED",
+        "reference": "http://covid.gov.pk/",
+        "description": "1 new deaths reported in Balochistan taking the tally to 290",
+        "extra": ""
+    },
+    "24096": {
+        "": "8438",
+        "id": "24096",
+        "_id": "",
+        "datetime": "2021-06-08T05:12:36",
+        "type": "INFECTED",
+        "reference": "http://covid.gov.pk/",
+        "description": "19 new cases reported in  AJK taking the tally to 19538",
+        "extra": ""
+    },
+    "24097": {
+        "": "8439",
+        "id": "24097",
+        "_id": "",
+        "datetime": "2021-06-08T05:12:36",
+        "type": "RECOVERED",
+        "reference": "http://covid.gov.pk/",
+        "description": "54 new recoveries reported in AJK taking the tally to 18315",
+        "extra": ""
+    },
+    "24098": {
+        "": "8440",
+        "id": "24098",
+        "_id": "",
+        "datetime": "2021-06-08T05:12:36",
+        "type": "DECEASED",
+        "reference": "http://covid.gov.pk/",
+        "description": "2 new deaths reported in AJK taking the tally to 556",
+        "extra": ""
     }
 }
