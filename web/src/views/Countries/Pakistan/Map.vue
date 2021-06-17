@@ -34,13 +34,13 @@ export default {
     },
     getMap() {
       var data = [
-        ['pk-sd', this.provience['Sindh'].infected.total],
-        ['pk-ba', this.provience['Balochistan'].infected.total],
-        ['pk-jk', this.provience['AJK'].infected.total],
-        ['pk-na', this.provience['KPK'].infected.total],
-        ['pk-gb', this.provience['GB'].infected.total],
-        ['pk-pb', this.provience['Punjab'].infected.total],
-        ['pk-is', this.provience['Islamabad'].infected.total]
+        ['pk-sd', this.provience['Sindh'].infected.total - this.provience['Sindh'].recovered.total - this.provience['Sindh'].deceased.total],
+        ['pk-ba', this.provience['Balochistan'].infected.total - this.provience['Balochistan'].recovered.total - this.provience['Balochistan'].deceased.total],
+        ['pk-jk', this.provience['AJK'].infected.total - this.provience['AJK'].recovered.total - this.provience['AJK'].deceased.total],
+        ['pk-na', this.provience['KPK'].infected.total - this.provience['KPK'].recovered.total - this.provience['KPK'].deceased.total],
+        ['pk-gb', this.provience['GB'].infected.total - this.provience['GB'].recovered.total - this.provience['GB'].deceased.total],
+        ['pk-pb', this.provience['Punjab'].infected.total - this.provience['Punjab'].recovered.total - this.provience['Punjab'].deceased.total],
+        ['pk-is', this.provience['Islamabad'].infected.total - this.provience['Islamabad'].recovered.total - this.provience['Islamabad'].deceased.total]
       ];
 
       // eslint-disable-next-line no-undef
