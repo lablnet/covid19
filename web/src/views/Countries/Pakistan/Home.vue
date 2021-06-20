@@ -161,6 +161,9 @@
                   <th>
                     <span class="text-danger">Deceased</span>
                   </th>
+                  <td>
+                    <span class="text-warning">Active</span>
+                  </td>
                 </tr>
 
                 </thead>
@@ -171,6 +174,7 @@
                   <td>{{ item.infected.total }} <sub v-if="isToday()">+{{ item.infected.last }}</sub></td>
                   <td>{{ item.recovered.total }} <sub v-if="isToday()">+{{ item.recovered.last }}</sub></td>
                   <td>{{ item.deceased.total }} <sub v-if="isToday()">+{{ item.deceased.last }}</sub></td>
+                  <td> {{ item.infected.total - item.recovered.total - item.deceased.total}} <sub v-if="isToday()">+{{ item.infected.last - item.recovered.last - item.deceased.last }}</sub></td>
                   <span style="display: none">{{ i++ }}</span>
                 </tr>
 
