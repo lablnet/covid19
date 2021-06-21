@@ -72,6 +72,7 @@ agency_code,area,county,admin_district,agency_name,address,phone_number,longitud
 1303180011,Central Region,Taichung City,Wufeng District,Asia University Hospital,"No. 222, Fuxin Road, Wufeng District, Taichung City, 413",04-37061668,120.686043,24.053652
 0517050010,Central Region,Taichung City,North District,Taichung Armed Forces General Hospital Zhongqing Branch,"No. 500, Zhongming Road, North District, Taichung City, 404",04-36020126,120.672018,24.162466
 1536100081,Central Region,Taichung City,Daya District,Ching-chyuan Hospital,"No. 80, Sec. 4, Yatan Rd., Daya Dist., Taichung City 428, Taiwan (R.O.C.)",04-25605600 ,120.66637449212,24.2170591790347
+1503190020,Central Region,Taichung City,Taiping District,Everan Hospital,"No. 9, Sec. 1, Yongping Rd., Taiping Dist., Taichung City 411, Taiwan (R.O.C.)",04-36113611,120.719689482769,24.1311869653575
 0638020014,Central Region,Nantou County,Puli Township,Taichung Veterans General Hospital Puli Branch,"No. 1, Rongguang Road, Puli Township, Nantou County, 54552",0921-937367,120.995785,23.975834
 0938030016,Central Region,Nantou County,Caotun Township,Yumin Hospital,"No. 200, Section 1, Taiping Road, Caotun Township, Nantou County, 542",0979-933795,120.681661,23.960591
 1138010019,Central Region,Nantou County,Nantou City,Nantou Christian Hospital,"No. 870, Zhongxing Road, Nantou City, Nantou County, 540",049-2225595#1195,120.683969,23.898903
@@ -85,6 +86,7 @@ agency_code,area,county,admin_district,agency_name,address,phone_number,longitud
 0937030012,Central Region,Changhua County,Hemei Township,Farlin Hospital,"No. 180, Heguang Road, Hemei Township, Changhua County, 508",04-7566995,120.491865,24.110572
 1537051292,Central Region,Changhua County,Yuanlin City,Yuan Sheng Hospital,"No. 359, Juguang Road, Yuanlin City, Changhua County, 510",04-8383995,120.566404,23.95925
 0937050024,Central Region,Changhua County,Yuanlin City,Huilai Medical Care System Hongren Hospital,"No. 89, Huilai St., Yuanlin City, Changhua County 510014, Taiwan (R.O.C.) ",04-8375878,120.570296,23.9551145
+1137010051,Central Region,Changhua County,Changhua City,Hanming Christian Hospital,"No. 366, Sec. 1, Zhongshan Rd., Changhua City, Changhua County 500, Taiwan (R.O.C.)",04-7113456,120.535688308017,24.0612998606823
 0439010527,Southern Region,Yunlin County,Douliu City,National Cheng Kung University Hospital Dou-Liou Branch,"No. 345, Zhuangjing Road, Douliu City, Yunlin County, 640",05-5332121,120.545879,23.701971
 1339060017,Southern Region,Yunlin County,Beigang Township,China Medical University Beigang Hospital,"No. 123, Xinde Road, Beigang Township, Yunlin County, 651",05-7837901,120.307229,23.590144
 1139040011,Southern Region,Yunlin County,Xiluo Township,Yunlin Christian Hospital,"No. 375, Shichang South Road, Xiluo Township, Yunlin County, 648",05-5871111,120.441373,23.780705
