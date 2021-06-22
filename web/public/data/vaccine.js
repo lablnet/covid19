@@ -514,5 +514,17 @@ var vaccine = {
         "last_partially": "148,737",
         "last_doses": "226,867",
         "reference": "https://covid.gov.pk/"
+    },
+    "47": {
+        "": "43",
+        "id": "47",
+        "datetime": "2021-06-22T04:06:20",
+        "total_fully": "3,457,578",
+        "total_partially": "6,945,344",
+        "total_doses": "12,977,740",
+        "last_fully": "78,130",
+        "last_partially": "148,737",
+        "last_doses": "226,867",
+        "reference": "https://covid.gov.pk/"
     }
 }
