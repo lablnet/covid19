@@ -80,14 +80,14 @@ last_partially = str(last_partially_vaccine.split(" ")[-2])
 last_fully = str(last_fully_vaccine.split(" ")[-2])
 last_doses = str(last_doses.split(" ")[-2])
 
+
 date1 = ""
 date2 = ""
 already = conn.get_last("vaccine").fetchall()
 if  len(already) != 0: date1 = already[0][1].split("-")[2].split("T")[0]
 date2 = date.split("-")[2].split("T")[0]
 
-if not date1 == date2 and date2 == last_update_in_website:
-    conn.insert("vaccine", {
+data = {
         "datetime": date,
         "total_fully": total_fully,
         "total_partially": total_partially,
@@ -96,7 +96,11 @@ if not date1 == date2 and date2 == last_update_in_website:
         "last_partially": last_partially,
         "last_doses": last_doses,
         "reference": url,
-    })
+    }
+print(data)
+
+if not date1 == date2 and date2 == last_update_in_website:
+    conn.insert("vaccine", data)
 
 # Add last updated date to last update..
 write_json(folder+"web/public/data/last_update.js", {"update": last_update}, "update")

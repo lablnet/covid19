@@ -142,7 +142,7 @@
       <div class="col-md-6">
         <div class="card">
           <div class="card-header">
-            <h1 class="subtitle">Cases Provience wise</h1>
+            <h1 class="subtitle">Cases Province wise</h1>
           </div>
           <div class="container">
             <div class="table-responsive">
