@@ -76,9 +76,9 @@ last_doses = soup.find('div', class_='purple').text.replace('Total Doses Adminis
 total_partially = str(last_partially_vaccine.split(" ")[0])
 total_fully = str(last_fully_vaccine.split(" ")[0])
 total_doses = str(last_doses.split(" ")[0])
-last_partially = str(last_partially_vaccine.split(" ")[-2])
-last_fully = str(last_fully_vaccine.split(" ")[-2])
-last_doses = str(last_doses.split(" ")[-2])
+last_partially = str(last_partially_vaccine.split(" ")[-1])
+last_fully = str(last_fully_vaccine.split(" ")[-1])
+last_doses = str(last_doses.split(" ")[-1])
 
 
 date1 = ""
