@@ -1,12 +1,12 @@
 var provience = {
     "Islamabad": {
         "infected": {
-            "last": 73,
-            "total": 82779
+            "last": 66,
+            "total": 82845
         },
         "recovered": {
-            "last": 23,
-            "total": 80978
+            "last": 36,
+            "total": 81014
         },
         "deceased": {
             "last": 2,
@@ -15,54 +15,54 @@ var provience = {
     },
     "Punjab": {
         "infected": {
-            "last": 153,
-            "total": 346454
+            "last": 128,
+            "total": 346582
         },
         "recovered": {
-            "last": 254,
-            "total": 327422
+            "last": 264,
+            "total": 327686
         },
         "deceased": {
             "last": 6,
-            "total": 10761
+            "total": 10767
         }
     },
     "Sindh": {
         "infected": {
-            "last": 713,
-            "total": 338387
+            "last": 881,
+            "total": 339268
         },
         "recovered": {
-            "last": 640,
-            "total": 313376
+            "last": 492,
+            "total": 313868
         },
         "deceased": {
-            "last": 14,
-            "total": 5478
+            "last": 19,
+            "total": 5497
         }
     },
     "KPK": {
         "infected": {
-            "last": 111,
-            "total": 138179
+            "last": 127,
+            "total": 138306
         },
         "recovered": {
-            "last": 84,
-            "total": 132333
+            "last": 60,
+            "total": 132393
         },
         "deceased": {
-            "last": 4,
-            "total": 4324
+            "last": 5,
+            "total": 4329
         }
     },
     "GB": {
         "infected": {
-            "last": 101,
-            "total": 6239
+            "last": 92,
+            "total": 6331
         },
         "recovered": {
-            "last": 13,
-            "total": 5748
+            "last": 15,
+            "total": 5763
         },
         "deceased": {
             "last": 3,
@@ -71,30 +71,30 @@ var provience = {
     },
     "Balochistan": {
         "infected": {
-            "last": 64,
-            "total": 27242
+            "last": 53,
+            "total": 27295
         },
         "recovered": {
-            "last": 71,
-            "total": 26241
+            "last": 56,
+            "total": 26297
         },
         "deceased": {
             "last": 1,
-            "total": 309
+            "total": 310
         }
     },
     "AJK": {
         "infected": {
-            "last": 62,
-            "total": 20405
+            "last": 53,
+            "total": 20458
         },
         "recovered": {
-            "last": 25,
-            "total": 19332
+            "last": 34,
+            "total": 19366
         },
         "deceased": {
-            "last": 1,
-            "total": 583
+            "last": 3,
+            "total": 586
         }
     }
 }
