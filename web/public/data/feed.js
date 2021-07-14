@@ -1,5 +1,131 @@
 var feed = [
     {
+        "id": 24757,
+        "date": "2021-07-14T04:04:28",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "42 new recoveries reported in AJK taking the tally to 19779"
+    },
+    {
+        "id": 24756,
+        "date": "2021-07-14T04:04:28",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "136 new cases reported in  AJK taking the tally to 21392"
+    },
+    {
+        "id": 24755,
+        "date": "2021-07-14T04:04:28",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "113 new cases reported in  Balochistan taking the tally to 28434"
+    },
+    {
+        "id": 24754,
+        "date": "2021-07-14T04:04:28",
+        "type": "DECEASED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "2 new deaths reported in Gilgit Baltistan taking the tally to 113"
+    },
+    {
+        "id": 24753,
+        "date": "2021-07-14T04:04:28",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "40 new recoveries reported in Gilgit Baltistan taking the tally to 6255"
+    },
+    {
+        "id": 24752,
+        "date": "2021-07-14T04:04:28",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "72 new cases reported in  Gilgit Baltistan taking the tally to 7044"
+    },
+    {
+        "id": 24751,
+        "date": "2021-07-14T04:04:28",
+        "type": "DECEASED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "6 new deaths reported in KPK taking the tally to 4371"
+    },
+    {
+        "id": 24750,
+        "date": "2021-07-14T04:04:28",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "150 new recoveries reported in KPK taking the tally to 133522"
+    },
+    {
+        "id": 24749,
+        "date": "2021-07-14T04:04:28",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "117 new cases reported in  KPK taking the tally to 139710"
+    },
+    {
+        "id": 24748,
+        "date": "2021-07-14T04:04:28",
+        "type": "DECEASED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "8 new deaths reported in Sindh taking the tally to 5621"
+    },
+    {
+        "id": 24747,
+        "date": "2021-07-14T04:04:28",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "535 new recoveries reported in Sindh taking the tally to 318376"
+    },
+    {
+        "id": 24746,
+        "date": "2021-07-14T04:04:28",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "1201 new cases reported in  Sindh taking the tally to 349586"
+    },
+    {
+        "id": 24745,
+        "date": "2021-07-14T04:04:28",
+        "type": "DECEASED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "7 new deaths reported in Punjab taking the tally to 10839"
+    },
+    {
+        "id": 24744,
+        "date": "2021-07-14T04:04:28",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "43 new recoveries reported in Punjab taking the tally to 329012"
+    },
+    {
+        "id": 24743,
+        "date": "2021-07-14T04:04:28",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "216 new cases reported in  Punjab taking the tally to 348725"
+    },
+    {
+        "id": 24742,
+        "date": "2021-07-14T04:04:28",
+        "type": "DECEASED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "1 new deaths reported in Islamabad taking the tally to 786"
+    },
+    {
+        "id": 24741,
+        "date": "2021-07-14T04:04:28",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "58 new recoveries reported in Islamabad taking the tally to 81451"
+    },
+    {
+        "id": 24740,
+        "date": "2021-07-14T04:04:28",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "125 new cases reported in  Islamabad taking the tally to 83956"
+    },
+    {
         "id": 24739,
         "date": "2021-07-13T04:04:39",
         "type": "DECEASED",
