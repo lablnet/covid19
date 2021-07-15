@@ -1086,5 +1086,21 @@ var summery = {
         "last_deaths": "24",
         "last_critical": "77",
         "reference": "https://covid.gov.pk/"
+    },
+    "73": {
+        "": "68",
+        "id": "73",
+        "datetime": "2021-07-15T04:04:57",
+        "total_tests": "15,248,785",
+        "total_cases": "981,392",
+        "total_recovered": "916,373",
+        "total_deaths": "22,689",
+        "total_critical": "2,336",
+        "last_tests": "48,910",
+        "last_cases": "2,545",
+        "last_recovered": "1,030",
+        "last_deaths": "47",
+        "last_critical": "78",
+        "reference": "https://covid.gov.pk/"
     }
 }
