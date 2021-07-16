@@ -189,7 +189,7 @@
             <h1 class="subtitle">Daily Trend</h1>
           </div>
           <div class="container">
-            <canvas id="myChart" style="width: 100%"></canvas>
+            <div id="myChart" style="width: 100%"></div>
           </div>
         </div>
       </div>
@@ -199,7 +199,7 @@
             <h1 class="subtitle">Cases Breakdown</h1>
           </div>
           <div class="container">
-            <canvas id="percentage" style="width: 100%"></canvas>
+            <div id="percentage" style="width: 100%"></div>
           </div>
         </div>
       </div>
@@ -213,8 +213,7 @@ import {
   Vue
 } from 'vue-class-component'
 import {get_feed_by_province} from "@/views/Countries/Pakistan/helper";
-
-import Chart from 'chart.js'
+import ApexCharts from 'apexcharts'
 import round from "@/round"
 
 export default {
@@ -276,33 +275,23 @@ export default {
       const TOTAL = this.percent.total
       const data = [round((INFECTED / TOTAL) * 100), round((DECEASED / TOTAL) * 100), round((RECOVERED / TOTAL) * 100)]
 
-      const myChart = new Chart(ctx, {
-        type: 'doughnut',
-        data: {
-          datasets: [{
-            data: data,
-            backgroundColor: [
-              'rgba(255, 153, 0, 1)',
-              'rgba(255, 0, 0, 1)',
-              'rgba(0, 255, 0, 1)'
-            ]
-          }],
-
-          // These labels appear in the legend and in the tooltips when hovering different arcs
-          labels: [
-            'INFECTED',
-            'DECEASED',
-            'RECOVERED'
-          ]
-        },
-        options: {
-          elements: {
-            arc: {
-              borderWidth: 0
+      console.log(data)
+      const myChart = new ApexCharts(ctx, {
+        chart: {type: 'donut'},
+        series: data,
+        colors: ["rgba(255, 153, 0, 1)", "rgba(255, 0, 0, 1)", "rgba(0, 255, 0, 1)"],
+        labels: ['INFECTED', 'DECEASED', 'RECOVERED'],
+        plotOptions: {
+          pie: {
+            donut: {
+              labels: {
+                show: true,
+              }
             }
-          },
+          }
         }
       })
+      myChart.render()
     },
 
     mount() {
@@ -327,62 +316,31 @@ export default {
         RECOVERED.push(e.RECOVERED)
         // }
       })
-      const myChart = new Chart(ctx, {
-        type: 'line',
-
-        data: {
-          labels: labels,
-          datasets: [{
-
-            label: 'RECOVERED',
+      const myChart = new ApexCharts(ctx, {
+        chart: {type: 'line'},
+        series:
+          [{
+            name: 'RECOVERED',
             data: RECOVERED,
-            borderColor: [
-              'rgba(0, 255, 0, 1)',
-            ],
-
-            borderWidth: 2,
-            fill: false,
-
+            color: "rgba(0, 255, 0, 1)",
           },
             {
-              label: 'INFECTED',
+              name: 'INFECTED',
               data: INFECTED,
-              borderColor: [
-                'rgba(255, 153, 0, 1)',
-              ],
-
-              borderWidth: 2,
-              fill: false,
-
+              color: "rgba(255, 153, 0, 1)",
             },
             {
 
-              label: 'DECEASED',
+              name: 'DECEASED',
               data: DECEASED,
-              borderColor: [
-                'rgba(255, 0, 0, 1)',
-              ],
-
-              borderWidth: 2,
-              fill: false,
-
+              color: "rgba(255, 0, 0, 1)",
             },
-          ]
-        },
-        options: {
-
-          responsive: true,
-          maintainAspectRatio: true,
-
-          scales: {
-            yAxes: [{
-              ticks: {
-                beginAtZero: true
-              }
-            }]
-          }
+          ],
+        xaxis: {
+          categories: labels
         }
       })
+      myChart.render()
     },
 
     getProvience() {

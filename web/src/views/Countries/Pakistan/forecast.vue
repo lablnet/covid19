@@ -15,7 +15,7 @@
             <h1 class="subtitle">Daily Trend</h1>
           </div>
           <div class="container">
-            <canvas id="myChart" style="width: 100%"></canvas>
+            <div id="myChart" style="width: 100%"></div>
           </div>
         </div>
       </div>
@@ -28,7 +28,7 @@ import {
   Options,
   Vue
 } from 'vue-class-component'
-import Chart from 'chart.js'
+import ApexCharts from 'apexcharts'
 import round from "@/round"
 
 export default {
@@ -60,47 +60,29 @@ export default {
         PREDICTED.push(NaN)
       })
       for (let item in this.forecast) {
-        labels.push(this.forecast[item].Date)
+        labels.push(this.forecast[item].DATE)
         PREDICTED.push(this.forecast[item].PREDICT)
       }
 
-      const myChart = new Chart(ctx, {
-        type: 'line',
-        data: {
-          labels: labels,
-          datasets: [
-            {
-              label: 'INFECTED',
-              data: INFECTED,
-              borderColor: [
-                'rgba(255, 153, 0, 1)',
-              ],
-              borderWidth: 2,
-              fill: false,
-            },
-            {
-              label: 'FORECAST',
-              data: PREDICTED,
-              borderColor: [
-                'rgba(3, 215, 252, 1)',
-              ],
-              borderWidth: 2,
-              fill: false,
-            },
-          ]
-        },
-        options: {
-          responsive: true,
-          maintainAspectRatio: true,
-          scales: {
-            yAxes: [{
-              ticks: {
-                beginAtZero: true
-              }
-            }]
-          }
+      const myChart = new ApexCharts(ctx, {
+        chart: {type: 'line'},
+        series: [
+          {
+            name: "INFECTED",
+            data: INFECTED,
+            color: "rgba(255, 153, 0, 1)",
+          },
+          {
+            name: "FORECAST",
+            data: PREDICTED,
+            color: "rgba(3, 215, 252, 1)",
+          },
+        ],
+        xaxis: {
+          categories: labels
         }
       })
+      myChart.render()
     },
 
 
