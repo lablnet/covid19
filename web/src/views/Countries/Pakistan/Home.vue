@@ -275,7 +275,6 @@ export default {
       const TOTAL = this.percent.total
       const data = [round((INFECTED / TOTAL) * 100), round((DECEASED / TOTAL) * 100), round((RECOVERED / TOTAL) * 100)]
 
-      console.log(data)
       const myChart = new ApexCharts(ctx, {
         chart: {type: 'donut'},
         series: data,
