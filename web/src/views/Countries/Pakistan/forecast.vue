@@ -6,7 +6,8 @@
       </div>
     </div>
     <p class="content mt-3 mb-5">
-      Forecast of cumulative confirmed COVID-19 Cases in Pakistan using linear regression model.
+      Forecast of cumulative confirmed COVID-19 Cases in Pakistan using linear
+      regression model.
     </p>
     <div class="row mt-5 mb-5">
       <div class="col-md-12">
@@ -80,12 +81,19 @@ export default {
         ],
         xaxis: {
           categories: labels
-        }
+        },
+        stroke: {
+          width: 2
+        },
+        markers: {
+          show: true,
+          fillOpacity: 0.5,
+          lineWidth: 1,
+          size: 5
+        },
       })
       myChart.render()
     },
-
-
   },
 }
 </script>

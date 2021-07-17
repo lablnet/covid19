@@ -337,7 +337,16 @@ export default {
           ],
         xaxis: {
           categories: labels
-        }
+        },
+        stroke: {
+          width: 2
+        },
+        markers: {
+          show: true,
+          fillOpacity: 0.5,
+          lineWidth: 1,
+          size: 5
+        },
       })
       myChart.render()
     },
