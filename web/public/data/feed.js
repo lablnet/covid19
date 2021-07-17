@@ -1,5 +1,145 @@
 var feed = [
     {
+        "id": 24811,
+        "date": "2021-07-17T05:02:36",
+        "type": "DECEASED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "1 new deaths reported in AJK taking the tally to 598"
+    },
+    {
+        "id": 24810,
+        "date": "2021-07-17T05:02:36",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "53 new recoveries reported in AJK taking the tally to 19912"
+    },
+    {
+        "id": 24809,
+        "date": "2021-07-17T05:02:36",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "179 new cases reported in  AJK taking the tally to 21811"
+    },
+    {
+        "id": 24808,
+        "date": "2021-07-17T05:02:36",
+        "type": "DECEASED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "1 new deaths reported in Balochistan taking the tally to 319"
+    },
+    {
+        "id": 24807,
+        "date": "2021-07-17T05:02:36",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "71 new recoveries reported in Balochistan taking the tally to 27153"
+    },
+    {
+        "id": 24806,
+        "date": "2021-07-17T05:02:36",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "180 new cases reported in  Balochistan taking the tally to 28884"
+    },
+    {
+        "id": 24805,
+        "date": "2021-07-17T05:02:36",
+        "type": "DECEASED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "1 new deaths reported in Gilgit Baltistan taking the tally to 114"
+    },
+    {
+        "id": 24804,
+        "date": "2021-07-17T05:02:36",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "22 new recoveries reported in Gilgit Baltistan taking the tally to 6315"
+    },
+    {
+        "id": 24803,
+        "date": "2021-07-17T05:02:36",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "78 new cases reported in  Gilgit Baltistan taking the tally to 7288"
+    },
+    {
+        "id": 24802,
+        "date": "2021-07-17T05:02:36",
+        "type": "DECEASED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "3 new deaths reported in KPK taking the tally to 4380"
+    },
+    {
+        "id": 24801,
+        "date": "2021-07-17T05:02:36",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "238 new recoveries reported in KPK taking the tally to 133974"
+    },
+    {
+        "id": 24800,
+        "date": "2021-07-17T05:02:36",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "333 new cases reported in  KPK taking the tally to 140293"
+    },
+    {
+        "id": 24799,
+        "date": "2021-07-17T05:02:36",
+        "type": "DECEASED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "25 new deaths reported in Sindh taking the tally to 5697"
+    },
+    {
+        "id": 24798,
+        "date": "2021-07-17T05:02:36",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "381 new recoveries reported in Sindh taking the tally to 319826"
+    },
+    {
+        "id": 24797,
+        "date": "2021-07-17T05:02:36",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "1631 new cases reported in  Sindh taking the tally to 354103"
+    },
+    {
+        "id": 24796,
+        "date": "2021-07-17T05:02:36",
+        "type": "DECEASED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "9 new deaths reported in Punjab taking the tally to 10865"
+    },
+    {
+        "id": 24795,
+        "date": "2021-07-17T05:02:36",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "134 new recoveries reported in Punjab taking the tally to 329478"
+    },
+    {
+        "id": 24794,
+        "date": "2021-07-17T05:02:36",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "415 new cases reported in  Punjab taking the tally to 349890"
+    },
+    {
+        "id": 24793,
+        "date": "2021-07-17T05:02:36",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "101 new recoveries reported in Islamabad taking the tally to 81671"
+    },
+    {
+        "id": 24792,
+        "date": "2021-07-17T05:02:36",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "133 new cases reported in  Islamabad taking the tally to 84399"
+    },
+    {
         "id": 24791,
         "date": "2021-07-16T04:04:17",
         "type": "DECEASED",
