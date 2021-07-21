@@ -126,7 +126,7 @@ class _sqlite:
         prev_date = None
         data_list = []
         i = 0
-        maxDays = 15
+        maxDays = 40
         while True:
             i += 1
             # print(i)        # Just to check line number / iteration number

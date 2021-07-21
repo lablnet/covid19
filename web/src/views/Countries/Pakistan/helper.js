@@ -23,7 +23,9 @@ Object.size = function (obj) {
   }
   return size;
 };
-
+const object_length = (obj) => {
+  return Object.size(obj)
+}
 const get_province_stat = (state) => {
   let data = get_feed_by_province(state)
   let size = Object.size(data)
@@ -41,7 +43,14 @@ const get_province_stat = (state) => {
 
   return filtered
 }
+const numFormatter = (num) => {
+  return num + "k"
+  // if(num > 999 && num < 1000000) return ( num / 1000 ).toFixed(1) + 'K'
+  // else if(num > 1000000) return ( num / 1000000 ).toFixed(1) + 'M'
+  // else return num
+}
 export {
   get_feed_by_province,
   get_province_stat,
+  object_length
 }

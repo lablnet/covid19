@@ -73,7 +73,6 @@
             <h1 class="title twelve mt-2"><b>Recoveries</b></h1>
             <p class="stat mx-2 mt-2 text-success"><b>{{ summery.total_recovered }}</b> <sub
               v-if="isToday()">+{{ summery.last_recovered }}</sub></p>
-
           </div>
         </div>
       </div>
@@ -186,10 +185,10 @@
       <div class="col-md-6">
         <div class="card">
           <div class="card-header">
-            <h1 class="subtitle">Daily Trend</h1>
+            <h1 class="subtitle">Vaccine Trend</h1>
           </div>
           <div class="container">
-            <div id="myChart" style="width: 100%"></div>
+            <div id="vaccineChart" style="width: 100%"></div>
           </div>
         </div>
       </div>
@@ -204,6 +203,20 @@
         </div>
       </div>
     </div>
+
+    <div class="row mt-5 mb-5">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header">
+            <h1 class="subtitle">Daily Trend </h1>
+          </div>
+          <div class="container">
+            <div id="myChart" style="width: 100%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </template>
 
@@ -212,9 +225,10 @@ import {
   Options,
   Vue
 } from 'vue-class-component'
-import {get_feed_by_province} from "@/views/Countries/Pakistan/helper";
+import {get_feed_by_province, object_length} from "@/views/Countries/Pakistan/helper";
 import ApexCharts from 'apexcharts'
 import round from "@/round"
+//import {numFormatter} from '@/views/Countries/Pakistan/helper'
 
 export default {
   mounted() {
@@ -231,6 +245,7 @@ export default {
     this.getTrend()
     this.getPercentage()
     this.isToday()
+    this.getVacChart()
   },
 
   data() {
@@ -257,6 +272,71 @@ export default {
   },
 
   methods: {
+    getVacChart() {
+      // eslint-disable-next-line no-undef
+      let vac = vaccine
+      let data = {
+        total_doses: [],
+        total_fully: [],
+        total_partially: [],
+        vaccinated: []
+      }
+      let labels = []
+      console.log("length", object_length(vac))
+      let len = object_length(vac)
+      for (let i = len; i >= 0; i--) {
+        if (vac[i] !== undefined) {
+          data.total_doses.push(Number.parseInt(vac[i].total_doses.toString().replace(/,/g, '')))
+          data.total_fully.push(Number.parseInt(vac[i].total_fully.toString().replace(/,/g, '')))
+          data.total_partially.push(Number.parseInt(vac[i].total_partially.toString().replace(/,/g, '')))
+          data.vaccinated.push(round((Number.parseInt(vac[i].total_fully.toString().replace(/,/g, '')) / 216600000)*100))
+          labels.push(vac[i].datetime)
+          if ((len - 8) === i) break
+          console.log("test", Number.parseInt(vac[i].total_doses.toString().replace(/,/g, '')))
+        }
+      }
+      console.log("vaccine", data)
+      const ctx = document.getElementById("vaccineChart")
+      const myChart = new ApexCharts(ctx, {
+        chart: {type: 'line'},
+        series:
+          [{
+            name: 'Fully Vaccinated',
+            data: data.total_fully.reverse(),
+            color: "rgba(0, 255, 0, 1)",
+          },
+            {
+              name: 'Partially Vaccinated',
+              data: data.total_partially.reverse(),
+              color: "rgba(255, 153, 0, 1)",
+            },
+            {
+              name: 'Doses Administered',
+              data: data.total_doses.reverse(),
+              color: "rgba(3, 252, 244, 1)",
+            },
+            {
+              name: '%age Vaccinated over population',
+              data: data.vaccinated.reverse(),
+              color: "rgba(9, 112, 0, 1)",
+            },
+          ],
+        xaxis: {
+          categories: labels.reverse()
+        },
+        stroke: {
+          width: 2
+        },
+        markers: {
+          show: true,
+          fillOpacity: 0.5,
+          lineWidth: 1,
+          size: 5
+        },
+      })
+      myChart.render()
+      console.log("vaccine", data)
+    },
     getVaccine() {
       // eslint-disable-next-line no-undef
       let highest = vaccine[Object.keys(vaccine).pop()];
@@ -273,18 +353,29 @@ export default {
       const DECEASED = this.percent.des
       const RECOVERED = this.percent.rec
       const TOTAL = this.percent.total
-      const data = [round((INFECTED / TOTAL) * 100), round((DECEASED / TOTAL) * 100), round((RECOVERED / TOTAL) * 100)]
+      const data = [INFECTED, DECEASED, RECOVERED]
+      //const data = [round((INFECTED / TOTAL) * 100), round((DECEASED / TOTAL) * 100), round((RECOVERED / TOTAL) * 100)]
 
       const myChart = new ApexCharts(ctx, {
         chart: {type: 'donut'},
         series: data,
         colors: ["rgba(255, 153, 0, 1)", "rgba(255, 0, 0, 1)", "rgba(0, 255, 0, 1)"],
         labels: ['INFECTED', 'DECEASED', 'RECOVERED'],
+        yaxis: {
+          labels: {
+            // formatter: function (value) {
+            //   return numFormatter(value)
+            // }
+          },
+        },
         plotOptions: {
           pie: {
             donut: {
               labels: {
                 show: true,
+                // formatter: function (value) {
+                //   return numFormatter(value)
+                // }
               }
             }
           }
