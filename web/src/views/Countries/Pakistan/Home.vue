@@ -282,7 +282,6 @@ export default {
         vaccinated: []
       }
       let labels = []
-      console.log("length", object_length(vac))
       let len = object_length(vac)
       for (let i = len; i >= 0; i--) {
         if (vac[i] !== undefined) {
@@ -292,10 +291,8 @@ export default {
           data.vaccinated.push(round((Number.parseInt(vac[i].total_fully.toString().replace(/,/g, '')) / 216600000)*100))
           labels.push(vac[i].datetime)
           if ((len - 8) === i) break
-          console.log("test", Number.parseInt(vac[i].total_doses.toString().replace(/,/g, '')))
         }
       }
-      console.log("vaccine", data)
       const ctx = document.getElementById("vaccineChart")
       const myChart = new ApexCharts(ctx, {
         chart: {type: 'line'},
@@ -335,7 +332,6 @@ export default {
         },
       })
       myChart.render()
-      console.log("vaccine", data)
     },
     getVaccine() {
       // eslint-disable-next-line no-undef
