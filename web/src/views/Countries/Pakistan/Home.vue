@@ -394,17 +394,10 @@ export default {
 
       const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
       this.trend.map(e => {
-        // if (e.type == "INFECTED")  {
-        //let num = e.desc.match(/\b\d[\d,.]*\b/g)
-        //num = num[0]
-        //const d = e.date.split('-')
-        //const date = months[d[1] - 1] + '/' + d[2].split('T')[0]
-
         labels.push(e.DATE)
         INFECTED.push(e.INFECTED)
         DECEASED.push(e.DECEASED)
         RECOVERED.push(e.RECOVERED)
-        // }
       })
       const myChart = new ApexCharts(ctx, {
         chart: {type: 'line'},
