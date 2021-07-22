@@ -229,6 +229,7 @@ import {get_feed_by_province, object_length} from "@/views/Countries/Pakistan/he
 import ApexCharts from 'apexcharts'
 import round from "@/round"
 //import {numFormatter} from '@/views/Countries/Pakistan/helper'
+const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 
 export default {
   mounted() {
@@ -289,7 +290,12 @@ export default {
           data.total_fully.push(Number.parseInt(vac[i].total_fully.toString().replace(/,/g, '')))
           data.total_partially.push(Number.parseInt(vac[i].total_partially.toString().replace(/,/g, '')))
           data.vaccinated.push(round((Number.parseInt(vac[i].total_fully.toString().replace(/,/g, '')) / 216600000)*100))
-          labels.push(vac[i].datetime)
+          let date = vac[i].datetime
+          date = date.split("T")[0]
+          let month = months[Number(date.split("-")[1]) - 1]
+          let day = Number(date.split("-")[2])
+
+          labels.push(month.toString() + " " + day.toString())
           if ((len - 8) === i) break
         }
       }
@@ -387,10 +393,11 @@ export default {
       const INFECTED = []
       const DECEASED = []
       const RECOVERED = []
-
-      const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
       this.trend.map(e => {
-        labels.push(e.DATE)
+        let date = e.DATE
+        let month = months[Number(date.split("-")[1]) - 1]
+        let day = Number(date.split("-")[2])
+        labels.push(month.toString() + " " + day.toString())
         INFECTED.push(e.INFECTED)
         DECEASED.push(e.DECEASED)
         RECOVERED.push(e.RECOVERED)
@@ -427,6 +434,11 @@ export default {
           lineWidth: 1,
           size: 5
         },
+        responsive: [
+          {
+            breakpoint: 20,
+          },
+      ]
       })
       myChart.render()
     },
