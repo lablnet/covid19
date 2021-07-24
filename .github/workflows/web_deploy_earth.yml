@@ -27,8 +27,8 @@ jobs:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.6.2
         with:
-          GIT_CONFIG_NAME: "covid19-earth"
-          GIT_CONFIG_EMAIL: "covid19-earth@users.noreply.github.com"
+          GIT_CONFIG_NAME: "alphasofthub-bot"
+          GIT_CONFIG_EMAIL: "alphasofthub-bot@users.noreply.github.com"
           REPOSITORY_NAME: "covid19-earth/covid19-earth"
           SINGLE_COMMIT: true
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
