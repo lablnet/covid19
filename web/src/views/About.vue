@@ -121,22 +121,25 @@ export default {
       let that = this
       fetch("https://api.github.com/repos/lablnet/covid19/contributors").then((resp) => resp.json())
         .then(async (data) => {
-          let items = []
-          for (let index in data) {
-            const response = await fetch(`https://api.github.com/users/${data[index].login}`)
-            const user = await response.json()
-            items.push(
-              {
-                "name": user.name,
-                "pic": data[index].avatar_url,
-                "link": data[index].html_url,
-                "contributions": data[index].contributions
+            let items = []
+            for (let index in data) {
+              const response = await fetch(`https://api.github.com/users/${data[index].login}`)
+              const user = await response.json()
+              if (data[index].login !== 'alphasofthub-bot') {
+                items.push(
+                  {
+                    "name": user.name,
+                    "pic": data[index].avatar_url,
+                    "link": data[index].html_url,
+                    "contributions": data[index].contributions
+                  }
+                )
               }
-            )
+            }
+            that.contributors = items
+            that.loading = false
           }
-          that.contributors = items
-          that.loading = false
-        }).catch(function (error) {
+        ).catch(function (error) {
       })
     }
   }
