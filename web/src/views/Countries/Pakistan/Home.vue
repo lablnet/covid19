@@ -170,9 +170,9 @@
                 <span style="display: none">{{ i = 0 }}</span>
                 <tr v-for="item in provience" :key="item">
                   <td><b>{{ provienceName[i] }}</b></td>
-                  <td>{{ item.infected.total }} <sub v-if="isToday() && item.infected.last > 0">+{{ item.infected.last }}</sub></td>
-                  <td>{{ item.recovered.total }} <sub v-if="isToday() && item.recovered.last > 0">+{{ item.recovered.last }}</sub></td>
-                  <td>{{ item.deceased.total }} <sub v-if="isToday() && item.deceased.last > 0">+{{ item.deceased.last }}</sub></td>
+                  <td>{{ formatted(item.infected.total) }} <sub v-if="isToday() && item.infected.last > 0">+{{ item.infected.last }}</sub></td>
+                  <td>{{ formatted(item.recovered.total) }} <sub v-if="isToday() && item.recovered.last > 0">+{{ item.recovered.last }}</sub></td>
+                  <td>{{ formatted(item.deceased.total) }} <sub v-if="isToday() && item.deceased.last > 0">+{{ item.deceased.last }}</sub></td>
                   <td v-if="this.getActive(item)">{{ this.getActive(item) }}</td>
                   <span style="display: none">{{ i++ }}</span>
                 </tr>
@@ -232,7 +232,7 @@ import {
 import {get_feed_by_province, object_length} from "@/views/Countries/Pakistan/helper";
 import ApexCharts from 'apexcharts'
 import round from "@/round"
-//import {numFormatter} from '@/views/Countries/Pakistan/helper'
+import {numFormatter} from '@/views/Countries/Pakistan/helper'
 const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 
 export default {
@@ -277,9 +277,13 @@ export default {
   },
 
   methods: {
+    formatted(data)
+    {
+      return numFormatter(data)
+    },
     getActive(item)
     {
-      return item.infected.total - item.recovered.total - item.deceased.total
+      return numFormatter(item.infected.total - item.recovered.total - item.deceased.total)
     },
     getVacChart() {
       // eslint-disable-next-line no-undef
