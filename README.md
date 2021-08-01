@@ -6,7 +6,7 @@
 
 Super Fast COVID-19 Dashboard and parser
   
-If you have any idea/suggestion to improve this dashboard, please write to mumerfarooqlablnet01@gmail.com
+If you have any idea/suggestion to improve this dashboard, please write to GitHub discussion section
 
 ## Purpose
 1. Develop awareness among the public.
