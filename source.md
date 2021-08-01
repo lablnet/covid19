@@ -8,10 +8,6 @@ Our data fetched automatically, but we trying to make its less error pros. Here 
 
 -   [Official COVID-19 Dashboard](http://covid.gov.pk/)
 
-Previously, we fetched data from this website:
-
-
--   [https://co.vid19.pk/](https://co.vid19.pk/)
 
 ### Taiwan
 
