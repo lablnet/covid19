@@ -160,6 +160,9 @@
                   <th>
                     <span class="text-danger">Deceased</span>
                   </th>
+                  <th>
+                    <span class="text-warning">Active</span>
+                  </th>
                 </tr>
 
                 </thead>
@@ -167,9 +170,10 @@
                 <span style="display: none">{{ i = 0 }}</span>
                 <tr v-for="item in provience" :key="item">
                   <td><b>{{ provienceName[i] }}</b></td>
-                  <td>{{ item.infected.total }} <sub v-if="isToday()">+{{ item.infected.last }}</sub></td>
-                  <td>{{ item.recovered.total }} <sub v-if="isToday()">+{{ item.recovered.last }}</sub></td>
-                  <td>{{ item.deceased.total }} <sub v-if="isToday()">+{{ item.deceased.last }}</sub></td>
+                  <td>{{ item.infected.total }} <sub v-if="isToday() && item.infected.last > 0">+{{ item.infected.last }}</sub></td>
+                  <td>{{ item.recovered.total }} <sub v-if="isToday() && item.recovered.last > 0">+{{ item.recovered.last }}</sub></td>
+                  <td>{{ item.deceased.total }} <sub v-if="isToday() && item.deceased.last > 0">+{{ item.deceased.last }}</sub></td>
+                  <td v-if="this.getActive(item)">{{ this.getActive(item) }}</td>
                   <span style="display: none">{{ i++ }}</span>
                 </tr>
 
@@ -273,6 +277,10 @@ export default {
   },
 
   methods: {
+    getActive(item)
+    {
+      return item.infected.total - item.recovered.total - item.deceased.total
+    },
     getVacChart() {
       // eslint-disable-next-line no-undef
       let vac = vaccine
