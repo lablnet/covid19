@@ -6,13 +6,13 @@ from urllib.request import Request, urlopen
 import requests
 from bs4 import BeautifulSoup
 import re
-# from  src._sqlite import _sqlite
-# from src.__config import get_config
-# from src.jsExport import make_json, write_json
+from  src._sqlite import _sqlite
+from src.__config import get_config
+from src.jsExport import make_json, write_json
 from datetime import datetime
 from pathlib import Path
 
-# folder = str(Path("").parent.absolute()).replace("Countries\Pakistan", "") + "/"
+folder = str(Path("").parent.absolute()).replace("Countries\Pakistan", "") + "/"
 
 url = 'https://covid.gov.pk/'
 page = requests.get(url)
@@ -38,8 +38,8 @@ totalTests = patients[3].text  # totalTests taken
 critical = patients[4].text  # critical cases
 
 # Database
-# s = _sqlite()
-# conn = s.conn(get_config("database", folder+"/Countries/Pakistan"), folder)
+s = _sqlite()
+conn = s.conn(get_config("database", folder+"/Countries/Pakistan"), folder)
 # conn.create_tables()
 
 # Prepare current datetime.
@@ -47,26 +47,26 @@ now = datetime.now()
 date = datetime.strftime(now, "%Y-%m-%dT%H:%M:%S GMT+5")
 date = date.replace(" GMT+5", "")
 
-# date1 = ""
-# already = conn.get_last("summery").fetchall()
-# if  len(already) != 0: date1 = already[0][1].split("-")[2].split("T")[0]
-# date2 = date.split("-")[2].split("T")[0]
-#
-# if not date1 == date2 and date2 == last_update_in_website:
-#     conn.insert("summery", {
-#         "datetime": date,
-#         "total_tests": totalTests,
-#         "total_cases": confirm_total,
-#         "total_deaths": deaths,
-#         "total_recovered": recoveries,
-#         "total_critical": critical,
-#         "last_tests": last_tests,
-#         "last_cases": last_24hr_cases,
-#         "last_deaths": last_deaths,
-#         "last_recovered": last_recoveries,
-#         "last_critical": critical_cases,
-#         "reference": url,
-#     })
+date1 = ""
+already = conn.get_last("summery").fetchall()
+if  len(already) != 0: date1 = already[0][1].split("-")[2].split("T")[0]
+date2 = date.split("-")[2].split("T")[0]
+
+if not date1 == date2 and date2 == last_update_in_website:
+    conn.insert("summery", {
+        "datetime": date,
+        "total_tests": totalTests,
+        "total_cases": confirm_total,
+        "total_deaths": deaths,
+        "total_recovered": recoveries,
+        "total_critical": critical,
+        "last_tests": last_tests,
+        "last_cases": last_24hr_cases,
+        "last_deaths": last_deaths,
+        "last_recovered": last_recoveries,
+        "last_critical": critical_cases,
+        "reference": url,
+    })
 
 # vaccinated
 # dose 1 full and in 24 hrs
@@ -107,11 +107,11 @@ if last_doses == "":
     last_doses = str(last_doses.split(" ")[-2])
 
 #
-# date1 = ""
-# date2 = ""
-# already = conn.get_last("vaccine").fetchall()
-# if  len(already) != 0: date1 = already[0][1].split("-")[2].split("T")[0]
-# date2 = date.split("-")[2].split("T")[0]
+date1 = ""
+date2 = ""
+already = conn.get_last("vaccine").fetchall()
+if  len(already) != 0: date1 = already[0][1].split("-")[2].split("T")[0]
+date2 = date.split("-")[2].split("T")[0]
 
 data = {
         "datetime": date,
@@ -125,11 +125,11 @@ data = {
     }
 print(data)
 
-# if not date1 == date2 and date2 == last_update_in_website:
-#     conn.insert("vaccine", data)
+if not date1 == date2 and date2 == last_update_in_website:
+    conn.insert("vaccine", data)
 
 # Add last updated date to last update..
-# write_json(folder+"web/public/data/last_update.js", {"update": last_update}, "update")
+write_json(folder+"web/public/data/last_update.js", {"update": last_update}, "update")
 
 # Finally, Done
 print("Done, Thanks")
