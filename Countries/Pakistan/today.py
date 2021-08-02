@@ -6,7 +6,7 @@ from urllib.request import Request, urlopen
 import requests
 from bs4 import BeautifulSoup
 import re
-from src._sqlite import _sqlite
+from  src._sqlite import _sqlite
 from src.__config import get_config
 from src.jsExport import make_json, write_json
 from datetime import datetime
@@ -69,16 +69,38 @@ if not date1 == date2 and date2 == last_update_in_website:
     })
 
 # vaccinated
+# dose 1 full and in 24 hrs
 last_partially_vaccine = soup.find('div', class_='blue').text.replace('Partially Vaccinated', '').replace("Last", "").replace('\n', '').replace('\r', '')
+print(last_partially_vaccine)
+# dose 2 full and in 24 hrs
 last_fully_vaccine = soup.find('div', class_='green').text.replace('Fully Vaccinated', '').replace("Last", "").replace('\n', '').replace('\r', '')
+print(last_fully_vaccine)
+# Total doses administered
 last_doses = soup.find('div', class_='purple').text.replace('Total Doses Administered', '').replace("Last", "").replace('\n', '').replace('\r', '')
-
+print(last_doses)
+# total dose 1
 total_partially = str(last_partially_vaccine.split(" ")[0])
+if total_partially == "Dose":
+    total_partially = str(last_partially_vaccine.split(" ")[1])
+
+# total dose 2 -> dose 2 means fully vaccinated
 total_fully = str(last_fully_vaccine.split(" ")[0])
+if total_fully == "Dose":
+    total_fully = str(last_fully_vaccine.split(" ")[1])
+# total administered doses
 total_doses = str(last_doses.split(" ")[0])
+# dose 1 in last 24hrs
 last_partially = str(last_partially_vaccine.split(" ")[-1])
+if last_partially == "":
+    last_partially = str(last_partially_vaccine.split(" ")[-2]) # if last is empty space then 2nd last is value
+# dose 2 in last 24 hrs
 last_fully = str(last_fully_vaccine.split(" ")[-1])
+if last_fully == "":
+    last_fully = str(last_fully_vaccine.split(" ")[-2])
+# total doses in 24 hrs
 last_doses = str(last_doses.split(" ")[-1])
+if last_doses == "":
+    last_doses = str(last_doses.split(" ")[-2])
 
 
 date1 = ""
