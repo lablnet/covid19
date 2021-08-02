@@ -71,13 +71,12 @@ if not date1 == date2 and date2 == last_update_in_website:
 # vaccinated
 # dose 1 full and in 24 hrs
 last_partially_vaccine = soup.find('div', class_='blue').text.replace('Partially Vaccinated', '').replace("Last", "").replace('\n', '').replace('\r', '')
-print(last_partially_vaccine)
+
 # dose 2 full and in 24 hrs
 last_fully_vaccine = soup.find('div', class_='green').text.replace('Fully Vaccinated', '').replace("Last", "").replace('\n', '').replace('\r', '')
-print(last_fully_vaccine)
+
 # Total doses administered
 last_doses = soup.find('div', class_='purple').text.replace('Total Doses Administered', '').replace("Last", "").replace('\n', '').replace('\r', '')
-print(last_doses)
 # total dose 1
 total_partially = str(last_partially_vaccine.split(" ")[0])
 if total_partially == "Dose":
