@@ -82,11 +82,15 @@ last_doses = soup.find('div', class_='purple').text.replace('Total Doses Adminis
 total_partially = str(last_partially_vaccine.split(" ")[0])
 if total_partially == "Dose":
     total_partially = str(last_partially_vaccine.split(" ")[1])
+    total_partially = total_partially[1:] # to neglect 1 of Dose 1.
 
 # total dose 2 -> dose 2 means fully vaccinated
 total_fully = str(last_fully_vaccine.split(" ")[0])
 if total_fully == "Dose":
     total_fully = str(last_fully_vaccine.split(" ")[1])
+    total_fully = total_fully[1:] # to ignore 2 of Dose 2
+
+
 # total administered doses
 total_doses = str(last_doses.split(" ")[0])
 # dose 1 in last 24hrs
@@ -102,7 +106,7 @@ last_doses = str(last_doses.split(" ")[-1])
 if last_doses == "":
     last_doses = str(last_doses.split(" ")[-2])
 
-
+#
 date1 = ""
 date2 = ""
 already = conn.get_last("vaccine").fetchall()
