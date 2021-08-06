@@ -1,7 +1,7 @@
 agency_code,area,county,admin_district,agency_name,address,phone_number,longitude,latitude
 0111070010,Taipei Region,Keelung City,Xinyi District,"Keelung Hospital, Ministry of Health and Welfare","No. 268, Xin 2nd Road, Xinyi District, Keelung City, 201",02-24292525,121.748322,25.130456
 1411030013,Taipei Region,Keelung City,Nuannuan District,Taiwan Miner's General Hospital,"No. 29, Yuanyuan Road, Nuannuan District, Keelung City, 205",02-24579101,121.733254,25.107904
-0511040010,Taipei Region,Keelung City,Zhongzheng District,Tri-Service General Hospital Keelung Branch - Zhengrong Branch,"No. 100, Zhengrong Street, Zhongzheng District, Keelung City, 202",02-24231735,121.764267,25.144625
+0511040010,Taipei Region,Keelung City,Zhongzheng District,Tri-Service General Hospital Keelung Branch,"No. 100, Zhengrong Street, Zhongzheng District, Keelung City, 202",02-24231735,121.764267,25.144625
 0101090517,Taipei Region,Taipei City,Zhonghua Road,Taipei City Hospital Heping Branch,"No. 33, Section 2, Zhonghua Road, Zhongzheng District, Taipei City, 100",02-23889595,121.519236,25.029228
 0101090517,Taipei Region,Taipei City,Datong District,Taipei City Hospital Zhongxing Branch,"No. 145, Zhengzhou Road, Datong District, Taipei City, 103",02-25523234,121.5093209,25.0509696
 0101090517,Taipei Region,Taipei City,Shilin District,Taipei City Hospital Yangming Branch,"No. 105, Yusheng Street, Shilin District, Taipei City, 11146",02-28353456#5145,121.5315656,25.105194
@@ -12,7 +12,7 @@ agency_code,area,county,admin_district,agency_name,address,phone_number,longitud
 1101110026,Taipei Region,Taipei City,Neihu District,Kang-Ning General Hospital,"No. 26, Lane 420, Section 5, Chenggong Road, Neihu District, Taipei City, 114",02-26345500,121.6089476,25.0758907
 0901190010,Taipei Region,Taipei City,Wanhua District,West Garden Hospital,"No. 270, Section 2, Xiyuan Road, Wanhua District, Taipei City, 108",02-23076968,121.494405,25.027743
 1501010010,Taipei Region,Taipei City,Songshan District,Pojen General Hospital,"No. 66, Guangfu North Road, Songshan District, Taipei City, 105",02-25786677#2019??978-199960,121.5576835,25.0499097
-1231030015,Taipei Region,New Taipei City,Yonghe District,Cardinal Tien Hospital An Kang Branch,"No. 80, Zhongxing Street, Yonghe District, New Taipei City, 234",02-29286060,121.51787,25.011874
+1231030015,Taipei Region,New Taipei City,Yonghe District,Yonghe Cardinal Tien Hospital?,"No. 80, Zhongxing Street, Yonghe District, New Taipei City, 234",02-29286060,121.51787,25.011874
 1331160010,Taipei Region,New Taipei City,Taishan District,Fu Jen Catholic University Hospital,"No. 69, Guizi Road, Taishan District, New Taipei City, 243",02-85128888,121.430799,25.039676
 1131110516,Taipei Region,New Taipei City,Xizhi District,Cathay General Hospital Sijhih Branch,"No. 2, Lane 59, Jiancheng Road, Xizhi District, New Taipei City, 221",02-26482121#3910,121.661084,25.072872
 0131060029,Taipei Region,New Taipei City,Xinzhuang District,"Taipei Hospital, Ministry of Health and Welfare","No. 127, Siyuan Rd, Xinzhuang District, New Taipei City, 242",02-22765566,121.459623,25.043241
@@ -24,7 +24,7 @@ agency_code,area,county,admin_district,agency_name,address,phone_number,longitud
 1531071030,Taipei Region,New Taipei City,Shulin District,Ren Ai Hospital,"No. 9, Wenhua Street, Shulin District, New Taipei City, 238",02-26834567,121.420039,24.987188
 1531120038,Taipei Region,New Taipei City,Ruifang District,Rueifang Miner Hospital,"No. 71-2, Yikeng Road, Ruifang District, New Taipei City, 224",02-24974101,121.80217,25.108602
 1231050017,Taipei Region,New Taipei City,Xindian Dist,Cardinal Tien Hospital An Kang Branch,"No. 15, Chezi Rd., Xindian Dist., New Taipei City 231, Taiwan (R.O.C.)",02-22123066,121.5038556,24.95367737
-1131130018,Taipei Region,New Taipei City,Tucheng Dist,New Taipei City Tucheng Hospital ,"No. 6, Sec. 2, Jincheng Rd., Tucheng Dist., New Taipei City 236, Taiwan (R.O.C.)",02-22630588,121.448769781125,24.9763228908933
+1131130018,Taipei Region,New Taipei City,Tucheng Dist,New Taipei City Tucheng Hospital ,"No. 6, Sec. 2, Jincheng Rd., Tucheng Dist., New Taipei City 236, Taiwan (R.O.C.)",02-22630588,121.4487698,24.97632289
 1134010022,Taipei Region,Yilan County,Yilan City,Yilan Jen-Ai Hospital,"No. 260, Section 2, Zhongshan Road, Yilan City, Yilan County, 260",03-9321888,121.754451,24.748723
 0434010518,Taipei Region,Yilan County,Yilan City,National Yang-Ming University Hospital,"No. 169, Xiaoshe Road, Yilan City, Yilan County, 260",03-9325192,121.754029,24.757853
 0634070018,Taipei Region,Yilan County,Yuanshan Township,Taipei Veterans General Hospital Yuanshan Branch,"No. 386, Rongguang Road, Yuanshan Township, Yilan County 264",03-9222141,121.687824,24.721919
@@ -41,9 +41,9 @@ agency_code,area,county,admin_district,agency_name,address,phone_number,longitud
 1132010024,Northern Region,Taoyuan City,Taoyuan District,Saint Paul's Hospital,"No. 123, Jianxin Street, Taoyuan District, Taoyuan City, 330",03-3613141,121.312242,24.982288
 1532040066,Northern Region,Taoyuan City,Yangmei District,Yee Zen General Hospita,"No. 30, Lane 321, Yangxin North Road, Yangmei District, Taoyuan City, 326",03-4855566,121.155427,24.916951
 1532040039,Northern Region,Taoyuan City,Yangmei District,Ten Chen General Hospital,"No. 356, Section 1, Zhongshan North Road, Yangmei District, Taoyuan City, 326",03-4782350,121.1571669,24.962516
-1532100049,Northern Region,Taoyuan City,Pingzhen District,Landseed International Hospital,"No. 77, Guangtai Road, Pingzhen District, Taoyuan City, 324?î»o. 115, Lane 430, Section 2, Yanping Road, Pingzhen District Taoyuan City, 324",03-4941234,121.20496,24.94612
+1532100049,Northern Region,Taoyuan City,Pingzhen District,Landseed International Hospital,"No. 77, Guangtai Road, Pingzhen District, Taoyuan City, 324?No. 115, Lane 430, Section 2, Yanping Road, Pingzhen District Taoyuan City, 324",03-4941234,121.20496,24.94612
 0932020025,Northern Region,Taoyuan City,Zhongli District,Ten-Chen General Hospital,"No. 155, Yanping Road, Zhongli District, Taoyuan City, 320",03-4629292,121.229327,24.962795
-1532021383,Northern Region,Taoyuan City,Zhongli District,Armfulcare Hospital,"No. 119, Zhiguang Rd., Zhongli Dist., Taoyuan City 320, Taiwan (R.O.C.)",03-4919119,121.205555106158,24.9614694165287
+1532021383,Northern Region,Taoyuan City,Zhongli District,Armfulcare Hospital,"No. 119, Zhiguang Rd., Zhongli Dist., Taoyuan City 320, Taiwan (R.O.C.)",03-4919119,121.2055551,24.96146942
 0512040014,Northern Region,Hsinchu City,North District,Hsin Chu Armed Force Hospital,"No. 3, Wuling Road, North District, Hsinchu City, 300",03-5348181#325117,120.961966,24.816144
 1112010528,Northern Region,Hsinchu City,East District,Hsinchu Cathay General Hospital,"No. 678, Section 2, Zhonghua Rd, East District, Hsinchu City, 300",03-5278999#7999,120.965227,24.798257
 1512011185,Northern Region,Hsinchu City,East District,Nan Men General Hospital,"No. 20, Linsen Road, East District, Hsinchu City, 300",03-5261122#150,120.969682,24.80222
@@ -53,7 +53,7 @@ agency_code,area,county,admin_district,agency_name,address,phone_number,longitud
 0433050018,Northern Region,Hsinchu County,Zhubei City,National Taiwan University Hospital Hsinchu Biomedical Park Hosputal Zhubei Branch,"No. 2, Sec. 1, Shengyi Rd., Zhubei City, Hsinchu County 302",03-6677600#532324,121.043718,24.80607
 1133060019,Northern Region,Hsinchu County,Hukou Township,"Catholic Mercy Hospital, Catholic Mercy Medical Foundation","No. 29, Zhongxiao Road, Hukou Township, Hsinchu County, 303",03-5993500#2190,121.045474,24.900496
 1533051063,Northern Region,Hsinchu County,Zhubei City,Da An Hospital,"No. 6, Ln. 318, Bo'ai St., Zhubei City, Hsinchu County 302, Taiwan (R.O.C.)",03-5557188,121.0081583,24.83498111
-1535010051,Northern Region,Miaoli County,Miaoli City,Da Chien Hospital,"No. 36, Gongjing Rd., Miaoli City, Miaoli County 360, Taiwan (R.O.C.)",037-357125,120.814932722555,24.5498631783752
+1535010051,Northern Region,Miaoli County,Miaoli City,Da Chien Hospital,"No. 36, Gongjing Rd., Miaoli City, Miaoli County 360, Taiwan (R.O.C.)",037-357125,120.8149327,24.54986318
 0135010016,Northern Region,Miaoli County,Miaoli City,"Miaoli General Hospital, Ministry of Health and Welfare","No. 747, Weigong Road, Miaoli City, Miaoli County, 36054",037-261920,120.840405,24.575655
 1135050020,Northern Region,Miaoli County,Toufen City,Wei Gong Memorial Hospital,"No. 128, Xinyi Road, Toufen City, Miaoli County, 351",037-676811,120.907345,24.687096
 0935020027,Northern Region,Miaoli County,Yuanli Township,Lee General Hospital,"No. 168, Heping Road, Yuanli Township, Miaoli County, 358",037-862387,120.65272,24.44182
@@ -62,7 +62,7 @@ agency_code,area,county,admin_district,agency_name,address,phone_number,longitud
 1535010024,Northern Region,Miaoli County,Miaoli City,Sheiho Hosipital,"No. 1367, Zhongzheng Rd., Miaoli City, Miaoli County 360, Taiwan (R.O.C.)",03-7352631,120.8176672,24.54129848
 1535031041,Northern Region,Miaoli County,Tongxiao Township,Tong Siao Kuang Tien Hospital,"No. 88, Zhongshan Rd., Tongxi Vil., Tongxiao Township, Miaoli County 357, Taiwan (R.O.C.)",037-759999,120.6803423,24.48958265
 0935010012,Northern Region,Miaoli County,Miaoli City,Hope Doctors Hospital,"No. 125, Xindong St., Miaoli City, Miaoli County 360, Taiwan (R.O.C.)",037-320508,120.8215602,24.5517864
-1535040068,Northern Region,Miaoli County,Zhunan Township,Tyz-Yo Hospital ,"No. 17, Minzhi St., Zhunan Township, Miaoli County 350, Taiwan (R.O.C.)",037-476589,120.87891694751,24.6847740523604
+1535040068,Northern Region,Miaoli County,Zhunan Township,Tyz-Yo Hospital ,"No. 17, Minzhi St., Zhunan Township, Miaoli County 350, Taiwan (R.O.C.)",037-476589,120.8789169,24.68477405
 0936030018,Central Region,Taichung City,Dajia District,Daja Lee General Hospital,"No. 2, Bade Street, Dajia District, Taichung City, 437",04-26862288,120.618073,24.350784
 1136200015,Central Region,Taichung City,Dali District,Jen-ai Hospital Dali Branch,"No. 483, Dongrong Road, Dali District, Taichung City, 412",04-24819900#11564,120.680434,24.109261
 1517011112,Central Region,Taichung City,Central District,Cheng Ching General Hospital,"No. 139, Pingdeng Street, Central District, Taichung City, 400",04-24632000,120.68161,24.142603
@@ -74,8 +74,8 @@ agency_code,area,county,admin_district,agency_name,address,phone_number,longitud
 0136010010,Central Region,Taichung City,Fengyuan District,"Feng-Yuan Hospital, Ministry Of Health And Welfare","No. 100, Ankang Road, Fengyuan District, Taichung City, 420",04-25271180,120.725292,24.242707
 1303180011,Central Region,Taichung City,Wufeng District,Asia University Hospital,"No. 222, Fuxin Road, Wufeng District, Taichung City, 413",04-37061668,120.686043,24.053652
 0517050010,Central Region,Taichung City,North District,Taichung Armed Forces General Hospital Zhongqing Branch,"No. 500, Zhongming Road, North District, Taichung City, 404",04-36020126,120.672018,24.162466
-1536100081,Central Region,Taichung City,Daya District,Ching-chyuan Hospital,"No. 80, Sec. 4, Yatan Rd., Daya Dist., Taichung City 428, Taiwan (R.O.C.)",04-25605600 ,120.66637449212,24.2170591790347
-1503190020,Central Region,Taichung City,Taiping District,Everan Hospital,"No. 9, Sec. 1, Yongping Rd., Taiping Dist., Taichung City 411, Taiwan (R.O.C.)",04-36113611,120.719689482769,24.1311869653575
+1536100081,Central Region,Taichung City,Daya District,Ching-chyuan Hospital,"No. 80, Sec. 4, Yatan Rd., Daya Dist., Taichung City 428, Taiwan (R.O.C.)",04-25605600 ,120.6663745,24.21705918
+1503190020,Central Region,Taichung City,Taiping District,Everan Hospital,"No. 9, Sec. 1, Yongping Rd., Taiping Dist., Taichung City 411, Taiwan (R.O.C.)",04-36113611,120.7196895,24.13118697
 0638020014,Central Region,Nantou County,Puli Township,Taichung Veterans General Hospital Puli Branch,"No. 1, Rongguang Road, Puli Township, Nantou County, 54552",0921-937367,120.995785,23.975834
 0938030016,Central Region,Nantou County,Caotun Township,Yumin Hospital,"No. 200, Section 1, Taiping Road, Caotun Township, Nantou County, 542",0979-933795,120.681661,23.960591
 1138010019,Central Region,Nantou County,Nantou City,Nantou Christian Hospital,"No. 870, Zhongxing Road, Nantou City, Nantou County, 540",049-2225595#1195,120.683969,23.898903
@@ -89,7 +89,7 @@ agency_code,area,county,admin_district,agency_name,address,phone_number,longitud
 0937030012,Central Region,Changhua County,Hemei Township,Farlin Hospital,"No. 180, Heguang Road, Hemei Township, Changhua County, 508",04-7566995,120.491865,24.110572
 1537051292,Central Region,Changhua County,Yuanlin City,Yuan Sheng Hospital,"No. 359, Juguang Road, Yuanlin City, Changhua County, 510",04-8383995,120.566404,23.95925
 0937050024,Central Region,Changhua County,Yuanlin City,Huilai Medical Care System Hongren Hospital,"No. 89, Huilai St., Yuanlin City, Changhua County 510014, Taiwan (R.O.C.) ",04-8375878,120.570296,23.9551145
-1137010051,Central Region,Changhua County,Changhua City,Hanming Christian Hospital,"No. 366, Sec. 1, Zhongshan Rd., Changhua City, Changhua County 500, Taiwan (R.O.C.)",04-7113456,120.535688308017,24.0612998606823
+1137010051,Central Region,Changhua County,Changhua City,Hanming Christian Hospital,"No. 366, Sec. 1, Zhongshan Rd., Changhua City, Changhua County 500, Taiwan (R.O.C.)",04-7113456,120.5356883,24.06129986
 0439010527,Southern Region,Yunlin County,Douliu City,National Cheng Kung University Hospital Dou-Liou Branch,"No. 345, Zhuangjing Road, Douliu City, Yunlin County, 640",05-5332121,120.545879,23.701971
 1339060017,Southern Region,Yunlin County,Beigang Township,China Medical University Beigang Hospital,"No. 123, Xinde Road, Beigang Township, Yunlin County, 651",05-7837901,120.307229,23.590144
 1139040011,Southern Region,Yunlin County,Xiluo Township,Yunlin Christian Hospital,"No. 375, Shichang South Road, Xiluo Township, Yunlin County, 648",05-5871111,120.441373,23.780705
@@ -132,7 +132,7 @@ agency_code,area,county,admin_district,agency_name,address,phone_number,longitud
 1307370011,Kaohsiung-Pingtung Region,Kaohsiung City,Qijin District,Kaohsiung Municipal CiJin Hospital,"No. 33, Qigang Road, Qijin District, Kaohsiung City, 805",07-5711188,120.285113,22.59021
 1542011282,Kaohsiung-Pingtung Region,Kaohsiung City,Fengshan District,Shing-Hou Hospital,"No. 389, Wujia 2nd Road, Fengshan District, Kaohsiung City, 830",07-7613111,120.335627,22.597673
 1107320017,Kaohsiung-Pingtung Region,Kaohsiung City,Sanmin District,E-DA Dachang Hospital,"No. 305, Dachang 1st Road, Sanmin District, Kaohsiung City, 807",07-5599123,120.3199,22.657727
-1502110064,Kaohsiung-Pingtung Region,Kaohsiung City,Xiaogang District,Antai Communtiy Hosptial,"No. 111, Xuefu Rd., Xiaogang Dist., Kaohsiung City 812, Taiwan (R.O.C.)",07-8017856,120.3617305505,22.56540243451
+1502110064,Kaohsiung-Pingtung Region,Kaohsiung City,Xiaogang District,Antai Communtiy Hosptial,"No. 111, Xuefu Rd., Xiaogang Dist., Kaohsiung City 812, Taiwan (R.O.C.)",07-8017856,120.3617306,22.56540243
 0643130018,Kaohsiung-Pingtung Region,Pingtung County,Neipu Township,Kaohsiung Veterans General Hospital Pingtung Branch,"No. 1, Anping 1st Lane, Zhaosheng Road, Neipu Township, Pingtung County 912",08-7704115,120.599009,22.674418
 0143010011,Kaohsiung-Pingtung Region,Pingtung County,Pingtung City,"Pingtung Hospital, Ministry of Health and Welfare","No. 270, Ziyou Road, Pingtung City, Pingtung County, 900",08-7363011,120.495546,22.673264
 1343030018,Kaohsiung-Pingtung Region,Pingtung County,Donggang Township,Fooyin University Hospital,"No. 5, Zhongshan Road, Donggang Township, Pingtung County, 928",08-8323146,120.452734,22.465199
@@ -151,21 +151,21 @@ agency_code,area,county,admin_district,agency_name,address,phone_number,longitud
 2344030022,Kaohsiung-Pingtung Region,Penghu County,Baisha Township,Niaoyu Health Center,"No. 3, Yugang New Residential Quarter, Niaoyu, Baisha Township, Penghu County 884,",06-9916092,119.660087,23.660035
 0144010015,Kaohsiung-Pingtung Region,Penghu County,Magong City,"Penghu Hospital, Ministry of Health and Welfare","No. 10, Zhongzheng Road, Magong City, Penghu County, 880",06-9261151 ,119.565423,23.564553
 2344050024,Kaohsiung-Pingtung Region,Penghu County,Wangan Township,Jiangjun Health Center,"No. 1-3, Jiangjun'ao, Jiangjun Village, Wangan Township, Penghu County",06-9902066,119.521637,23.361397
-2344050015,Kaohsiung-Pingtung Region,Penghu County,Wangan Township,Huayu Health Room,"No. 5, Huayu, Wang?î§±n Township, Penghu County 882",06-9991739,119.320671,23.403736
-2344050015,Kaohsiung-Pingtung Region,Penghu County,Wangan Township,Wangan Township Health Center,"No. 36-7, Xi'an Village, Wang?î§±n Township, Penghu County 882",06-9991036 ,119.497377,23.361897
+2344050015,Kaohsiung-Pingtung Region,Penghu County,Wangan Township,Huayu Health Room,"No. 5, Huayu, Wang?an Township, Penghu County 882",06-9991739,119.320671,23.403736
+2344050015,Kaohsiung-Pingtung Region,Penghu County,Wangan Township,Wangan Township Health Center,"No. 36-7, Xi'an Village, Wang?an Township, Penghu County 882",06-9991036 ,119.497377,23.361897
 0645020015,Eastern Region,Hualien County,Fenglin Township,Taipei Veterans General Hospital Fenglin Branch,"No. 2, Section 1, Zhongzheng Road, Fenglin Township, Hualien County, 975",03-8764539 ,121.439215,23.727428
 0145080011,Eastern Region,Hualien County,Fengbin Township,"Hualien Hospital Fengbin Aboriginal Branch, Ministry of Health and Welfare","No. 41, Guangfeng Road, Fengbin Township, Hualien County, 977",03-8791385,121.521184,23.601957
 0545040515,Eastern Region,Hualien County,Xincheng Township,Hualien Armed Forces General Hospital,"No. 163, Jiali Road, Xincheng Township, Hualien County, 971",03-8263151,121.6074,24.024429
 1145010038,Eastern Region,Hualien County,Hualien City,Mennonite Christian Hospital,"No. 44, Minquan Road, Hualien City, Hualien County, 970",03-8241234,121.626753,23.988335
 0645030011,Eastern Region,Hualien County,Yuli Township,Taipei Veterans General Hospital Yuli Branch,"No. 91, Xinxing Street, Yuli Township, Hualien County, 981",03-8883141 ,121.312031,23.339213
 0145010019,Eastern Region,Hualien County,Hualien City,"Hualien Hospital, Ministry of Health and Welfare","No. 600, Zhongzheng Road, Hualien City, Hualien County, 970",03-8358141 ,121.611421,23.979207
-1145030012,Eastern Region,Hualien County,Yuli Township,Buddhist Tzu Chi Medical Foundation Yuli Tzu Chi Hospital ,"No. 1-1, Minquan St., Yuli Township, Hualien County 981, Taiwan (R.O.C.)",03-8882718 ,121.318595223339,23.3349284733081
+1145030012,Eastern Region,Hualien County,Yuli Township,Buddhist Tzu Chi Medical Foundation Yuli Tzu Chi Hospital ,"No. 1-1, Minquan St., Yuli Township, Hualien County 981, Taiwan (R.O.C.)",03-8882718 ,121.3185952,23.33492847
 0146020537,Eastern Region,Taitung County,Chenggong Township,"Taitung Hospital Chenggong Branch, Ministry of Health and Welfare","No. 32, Zhongshan East Road, Chenggong Township, Taitung County, 961",089-854748,121.377829,23.099296
 0646010013,Eastern Region,Taitung County,Taitung City,Taipei Veterans General Hospital Taitung Branch,"No. 1000, Gengsheng Road, Taitung City, Taitung County, 950",089-222528,121.132431,22.772346
 1146030516,Eastern Region,Taitung County,Guanshan Township,Buddhist Tzu Chi Medical Foundation Kuanshan Tzu Chi Hospital,"No. 125-5, Heping Road, Guanshan Township, Taitung County, 956",089-814880,121.166766,23.057281
 1146010032,Eastern Region,Taitung County,Taitung City,"Taitung Christian Medical Foundation, Taitung Christian Hospital","No. 350, Kaifeng St, Taitung City, Taitung County, 950",089-960888,121.146016,22.763821
 0146010013,Eastern Region,Taitung County,Taitung City,"Taitung Hospital, Ministry of Health and Welfare","No. 1, Wuquan Street, Taitung City, Taitung County, 950",089-324112 ,121.150649,22.757025
-1146010041,Eastern Region,Taitung County,Taitung City,Catholic Hualien Diocese Medical Foundation Taitung St. Mary' s Hospital,"No. 2, Hangzhou Street, Taitung City, Taitung County, 950",089-322833,121.146387662787,22.7577577024614
+1146010041,Eastern Region,Taitung County,Taitung City,Catholic Hualien Diocese Medical Foundation Taitung St. Mary' s Hospital,"No. 2, Hangzhou Street, Taitung City, Taitung County, 950",089-322833,121.1463877,22.7577577
 0291010010,Taipei Region,Lienchiang County,Nangan Township,Lienchiang County Hospital,"No. 217, Fuxing Village, Nangan Township, Lienchiang County 209",083-623995 ,119.948945,26.161011
 2391020010,Taipei Region,Lienchiang County,Beigan Township,Bei-Gan Health Center,"No. 25, Tangqi Village, Beigan Township, Lienchiang County 210",083-655592 ,119.9963,26.223229
 2391040012,Taipei Region,Lienchiang County,Dongyin Township,Dong-In Health Center,"No. 123, Zhongliu Village, Dongyin Township, Lienchiang County 212",083-677206 ,120.490658,26.367287
