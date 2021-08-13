@@ -1,5 +1,131 @@
 var feed = [
     {
+        "id": 25342,
+        "date": "2021-08-13T04:05:55",
+        "type": "DECEASED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "2 new deaths reported in AJK taking the tally to 660"
+    },
+    {
+        "id": 25341,
+        "date": "2021-08-13T04:05:55",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "229 new recoveries reported in AJK taking the tally to 23048"
+    },
+    {
+        "id": 25340,
+        "date": "2021-08-13T04:05:55",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "307 new cases reported in  AJK taking the tally to 28654"
+    },
+    {
+        "id": 25339,
+        "date": "2021-08-13T04:05:55",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "112 new recoveries reported in Balochistan taking the tally to 30157"
+    },
+    {
+        "id": 25338,
+        "date": "2021-08-13T04:05:55",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "55 new cases reported in  Balochistan taking the tally to 31396"
+    },
+    {
+        "id": 25337,
+        "date": "2021-08-13T04:05:55",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "103 new recoveries reported in Gilgit Baltistan taking the tally to 8028"
+    },
+    {
+        "id": 25336,
+        "date": "2021-08-13T04:05:55",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "94 new cases reported in  Gilgit Baltistan taking the tally to 9137"
+    },
+    {
+        "id": 25335,
+        "date": "2021-08-13T04:05:55",
+        "type": "DECEASED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "20 new deaths reported in KPK taking the tally to 4624"
+    },
+    {
+        "id": 25334,
+        "date": "2021-08-13T04:05:55",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "787 new recoveries reported in KPK taking the tally to 140000"
+    },
+    {
+        "id": 25333,
+        "date": "2021-08-13T04:05:55",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "682 new cases reported in  KPK taking the tally to 150708"
+    },
+    {
+        "id": 25332,
+        "date": "2021-08-13T04:05:55",
+        "type": "DECEASED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "39 new deaths reported in Sindh taking the tally to 6355"
+    },
+    {
+        "id": 25331,
+        "date": "2021-08-13T04:05:55",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "2229 new recoveries reported in Sindh taking the tally to 353808"
+    },
+    {
+        "id": 25330,
+        "date": "2021-08-13T04:05:55",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "1783 new cases reported in  Sindh taking the tally to 407892"
+    },
+    {
+        "id": 25329,
+        "date": "2021-08-13T04:05:55",
+        "type": "DECEASED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "15 new deaths reported in Punjab taking the tally to 11307"
+    },
+    {
+        "id": 25328,
+        "date": "2021-08-13T04:05:55",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "755 new recoveries reported in Punjab taking the tally to 338051"
+    },
+    {
+        "id": 25327,
+        "date": "2021-08-13T04:05:55",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "1163 new cases reported in  Punjab taking the tally to 369358"
+    },
+    {
+        "id": 25326,
+        "date": "2021-08-13T04:05:55",
+        "type": "DECEASED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "3 new deaths reported in Islamabad taking the tally to 827"
+    },
+    {
+        "id": 25325,
+        "date": "2021-08-13T04:05:55",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "535 new cases reported in  Islamabad taking the tally to 92768"
+    },
+    {
         "id": 25324,
         "date": "2021-08-12T04:05:34",
         "type": "DECEASED",
