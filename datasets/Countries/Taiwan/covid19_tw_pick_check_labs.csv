@@ -53,7 +53,7 @@ agency_code,area,county,admin_district,agency_name,address,phone_number,longitud
 0433050018,Northern Region,Hsinchu County,Zhubei City,National Taiwan University Hospital Hsinchu Biomedical Park Hosputal Zhubei Branch,"No. 2, Sec. 1, Shengyi Rd., Zhubei City, Hsinchu County 302",03-6677600#532324,121.043718,24.80607
 1133060019,Northern Region,Hsinchu County,Hukou Township,"Catholic Mercy Hospital, Catholic Mercy Medical Foundation","No. 29, Zhongxiao Road, Hukou Township, Hsinchu County, 303",03-5993500#2190,121.045474,24.900496
 1533051063,Northern Region,Hsinchu County,Zhubei City,Da An Hospital,"No. 6, Ln. 318, Bo'ai St., Zhubei City, Hsinchu County 302, Taiwan (R.O.C.)",03-5557188,121.0081583,24.83498111
-1533051072,Northern Region,Hsinchu County,Zhubei City,Shin Ren Hospital (Rapid antigen testing only),"No. 331, Bo'ai St., Zhubei City, Hsinchu County 302, Taiwan (R.O.C.)",03-5552039,121.0078125,24.83560451
+1533051072,Northern Region,Hsinchu County,Zhubei City,Shin Ren Hospital,"No. 331, Bo'ai St., Zhubei City, Hsinchu County 302, Taiwan (R.O.C.)",03-5552039,121.0078125,24.83560451
 1535010051,Northern Region,Miaoli County,Miaoli City,Da Chien Hospital,"No. 36, Gongjing Rd., Miaoli City, Miaoli County 360, Taiwan (R.O.C.)",037-357125,120.8149327,24.54986318
 0135010016,Northern Region,Miaoli County,Miaoli City,"Miaoli General Hospital, Ministry of Health and Welfare","No. 747, Weigong Road, Miaoli City, Miaoli County, 36054",037-261920,120.840405,24.575655
 1135050020,Northern Region,Miaoli County,Toufen City,Wei Gong Memorial Hospital,"No. 128, Xinyi Road, Toufen City, Miaoli County, 351",037-676811,120.907345,24.687096
@@ -81,7 +81,7 @@ agency_code,area,county,admin_district,agency_name,address,phone_number,longitud
 1517020040,Central Region,Taichung City,East District,Tai Shin Landessd Hospital (Rapid antigen testing only),"No. 441, Zhenxing Rd., East Dist., Taichung City 401, Taiwan (R.O.C.)",04-22139966,120.7055594,24.13029581
 2336210034,Central Region,Taichung City,Heping District,Health Center of Lee Mountain (Rapid antigen testing only),"No. 68, Zhongzheng Rd., Heping Dist., Taichung City 424 , Taiwan (R.O.C.)",04-25989540,121.2551656,24.25437763
 3503030147,Central Region,Taichung City,Dajia District,Doctor Lai Clinic (Rapid antigen testing only),"No. 267, Sec. 5, Jiahou Rd., Dajia Dist., Taichung City 437 , Taiwan (R.O.C.)",04-26762248,120.6339478,24.34468752
-0638020014,Central Region,Nantou County,Puli Township,Taichung Veterans General Hospital Puli Branch,"No. 1, Rongguang Road, Puli Township, Nantou County, 54552",0921-937367,120.995785,23.975834
+0638020014,Central Region,Nantou County,Puli Township,Taichung Veterans General Hospital Puli Branch,"No. 1, Rongguang Road, Puli Township, Nantou County, 54552",049-2990-833#3000,120.995785,23.975834
 0938030016,Central Region,Nantou County,Caotun Township,Yumin Hospital,"No. 200, Section 1, Taiping Road, Caotun Township, Nantou County, 542",0979-933795,120.681661,23.960591
 1138010019,Central Region,Nantou County,Nantou City,Nantou Christian Hospital,"No. 870, Zhongxing Road, Nantou City, Nantou County, 540",049-2225595#1195,120.683969,23.898903
 1138020015,Central Region,Nantou County,Puli Township,Puli Christian Hospital,"No. 1, Tieshan Road, Puli Township, Nantou County, 545",049-2912151#1159,120.946524,23.970449
@@ -119,7 +119,7 @@ agency_code,area,county,admin_district,agency_name,address,phone_number,longitud
 0141010013,Southern Region,Tainan City,Xinying District,"Sinying Hospital, Ministry of Health and Welfare","No. 73, Xinyi Street, Xinying District, Tainan City, 730",06-6351131,120.313307,23.308848
 0141060513,Southern Region,Tainan City,Xinhua District,"Tainan Hospital Xinhua Branch, Ministry of Health and Welfare","No. 72, Nabari Ranch, Xinhua District, Tainan City, 712",06-5911929,120.336408,23.062491
 0641310018,Southern Region,Tainan City,Yongkang District,Kaohsiung Veterans General Hospital Tainan Branch,"No. 427, Fuxing Road, Yongkang District, Tainan City, 710",06-3125101,120.240268,22.997284
-0905290020,Southern Region,Tainan City,Guanmiao Dist,Ji An Hosptial (Rapid antigen testing only),"No. 435, Zhongzheng Rd., Guanmiao Dist., Tainan City 718, Taiwan (R.O.C.)",06-5955561,120.3445776,22.96701263
+0905290020,Southern Region,Tainan City,Guanmiao Dist,Ji An Hosptial (Rapid antigen testing only),"No. 435, Zhongzheng Rd., Guanmiao Dist., Tainan City 718, Taiwan (R.O.C.)",06-6025115,120.3445776,22.96701263
 3505070032,Southern Region,Tainan City,Shanhua Dist,Yi Jen Clinic (Rapid antigen testing only),"No. 387, Zhongzheng Rd., Shanhua Dist., Tainan City 741, Taiwan (R.O.C.)",06-5817267,120.2939464,23.12799491
 1102110011,Kaohsiung-Pingtung Region,Kaohsiung City,Xiaogang District,Kaohsiung Municipal Siaogang Hospital,"No. 482, Shanming Road, Xiaogang District, Kaohsiung City, 812",07-8036783#3134,120.363101,22.567359
 0502030015,Kaohsiung-Pingtung Region,Kaohsiung City,Zuoying District,Kaohsiung Armed Forces General Hospital Zuoying Branch,"No. 553, Junxiao Road, Zuoying District, Kaohsiung City, 813",07-5817121,120.290414,22.701528
