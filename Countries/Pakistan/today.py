@@ -40,7 +40,7 @@ critical = patients[4].text  # critical cases
 # Database
 s = _sqlite()
 conn = s.conn(get_config("database", folder+"/Countries/Pakistan"), folder)
-# conn.create_tables()
+conn.create_tables()
 
 # Prepare current datetime.
 now = datetime.now()
@@ -72,9 +72,14 @@ if not date1 == date2 and date2 == last_update_in_website:
 # dose 1 full and in 24 hrs
 last_partially_vaccine = soup.find('div', class_='blue').text.replace('Partially Vaccinated', '').replace("Last", "").replace('\n', '').replace('\r', '')
 print(last_partially_vaccine)
+if last_partially_vaccine.startswith("First") or last_partially_vaccine.startswith("First Dose"):
+    last_partially_vaccine = last_partially_vaccine.replace("First Dose", "")
 # dose 2 full and in 24 hrs
 last_fully_vaccine = soup.find('div', class_='green').text.replace('Fully Vaccinated', '').replace("Last", "").replace('\n', '').replace('\r', '')
 print(last_fully_vaccine)
+if last_fully_vaccine.startswith("Second Dose") or last_fully_vaccine.startswith("Second"):
+    last_fully_vaccine = last_fully_vaccine.replace("Second Dose", "")
+
 # Total doses administered
 last_doses = soup.find('div', class_='purple').text.replace('Total Doses Administered', '').replace("Last", "").replace('\n', '').replace('\r', '')
 print(last_doses)
