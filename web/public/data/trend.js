@@ -1,19 +1,5 @@
 var trend = [
     {
-        "DATE": "2021-08-11",
-        "INFECTED": 4856,
-        "DECEASED": 81,
-        "RECOVERED": 5025,
-        "TOTAL": 9962
-    },
-    {
-        "DATE": "2021-08-12",
-        "INFECTED": 4934,
-        "DECEASED": 102,
-        "RECOVERED": 3376,
-        "TOTAL": 8412
-    },
-    {
         "DATE": "2021-08-13",
         "INFECTED": 4619,
         "DECEASED": 79,
@@ -166,5 +152,19 @@ var trend = [
         "DECEASED": 57,
         "RECOVERED": 6595,
         "TOTAL": 10473
+    },
+    {
+        "DATE": "2021-09-04",
+        "INFECTED": 0,
+        "DECEASED": 0,
+        "RECOVERED": 0,
+        "TOTAL": 0
+    },
+    {
+        "DATE": "2021-09-05",
+        "INFECTED": 7727,
+        "DECEASED": 140,
+        "RECOVERED": 5414,
+        "TOTAL": 13281
     }
 ]
