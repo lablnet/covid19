@@ -11,7 +11,8 @@ agency_code,area,county,admin_district,agency_name,address,phone_number,longitud
 1101010012,Taipei Region,Taipei City,Songshan District,Taipei Chang Gung Memorial Hospital,"No. 199, DunHua N Rd, Songshan District, Taipei City, 105",02-27135211,121.5496556,25.0555992
 1101110026,Taipei Region,Taipei City,Neihu District,Kang-Ning General Hospital,"No. 26, Lane 420, Section 5, Chenggong Road, Neihu District, Taipei City, 114",02-26345500,121.6089476,25.0758907
 0901190010,Taipei Region,Taipei City,Wanhua District,West Garden Hospital,"No. 270, Section 2, Xiyuan Road, Wanhua District, Taipei City, 108",02-23076968,121.494405,25.027743
-1501010010,Taipei Region,Taipei City,Songshan District,Pojen General Hospital,"No. 66, Guangfu North Road, Songshan District, Taipei City, 105",02-25786677#2019??978-199960,121.5576835,25.0499097
+1501010010,Taipei Region,Taipei City,Songshan District,Pojen General Hospital,"No. 66, Guangfu North Road, Songshan District, Taipei City, 105",02-25786677#2019¡B0978-199960,121.5576835,25.0499097
+0701160518,Taipei Region,Taipei City,Beitou District,Taipei Municipal Gan-Dau Hospital,"No. 12, Ln. 225, Zhixing Rd., Beitou Dist., Taipei City 112, Taiwan (R.O.C.)",02-28587000,121.4662583,25.12048992
 1231030015,Taipei Region,New Taipei City,Yonghe District,Yonghe Cardinal Tien Hospital?,"No. 80, Zhongxing Street, Yonghe District, New Taipei City, 234",02-29286060,121.51787,25.011874
 1331160010,Taipei Region,New Taipei City,Taishan District,Fu Jen Catholic University Hospital,"No. 69, Guizi Road, Taishan District, New Taipei City, 243",02-85128888,121.430799,25.039676
 1131110516,Taipei Region,New Taipei City,Xizhi District,Cathay General Hospital Sijhih Branch,"No. 2, Lane 59, Jiancheng Road, Xizhi District, New Taipei City, 221",02-26482121#3910,121.661084,25.072872
@@ -26,6 +27,7 @@ agency_code,area,county,admin_district,agency_name,address,phone_number,longitud
 1231050017,Taipei Region,New Taipei City,Xindian District,Cardinal Tien Hospital An Kang Branch,"No. 15, Chezi Rd., Xindian Dist., New Taipei City 231, Taiwan (R.O.C.)",02-22123066,121.5038556,24.95367737
 1131130018,Taipei Region,New Taipei City,Tucheng District,New Taipei City Tucheng Hospital ,"No. 6, Sec. 2, Jincheng Rd., Tucheng Dist., New Taipei City 236, Taiwan (R.O.C.)",02-22630588,121.4487698,24.97632289
 1531041390,Taipei Region,New Taipei City,Zhonghe District,Yi Her Hospital,"No. 49, Liancheng Rd., Zhonghe Dist., New Taipei City 235, Taiwan (R.O.C.)",02-22450009,121.4985288,25.00190762
+1531131157,Taipei Region,New Taipei City,Tucheng District,En-Hua Hosptial,"No. 7-18, Sec. 1, Zhongyang Rd., Tucheng Dist., New Taipei City 236, Taiwan (R.O.C.)",02-22639955,121.4488352,24.9911882
 1134010022,Taipei Region,Yilan County,Yilan City,Yilan Jen-Ai Hospital,"No. 260, Section 2, Zhongshan Road, Yilan City, Yilan County, 260",03-9321888,121.754451,24.748723
 0434010518,Taipei Region,Yilan County,Yilan City,National Yang-Ming University Hospital,"No. 169, Xiaoshe Road, Yilan City, Yilan County, 260",03-9325192,121.754029,24.757853
 0634070018,Taipei Region,Yilan County,Yuanshan Township,Taipei Veterans General Hospital Yuanshan Branch,"No. 386, Rongguang Road, Yuanshan Township, Yilan County 264",03-9222141,121.687824,24.721919
@@ -45,6 +47,7 @@ agency_code,area,county,admin_district,agency_name,address,phone_number,longitud
 1532100049,Northern Region,Taoyuan City,Pingzhen District,Landseed International Hospital,"No. 77, Guangtai Road, Pingzhen District, Taoyuan City, 324?No. 115, Lane 430, Section 2, Yanping Road, Pingzhen District Taoyuan City, 324",03-4941234,121.20496,24.94612
 0932020025,Northern Region,Taoyuan City,Zhongli District,Ten-Chen General Hospital,"No. 155, Yanping Road, Zhongli District, Taoyuan City, 320",03-4629292,121.229327,24.962795
 1532021383,Northern Region,Taoyuan City,Zhongli District,Armfulcare Hospital,"No. 119, Zhiguang Rd., Zhongli Dist., Taoyuan City 320, Taiwan (R.O.C.)",03-4919119,121.2055551,24.96146942
+1132071036,Northern Region,Taoyuan City,Guishan District,Taoyuan Chang Gung Memorial Hospital,"No. 123, Dinghu Rd., Guishan Dist., Taoyuan City 333, Taiwan (R.O.C.)",03-3196200,121.3667802,25.02988402
 0512040014,Northern Region,Hsinchu City,North District,Hsin Chu Armed Force Hospital,"No. 3, Wuling Road, North District, Hsinchu City, 300",03-5348181#325117,120.961966,24.816144
 1112010528,Northern Region,Hsinchu City,East District,Hsinchu Cathay General Hospital,"No. 678, Section 2, Zhonghua Rd, East District, Hsinchu City, 300",03-5278999#7999,120.965227,24.798257
 1512011185,Northern Region,Hsinchu City,East District,Nan Men General Hospital,"No. 20, Linsen Road, East District, Hsinchu City, 300",03-5261122#150,120.969682,24.80222
