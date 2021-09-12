@@ -1463,12 +1463,12 @@ var vaccine = {
         "last_doses": "950,246",
         "reference": "https://covid.gov.pk/"
     },
-    "132": {
+    "133": {
         "": "122",
-        "id": "132",
-        "datetime": "2021-09-12T05:03:36",
+        "id": "133",
+        "datetime": "2021-09-12T16:56:59",
         "total_fully": "21,613,626",
-        "total_partially": "First",
+        "total_partially": "50,803,582",
         "total_doses": "67,342,288",
         "last_fully": "320,071",
         "last_partially": "596,373",
