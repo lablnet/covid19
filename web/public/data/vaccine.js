@@ -1403,20 +1403,8 @@ var vaccine = {
         "last_doses": "1,388,268",
         "reference": "https://covid.gov.pk/"
     },
-    "125": {
-        "": "117",
-        "id": "125",
-        "datetime": "2021-09-05T04:06:56",
-        "total_fully": "18,512,319",
-        "total_partially": "First",
-        "total_doses": "59,384,758",
-        "last_fully": "428,199",
-        "last_partially": "795,476",
-        "last_doses": "1,228,044",
-        "reference": "https://covid.gov.pk/"
-    },
     "126": {
-        "": "118",
+        "": "117",
         "id": "126",
         "datetime": "2021-09-06T04:05:37",
         "total_fully": "19,427,419",
@@ -1428,7 +1416,7 @@ var vaccine = {
         "reference": "https://covid.gov.pk/"
     },
     "127": {
-        "": "119",
+        "": "118",
         "id": "127",
         "datetime": "2021-09-07T04:05:56",
         "total_fully": "19,427,419",
@@ -1440,7 +1428,7 @@ var vaccine = {
         "reference": "https://covid.gov.pk/"
     },
     "128": {
-        "": "120",
+        "": "119",
         "id": "128",
         "datetime": "2021-09-08T04:05:27",
         "total_fully": "20,058,377",
@@ -1452,7 +1440,7 @@ var vaccine = {
         "reference": "https://covid.gov.pk/"
     },
     "129": {
-        "": "121",
+        "": "120",
         "id": "129",
         "datetime": "2021-09-09T04:05:34",
         "total_fully": "20,525,969",
@@ -1464,7 +1452,7 @@ var vaccine = {
         "reference": "https://covid.gov.pk/"
     },
     "130": {
-        "": "122",
+        "": "121",
         "id": "130",
         "datetime": "2021-09-10T04:06:29",
         "total_fully": "20,912,015",
@@ -1476,7 +1464,7 @@ var vaccine = {
         "reference": "https://covid.gov.pk/"
     },
     "131": {
-        "": "123",
+        "": "122",
         "id": "131",
         "datetime": "2021-09-11T04:06:44",
         "total_fully": "21,292,706",
@@ -1488,7 +1476,7 @@ var vaccine = {
         "reference": "https://covid.gov.pk/"
     },
     "132": {
-        "": "124",
+        "": "123",
         "id": "132",
         "datetime": "2021-09-12T05:03:36",
         "total_fully": "21,613,626",

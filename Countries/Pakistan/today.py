@@ -73,7 +73,19 @@ last_partially_vaccine = soup.find('div', class_='blue').text.replace('Partially
 last_fully_vaccine = soup.find('div', class_='green').text.replace('Fully Vaccinated', '').replace("Last", "").replace('\n', '').replace('\r', '')
 last_doses = soup.find('div', class_='purple').text.replace('Total Doses Administered', '').replace("Last", "").replace('\n', '').replace('\r', '')
 
+t_p = None # partially
+t_p = last_partially_vaccine.split(":")[0] # total partially.
+if t_p is not None:
+    t_p = t_p.split(" ")
+    # check if t_p[1] exists.
+    if len(t_p) > 1:
+        t_p = t_p[1]
+        t_p = t_p.replace("Dose", "")
+
 total_partially = str(last_partially_vaccine.split(" ")[0])
+if t_p is not None:
+    total_partially = t_p
+
 total_fully = str(last_fully_vaccine.split(" ")[0])
 total_doses = str(last_doses.split(" ")[0])
 last_partially = str(last_partially_vaccine.split(" ")[-1])
