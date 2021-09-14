@@ -1,12 +1,5 @@
 var trend = [
     {
-        "DATE": "2021-08-21",
-        "INFECTED": 3084,
-        "DECEASED": 65,
-        "RECOVERED": 3648,
-        "TOTAL": 6797
-    },
-    {
         "DATE": "2021-08-22",
         "INFECTED": 3842,
         "DECEASED": 75,
@@ -166,5 +159,12 @@ var trend = [
         "DECEASED": 67,
         "RECOVERED": 3391,
         "TOTAL": 6446
+    },
+    {
+        "DATE": "2021-09-14",
+        "INFECTED": 2574,
+        "DECEASED": 78,
+        "RECOVERED": 7241,
+        "TOTAL": 9893
     }
 ]
