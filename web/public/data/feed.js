@@ -1,5 +1,131 @@
 var feed = [
     {
+        "id": 26162,
+        "date": "2021-09-26T05:03:08",
+        "type": "DECEASED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "1 new deaths reported in AJK taking the tally to 735"
+    },
+    {
+        "id": 26161,
+        "date": "2021-09-26T05:03:08",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "83 new recoveries reported in AJK taking the tally to 32479"
+    },
+    {
+        "id": 26160,
+        "date": "2021-09-26T05:03:08",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "30 new cases reported in  AJK taking the tally to 34020"
+    },
+    {
+        "id": 26159,
+        "date": "2021-09-26T05:03:08",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "14 new recoveries reported in Balochistan taking the tally to 32275"
+    },
+    {
+        "id": 26158,
+        "date": "2021-09-26T05:03:08",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "12 new cases reported in  Balochistan taking the tally to 32849"
+    },
+    {
+        "id": 26157,
+        "date": "2021-09-26T05:03:08",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "7 new cases reported in  Gilgit Baltistan taking the tally to 10296"
+    },
+    {
+        "id": 26156,
+        "date": "2021-09-26T05:03:08",
+        "type": "DECEASED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "10 new deaths reported in KPK taking the tally to 5498"
+    },
+    {
+        "id": 26155,
+        "date": "2021-09-26T05:03:08",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "695 new recoveries reported in KPK taking the tally to 162223"
+    },
+    {
+        "id": 26154,
+        "date": "2021-09-26T05:03:08",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "257 new cases reported in  KPK taking the tally to 173023"
+    },
+    {
+        "id": 26153,
+        "date": "2021-09-26T05:03:08",
+        "type": "DECEASED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "8 new deaths reported in Sindh taking the tally to 7335"
+    },
+    {
+        "id": 26152,
+        "date": "2021-09-26T05:03:08",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "809 new recoveries reported in Sindh taking the tally to 425620"
+    },
+    {
+        "id": 26151,
+        "date": "2021-09-26T05:03:08",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "555 new cases reported in  Sindh taking the tally to 455065"
+    },
+    {
+        "id": 26150,
+        "date": "2021-09-26T05:03:08",
+        "type": "DECEASED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "18 new deaths reported in Punjab taking the tally to 12553"
+    },
+    {
+        "id": 26149,
+        "date": "2021-09-26T05:03:08",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "1167 new recoveries reported in Punjab taking the tally to 396090"
+    },
+    {
+        "id": 26148,
+        "date": "2021-09-26T05:03:08",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "811 new cases reported in  Punjab taking the tally to 428394"
+    },
+    {
+        "id": 26147,
+        "date": "2021-09-26T05:03:08",
+        "type": "DECEASED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "5 new deaths reported in Islamabad taking the tally to 915"
+    },
+    {
+        "id": 26146,
+        "date": "2021-09-26T05:03:08",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "322 new recoveries reported in Islamabad taking the tally to 101813"
+    },
+    {
+        "id": 26145,
+        "date": "2021-09-26T05:03:08",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "108 new cases reported in  Islamabad taking the tally to 105021"
+    },
+    {
         "id": 26144,
         "date": "2021-09-25T04:05:50",
         "type": "RECOVERED",
