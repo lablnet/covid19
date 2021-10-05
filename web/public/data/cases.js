@@ -106498,5 +106498,185 @@ var cases = {
         "reference": "http://covid.gov.pk/",
         "description": "51 new recoveries reported in AJK taking the tally to 32970",
         "extra": ""
+    },
+    "26308": {
+        "": "10650",
+        "id": "26308",
+        "_id": "",
+        "datetime": "2021-10-05T04:06:15",
+        "type": "INFECTED",
+        "reference": "http://covid.gov.pk/",
+        "description": "68 new cases reported in  Islamabad taking the tally to 105801",
+        "extra": ""
+    },
+    "26309": {
+        "": "10651",
+        "id": "26309",
+        "_id": "",
+        "datetime": "2021-10-05T04:06:15",
+        "type": "RECOVERED",
+        "reference": "http://covid.gov.pk/",
+        "description": "71 new recoveries reported in Islamabad taking the tally to 102604",
+        "extra": ""
+    },
+    "26310": {
+        "": "10652",
+        "id": "26310",
+        "_id": "",
+        "datetime": "2021-10-05T04:06:15",
+        "type": "DECEASED",
+        "reference": "http://covid.gov.pk/",
+        "description": "1 new deaths reported in Islamabad taking the tally to 929",
+        "extra": ""
+    },
+    "26311": {
+        "": "10653",
+        "id": "26311",
+        "_id": "",
+        "datetime": "2021-10-05T04:06:15",
+        "type": "INFECTED",
+        "reference": "http://covid.gov.pk/",
+        "description": "401 new cases reported in  Punjab taking the tally to 433687",
+        "extra": ""
+    },
+    "26312": {
+        "": "10654",
+        "id": "26312",
+        "_id": "",
+        "datetime": "2021-10-05T04:06:15",
+        "type": "RECOVERED",
+        "reference": "http://covid.gov.pk/",
+        "description": "734 new recoveries reported in Punjab taking the tally to 405287",
+        "extra": ""
+    },
+    "26313": {
+        "": "10655",
+        "id": "26313",
+        "_id": "",
+        "datetime": "2021-10-05T04:06:15",
+        "type": "DECEASED",
+        "reference": "http://covid.gov.pk/",
+        "description": "25 new deaths reported in Punjab taking the tally to 12710",
+        "extra": ""
+    },
+    "26314": {
+        "": "10656",
+        "id": "26314",
+        "_id": "",
+        "datetime": "2021-10-05T04:06:15",
+        "type": "INFECTED",
+        "reference": "http://covid.gov.pk/",
+        "description": "637 new cases reported in  Sindh taking the tally to 460748",
+        "extra": ""
+    },
+    "26315": {
+        "": "10657",
+        "id": "26315",
+        "_id": "",
+        "datetime": "2021-10-05T04:06:15",
+        "type": "RECOVERED",
+        "reference": "http://covid.gov.pk/",
+        "description": "517 new recoveries reported in Sindh taking the tally to 430505",
+        "extra": ""
+    },
+    "26316": {
+        "": "10658",
+        "id": "26316",
+        "_id": "",
+        "datetime": "2021-10-05T04:06:15",
+        "type": "DECEASED",
+        "reference": "http://covid.gov.pk/",
+        "description": "15 new deaths reported in Sindh taking the tally to 7442",
+        "extra": ""
+    },
+    "26317": {
+        "": "10659",
+        "id": "26317",
+        "_id": "",
+        "datetime": "2021-10-05T04:06:15",
+        "type": "INFECTED",
+        "reference": "http://covid.gov.pk/",
+        "description": "170 new cases reported in  KPK taking the tally to 174841",
+        "extra": ""
+    },
+    "26318": {
+        "": "10660",
+        "id": "26318",
+        "_id": "",
+        "datetime": "2021-10-05T04:06:15",
+        "type": "RECOVERED",
+        "reference": "http://covid.gov.pk/",
+        "description": "191 new recoveries reported in KPK taking the tally to 164956",
+        "extra": ""
+    },
+    "26319": {
+        "": "10661",
+        "id": "26319",
+        "_id": "",
+        "datetime": "2021-10-05T04:06:15",
+        "type": "DECEASED",
+        "reference": "http://covid.gov.pk/",
+        "description": "13 new deaths reported in KPK taking the tally to 5593",
+        "extra": ""
+    },
+    "26320": {
+        "": "10662",
+        "id": "26320",
+        "_id": "",
+        "datetime": "2021-10-05T04:06:15",
+        "type": "INFECTED",
+        "reference": "http://covid.gov.pk/",
+        "description": "2 new cases reported in  Gilgit Baltistan taking the tally to 10334",
+        "extra": ""
+    },
+    "26321": {
+        "": "10663",
+        "id": "26321",
+        "_id": "",
+        "datetime": "2021-10-05T04:06:15",
+        "type": "RECOVERED",
+        "reference": "http://covid.gov.pk/",
+        "description": "16 new recoveries reported in Gilgit Baltistan taking the tally to 10002",
+        "extra": ""
+    },
+    "26322": {
+        "": "10664",
+        "id": "26322",
+        "_id": "",
+        "datetime": "2021-10-05T04:06:15",
+        "type": "INFECTED",
+        "reference": "http://covid.gov.pk/",
+        "description": "11 new cases reported in  Balochistan taking the tally to 32992",
+        "extra": ""
+    },
+    "26323": {
+        "": "10665",
+        "id": "26323",
+        "_id": "",
+        "datetime": "2021-10-05T04:06:15",
+        "type": "RECOVERED",
+        "reference": "http://covid.gov.pk/",
+        "description": "28 new recoveries reported in Balochistan taking the tally to 32482",
+        "extra": ""
+    },
+    "26324": {
+        "": "10666",
+        "id": "26324",
+        "_id": "",
+        "datetime": "2021-10-05T04:06:15",
+        "type": "INFECTED",
+        "reference": "http://covid.gov.pk/",
+        "description": "19 new cases reported in  AJK taking the tally to 34253",
+        "extra": ""
+    },
+    "26325": {
+        "": "10667",
+        "id": "26325",
+        "_id": "",
+        "datetime": "2021-10-05T04:06:15",
+        "type": "RECOVERED",
+        "reference": "http://covid.gov.pk/",
+        "description": "77 new recoveries reported in AJK taking the tally to 33047",
+        "extra": ""
     }
 }
