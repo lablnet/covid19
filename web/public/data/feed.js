@@ -1,5 +1,131 @@
 var feed = [
     {
+        "id": 26343,
+        "date": "2021-10-06T04:04:52",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "63 new recoveries reported in AJK taking the tally to 33110"
+    },
+    {
+        "id": 26342,
+        "date": "2021-10-06T04:04:52",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "25 new cases reported in  AJK taking the tally to 34278"
+    },
+    {
+        "id": 26341,
+        "date": "2021-10-06T04:04:52",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "13 new recoveries reported in Balochistan taking the tally to 32495"
+    },
+    {
+        "id": 26340,
+        "date": "2021-10-06T04:04:52",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "12 new cases reported in  Balochistan taking the tally to 33004"
+    },
+    {
+        "id": 26339,
+        "date": "2021-10-06T04:04:52",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "16 new recoveries reported in Gilgit Baltistan taking the tally to 10018"
+    },
+    {
+        "id": 26338,
+        "date": "2021-10-06T04:04:52",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "4 new cases reported in  Gilgit Baltistan taking the tally to 10338"
+    },
+    {
+        "id": 26337,
+        "date": "2021-10-06T04:04:52",
+        "type": "DECEASED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "15 new deaths reported in KPK taking the tally to 5608"
+    },
+    {
+        "id": 26336,
+        "date": "2021-10-06T04:04:52",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "470 new recoveries reported in KPK taking the tally to 165426"
+    },
+    {
+        "id": 26335,
+        "date": "2021-10-06T04:04:52",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "171 new cases reported in  KPK taking the tally to 175012"
+    },
+    {
+        "id": 26334,
+        "date": "2021-10-06T04:04:52",
+        "type": "DECEASED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "9 new deaths reported in Sindh taking the tally to 7451"
+    },
+    {
+        "id": 26333,
+        "date": "2021-10-06T04:04:52",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "585 new recoveries reported in Sindh taking the tally to 431090"
+    },
+    {
+        "id": 26332,
+        "date": "2021-10-06T04:04:52",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "510 new cases reported in  Sindh taking the tally to 461258"
+    },
+    {
+        "id": 26331,
+        "date": "2021-10-06T04:04:52",
+        "type": "DECEASED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "14 new deaths reported in Punjab taking the tally to 12724"
+    },
+    {
+        "id": 26330,
+        "date": "2021-10-06T04:04:52",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "882 new recoveries reported in Punjab taking the tally to 406169"
+    },
+    {
+        "id": 26329,
+        "date": "2021-10-06T04:04:52",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "452 new cases reported in  Punjab taking the tally to 434139"
+    },
+    {
+        "id": 26328,
+        "date": "2021-10-06T04:04:52",
+        "type": "DECEASED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "1 new deaths reported in Islamabad taking the tally to 930"
+    },
+    {
+        "id": 26327,
+        "date": "2021-10-06T04:04:52",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "142 new recoveries reported in Islamabad taking the tally to 102746"
+    },
+    {
+        "id": 26326,
+        "date": "2021-10-06T04:04:52",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "38 new cases reported in  Islamabad taking the tally to 105839"
+    },
+    {
         "id": 26325,
         "date": "2021-10-05T04:06:15",
         "type": "RECOVERED",
