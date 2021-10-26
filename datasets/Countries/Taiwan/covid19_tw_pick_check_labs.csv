@@ -13,6 +13,7 @@ agency_code,area,county,admin_district,agency_name,address,phone_number,longitud
 0901190010,Taipei Region,Taipei City,Wanhua District,West Garden Hospital,"No. 270, Section 2, Xiyuan Road, Wanhua District, Taipei City, 108",02-23076968,121.494405,25.027743
 1501010010,Taipei Region,Taipei City,Songshan District,Pojen General Hospital,"No. 66, Guangfu North Road, Songshan District, Taipei City, 105",02-25786677#2019¡B0978-199960,121.5576835,25.0499097
 0701160518,Taipei Region,Taipei City,Beitou District,Taipei Municipal Gan-Dau Hospital,"No. 12, Ln. 225, Zhixing Rd., Beitou Dist., Taipei City 112, Taiwan (R.O.C.)",02-28587000,121.4662583,25.12048992
+0501160014,Taipei Region,Taipei City,Beitou District,Tri-Service General Hospital Beitou Branch,"No. 60, Xinmin Rd. Beitou Dist., Taipei City 112, Taiwan (R.O.C.)",02-28959808,121.5098927,25.13960801
 1231030015,Taipei Region,New Taipei City,Yonghe District,Yonghe Cardinal Tien Hospital?,"No. 80, Zhongxing Street, Yonghe District, New Taipei City, 234",02-29286060,121.51787,25.011874
 1331160010,Taipei Region,New Taipei City,Taishan District,Fu Jen Catholic University Hospital,"No. 69, Guizi Road, Taishan District, New Taipei City, 243",02-85128888,121.430799,25.039676
 1131110516,Taipei Region,New Taipei City,Xizhi District,Cathay General Hospital Sijhih Branch,"No. 2, Lane 59, Jiancheng Road, Xizhi District, New Taipei City, 221",02-26482121#3910,121.661084,25.072872
@@ -109,6 +110,7 @@ agency_code,area,county,admin_district,agency_name,address,phone_number,longitud
 0622020017,Southern Region,Chiayi City,West District,Taichung Veterans General Hospital Chiayi Branch,"No. 600, Section 2, Shixian Road, West District, Chiayi City, 600",05-2359630,120.42297,23.46755
 1122010021,Southern Region,Chiayi City,East District,St. Martin De Porres Hospital Da-Ya Branch,"No. 565, Section 2, Daya Road, East District, Chiayi City, 600",05-2756000,120.467671,23.47635
 0122020517,Southern Region,Chiayi City,West District,"Chia-Yi Hospital, Ministry of Health and Welfare","No. 312, Beigang Road, West District, Chiayi City, 60096",05-2319090,120.42936,23.481544
+1522011115,Southern Region,Chiayi City,East District,Yang Ming Hospital,"No. 252, Wufong N. Rd., East Dist., Chiayi City 600, Taiwan (R.O.C.)",05-2252000,120.4535518,23.48050296
 0140010028,Southern Region,Chiayi County,Puzi City,"Puzi Hospital, Ministry of Health and Welfare","No. 42-50, Yingcaipu 5, Yonghe Village, Puzi City, Chiayi County",05-3790600,120.234632,23.464349
 0640140012,Southern Region,Chiayi County,Zhuqi Township,Taichung Veterans General Hospital Wanqiao Branch,"No. 38, Shimayuan, Wanqiao Village, Zhuqi Township, Chiayi County",05-2791072,120.506664,23.487187
 0121050011,Southern Region,Tainan City,West Central District,"Tainan Hospital, Ministry of Health and Welfare","No. 125, Zhongshan Rd, West Central District, Tainan City, 700",06-2200055,120.208805,22.99638
