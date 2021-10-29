@@ -1,8 +1,8 @@
 name: Update CSV Dataset Records from Indian MoFHW website
 
 on:
-  schedule:
-    - cron:  '0 4,5,10 * * *'
+#   schedule:
+#     - cron:  '0 4,5,10 * * *'
   workflow_dispatch:
 
 
