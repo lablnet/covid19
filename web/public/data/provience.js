@@ -1,12 +1,12 @@
 var provience = {
     "Islamabad": {
         "infected": {
-            "last": 26,
-            "total": 107339
+            "last": 25,
+            "total": 107364
         },
         "recovered": {
-            "last": 28,
-            "total": 106065
+            "last": 27,
+            "total": 106092
         },
         "deceased": {
             "last": 1,
@@ -15,44 +15,44 @@ var provience = {
     },
     "Punjab": {
         "infected": {
-            "last": 103,
-            "total": 441903
+            "last": 62,
+            "total": 441965
         },
         "recovered": {
-            "last": 127,
-            "total": 421559
+            "last": 126,
+            "total": 421685
         },
         "deceased": {
-            "last": 1,
-            "total": 12978
+            "last": 2,
+            "total": 12980
         }
     },
     "Sindh": {
         "infected": {
-            "last": 50,
-            "total": 473199
+            "last": 51,
+            "total": 473250
         },
         "recovered": {
-            "last": 77,
-            "total": 452099
+            "last": 140,
+            "total": 452239
         },
         "deceased": {
-            "last": 3,
-            "total": 7603
+            "last": 1,
+            "total": 7604
         }
     },
     "KPK": {
         "infected": {
-            "last": 56,
-            "total": 179122
+            "last": 68,
+            "total": 179190
         },
         "recovered": {
-            "last": 58,
-            "total": 171904
+            "last": 62,
+            "total": 171966
         },
         "deceased": {
-            "last": 5,
-            "total": 5798
+            "last": 3,
+            "total": 5801
         }
     },
     "GB": {
@@ -71,12 +71,12 @@ var provience = {
     },
     "Balochistan": {
         "infected": {
-            "last": 3,
-            "total": 33400
+            "last": 8,
+            "total": 33408
         },
         "recovered": {
-            "last": 5,
-            "total": 32924
+            "last": 17,
+            "total": 32941
         },
         "deceased": {
             "last": 1,
@@ -86,11 +86,11 @@ var provience = {
     "AJK": {
         "infected": {
             "last": 2,
-            "total": 34512
+            "total": 34514
         },
         "recovered": {
             "last": 3,
-            "total": 33727
+            "total": 33730
         },
         "deceased": {
             "last": 1,
