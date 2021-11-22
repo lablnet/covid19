@@ -1,5 +1,103 @@
 var feed = [
     {
+        "id": 27112,
+        "date": "2021-11-22T04:07:01",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "2 new recoveries reported in AJK taking the tally to 33754"
+    },
+    {
+        "id": 27111,
+        "date": "2021-11-22T04:07:01",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "4 new cases reported in  AJK taking the tally to 34536"
+    },
+    {
+        "id": 27110,
+        "date": "2021-11-22T04:07:01",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "11 new recoveries reported in Balochistan taking the tally to 33004"
+    },
+    {
+        "id": 27109,
+        "date": "2021-11-22T04:07:01",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "10 new cases reported in  Balochistan taking the tally to 33444"
+    },
+    {
+        "id": 27108,
+        "date": "2021-11-22T04:07:01",
+        "type": "DECEASED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "2 new deaths reported in KPK taking the tally to 5816"
+    },
+    {
+        "id": 27107,
+        "date": "2021-11-22T04:07:01",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "69 new recoveries reported in KPK taking the tally to 172509"
+    },
+    {
+        "id": 27106,
+        "date": "2021-11-22T04:07:01",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "51 new cases reported in  KPK taking the tally to 179604"
+    },
+    {
+        "id": 27105,
+        "date": "2021-11-22T04:07:01",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "13 new recoveries reported in Sindh taking the tally to 452859"
+    },
+    {
+        "id": 27104,
+        "date": "2021-11-22T04:07:01",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "185 new cases reported in  Sindh taking the tally to 474243"
+    },
+    {
+        "id": 27103,
+        "date": "2021-11-22T04:07:01",
+        "type": "DECEASED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "2 new deaths reported in Punjab taking the tally to 12999"
+    },
+    {
+        "id": 27102,
+        "date": "2021-11-22T04:07:01",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "119 new recoveries reported in Punjab taking the tally to 422413"
+    },
+    {
+        "id": 27101,
+        "date": "2021-11-22T04:07:01",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "57 new cases reported in  Punjab taking the tally to 442479"
+    },
+    {
+        "id": 27100,
+        "date": "2021-11-22T04:07:01",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "22 new recoveries reported in Islamabad taking the tally to 106233"
+    },
+    {
+        "id": 27099,
+        "date": "2021-11-22T04:07:01",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "16 new cases reported in  Islamabad taking the tally to 107483"
+    },
+    {
         "id": 27098,
         "date": "2021-11-21T04:05:52",
         "type": "RECOVERED",
