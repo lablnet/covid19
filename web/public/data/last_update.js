@@ -1,3 +1,3 @@
 var update = {
-    "update": "17 Dec, 2021 - 07:40am Islamabad/Pakistan "
+    "update": "17 Dec, 2021 - 10:49am Islamabad/Pakistan "
 }
