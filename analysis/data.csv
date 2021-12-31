@@ -12011,3 +12011,17 @@ ID,datetime,province,new_cases,cumulative_cases,type,reference
 27667,2021-12-30T04:07:30,Balochistan,3,33180,RECOVERED,http://covid.gov.pk/
 27668,2021-12-30T04:07:30,AJK,3,34660,INFECTED,http://covid.gov.pk/
 27669,2021-12-30T04:07:30,AJK,4,33879,RECOVERED,http://covid.gov.pk/
+27670,2021-12-31T04:06:49,Islamabad,53,108618,INFECTED,http://covid.gov.pk/
+27671,2021-12-31T04:06:49,Islamabad,40,107347,RECOVERED,http://covid.gov.pk/
+27672,2021-12-31T04:06:49,Punjab,115,444977,INFECTED,http://covid.gov.pk/
+27673,2021-12-31T04:06:49,Punjab,58,429166,RECOVERED,http://covid.gov.pk/
+27674,2021-12-31T04:06:49,Sindh,308,481689,INFECTED,http://covid.gov.pk/
+27675,2021-12-31T04:06:49,Sindh,278,467642,RECOVERED,http://covid.gov.pk/
+27676,2021-12-31T04:06:49,Sindh,4,7670,DECEASED,http://covid.gov.pk/
+27677,2021-12-31T04:06:49,KPK,36,181370,INFECTED,http://covid.gov.pk/
+27678,2021-12-31T04:06:49,KPK,22,174874,RECOVERED,http://covid.gov.pk/
+27679,2021-12-31T04:06:49,KPK,1,5928,DECEASED,http://covid.gov.pk/
+27680,2021-12-31T04:06:49,Balochistan,3,33633,INFECTED,http://covid.gov.pk/
+27681,2021-12-31T04:06:49,Balochistan,3,33183,RECOVERED,http://covid.gov.pk/
+27682,2021-12-31T04:06:49,Balochistan,1,364,DECEASED,http://covid.gov.pk/
+27683,2021-12-31T04:06:49,AJK,5,33884,RECOVERED,http://covid.gov.pk/
