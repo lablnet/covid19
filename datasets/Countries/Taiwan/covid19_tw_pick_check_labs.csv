@@ -54,7 +54,7 @@ agency_code,area,county,admin_district,agency_name,address,phone_number,longitud
 0512040014,Northern Region,Hsinchu City,North District,Hsin Chu Armed Force Hospital,"No. 3, Wuling Road, North District, Hsinchu City, 300",03-5348181#325117,120.961966,24.816144
 1112010528,Northern Region,Hsinchu City,East District,Hsinchu Cathay General Hospital,"No. 678, Section 2, Zhonghua Rd, East District, Hsinchu City, 300",03-5278999#7999,120.965227,24.798257
 1512011185,Northern Region,Hsinchu City,East District,Nan Men General Hospital,"No. 20, Linsen Road, East District, Hsinchu City, 300",03-5261122#150,120.969682,24.80222
-0433030016,Northern Region,Hsinchu County,Zhudong Township,National Taiwan University Hospital Hsinchu Biomedical Park Hosputal Zhudong Branch,"No. 52, Zhishan Road, Zhudong Township, Hsinchu County, 310",03-5943248#1190,121.09328,24.719099
+0433050018,Northern Region,Hsinchu County,Zhudong Township,National Taiwan University Hospital Hsinchu Biomedical Park Hosputal Zhudong Branch,"No. 52, Zhishan Road, Zhudong Township, Hsinchu County, 310",03-5943248#1190,121.09328,24.719099
 0633030010,Northern Region,Hsinchu County,Zhudong Township,Taipei Veterans General Hospital Hsinchu Branch,"No. 81, Section 1, Jhongfong Rd, Zhudong Township, Hsinchu County, 310",03-5962134,121.100178,24.722617
 1333050017,Northern Region,Hsinchu County,Zhubei City,China Medical University Hsinchu Hospital,"No. 199, Section 1, Xinglong Road, Zhubei City, Hsinchu County, 302",03-5580558,121.001989,24.824037
 0433050018,Northern Region,Hsinchu County,Zhubei City,National Taiwan University Hospital Hsinchu Biomedical Park Hosputal Zhubei Branch,"No. 2, Sec. 1, Shengyi Rd., Zhubei City, Hsinchu County 302",03-6677600#532324,121.043718,24.80607
@@ -99,6 +99,7 @@ agency_code,area,county,admin_district,agency_name,address,phone_number,longitud
 1137020520,Central Region,Changhua County,Lukang Township,Lukang Christian Hopsital,"No. 480, Jhongjheng Rd, Lukang Township, Changhua County, 505",04-7779595,120.438211,24.060379
 1537040066,Central Region,Changhua County,Beidou Township,Cho Hospital,"No. 311, Section 1, Zhongshan Road, Beidou Township, Changhua County, 521",04-8882517,120.51554,23.872278
 0937030012,Central Region,Changhua County,Hemei Township,Farlin Hospital,"No. 180, Heguang Road, Hemei Township, Changhua County, 508",04-7566995,120.491865,24.110572
+0937050014,Central Region,Changhua County,Yuanlin City,Yuan Rung Hospital,"No. 201, Zhongzheng Rd., Yuanlin City, Changhua County 510, Taiwan (R.O.C.)",04-8326161,120.5748665,23.95348092
 0937050014,Central Region,Changhua County,Yuanlin City,Yuan Rung Hospital Yuan Sheng Branch,"No. 359, Juguang Road, Yuanlin City, Changhua County, 510",04-8383995,120.566404,23.95925
 0937050024,Central Region,Changhua County,Yuanlin City,Huilai Medical Care System Hongren Hospital,"No. 89, Huilai St., Yuanlin City, Changhua County 510014, Taiwan (R.O.C.) ",04-8375878,120.570296,23.9551145
 1137010051,Central Region,Changhua County,Changhua City,Hanming Christian Hospital,"No. 366, Sec. 1, Zhongshan Rd., Changhua City, Changhua County 500, Taiwan (R.O.C.)",04-7113456,120.5356883,24.06129986
