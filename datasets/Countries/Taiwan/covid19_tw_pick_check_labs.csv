@@ -50,11 +50,12 @@ agency_code,area,county,admin_district,agency_name,address,phone_number,longitud
 0932020025,Northern Region,Taoyuan City,Zhongli District,Ten-Chen General Hospital,"No. 155, Yanping Road, Zhongli District, Taoyuan City, 320",03-4629292,121.229327,24.962795
 1532021383,Northern Region,Taoyuan City,Zhongli District,Armfulcare Hospital,"No. 119, Zhiguang Rd., Zhongli Dist., Taoyuan City 320, Taiwan (R.O.C.)",03-4919119,121.2055551,24.96146942
 1132071036,Northern Region,Taoyuan City,Guishan District,Taoyuan Chang Gung Memorial Hospital,"No. 123, Dinghu Rd., Guishan Dist., Taoyuan City 333, Taiwan (R.O.C.)",03-3196200,121.3667802,25.02988402
+1532021365,Northern Region,Taoyuan City,Zhongli District,Hwa Young Hosptial,"No. 316, Sec. 2, Zhongbei Rd., Zhongli Dist., Taoyuan City 320, Taiwan (R.O.C.)","	03-4577200",121.2299712,24.95313224
 2332130017,Northern Region,Taoyuan City,Fuxing District,Public Health Center of Fuxing District,"No. 25, Zhongzheng Rd., Fuxing Dist., Taoyuan City 336, Taiwan (R.O.C.)",03-3822325,121.3510651,24.81512769
 0512040014,Northern Region,Hsinchu City,North District,Hsin Chu Armed Force Hospital,"No. 3, Wuling Road, North District, Hsinchu City, 300",03-5348181#325117,120.961966,24.816144
 1112010528,Northern Region,Hsinchu City,East District,Hsinchu Cathay General Hospital,"No. 678, Section 2, Zhonghua Rd, East District, Hsinchu City, 300",03-5278999#7999,120.965227,24.798257
 1512011185,Northern Region,Hsinchu City,East District,Nan Men General Hospital,"No. 20, Linsen Road, East District, Hsinchu City, 300",03-5261122#150,120.969682,24.80222
-0433050018,Northern Region,Hsinchu County,Zhudong Township,National Taiwan University Hospital Hsinchu Biomedical Park Hosputal Zhudong Branch,"No. 52, Zhishan Road, Zhudong Township, Hsinchu County, 310",03-5943248#1190,121.09328,24.719099
+0433030016,Northern Region,Hsinchu County,Zhudong Township,National Taiwan University Hospital Hsinchu Biomedical Park Hosputal Zhudong Branch,"No. 52, Zhishan Road, Zhudong Township, Hsinchu County, 310",03-5943248#1190,121.09328,24.719099
 0633030010,Northern Region,Hsinchu County,Zhudong Township,Taipei Veterans General Hospital Hsinchu Branch,"No. 81, Section 1, Jhongfong Rd, Zhudong Township, Hsinchu County, 310",03-5962134,121.100178,24.722617
 1333050017,Northern Region,Hsinchu County,Zhubei City,China Medical University Hsinchu Hospital,"No. 199, Section 1, Xinglong Road, Zhubei City, Hsinchu County, 302",03-5580558,121.001989,24.824037
 0433050018,Northern Region,Hsinchu County,Zhubei City,National Taiwan University Hospital Hsinchu Biomedical Park Hosputal Zhubei Branch,"No. 2, Sec. 1, Shengyi Rd., Zhubei City, Hsinchu County 302",03-6677600#532324,121.043718,24.80607
