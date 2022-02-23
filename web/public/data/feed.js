@@ -1,5 +1,131 @@
 var feed = [
     {
+        "id": 28598,
+        "date": "2022-02-23T04:07:16",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "122 new recoveries reported in AJK taking the tally to 41206"
+    },
+    {
+        "id": 28597,
+        "date": "2022-02-23T04:07:16",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "70 new cases reported in  AJK taking the tally to 42754"
+    },
+    {
+        "id": 28596,
+        "date": "2022-02-23T04:07:16",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "21 new recoveries reported in Balochistan taking the tally to 34747"
+    },
+    {
+        "id": 28595,
+        "date": "2022-02-23T04:07:16",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "10 new cases reported in  Balochistan taking the tally to 35294"
+    },
+    {
+        "id": 28594,
+        "date": "2022-02-23T04:07:16",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "78 new recoveries reported in Gilgit Baltistan taking the tally to 10984"
+    },
+    {
+        "id": 28593,
+        "date": "2022-02-23T04:07:16",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "23 new cases reported in  Gilgit Baltistan taking the tally to 11413"
+    },
+    {
+        "id": 28592,
+        "date": "2022-02-23T04:07:16",
+        "type": "DECEASED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "16 new deaths reported in KPK taking the tally to 6226"
+    },
+    {
+        "id": 28591,
+        "date": "2022-02-23T04:07:16",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "758 new recoveries reported in KPK taking the tally to 199535"
+    },
+    {
+        "id": 28590,
+        "date": "2022-02-23T04:07:16",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "250 new cases reported in  KPK taking the tally to 215337"
+    },
+    {
+        "id": 28589,
+        "date": "2022-02-23T04:07:16",
+        "type": "DECEASED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "15 new deaths reported in Sindh taking the tally to 8045"
+    },
+    {
+        "id": 28588,
+        "date": "2022-02-23T04:07:16",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "1298 new recoveries reported in Sindh taking the tally to 510588"
+    },
+    {
+        "id": 28587,
+        "date": "2022-02-23T04:07:16",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "424 new cases reported in  Sindh taking the tally to 565319"
+    },
+    {
+        "id": 28586,
+        "date": "2022-02-23T04:07:16",
+        "type": "DECEASED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "10 new deaths reported in Punjab taking the tally to 13471"
+    },
+    {
+        "id": 28585,
+        "date": "2022-02-23T04:07:16",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "653 new recoveries reported in Punjab taking the tally to 480181"
+    },
+    {
+        "id": 28584,
+        "date": "2022-02-23T04:07:16",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "403 new cases reported in  Punjab taking the tally to 499768"
+    },
+    {
+        "id": 28583,
+        "date": "2022-02-23T04:07:16",
+        "type": "DECEASED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "2 new deaths reported in Islamabad taking the tally to 1007"
+    },
+    {
+        "id": 28582,
+        "date": "2022-02-23T04:07:16",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "224 new recoveries reported in Islamabad taking the tally to 132274"
+    },
+    {
+        "id": 28581,
+        "date": "2022-02-23T04:07:16",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "52 new cases reported in  Islamabad taking the tally to 133988"
+    },
+    {
         "id": 28580,
         "date": "2022-02-22T04:07:21",
         "type": "DECEASED",
