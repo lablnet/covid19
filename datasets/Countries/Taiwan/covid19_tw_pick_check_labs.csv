@@ -51,6 +51,8 @@ agency_code,area,county,admin_district,agency_name,address,phone_number,longitud
 1532021383,Northern Region,Taoyuan City,Zhongli District,Armfulcare Hospital,"No. 119, Zhiguang Rd., Zhongli Dist., Taoyuan City 320, Taiwan (R.O.C.)",03-4919119,121.2055551,24.96146942
 1132071036,Northern Region,Taoyuan City,Guishan District,Taoyuan Chang Gung Memorial Hospital,"No. 123, Dinghu Rd., Guishan Dist., Taoyuan City 333, Taiwan (R.O.C.)",03-3196200,121.3667802,25.02988402
 1532021365,Northern Region,Taoyuan City,Zhongli District,Hwa Young Hosptial,"No. 316, Sec. 2, Zhongbei Rd., Zhongli Dist., Taoyuan City 320, Taiwan (R.O.C.)","	03-4577200",121.2299712,24.95313224
+1532020215,Northern Region,Taoyuan City,Zhongli District,Yowmin Hosptial,"No. 180, Sec. 2, Minzu Rd., Zhongli Dist., Taoyuan City 320, Taiwan (R.O.C.)",03-4915656,121.2037883,24.95751014
+1532021338,Northern Region,Taoyuan City,Zhongli District,Evergreen General Hosptial,"No. 150, Huanzhong E. Rd., Zhongli Dist., Taoyuan City 320, Taiwan (R.O.C.)",03-4631230,121.2578603,24.96448913
 2332130017,Northern Region,Taoyuan City,Fuxing District,Public Health Center of Fuxing District,"No. 25, Zhongzheng Rd., Fuxing Dist., Taoyuan City 336, Taiwan (R.O.C.)",03-3822325,121.3510651,24.81512769
 0512040014,Northern Region,Hsinchu City,North District,Hsin Chu Armed Force Hospital,"No. 3, Wuling Road, North District, Hsinchu City, 300",03-5348181#325117,120.961966,24.816144
 1112010528,Northern Region,Hsinchu City,East District,Hsinchu Cathay General Hospital,"No. 678, Section 2, Zhonghua Rd, East District, Hsinchu City, 300",03-5278999#7999,120.965227,24.798257
@@ -166,6 +168,7 @@ agency_code,area,county,admin_district,agency_name,address,phone_number,longitud
 1543110033,Kaohsiung-Pingtung Region,Pingtung County,Gaoshu Township,Daxin Hospital,"No. 208, Xingzhong Road, Gaoshu Township, Pingtung County, 906",08-7962033,120.599646,22.823792
 0943020013,Kaohsiung-Pingtung Region,Pingtung County,Chaozhou Township,Antai Medical Care Cooperation Chaozhou Antai Hospital,"No. 162 and 193, Siwei Road, Chaozhou Township, Pingtung County, 920",08-7800888,120.546964,22.554031
 0943040015,Kaohsiung-Pingtung Region,Pingtung County,Hengchun Township,Nan Men Hospital,"No. 10, Nanmen Rd., Hengchun Township, Pingtung County 946, Taiwan (R.O.C.)",08-8894568 ,120.7453691,22.00095622
+1543020105,Kaohsiung-Pingtung Region,Pingtung County,Chaozhou Township,Mawlong Orthopedic Hosptial,"No. 322, Chaosheng Rd., Chaozhou Township, Pingtung County 920, Taiwan (R.O.C.)",08-7801915,120.5392619,22.55625151
 2344060011,Kaohsiung-Pingtung Region,Penghu County,Qimei Township,Qimei Township Health Center,"No.54, Punei, Zhonghe Village, Qimei Township, Penghu County",06-9971005 ,119.430963,23.204103
 2344030031,Kaohsiung-Pingtung Region,Penghu County,Baisha Township,Jibei Health Center,"No. 8-13, Jibei Village, Baisha Township, Penghu County 884",06-9911430,119.610071,23.740119
 2344030022,Kaohsiung-Pingtung Region,Penghu County,Baisha Township,Niaoyu Health Center,"No. 3, Yugang New Residential Quarter, Niaoyu, Baisha Township, Penghu County 884,",06-9916092,119.660087,23.660035
