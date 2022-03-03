@@ -48,9 +48,10 @@
             location.reload()
         }
 
-        // if (localStorage.getItem("country") === null) {
-        //     get_country_from_AlphaSoftHub()
-        // }
+        if (localStorage.getItem("country") === null) {
+            localStorage.setItem("country", 'pk')
+            location.reload()
+        }
 
         function importJs(file) {
             let element = document.createElement("script");
