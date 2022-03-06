@@ -62,7 +62,7 @@
       </ol>
       </p>
       <p class="content-about mt-2 mb-3">
-        Copyright © 2020-2021 - <b><a href="https://alphasofthub.com/" target="_blank">AlphaSoftHub Pvt Ltd</a> & <a href="https://github.com/lablnet/covid19/graphs/contributors" target="_blank">Contributors</a></b> <a href="https://github.com/lablnet/covid19"
+        Copyright © 2020-2022 - <b><a href="https://alphasofthub.com/" target="_blank">AlphaSoftHub Pvt Ltd</a> & <a href="https://github.com/lablnet/covid19/graphs/contributors" target="_blank">Contributors</a></b> <a href="https://github.com/lablnet/covid19"
                                                                               target="_blank">Source Code</a>.
       </p>
       <div class="">

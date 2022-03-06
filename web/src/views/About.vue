@@ -80,9 +80,6 @@
         <p class="content-about mt-2 mx-2">
           If you like this project; Donate coffee?
           here is the bitcoin address. </p> <br/>
-        <img src="https://img.balancebadge.io/btc/37x6PA4qtPu2fQnYdW5U7jztYhbchASpBV.svg"/>
-        <br/>
-
         <pre><code>37x6PA4qtPu2fQnYdW5U7jztYhbchASpBV</code></pre>
         <p class="content-about mt-2 mx-2"> Thank, you so much.
         </p>
@@ -125,7 +122,7 @@ export default {
             for (let index in data) {
               const response = await fetch(`https://api.github.com/users/${data[index].login}`)
               const user = await response.json()
-              if (data[index].login !== 'alphasofthub-bot') {
+              if (data[index].login !== 'alphasofthub-bot' && data[index].login !== 'dependabot[bot]') {
                 items.push(
                   {
                     "name": user.name,
