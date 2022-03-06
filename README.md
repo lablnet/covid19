@@ -41,8 +41,6 @@ If you like this project; Donate coffee?
 
 Here is the bitcoin address.
 
-[![Balance](https://img.balancebadge.io/btc/37x6PA4qtPu2fQnYdW5U7jztYhbchASpBV.svg)](https://img.balancebadge.io/btc/37x6PA4qtPu2fQnYdW5U7jztYhbchASpBV.svg)
-
 ```37x6PA4qtPu2fQnYdW5U7jztYhbchASpBV```
 
 Thank you so much.
