@@ -1,5 +1,110 @@
 var feed = [
     {
+        "id": 28951,
+        "date": "2022-03-16T04:07:21",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "28 new recoveries reported in AJK taking the tally to 42333"
+    },
+    {
+        "id": 28950,
+        "date": "2022-03-16T04:07:21",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "9 new cases reported in  AJK taking the tally to 43190"
+    },
+    {
+        "id": 28949,
+        "date": "2022-03-16T04:07:21",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "17 new recoveries reported in Balochistan taking the tally to 35027"
+    },
+    {
+        "id": 28948,
+        "date": "2022-03-16T04:07:21",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "5 new cases reported in  Balochistan taking the tally to 35447"
+    },
+    {
+        "id": 28947,
+        "date": "2022-03-16T04:07:21",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "4 new recoveries reported in Gilgit Baltistan taking the tally to 11362"
+    },
+    {
+        "id": 28946,
+        "date": "2022-03-16T04:07:21",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "7 new cases reported in  Gilgit Baltistan taking the tally to 11648"
+    },
+    {
+        "id": 28945,
+        "date": "2022-03-16T04:07:21",
+        "type": "DECEASED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "4 new deaths reported in KPK taking the tally to 6306"
+    },
+    {
+        "id": 28944,
+        "date": "2022-03-16T04:07:21",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "509 new recoveries reported in KPK taking the tally to 210392"
+    },
+    {
+        "id": 28943,
+        "date": "2022-03-16T04:07:21",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "89 new cases reported in  KPK taking the tally to 218357"
+    },
+    {
+        "id": 28942,
+        "date": "2022-03-16T04:07:21",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "276 new recoveries reported in Sindh taking the tally to 552198"
+    },
+    {
+        "id": 28941,
+        "date": "2022-03-16T04:07:21",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "258 new cases reported in  Sindh taking the tally to 572555"
+    },
+    {
+        "id": 28940,
+        "date": "2022-03-16T04:07:21",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "138 new recoveries reported in Punjab taking the tally to 487416"
+    },
+    {
+        "id": 28939,
+        "date": "2022-03-16T04:07:21",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "106 new cases reported in  Punjab taking the tally to 504045"
+    },
+    {
+        "id": 28938,
+        "date": "2022-03-16T04:07:21",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "31 new recoveries reported in Islamabad taking the tally to 133563"
+    },
+    {
+        "id": 28937,
+        "date": "2022-03-16T04:07:21",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "19 new cases reported in  Islamabad taking the tally to 134878"
+    },
+    {
         "id": 28936,
         "date": "2022-03-15T04:08:30",
         "type": "RECOVERED",
