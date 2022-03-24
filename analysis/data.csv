@@ -13395,3 +13395,15 @@ ID,datetime,province,new_cases,cumulative_cases,type,reference
 29051,2022-03-23T04:07:30,Balochistan,4,35064,RECOVERED,http://covid.gov.pk/
 29052,2022-03-23T04:07:30,AJK,5,43227,INFECTED,http://covid.gov.pk/
 29053,2022-03-23T04:07:30,AJK,9,42405,RECOVERED,http://covid.gov.pk/
+29054,2022-03-24T04:08:17,Islamabad,12,135003,INFECTED,http://covid.gov.pk/
+29055,2022-03-24T04:08:17,Islamabad,26,133799,RECOVERED,http://covid.gov.pk/
+29056,2022-03-24T04:08:17,Punjab,62,504639,INFECTED,http://covid.gov.pk/
+29057,2022-03-24T04:08:17,Punjab,26,490102,RECOVERED,http://covid.gov.pk/
+29058,2022-03-24T04:08:17,Sindh,82,574239,INFECTED,http://covid.gov.pk/
+29059,2022-03-24T04:08:17,Sindh,16,560156,RECOVERED,http://covid.gov.pk/
+29060,2022-03-24T04:08:17,KPK,42,218819,INFECTED,http://covid.gov.pk/
+29061,2022-03-24T04:08:17,KPK,99,211691,RECOVERED,http://covid.gov.pk/
+29062,2022-03-24T04:08:17,,2,11675,INFECTED,http://covid.gov.pk/
+29063,2022-03-24T04:08:17,Balochistan,6,35070,RECOVERED,http://covid.gov.pk/
+29064,2022-03-24T04:08:17,AJK,10,43237,INFECTED,http://covid.gov.pk/
+29065,2022-03-24T04:08:17,AJK,7,42412,RECOVERED,http://covid.gov.pk/
