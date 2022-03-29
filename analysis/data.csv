@@ -13466,3 +13466,16 @@ ID,datetime,province,new_cases,cumulative_cases,type,reference
 29122,2022-03-28T04:07:53,Balochistan,1,35080,RECOVERED,http://covid.gov.pk/
 29123,2022-03-28T04:07:53,AJK,5,43249,INFECTED,http://covid.gov.pk/
 29124,2022-03-28T04:07:53,AJK,3,42429,RECOVERED,http://covid.gov.pk/
+29125,2022-03-29T04:07:43,Islamabad,10,135048,INFECTED,http://covid.gov.pk/
+29126,2022-03-29T04:07:43,Islamabad,10,133893,RECOVERED,http://covid.gov.pk/
+29127,2022-03-29T04:07:43,Punjab,32,504926,INFECTED,http://covid.gov.pk/
+29128,2022-03-29T04:07:43,Punjab,18,490419,RECOVERED,http://covid.gov.pk/
+29129,2022-03-29T04:07:43,Punjab,1,13553,DECEASED,http://covid.gov.pk/
+29130,2022-03-29T04:07:43,Sindh,186,574989,INFECTED,http://covid.gov.pk/
+29131,2022-03-29T04:07:43,KPK,31,218968,INFECTED,http://covid.gov.pk/
+29132,2022-03-29T04:07:43,KPK,13,212016,RECOVERED,http://covid.gov.pk/
+29133,2022-03-29T04:07:43,,3,11699,INFECTED,http://covid.gov.pk/
+29134,2022-03-29T04:07:43,,3,11456,RECOVERED,http://covid.gov.pk/
+29135,2022-03-29T04:07:43,Balochistan,2,35471,INFECTED,http://covid.gov.pk/
+29136,2022-03-29T04:07:43,AJK,5,43254,INFECTED,http://covid.gov.pk/
+29137,2022-03-29T04:07:43,AJK,3,42432,RECOVERED,http://covid.gov.pk/
