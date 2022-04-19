@@ -13717,3 +13717,13 @@ ID,datetime,province,new_cases,cumulative_cases,type,reference
 29373,2022-04-18T04:12:29,KPK,1,6323,DECEASED,http://covid.gov.pk/
 29374,2022-04-18T04:12:29,,6,11735,INFECTED,http://covid.gov.pk/
 29375,2022-04-18T04:12:29,AJK,2,42503,RECOVERED,http://covid.gov.pk/
+29376,2022-04-19T04:21:02,Islamabad,2,135159,INFECTED,http://covid.gov.pk/
+29377,2022-04-19T04:21:02,Islamabad,3,134065,RECOVERED,http://covid.gov.pk/
+29378,2022-04-19T04:21:02,Punjab,30,505720,INFECTED,http://covid.gov.pk/
+29379,2022-04-19T04:21:02,Punjab,30,490934,RECOVERED,http://covid.gov.pk/
+29380,2022-04-19T04:21:02,Sindh,48,576618,INFECTED,http://covid.gov.pk/
+29381,2022-04-19T04:21:02,Sindh,6,566927,RECOVERED,http://covid.gov.pk/
+29382,2022-04-19T04:21:02,KPK,4,219389,INFECTED,http://covid.gov.pk/
+29383,2022-04-19T04:21:02,KPK,4,212649,RECOVERED,http://covid.gov.pk/
+29384,2022-04-19T04:21:02,,1,11736,INFECTED,http://covid.gov.pk/
+29385,2022-04-19T04:21:02,AJK,2,42505,RECOVERED,http://covid.gov.pk/
