@@ -1,12 +1,12 @@
 var provience = {
     "Islamabad": {
         "infected": {
-            "last": 6,
-            "total": 135165
+            "last": 3,
+            "total": 135168
         },
         "recovered": {
             "last": 4,
-            "total": 134073
+            "total": 134077
         },
         "deceased": {
             "last": 1,
@@ -15,12 +15,12 @@ var provience = {
     },
     "Punjab": {
         "infected": {
-            "last": 53,
-            "total": 505810
+            "last": 47,
+            "total": 505857
         },
         "recovered": {
-            "last": 52,
-            "total": 491022
+            "last": 46,
+            "total": 491068
         },
         "deceased": {
             "last": 1,
@@ -29,12 +29,12 @@ var provience = {
     },
     "Sindh": {
         "infected": {
-            "last": 35,
-            "total": 576677
+            "last": 17,
+            "total": 576694
         },
         "recovered": {
-            "last": 4,
-            "total": 566938
+            "last": 3,
+            "total": 566941
         },
         "deceased": {
             "last": 3,
@@ -43,12 +43,12 @@ var provience = {
     },
     "KPK": {
         "infected": {
-            "last": 14,
-            "total": 219411
+            "last": 11,
+            "total": 219422
         },
         "recovered": {
-            "last": 12,
-            "total": 212699
+            "last": 8,
+            "total": 212707
         },
         "deceased": {
             "last": 1,
@@ -61,8 +61,8 @@ var provience = {
             "total": 11737
         },
         "recovered": {
-            "last": 3,
-            "total": 11528
+            "last": 1,
+            "total": 11529
         },
         "deceased": {
             "last": 1,
@@ -76,7 +76,7 @@ var provience = {
         },
         "recovered": {
             "last": 1,
-            "total": 35103
+            "total": 35104
         },
         "deceased": {
             "last": 1,
@@ -86,7 +86,7 @@ var provience = {
     "AJK": {
         "infected": {
             "last": 2,
-            "total": 43306
+            "total": 43308
         },
         "recovered": {
             "last": 1,
