@@ -1,5 +1,68 @@
 var feed = [
     {
+        "id": 29440,
+        "date": "2022-04-24T10:06:53",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "2 new recoveries reported in AJK taking the tally to 42510"
+    },
+    {
+        "id": 29439,
+        "date": "2022-04-24T10:06:53",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "2 new cases reported in  AJK taking the tally to 43310"
+    },
+    {
+        "id": 29438,
+        "date": "2022-04-24T10:06:53",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "36 new recoveries reported in KPK taking the tally to 212745"
+    },
+    {
+        "id": 29437,
+        "date": "2022-04-24T10:06:53",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "11 new cases reported in  KPK taking the tally to 219448"
+    },
+    {
+        "id": 29436,
+        "date": "2022-04-24T10:06:53",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "10 new recoveries reported in Sindh taking the tally to 566956"
+    },
+    {
+        "id": 29435,
+        "date": "2022-04-24T10:06:53",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "28 new cases reported in  Sindh taking the tally to 576739"
+    },
+    {
+        "id": 29434,
+        "date": "2022-04-24T10:06:53",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "59 new cases reported in  Punjab taking the tally to 505963"
+    },
+    {
+        "id": 29433,
+        "date": "2022-04-24T10:06:53",
+        "type": "RECOVERED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "4 new recoveries reported in Islamabad taking the tally to 134085"
+    },
+    {
+        "id": 29432,
+        "date": "2022-04-24T10:06:53",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "5 new cases reported in  Islamabad taking the tally to 135175"
+    },
+    {
         "id": 29431,
         "date": "2022-04-23T04:07:22",
         "type": "RECOVERED",
