@@ -13814,3 +13814,10 @@ ID,datetime,province,new_cases,cumulative_cases,type,reference
 29470,2022-05-10T10:07:36,Sindh,1,567237,RECOVERED,http://covid.gov.pk/
 29471,2022-05-10T10:07:36,KPK,4,212886,RECOVERED,http://covid.gov.pk/
 29472,2022-05-10T10:07:36,AJK,1,42517,RECOVERED,http://covid.gov.pk/
+29473,2022-05-14T05:07:43,Islamabad,35,135281,INFECTED,http://covid.gov.pk/
+29474,2022-05-14T05:07:43,Punjab,180,506679,INFECTED,http://covid.gov.pk/
+29475,2022-05-14T05:07:43,Sindh,78,577067,INFECTED,http://covid.gov.pk/
+29476,2022-05-14T05:07:43,Sindh,1,8105,DECEASED,http://covid.gov.pk/
+29477,2022-05-14T05:07:43,KPK,37,219591,INFECTED,http://covid.gov.pk/
+29478,2022-05-14T05:07:43,Balochistan,1,35487,INFECTED,http://covid.gov.pk/
+29479,2022-05-14T05:07:43,AJK,3,43317,INFECTED,http://covid.gov.pk/
