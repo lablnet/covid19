@@ -13834,3 +13834,10 @@ ID,datetime,province,new_cases,cumulative_cases,type,reference
 29490,2022-05-18T04:18:45,,3,11748,INFECTED,http://covid.gov.pk/
 29491,2022-05-18T04:18:45,Balochistan,6,35493,INFECTED,http://covid.gov.pk/
 29492,2022-05-18T04:18:45,AJK,6,43323,INFECTED,http://covid.gov.pk/
+29493,2022-05-19T05:13:56,Islamabad,9,135312,INFECTED,http://covid.gov.pk/
+29494,2022-05-19T05:13:56,Punjab,34,506865,INFECTED,http://covid.gov.pk/
+29495,2022-05-19T05:13:56,Punjab,1,13564,DECEASED,http://covid.gov.pk/
+29496,2022-05-19T05:13:56,Sindh,35,577201,INFECTED,http://covid.gov.pk/
+29497,2022-05-19T05:13:56,KPK,9,219616,INFECTED,http://covid.gov.pk/
+29498,2022-05-19T05:13:56,Balochistan,1,35494,INFECTED,http://covid.gov.pk/
+29499,2022-05-19T05:13:56,AJK,1,43324,INFECTED,http://covid.gov.pk/
