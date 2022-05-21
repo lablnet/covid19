@@ -13845,3 +13845,8 @@ ID,datetime,province,new_cases,cumulative_cases,type,reference
 29501,2022-05-20T04:15:55,Punjab,33,506898,INFECTED,http://covid.gov.pk/
 29502,2022-05-20T04:15:55,Sindh,34,577235,INFECTED,http://covid.gov.pk/
 29503,2022-05-20T04:15:55,KPK,7,219623,INFECTED,http://covid.gov.pk/
+29504,2022-05-21T04:08:29,Islamabad,10,135329,INFECTED,http://covid.gov.pk/
+29505,2022-05-21T04:08:29,Punjab,27,506925,INFECTED,http://covid.gov.pk/
+29506,2022-05-21T04:08:29,Sindh,23,577258,INFECTED,http://covid.gov.pk/
+29507,2022-05-21T04:08:29,KPK,8,219631,INFECTED,http://covid.gov.pk/
+29508,2022-05-21T04:08:29,Balochistan,2,35496,INFECTED,http://covid.gov.pk/
