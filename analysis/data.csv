@@ -13850,3 +13850,7 @@ ID,datetime,province,new_cases,cumulative_cases,type,reference
 29506,2022-05-21T04:08:29,Sindh,23,577258,INFECTED,http://covid.gov.pk/
 29507,2022-05-21T04:08:29,KPK,8,219631,INFECTED,http://covid.gov.pk/
 29508,2022-05-21T04:08:29,Balochistan,2,35496,INFECTED,http://covid.gov.pk/
+29509,2022-05-22T10:07:28,Islamabad,9,135338,INFECTED,http://covid.gov.pk/
+29510,2022-05-22T10:07:28,Sindh,30,577288,INFECTED,http://covid.gov.pk/
+29511,2022-05-22T10:07:28,KPK,7,219638,INFECTED,http://covid.gov.pk/
+29512,2022-05-22T10:07:28,AJK,2,43326,INFECTED,http://covid.gov.pk/
