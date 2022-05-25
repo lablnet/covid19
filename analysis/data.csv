@@ -13860,3 +13860,8 @@ ID,datetime,province,new_cases,cumulative_cases,type,reference
 29516,2022-05-23T04:22:00,KPK,4,219642,INFECTED,http://covid.gov.pk/
 29517,2022-05-23T04:22:00,Balochistan,1,35497,INFECTED,http://covid.gov.pk/
 29518,2022-05-23T04:22:00,AJK,2,43328,INFECTED,http://covid.gov.pk/
+29519,2022-05-25T04:19:00,Islamabad,18,135364,INFECTED,http://covid.gov.pk/
+29520,2022-05-25T04:19:00,Punjab,59,507033,INFECTED,http://covid.gov.pk/
+29521,2022-05-25T04:19:00,Sindh,69,577371,INFECTED,http://covid.gov.pk/
+29522,2022-05-25T04:19:00,KPK,6,219648,INFECTED,http://covid.gov.pk/
+29523,2022-05-25T04:19:00,Balochistan,1,35498,INFECTED,http://covid.gov.pk/
