@@ -1,8 +1,8 @@
 var provience = {
     "Islamabad": {
         "infected": {
-            "last": 39,
-            "total": 135468
+            "last": 10,
+            "total": 135478
         },
         "recovered": {
             "last": 4,
@@ -15,8 +15,8 @@ var provience = {
     },
     "Punjab": {
         "infected": {
-            "last": 75,
-            "total": 507311
+            "last": 25,
+            "total": 507336
         },
         "recovered": {
             "last": 19,
@@ -29,8 +29,8 @@ var provience = {
     },
     "Sindh": {
         "infected": {
-            "last": 84,
-            "total": 577687
+            "last": 15,
+            "total": 577702
         },
         "recovered": {
             "last": 1,

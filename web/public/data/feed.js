@@ -1,5 +1,26 @@
 var feed = [
     {
+        "id": 29576,
+        "date": "2022-06-07T10:07:03",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "15 new cases reported in  Sindh taking the tally to 577702"
+    },
+    {
+        "id": 29575,
+        "date": "2022-06-07T10:07:03",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "25 new cases reported in  Punjab taking the tally to 507336"
+    },
+    {
+        "id": 29574,
+        "date": "2022-06-07T10:07:03",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "10 new cases reported in  Islamabad taking the tally to 135478"
+    },
+    {
         "id": 29573,
         "date": "2022-06-07T04:15:59",
         "type": "INFECTED",
