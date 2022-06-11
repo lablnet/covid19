@@ -13929,3 +13929,10 @@ ID,datetime,province,new_cases,cumulative_cases,type,reference
 29585,2022-06-09T04:18:11,KPK,3,219709,INFECTED,http://covid.gov.pk/
 29586,2022-06-09T04:18:11,,2,11752,INFECTED,http://covid.gov.pk/
 29587,2022-06-09T04:18:11,AJK,2,43342,INFECTED,http://covid.gov.pk/
+29588,2022-06-11T04:10:47,Islamabad,17,135527,INFECTED,http://covid.gov.pk/
+29589,2022-06-11T04:10:47,Punjab,12,507381,INFECTED,http://covid.gov.pk/
+29590,2022-06-11T04:10:47,Punjab,1,13565,DECEASED,http://covid.gov.pk/
+29591,2022-06-11T04:10:47,Sindh,31,577812,INFECTED,http://covid.gov.pk/
+29592,2022-06-11T04:10:47,Sindh,1,8107,DECEASED,http://covid.gov.pk/
+29593,2022-06-11T04:10:47,KPK,6,219715,INFECTED,http://covid.gov.pk/
+29594,2022-06-11T04:10:47,AJK,6,43348,INFECTED,http://covid.gov.pk/
