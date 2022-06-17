@@ -13968,3 +13968,10 @@ ID,datetime,province,new_cases,cumulative_cases,type,reference
 29624,2022-06-16T05:10:55,Sindh,1,8108,DECEASED,http://covid.gov.pk/
 29625,2022-06-16T05:10:55,KPK,12,219756,INFECTED,http://covid.gov.pk/
 29626,2022-06-16T05:10:55,AJK,2,43356,INFECTED,http://covid.gov.pk/
+29627,2022-06-17T04:20:26,Islamabad,9,135652,INFECTED,http://covid.gov.pk/
+29628,2022-06-17T04:20:26,Punjab,23,507584,INFECTED,http://covid.gov.pk/
+29629,2022-06-17T04:20:26,Punjab,1,13566,DECEASED,http://covid.gov.pk/
+29630,2022-06-17T04:20:26,Sindh,53,578059,INFECTED,http://covid.gov.pk/
+29631,2022-06-17T04:20:26,KPK,6,219762,INFECTED,http://covid.gov.pk/
+29632,2022-06-17T04:20:26,Balochistan,4,35510,INFECTED,http://covid.gov.pk/
+29633,2022-06-17T04:20:26,AJK,3,43359,INFECTED,http://covid.gov.pk/
