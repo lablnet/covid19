@@ -1,5 +1,47 @@
 var feed = [
     {
+        "id": 29659,
+        "date": "2022-06-22T04:24:35",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "4 new cases reported in  AJK taking the tally to 43366"
+    },
+    {
+        "id": 29658,
+        "date": "2022-06-22T04:24:35",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "5 new cases reported in  Balochistan taking the tally to 35517"
+    },
+    {
+        "id": 29657,
+        "date": "2022-06-22T04:24:35",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "20 new cases reported in  KPK taking the tally to 219818"
+    },
+    {
+        "id": 29656,
+        "date": "2022-06-22T04:24:35",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "89 new cases reported in  Sindh taking the tally to 578428"
+    },
+    {
+        "id": 29655,
+        "date": "2022-06-22T04:24:35",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "52 new cases reported in  Punjab taking the tally to 507771"
+    },
+    {
+        "id": 29654,
+        "date": "2022-06-22T04:24:35",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "34 new cases reported in  Islamabad taking the tally to 135817"
+    },
+    {
         "id": 29653,
         "date": "2022-06-21T05:13:25",
         "type": "INFECTED",
