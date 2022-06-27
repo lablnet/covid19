@@ -1,5 +1,61 @@
 var feed = [
     {
+        "id": 29690,
+        "date": "2022-06-27T04:40:06",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "4 new cases reported in  AJK taking the tally to 43379"
+    },
+    {
+        "id": 29689,
+        "date": "2022-06-27T04:40:06",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "1 new cases reported in  Gilgit Baltistan taking the tally to 11759"
+    },
+    {
+        "id": 29688,
+        "date": "2022-06-27T04:40:06",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "41 new cases reported in  KPK taking the tally to 219937"
+    },
+    {
+        "id": 29687,
+        "date": "2022-06-27T04:40:06",
+        "type": "DECEASED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "1 new deaths reported in Sindh taking the tally to 8110"
+    },
+    {
+        "id": 29686,
+        "date": "2022-06-27T04:40:06",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "489 new cases reported in  Sindh taking the tally to 579530"
+    },
+    {
+        "id": 29685,
+        "date": "2022-06-27T04:40:06",
+        "type": "DECEASED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "3 new deaths reported in Punjab taking the tally to 13569"
+    },
+    {
+        "id": 29684,
+        "date": "2022-06-27T04:40:06",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "158 new cases reported in  Punjab taking the tally to 508112"
+    },
+    {
+        "id": 29683,
+        "date": "2022-06-27T04:40:06",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "95 new cases reported in  Islamabad taking the tally to 136028"
+    },
+    {
         "id": 29682,
         "date": "2022-06-25T05:06:36",
         "type": "INFECTED",
