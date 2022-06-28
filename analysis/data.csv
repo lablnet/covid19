@@ -14032,3 +14032,11 @@ ID,datetime,province,new_cases,cumulative_cases,type,reference
 29688,2022-06-27T04:40:06,KPK,41,219937,INFECTED,http://covid.gov.pk/
 29689,2022-06-27T04:40:06,,1,11759,INFECTED,http://covid.gov.pk/
 29690,2022-06-27T04:40:06,AJK,4,43379,INFECTED,http://covid.gov.pk/
+29691,2022-06-28T04:30:53,Islamabad,14,136042,INFECTED,http://covid.gov.pk/
+29692,2022-06-28T04:30:53,Punjab,55,508167,INFECTED,http://covid.gov.pk/
+29693,2022-06-28T04:30:53,Punjab,1,13570,DECEASED,http://covid.gov.pk/
+29694,2022-06-28T04:30:53,Sindh,248,579778,INFECTED,http://covid.gov.pk/
+29695,2022-06-28T04:30:53,Sindh,1,8111,DECEASED,http://covid.gov.pk/
+29696,2022-06-28T04:30:53,KPK,9,219946,INFECTED,http://covid.gov.pk/
+29697,2022-06-28T04:30:53,Balochistan,6,35531,INFECTED,http://covid.gov.pk/
+29698,2022-06-28T04:30:53,AJK,1,43380,INFECTED,http://covid.gov.pk/
