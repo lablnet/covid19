@@ -14040,3 +14040,11 @@ ID,datetime,province,new_cases,cumulative_cases,type,reference
 29696,2022-06-28T04:30:53,KPK,9,219946,INFECTED,http://covid.gov.pk/
 29697,2022-06-28T04:30:53,Balochistan,6,35531,INFECTED,http://covid.gov.pk/
 29698,2022-06-28T04:30:53,AJK,1,43380,INFECTED,http://covid.gov.pk/
+29699,2022-06-29T05:18:55,Islamabad,55,136097,INFECTED,http://covid.gov.pk/
+29700,2022-06-29T05:18:55,Punjab,91,508258,INFECTED,http://covid.gov.pk/
+29701,2022-06-29T05:18:55,Punjab,1,13571,DECEASED,http://covid.gov.pk/
+29702,2022-06-29T05:18:55,Sindh,353,580131,INFECTED,http://covid.gov.pk/
+29703,2022-06-29T05:18:55,KPK,29,219975,INFECTED,http://covid.gov.pk/
+29704,2022-06-29T05:18:55,,1,11760,INFECTED,http://covid.gov.pk/
+29705,2022-06-29T05:18:55,Balochistan,9,35540,INFECTED,http://covid.gov.pk/
+29706,2022-06-29T05:18:55,AJK,3,43383,INFECTED,http://covid.gov.pk/
