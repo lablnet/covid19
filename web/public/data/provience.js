@@ -1,8 +1,8 @@
 var provience = {
     "Islamabad": {
         "infected": {
-            "last": 29,
-            "total": 136318
+            "last": 63,
+            "total": 136381
         },
         "recovered": {
             "last": 4,
@@ -15,8 +15,8 @@ var provience = {
     },
     "Punjab": {
         "infected": {
-            "last": 97,
-            "total": 508807
+            "last": 113,
+            "total": 508920
         },
         "recovered": {
             "last": 19,
@@ -29,8 +29,8 @@ var provience = {
     },
     "Sindh": {
         "infected": {
-            "last": 508,
-            "total": 582623
+            "last": 461,
+            "total": 583084
         },
         "recovered": {
             "last": 1,
@@ -43,8 +43,8 @@ var provience = {
     },
     "KPK": {
         "infected": {
-            "last": 27,
-            "total": 220123
+            "last": 9,
+            "total": 220132
         },
         "recovered": {
             "last": 4,
@@ -71,8 +71,8 @@ var provience = {
     },
     "Balochistan": {
         "infected": {
-            "last": 9,
-            "total": 35577
+            "last": 5,
+            "total": 35582
         },
         "recovered": {
             "last": 3,
@@ -85,8 +85,8 @@ var provience = {
     },
     "AJK": {
         "infected": {
-            "last": 4,
-            "total": 43411
+            "last": 2,
+            "total": 43413
         },
         "recovered": {
             "last": 1,
