@@ -14118,3 +14118,9 @@ ID,datetime,province,new_cases,cumulative_cases,type,reference
 29774,2022-07-11T05:16:59,Sindh,2,8130,DECEASED,http://covid.gov.pk/
 29775,2022-07-11T05:16:59,KPK,19,220314,INFECTED,http://covid.gov.pk/
 29776,2022-07-11T05:16:59,Balochistan,1,35614,INFECTED,http://covid.gov.pk/
+29777,2022-07-12T05:31:13,Islamabad,14,136657,INFECTED,http://covid.gov.pk/
+29778,2022-07-12T05:31:13,Punjab,43,509628,INFECTED,http://covid.gov.pk/
+29779,2022-07-12T05:31:13,Punjab,1,13580,DECEASED,http://covid.gov.pk/
+29780,2022-07-12T05:31:13,Sindh,184,586075,INFECTED,http://covid.gov.pk/
+29781,2022-07-12T05:31:13,KPK,11,220325,INFECTED,http://covid.gov.pk/
+29782,2022-07-12T05:31:13,AJK,3,43436,INFECTED,http://covid.gov.pk/
