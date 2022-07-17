@@ -14154,3 +14154,12 @@ ID,datetime,province,new_cases,cumulative_cases,type,reference
 29810,2022-07-16T10:06:16,,1,11774,INFECTED,http://covid.gov.pk/
 29811,2022-07-16T10:06:16,Balochistan,10,35643,INFECTED,http://covid.gov.pk/
 29812,2022-07-16T10:06:16,AJK,9,43451,INFECTED,http://covid.gov.pk/
+29813,2022-07-17T04:23:31,Islamabad,37,136831,INFECTED,http://covid.gov.pk/
+29814,2022-07-17T04:23:31,Punjab,142,510241,INFECTED,http://covid.gov.pk/
+29815,2022-07-17T04:23:31,Punjab,1,13582,DECEASED,http://covid.gov.pk/
+29816,2022-07-17T04:23:31,Sindh,354,587827,INFECTED,http://covid.gov.pk/
+29817,2022-07-17T04:23:31,Sindh,1,8144,DECEASED,http://covid.gov.pk/
+29818,2022-07-17T04:23:31,KPK,53,220466,INFECTED,http://covid.gov.pk/
+29819,2022-07-17T04:23:31,,1,11775,INFECTED,http://covid.gov.pk/
+29820,2022-07-17T04:23:31,Balochistan,9,35652,INFECTED,http://covid.gov.pk/
+29821,2022-07-17T04:23:31,AJK,9,43460,INFECTED,http://covid.gov.pk/
