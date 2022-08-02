@@ -1,8 +1,8 @@
 var provience = {
     "Islamabad": {
         "infected": {
-            "last": 99,
-            "total": 137430
+            "last": 85,
+            "total": 137515
         },
         "recovered": {
             "last": 4,
@@ -10,13 +10,13 @@ var provience = {
         },
         "deceased": {
             "last": 1,
-            "total": 1027
+            "total": 1028
         }
     },
     "Punjab": {
         "infected": {
-            "last": 696,
-            "total": 513528
+            "last": 614,
+            "total": 514142
         },
         "recovered": {
             "last": 19,
@@ -24,13 +24,13 @@ var provience = {
         },
         "deceased": {
             "last": 1,
-            "total": 13588
+            "total": 13589
         }
     },
     "Sindh": {
         "infected": {
-            "last": 302,
-            "total": 590936
+            "last": 188,
+            "total": 591124
         },
         "recovered": {
             "last": 1,
@@ -43,8 +43,8 @@ var provience = {
     },
     "KPK": {
         "infected": {
-            "last": 95,
-            "total": 221355
+            "last": 108,
+            "total": 221463
         },
         "recovered": {
             "last": 4,
@@ -52,13 +52,13 @@ var provience = {
         },
         "deceased": {
             "last": 1,
-            "total": 6329
+            "total": 6330
         }
     },
     "GB": {
         "infected": {
-            "last": 21,
-            "total": 11891
+            "last": 5,
+            "total": 11896
         },
         "recovered": {
             "last": 14,
@@ -71,8 +71,8 @@ var provience = {
     },
     "Balochistan": {
         "infected": {
-            "last": 9,
-            "total": 35794
+            "last": 17,
+            "total": 35811
         },
         "recovered": {
             "last": 3,
@@ -85,8 +85,8 @@ var provience = {
     },
     "AJK": {
         "infected": {
-            "last": 44,
-            "total": 43657
+            "last": 31,
+            "total": 43688
         },
         "recovered": {
             "last": 1,
