@@ -1,5 +1,54 @@
 var feed = [
     {
+        "id": 29972,
+        "date": "2022-08-08T05:13:54",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "23 new cases reported in  AJK taking the tally to 43875"
+    },
+    {
+        "id": 29971,
+        "date": "2022-08-08T05:13:54",
+        "type": "DECEASED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "1 new deaths reported in KPK taking the tally to 6332"
+    },
+    {
+        "id": 29970,
+        "date": "2022-08-08T05:13:54",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "85 new cases reported in  KPK taking the tally to 221957"
+    },
+    {
+        "id": 29969,
+        "date": "2022-08-08T05:13:54",
+        "type": "DECEASED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "2 new deaths reported in Sindh taking the tally to 8196"
+    },
+    {
+        "id": 29968,
+        "date": "2022-08-08T05:13:54",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "102 new cases reported in  Sindh taking the tally to 591852"
+    },
+    {
+        "id": 29967,
+        "date": "2022-08-08T05:13:54",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "371 new cases reported in  Punjab taking the tally to 516411"
+    },
+    {
+        "id": 29966,
+        "date": "2022-08-08T05:13:54",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "47 new cases reported in  Islamabad taking the tally to 137954"
+    },
+    {
         "id": 29965,
         "date": "2022-08-07T05:06:27",
         "type": "INFECTED",
