@@ -1,5 +1,61 @@
 var feed = [
     {
+        "id": 30074,
+        "date": "2022-08-22T05:00:30",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "13 new cases reported in  AJK taking the tally to 44167"
+    },
+    {
+        "id": 30073,
+        "date": "2022-08-22T05:00:30",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "1 new cases reported in  Balochistan taking the tally to 35923"
+    },
+    {
+        "id": 30072,
+        "date": "2022-08-22T05:00:30",
+        "type": "DECEASED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "1 new deaths reported in KPK taking the tally to 6346"
+    },
+    {
+        "id": 30071,
+        "date": "2022-08-22T05:00:30",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "120 new cases reported in  KPK taking the tally to 223003"
+    },
+    {
+        "id": 30070,
+        "date": "2022-08-22T05:00:30",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "56 new cases reported in  Sindh taking the tally to 592942"
+    },
+    {
+        "id": 30069,
+        "date": "2022-08-22T05:00:30",
+        "type": "DECEASED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "2 new deaths reported in Punjab taking the tally to 13599"
+    },
+    {
+        "id": 30068,
+        "date": "2022-08-22T05:00:30",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "183 new cases reported in  Punjab taking the tally to 519857"
+    },
+    {
+        "id": 30067,
+        "date": "2022-08-22T05:00:30",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "43 new cases reported in  Islamabad taking the tally to 138772"
+    },
+    {
         "id": 30066,
         "date": "2022-08-21T04:22:55",
         "type": "INFECTED",
