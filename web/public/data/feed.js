@@ -1,5 +1,68 @@
 var feed = [
     {
+        "id": 30100,
+        "date": "2022-08-25T10:07:43",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "7 new cases reported in  AJK taking the tally to 44192"
+    },
+    {
+        "id": 30099,
+        "date": "2022-08-25T10:07:43",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "2 new cases reported in  Balochistan taking the tally to 35931"
+    },
+    {
+        "id": 30098,
+        "date": "2022-08-25T10:07:43",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "6 new cases reported in  Gilgit Baltistan taking the tally to 12005"
+    },
+    {
+        "id": 30097,
+        "date": "2022-08-25T10:07:43",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "74 new cases reported in  KPK taking the tally to 223143"
+    },
+    {
+        "id": 30096,
+        "date": "2022-08-25T10:07:43",
+        "type": "DECEASED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "3 new deaths reported in Sindh taking the tally to 8221"
+    },
+    {
+        "id": 30095,
+        "date": "2022-08-25T10:07:43",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "55 new cases reported in  Sindh taking the tally to 593071"
+    },
+    {
+        "id": 30094,
+        "date": "2022-08-25T10:07:43",
+        "type": "DECEASED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "1 new deaths reported in Punjab taking the tally to 13603"
+    },
+    {
+        "id": 30093,
+        "date": "2022-08-25T10:07:43",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "134 new cases reported in  Punjab taking the tally to 520231"
+    },
+    {
+        "id": 30092,
+        "date": "2022-08-25T10:07:43",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "35 new cases reported in  Islamabad taking the tally to 138887"
+    },
+    {
         "id": 30091,
         "date": "2022-08-24T05:04:35",
         "type": "INFECTED",
