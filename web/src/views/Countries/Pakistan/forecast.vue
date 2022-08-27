@@ -6,8 +6,7 @@
       </div>
     </div>
     <p class="content mt-3 mb-5">
-      Forecast of cumulative confirmed COVID-19 Cases in Pakistan using linear
-      regression model.
+      Forecast of cumulative confirmed COVID-19 Cases in Pakistan using Neural Network model.
     </p>
     <div class="row mt-5 mb-5">
       <div class="col-md-12">
