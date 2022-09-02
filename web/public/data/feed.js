@@ -1,5 +1,12 @@
 var feed = [
     {
+        "id": 30142,
+        "date": "2022-09-02T05:18:37",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "976220 new cases reported in  Sindh taking the tally to 1569537"
+    },
+    {
         "id": 30141,
         "date": "2022-08-31T05:24:24",
         "type": "INFECTED",

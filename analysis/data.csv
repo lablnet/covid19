@@ -14483,3 +14483,4 @@ ID,datetime,province,new_cases,cumulative_cases,type,reference
 30139,2022-08-31T05:24:24,,2,12020,INFECTED,http://covid.gov.pk/
 30140,2022-08-31T05:24:24,Balochistan,3,35946,INFECTED,http://covid.gov.pk/
 30141,2022-08-31T05:24:24,AJK,9,44247,INFECTED,http://covid.gov.pk/
+30142,2022-09-02T05:18:37,Sindh,976220,1569537,INFECTED,http://covid.gov.pk/

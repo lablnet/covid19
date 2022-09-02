@@ -29,8 +29,8 @@ var provience = {
     },
     "Sindh": {
         "infected": {
-            "last": 37,
-            "total": 593317
+            "last": 976220,
+            "total": 1569537
         },
         "recovered": {
             "last": 1,
