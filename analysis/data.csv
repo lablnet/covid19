@@ -14493,3 +14493,8 @@ ID,datetime,province,new_cases,cumulative_cases,type,reference
 30149,2022-09-02T10:08:32,,2,12022,INFECTED,http://covid.gov.pk/
 30150,2022-09-02T10:08:32,Balochistan,3,35949,INFECTED,http://covid.gov.pk/
 30151,2022-09-02T10:08:32,AJK,15,44262,INFECTED,http://covid.gov.pk/
+30152,2022-09-03T10:08:12,Islamabad,20,139191,INFECTED,http://covid.gov.pk/
+30153,2022-09-03T10:08:12,Punjab,100,521279,INFECTED,http://covid.gov.pk/
+30154,2022-09-03T10:08:12,KPK,67,223630,INFECTED,http://covid.gov.pk/
+30155,2022-09-03T10:08:12,KPK,2,6354,DECEASED,http://covid.gov.pk/
+30156,2022-09-03T10:08:12,AJK,11,44273,INFECTED,http://covid.gov.pk/
