@@ -120,10 +120,10 @@ var trend = [
     },
     {
         "DATE": "2022-09-02",
-        "INFECTED": 976607,
+        "INFECTED": 887,
         "DECEASED": 5,
         "RECOVERED": 0,
-        "TOTAL": 976612
+        "TOTAL": 892
     },
     {
         "DATE": "2022-09-03",

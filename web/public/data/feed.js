@@ -242,7 +242,7 @@ var feed = [
         "date": "2022-09-02T05:18:37",
         "type": "INFECTED",
         "ref": "http://covid.gov.pk/",
-        "desc": "976220 new cases reported in  Sindh taking the tally to 1569537"
+        "desc": "500 new cases reported in  Sindh taking the tally to 1569537"
     },
     {
         "id": 30141,
