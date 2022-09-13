@@ -14536,3 +14536,10 @@ ID,datetime,province,new_cases,cumulative_cases,type,reference
 30192,2022-09-12T10:09:10,KPK,24,224006,INFECTED,http://covid.gov.pk/
 30193,2022-09-12T10:09:10,,1,12038,INFECTED,http://covid.gov.pk/
 30194,2022-09-12T10:09:10,AJK,3,44304,INFECTED,http://covid.gov.pk/
+30195,2022-09-13T05:21:33,Islamabad,5,139340,INFECTED,http://covid.gov.pk/
+30196,2022-09-13T05:21:33,Punjab,47,521842,INFECTED,http://covid.gov.pk/
+30197,2022-09-13T05:21:33,KPK,3,224009,INFECTED,http://covid.gov.pk/
+30198,2022-09-13T05:21:33,KPK,1,6361,DECEASED,http://covid.gov.pk/
+30199,2022-09-13T05:21:33,,3,12041,INFECTED,http://covid.gov.pk/
+30200,2022-09-13T05:21:33,Balochistan,2,35977,INFECTED,http://covid.gov.pk/
+30201,2022-09-13T05:21:33,AJK,1,44305,INFECTED,http://covid.gov.pk/
