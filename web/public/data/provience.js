@@ -15,8 +15,8 @@ var provience = {
     },
     "Punjab": {
         "infected": {
-            "last": 75,
-            "total": 521917
+            "last": 23,
+            "total": 521940
         },
         "recovered": {
             "last": 19,
@@ -43,8 +43,8 @@ var provience = {
     },
     "KPK": {
         "infected": {
-            "last": 44,
-            "total": 224053
+            "last": 28,
+            "total": 224081
         },
         "recovered": {
             "last": 4,
@@ -57,8 +57,8 @@ var provience = {
     },
     "GB": {
         "infected": {
-            "last": 5,
-            "total": 12046
+            "last": 3,
+            "total": 12049
         },
         "recovered": {
             "last": 14,
@@ -85,8 +85,8 @@ var provience = {
     },
     "AJK": {
         "infected": {
-            "last": 4,
-            "total": 44309
+            "last": 1,
+            "total": 44310
         },
         "recovered": {
             "last": 1,
