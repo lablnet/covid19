@@ -9,25 +9,29 @@ __status__ = "Production"
 import json
 import os
 
+_cache = {}
+
 
 def get_config(config, root="", filename="config.json"):
     """
      Get config value from config file.
      Args:
-         config: key the value you want to get!.
+         config: Key for the config you want to get!.
+         root: Project root folder path.
+         filename: Name of the config file. Defaults to config.json
      Returns:
-         mixed.
-     Raises:
-         None.
+         The config value loaded from config file or None
      """
 
-    if os.path.isfile(root+"/"+filename):
-        file = open(root+"/"+filename, "r")
-        data = file.read()
-        configuration = json.loads(data)
-        if config in configuration:
-            return configuration[config]
-        else:
-            return None
-    else:
+    global _cache
+
+    if not _cache:
+        if os.path.isfile(root + "/" + filename):
+            with open(root + "/" + filename) as file:
+                data = file.read()
+                _cache = json.loads(data)
+
+    try:
+        return cache[config]
+    except KeyError:
         return None
