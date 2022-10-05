@@ -14599,3 +14599,11 @@ ID,datetime,province,new_cases,cumulative_cases,type,reference
 30255,2022-09-30T10:10:44,KPK,3,6369,DECEASED,http://covid.gov.pk/
 30256,2022-09-30T10:10:44,,2,12059,INFECTED,http://covid.gov.pk/
 30257,2022-09-30T10:10:44,Balochistan,2,35998,INFECTED,http://covid.gov.pk/
+30258,2022-10-05T10:58:20,Islamabad,5,139425,INFECTED,http://covid.gov.pk/
+30259,2022-10-05T10:58:20,Punjab,46,522243,INFECTED,http://covid.gov.pk/
+30260,2022-10-05T10:58:20,Punjab,1,13614,DECEASED,http://covid.gov.pk/
+30261,2022-10-05T10:58:20,Sindh,1,8242,DECEASED,http://covid.gov.pk/
+30262,2022-10-05T10:58:20,KPK,35,224312,INFECTED,http://covid.gov.pk/
+30263,2022-10-05T10:58:20,KPK,1,6370,DECEASED,http://covid.gov.pk/
+30264,2022-10-05T10:58:20,Balochistan,4,36002,INFECTED,http://covid.gov.pk/
+30265,2022-10-05T10:58:20,AJK,3,44320,INFECTED,http://covid.gov.pk/
