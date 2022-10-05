@@ -22,9 +22,9 @@ df = pd.read_sql("SELECT * FROM labs", conn)
 df.to_csv(folder+'web/public/data/labs.csv')
 
 # Who dataset.
-conn = sqlite3.connect(folder + get_config("database", folder+"/Countries/", "who.json")['db_name'] + '.sqlite')
-df = pd.read_sql("SELECT * FROM global", conn)
-df.to_csv(folder+'web/public/data/global.csv')
+# conn = sqlite3.connect(folder + get_config("database", folder+"/Countries/", "who.json")['db_name'] + '.sqlite')
+# df = pd.read_sql("SELECT * FROM global", conn)
+# df.to_csv(folder+'web/public/data/global.csv')
 
 # Finally, Done
 print("Done, Thanks")

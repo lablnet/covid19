@@ -13,7 +13,7 @@ make_json(folder+"web/public/data/cases.csv", folder+"web/public/data/cases.js",
 make_json(folder+"web/public/data/summery.csv", folder+"web/public/data/summery.js", "summery")
 make_json(folder+"web/public/data/summery.csv", folder+"web/public/data/app.json", False)
 
-make_json(folder+"web/public/data/global.csv", folder+"web/public/data/global.js", "global")
+# make_json(folder+"web/public/data/global.csv", folder+"web/public/data/global.js", "global")
 make_json(folder+"web/public/data/quarantines.csv", folder+"web/public/data/quarantines.js", "quarantines")
 make_json(folder+"web/public/data/labs.csv", folder+"web/public/data/labs.js", "labs")
 make_json(folder+"web/public/data/forecast.csv", folder+"web/public/data/forecast.js", "forecast")
