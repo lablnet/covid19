@@ -32,6 +32,6 @@ def get_config(config, root="", filename="config.json"):
                 _cache = json.loads(data)
 
     try:
-        return cache[config]
+        return _cache[config]
     except KeyError:
         return None
