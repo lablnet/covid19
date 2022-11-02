@@ -5,8 +5,8 @@ var provience = {
             "total": 1031
         },
         "infected": {
-            "last": 9,
-            "total": 139493
+            "last": 11,
+            "total": 139504
         },
         "recovered": {
             "last": 4,
@@ -19,8 +19,8 @@ var provience = {
             "total": 13616
         },
         "infected": {
-            "last": 71,
-            "total": 522650
+            "last": 27,
+            "total": 522677
         },
         "recovered": {
             "last": 19,
@@ -29,8 +29,8 @@ var provience = {
     },
     "Sindh": {
         "deceased": {
-            "last": 4,
-            "total": 8246
+            "last": 1,
+            "total": 8247
         },
         "infected": {
             "last": 500,
@@ -47,8 +47,8 @@ var provience = {
             "total": 6371
         },
         "infected": {
-            "last": 21,
-            "total": 224495
+            "last": 7,
+            "total": 224502
         },
         "recovered": {
             "last": 4,
@@ -61,8 +61,8 @@ var provience = {
             "total": 191
         },
         "infected": {
-            "last": 11,
-            "total": 12070
+            "last": 1,
+            "total": 12071
         },
         "recovered": {
             "last": 14,
@@ -75,8 +75,8 @@ var provience = {
             "total": 378
         },
         "infected": {
-            "last": 4,
-            "total": 36018
+            "last": 1,
+            "total": 36019
         },
         "recovered": {
             "last": 3,
@@ -90,7 +90,7 @@ var provience = {
         },
         "infected": {
             "last": 1,
-            "total": 44328
+            "total": 44329
         },
         "recovered": {
             "last": 1,
