@@ -1,5 +1,40 @@
 var feed = [
     {
+        "id": 30304,
+        "date": "2022-11-07T04:31:54",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "1 new cases reported in  Balochistan taking the tally to 36021"
+    },
+    {
+        "id": 30303,
+        "date": "2022-11-07T04:31:54",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "1 new cases reported in  Gilgit Baltistan taking the tally to 12072"
+    },
+    {
+        "id": 30302,
+        "date": "2022-11-07T04:31:54",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "15 new cases reported in  KPK taking the tally to 224532"
+    },
+    {
+        "id": 30301,
+        "date": "2022-11-07T04:31:54",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "39 new cases reported in  Punjab taking the tally to 522776"
+    },
+    {
+        "id": 30300,
+        "date": "2022-11-07T04:31:54",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "14 new cases reported in  Islamabad taking the tally to 139537"
+    },
+    {
         "id": 30299,
         "date": "2022-11-05T10:08:20",
         "type": "INFECTED",
