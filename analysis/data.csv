@@ -14649,3 +14649,10 @@ ID,datetime,province,new_cases,cumulative_cases,type,reference
 30305,2022-11-08T10:08:53,Islamabad,5,139542,INFECTED,http://covid.gov.pk/
 30306,2022-11-08T10:08:53,Punjab,11,522787,INFECTED,http://covid.gov.pk/
 30307,2022-11-08T10:08:53,KPK,5,224537,INFECTED,http://covid.gov.pk/
+30308,2022-11-10T04:29:02,Islamabad,7,139549,INFECTED,http://covid.gov.pk/
+30309,2022-11-10T04:29:02,Punjab,39,522826,INFECTED,http://covid.gov.pk/
+30310,2022-11-10T04:29:02,Sindh,1,8248,DECEASED,http://covid.gov.pk/
+30311,2022-11-10T04:29:02,KPK,16,224553,INFECTED,http://covid.gov.pk/
+30312,2022-11-10T04:29:02,KPK,1,6372,DECEASED,http://covid.gov.pk/
+30313,2022-11-10T04:29:02,,2,12074,INFECTED,http://covid.gov.pk/
+30314,2022-11-10T04:29:02,AJK,1,44333,INFECTED,http://covid.gov.pk/
