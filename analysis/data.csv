@@ -14660,3 +14660,7 @@ ID,datetime,province,new_cases,cumulative_cases,type,reference
 30316,2022-11-11T04:26:16,Punjab,23,522849,INFECTED,http://covid.gov.pk/
 30317,2022-11-11T04:26:16,KPK,9,224562,INFECTED,http://covid.gov.pk/
 30318,2022-11-11T04:26:16,Balochistan,1,36022,INFECTED,http://covid.gov.pk/
+30319,2022-11-13T10:07:31,Islamabad,9,139559,INFECTED,http://covid.gov.pk/
+30320,2022-11-13T10:07:31,Punjab,31,522880,INFECTED,http://covid.gov.pk/
+30321,2022-11-13T10:07:31,KPK,18,224580,INFECTED,http://covid.gov.pk/
+30322,2022-11-13T10:07:31,,1,12075,INFECTED,http://covid.gov.pk/
