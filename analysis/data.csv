@@ -14664,3 +14664,6 @@ ID,datetime,province,new_cases,cumulative_cases,type,reference
 30320,2022-11-13T10:07:31,Punjab,31,522880,INFECTED,http://covid.gov.pk/
 30321,2022-11-13T10:07:31,KPK,18,224580,INFECTED,http://covid.gov.pk/
 30322,2022-11-13T10:07:31,,1,12075,INFECTED,http://covid.gov.pk/
+30323,2022-11-14T10:08:59,Islamabad,2,139561,INFECTED,http://covid.gov.pk/
+30324,2022-11-14T10:08:59,Punjab,16,522896,INFECTED,http://covid.gov.pk/
+30325,2022-11-14T10:08:59,KPK,18,224598,INFECTED,http://covid.gov.pk/
