@@ -5,8 +5,8 @@ var provience = {
             "total": 1031
         },
         "infected": {
-            "last": 7,
-            "total": 139595
+            "last": 15,
+            "total": 139610
         },
         "recovered": {
             "last": 4,
@@ -19,8 +19,8 @@ var provience = {
             "total": 13616
         },
         "infected": {
-            "last": 11,
-            "total": 523014
+            "last": 68,
+            "total": 523082
         },
         "recovered": {
             "last": 19,
@@ -47,8 +47,8 @@ var provience = {
             "total": 6372
         },
         "infected": {
-            "last": 5,
-            "total": 224647
+            "last": 37,
+            "total": 224684
         },
         "recovered": {
             "last": 4,
@@ -61,8 +61,8 @@ var provience = {
             "total": 191
         },
         "infected": {
-            "last": 1,
-            "total": 12078
+            "last": 6,
+            "total": 12084
         },
         "recovered": {
             "last": 14,
@@ -90,7 +90,7 @@ var provience = {
         },
         "infected": {
             "last": 1,
-            "total": 44333
+            "total": 44334
         },
         "recovered": {
             "last": 1,

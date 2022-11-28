@@ -1,40 +1,5 @@
 var trend = [
     {
-        "DATE": "2022-10-31",
-        "INFECTED": 0,
-        "DECEASED": 0,
-        "RECOVERED": 0,
-        "TOTAL": 0
-    },
-    {
-        "DATE": "2022-11-01",
-        "INFECTED": 106,
-        "DECEASED": 1,
-        "RECOVERED": 0,
-        "TOTAL": 107
-    },
-    {
-        "DATE": "2022-11-02",
-        "INFECTED": 48,
-        "DECEASED": 1,
-        "RECOVERED": 0,
-        "TOTAL": 49
-    },
-    {
-        "DATE": "2022-11-03",
-        "INFECTED": 35,
-        "DECEASED": 0,
-        "RECOVERED": 0,
-        "TOTAL": 35
-    },
-    {
-        "DATE": "2022-11-04",
-        "INFECTED": 28,
-        "DECEASED": 0,
-        "RECOVERED": 0,
-        "TOTAL": 28
-    },
-    {
         "DATE": "2022-11-05",
         "INFECTED": 35,
         "DECEASED": 0,
@@ -166,5 +131,40 @@ var trend = [
         "DECEASED": 0,
         "RECOVERED": 0,
         "TOTAL": 23
+    },
+    {
+        "DATE": "2022-11-24",
+        "INFECTED": 0,
+        "DECEASED": 0,
+        "RECOVERED": 0,
+        "TOTAL": 0
+    },
+    {
+        "DATE": "2022-11-25",
+        "INFECTED": 0,
+        "DECEASED": 0,
+        "RECOVERED": 0,
+        "TOTAL": 0
+    },
+    {
+        "DATE": "2022-11-26",
+        "INFECTED": 0,
+        "DECEASED": 0,
+        "RECOVERED": 0,
+        "TOTAL": 0
+    },
+    {
+        "DATE": "2022-11-27",
+        "INFECTED": 0,
+        "DECEASED": 0,
+        "RECOVERED": 0,
+        "TOTAL": 0
+    },
+    {
+        "DATE": "2022-11-28",
+        "INFECTED": 127,
+        "DECEASED": 0,
+        "RECOVERED": 0,
+        "TOTAL": 127
     }
 ]
