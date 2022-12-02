@@ -2,57 +2,57 @@ var forecast = {
     "1": {
         "id": "1",
         "DATE": "2022-11-30",
-        "PREDICT": "24"
+        "PREDICT": "20"
     },
     "2": {
         "id": "2",
         "DATE": "2022-12-01",
-        "PREDICT": "34"
+        "PREDICT": "26"
     },
     "3": {
         "id": "3",
         "DATE": "2022-12-02",
-        "PREDICT": "36"
+        "PREDICT": "45"
     },
     "4": {
         "id": "4",
         "DATE": "2022-12-03",
-        "PREDICT": "50"
+        "PREDICT": "40"
     },
     "5": {
         "id": "5",
         "DATE": "2022-12-04",
-        "PREDICT": "40"
+        "PREDICT": "32"
     },
     "6": {
         "id": "6",
         "DATE": "2022-12-05",
-        "PREDICT": "33"
+        "PREDICT": "28"
     },
     "7": {
         "id": "7",
         "DATE": "2022-12-06",
-        "PREDICT": "29"
+        "PREDICT": "35"
     },
     "8": {
         "id": "8",
         "DATE": "2022-12-07",
-        "PREDICT": "39"
+        "PREDICT": "33"
     },
     "9": {
         "id": "9",
         "DATE": "2022-12-08",
-        "PREDICT": "40"
+        "PREDICT": "41"
     },
     "10": {
         "id": "10",
         "DATE": "2022-12-09",
-        "PREDICT": "45"
+        "PREDICT": "43"
     },
     "11": {
         "id": "11",
         "DATE": "2022-12-10",
-        "PREDICT": "45"
+        "PREDICT": "42"
     },
     "12": {
         "id": "12",
@@ -62,16 +62,16 @@ var forecast = {
     "13": {
         "id": "13",
         "DATE": "2022-12-12",
-        "PREDICT": "36"
+        "PREDICT": "40"
     },
     "14": {
         "id": "14",
         "DATE": "2022-12-13",
-        "PREDICT": "36"
+        "PREDICT": "45"
     },
     "15": {
         "id": "15",
         "DATE": "2022-12-14",
-        "PREDICT": "44"
+        "PREDICT": "47"
     }
 }
