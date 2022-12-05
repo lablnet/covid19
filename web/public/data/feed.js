@@ -1,5 +1,26 @@
 var feed = [
     {
+        "id": 30374,
+        "date": "2022-12-05T10:08:08",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "20 new cases reported in  KPK taking the tally to 224760"
+    },
+    {
+        "id": 30373,
+        "date": "2022-12-05T10:08:08",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "11 new cases reported in  Punjab taking the tally to 523162"
+    },
+    {
+        "id": 30372,
+        "date": "2022-12-05T10:08:08",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "3 new cases reported in  Islamabad taking the tally to 139626"
+    },
+    {
         "id": 30371,
         "date": "2022-12-05T05:06:41",
         "type": "INFECTED",

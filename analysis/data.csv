@@ -14713,3 +14713,6 @@ ID,datetime,province,new_cases,cumulative_cases,type,reference
 30369,2022-12-05T05:06:41,KPK,21,224740,INFECTED,http://covid.gov.pk/
 30370,2022-12-05T05:06:41,,1,12085,INFECTED,http://covid.gov.pk/
 30371,2022-12-05T05:06:41,AJK,1,44335,INFECTED,http://covid.gov.pk/
+30372,2022-12-05T10:08:08,Islamabad,3,139626,INFECTED,http://covid.gov.pk/
+30373,2022-12-05T10:08:08,Punjab,11,523162,INFECTED,http://covid.gov.pk/
+30374,2022-12-05T10:08:08,KPK,20,224760,INFECTED,http://covid.gov.pk/
