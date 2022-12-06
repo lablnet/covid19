@@ -2,76 +2,76 @@ var forecast = {
     "1": {
         "id": "1",
         "DATE": "2022-12-01",
-        "PREDICT": "36"
+        "PREDICT": "30"
     },
     "2": {
         "id": "2",
         "DATE": "2022-12-02",
-        "PREDICT": "60"
+        "PREDICT": "53"
     },
     "3": {
         "id": "3",
         "DATE": "2022-12-03",
-        "PREDICT": "43"
+        "PREDICT": "31"
     },
     "4": {
         "id": "4",
         "DATE": "2022-12-04",
-        "PREDICT": "36"
+        "PREDICT": "35"
     },
     "5": {
         "id": "5",
         "DATE": "2022-12-05",
-        "PREDICT": "48"
+        "PREDICT": "37"
     },
     "6": {
         "id": "6",
         "DATE": "2022-12-06",
-        "PREDICT": "52"
+        "PREDICT": "41"
     },
     "7": {
         "id": "7",
         "DATE": "2022-12-07",
-        "PREDICT": "61"
+        "PREDICT": "49"
     },
     "8": {
         "id": "8",
         "DATE": "2022-12-08",
-        "PREDICT": "63"
+        "PREDICT": "49"
     },
     "9": {
         "id": "9",
         "DATE": "2022-12-09",
-        "PREDICT": "76"
+        "PREDICT": "55"
     },
     "10": {
         "id": "10",
         "DATE": "2022-12-10",
-        "PREDICT": "80"
+        "PREDICT": "54"
     },
     "11": {
         "id": "11",
         "DATE": "2022-12-11",
-        "PREDICT": "87"
+        "PREDICT": "55"
     },
     "12": {
         "id": "12",
         "DATE": "2022-12-12",
-        "PREDICT": "98"
+        "PREDICT": "59"
     },
     "13": {
         "id": "13",
         "DATE": "2022-12-13",
-        "PREDICT": "116"
+        "PREDICT": "62"
     },
     "14": {
         "id": "14",
         "DATE": "2022-12-14",
-        "PREDICT": "130"
+        "PREDICT": "66"
     },
     "15": {
         "id": "15",
         "DATE": "2022-12-15",
-        "PREDICT": "146"
+        "PREDICT": "68"
     }
 }
