@@ -1,5 +1,40 @@
 var feed = [
     {
+        "id": 30384,
+        "date": "2022-12-07T05:06:27",
+        "type": "DECEASED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "1 new deaths reported in KPK taking the tally to 6374"
+    },
+    {
+        "id": 30383,
+        "date": "2022-12-07T05:06:27",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "13 new cases reported in  KPK taking the tally to 224775"
+    },
+    {
+        "id": 30382,
+        "date": "2022-12-07T05:06:27",
+        "type": "DECEASED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "1 new deaths reported in Sindh taking the tally to 8251"
+    },
+    {
+        "id": 30381,
+        "date": "2022-12-07T05:06:27",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "5 new cases reported in  Punjab taking the tally to 523179"
+    },
+    {
+        "id": 30380,
+        "date": "2022-12-07T05:06:27",
+        "type": "INFECTED",
+        "ref": "http://covid.gov.pk/",
+        "desc": "1 new cases reported in  Islamabad taking the tally to 139631"
+    },
+    {
         "id": 30379,
         "date": "2022-12-06T10:07:18",
         "type": "INFECTED",

@@ -5,8 +5,8 @@ var provience = {
             "total": 1031
         },
         "infected": {
-            "last": 4,
-            "total": 139630
+            "last": 1,
+            "total": 139631
         },
         "recovered": {
             "last": 4,
@@ -19,8 +19,8 @@ var provience = {
             "total": 13616
         },
         "infected": {
-            "last": 12,
-            "total": 523174
+            "last": 5,
+            "total": 523179
         },
         "recovered": {
             "last": 19,
@@ -30,7 +30,7 @@ var provience = {
     "Sindh": {
         "deceased": {
             "last": 1,
-            "total": 8250
+            "total": 8251
         },
         "infected": {
             "last": 500,
@@ -44,11 +44,11 @@ var provience = {
     "KPK": {
         "deceased": {
             "last": 1,
-            "total": 6373
+            "total": 6374
         },
         "infected": {
-            "last": 2,
-            "total": 224762
+            "last": 13,
+            "total": 224775
         },
         "recovered": {
             "last": 4,
