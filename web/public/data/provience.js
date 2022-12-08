@@ -5,8 +5,8 @@ var provience = {
             "total": 1031
         },
         "infected": {
-            "last": 1,
-            "total": 139631
+            "last": 2,
+            "total": 139633
         },
         "recovered": {
             "last": 4,
@@ -19,8 +19,8 @@ var provience = {
             "total": 13616
         },
         "infected": {
-            "last": 5,
-            "total": 523179
+            "last": 10,
+            "total": 523189
         },
         "recovered": {
             "last": 19,
@@ -47,8 +47,8 @@ var provience = {
             "total": 6374
         },
         "infected": {
-            "last": 13,
-            "total": 224775
+            "last": 6,
+            "total": 224781
         },
         "recovered": {
             "last": 4,
