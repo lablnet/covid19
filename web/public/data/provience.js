@@ -6,7 +6,7 @@ var provience = {
         },
         "infected": {
             "last": 2,
-            "total": 139633
+            "total": 139635
         },
         "recovered": {
             "last": 4,
@@ -16,11 +16,11 @@ var provience = {
     "Punjab": {
         "deceased": {
             "last": 1,
-            "total": 13616
+            "total": 13617
         },
         "infected": {
-            "last": 10,
-            "total": 523189
+            "last": 8,
+            "total": 523197
         },
         "recovered": {
             "last": 19,
@@ -47,8 +47,8 @@ var provience = {
             "total": 6374
         },
         "infected": {
-            "last": 6,
-            "total": 224781
+            "last": 5,
+            "total": 224786
         },
         "recovered": {
             "last": 4,
@@ -76,7 +76,7 @@ var provience = {
         },
         "infected": {
             "last": 1,
-            "total": 36026
+            "total": 36027
         },
         "recovered": {
             "last": 3,
