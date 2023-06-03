@@ -1,4 +1,4 @@
-requests==2.25.1
+requests==2.31.0
 selenium==3.141.0
 webdriver-manager==3.4.1
 pandas==1.1.3
